@@ -61,3 +61,5 @@ class ControlledCarousel extends React.Component {
 }
 
 render(<ControlledCarousel />);
+
+export default ControlledCarousel;
