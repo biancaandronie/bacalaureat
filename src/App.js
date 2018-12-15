@@ -7,12 +7,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
           <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
+          <img src={foot} className="footer" alt="crop1" width="1600" height="154" />
 
-
-          <footer>
-            <img src={foot} className="App-logo" alt="crop1" width="1600" height="154" />
-          </footer>
       </div>
 
 
