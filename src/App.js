@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import imag from './images/crop1.jpg';
 import foot from './images/foot.jpg';
-import stele2 from './images/stele2.jpg';
+import stele3 from './images/stele3.jpg';
 import './App.css';
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
           </div>
 
               <div className="content-right">
-                <img src={stele2} className="stele" alt="stele" width="258" height="221" />
+                <img src={stele3} className="stele" alt="stele" width="467" height="400" />
               </div>
 
       </div>

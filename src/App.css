@@ -47,6 +47,7 @@
 .content-right{
     height: auto;
     padding-right: 150px;
+    padding-top: 20px;
     overflow: hidden;
     float: right;
 }
