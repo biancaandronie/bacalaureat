@@ -44,6 +44,12 @@
   background-color: #BD4CB8;
 }
 
+.content-left{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
 .content-right{
     width: 100%;
     height: auto;
