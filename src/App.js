@@ -33,21 +33,21 @@ class App extends Component {
                 </ul>
                 <div className="carousel-inner">
                   <div className="carousel-item active">
-                    <img src={imag} alt="Los Angeles" width="1600" height="158">
+                    <img src={imag} alt="Los Angeles" width="1600" height="158" />
                     <div className="carousel-caption">
                       <h3>Los Angeles</h3>
                       <p>We had such a great time in LA!</p>
                     </div>
                   </div>
                   <div className="carousel-item">
-                    <img src={foot} alt="Chicago" width="1600" height="154">
+                    <img src={foot} alt="Chicago" width="1600" height="154" />
                     <div className="carousel-caption">
                       <h3>Chicago</h3>
                       <p>Thank you, Chicago!</p>
                     </div>
                   </div>
                   <div className="carousel-item">
-                    <img src={foot} alt="New York" width="1600" height="154">
+                    <img src={foot} alt="New York" width="1600" height="154" />
                     <div className="carousel-caption">
                       <h3>New York</h3>
                       <p>We love the Big Apple!</p>
