@@ -45,14 +45,14 @@
 }
 
 .content-right{
-    width: 100%;
     height: auto;
+    padding-right: 150px;
     overflow: hidden;
+    float: right;
 }
 
 .stele{
+    width: 100%;
     height: auto;
     overflow: hidden;
-    float: right;
-    padding-right:150px;
 }
