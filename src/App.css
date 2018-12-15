@@ -51,7 +51,8 @@
 }
 
 .stele{
-    width: 100%;
     height: auto;
     overflow: hidden;
+    float: right;
+    padding-right:150px;
 }
