@@ -13,7 +13,7 @@ class App extends Component {
           <div className="jumatate">
 
             <div className="stanga">
-                <img src={stg} className="App-logo" alt="crop1" width="60" height="888" />
+                <img src={stg} className="App-logo" alt="crop1" width="60" height="60" />
             </div>
 
             <div className="centru">
@@ -21,7 +21,7 @@ class App extends Component {
             </div>
 
             <div className="dreapta">
-                <img src={dr} className="App-logo" alt="crop1" width="60" height="888" />
+                <img src={dr} className="App-logo" alt="crop1" width="60" height="60" />
             </div>
           </div>
       </div>
