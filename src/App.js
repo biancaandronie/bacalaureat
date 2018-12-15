@@ -12,7 +12,7 @@ class App extends Component {
         <table width="100%" border="0" cellspacing="0" cellpadding="0" className="App-logo">
         <tr>
         <td>
-         <img src={imag} alt="Girl in a jacket">
+         <img src={imag} alt="Girl in a jacket" />
         </td>
         <td>
          <h1>aaa</h1>
