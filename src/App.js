@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import imag from './imag.png';
+import imag from './images/crop1.png';
 import './App.css';
 
 class App extends Component {
@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
 
-          <img src={imag} className="App-logo" alt="crop1" width="1600" height="1200" />
+          <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
 
       </div>
     );
