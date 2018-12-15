@@ -8,8 +8,9 @@ class App extends Component {
       <div className="App">
           <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
 
+          <div className="footer"></div>
       </div>
-      <div className="footer"></div>
+
 
     );
   }
