@@ -21,7 +21,7 @@ class App extends Component {
             </ul>
           </div>
 
-          <div className="content-left"></div>
+          <div className="content-left">sssss</div>
 
           <div className="content">
             <p>Maintenant, ce n`est pas si difficile à apprendre pour le baccalauréat!</p>
