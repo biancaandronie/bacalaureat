@@ -22,7 +22,7 @@ class App extends Component {
           </div>
 
           <div className="content-right">
-            <img src={stele2} className="stele" alt="stele" width="646" height="553" />
+            <img src={stele2} className="stele" alt="stele" width="258" height="221" />
           </div>
 
       </div>
