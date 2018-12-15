@@ -44,13 +44,19 @@
   background-color: #BD4CB8;
 }
 
+.content{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
 .content-left{
     width: 100%;
     height: auto;
     overflow: hidden;
 }
 
-.content{
+.content-center{
     width: 100%;
     height: auto;
     overflow: hidden;

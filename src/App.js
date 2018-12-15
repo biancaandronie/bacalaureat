@@ -21,16 +21,16 @@ class App extends Component {
             </ul>
           </div>
 
-          <div className="content-left">sssss</div>
-
           <div className="content">
-            <p>Maintenant, ce n`est pas si difficile à apprendre pour le baccalauréat!</p>
-          </div>
+              <div className="content-left">sss</div>
+              <div className="content-center">
+                <p>Maintenant, ce n`est pas si difficile à apprendre pour le baccalauréat!</p>
+              </div>
 
-          <div className="content-right">
-            <img src={stele2} className="stele" alt="stele" width="258" height="221" />
+              <div className="content-right">
+                <img src={stele2} className="stele" alt="stele" width="258" height="221" />
+              </div>
           </div>
-
       </div>
 
 
