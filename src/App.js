@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import imag from './images/crop1.png';
+import imag from './images/crop1.jpg';
 import './App.css';
 
 class App extends Component {
