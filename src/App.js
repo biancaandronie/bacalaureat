@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import imag from './images/crop1.jpg';
+import foot from './images/foot.jpg';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +9,9 @@ class App extends Component {
       <div className="App">
           <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
 
-          <div className="footer"></div>
+          <div className="footer">
+            <img src={foot} className="App-logo" alt="crop1" width="1600" height="154" />
+          </div>
       </div>
 
 
