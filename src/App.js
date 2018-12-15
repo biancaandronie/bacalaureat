@@ -21,8 +21,10 @@ class App extends Component {
             </ul>
           </div>
 
-          <div className="content-left">
-            <h1>Maintenant, ce n`est pas si difficile à apprendre pour le baccalauréat!</h1>
+          <div className="content-left"></div>
+
+          <div className="content">
+            <p>Maintenant, ce n`est pas si difficile à apprendre pour le baccalauréat!</p>
           </div>
 
           <div className="content-right">
