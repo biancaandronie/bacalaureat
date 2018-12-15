@@ -41,5 +41,11 @@
 }
 
 .menu li a:hover {
-  background-color: #111111;
+  background-color: #BD4CB8;
+}
+
+.content-right{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
 }

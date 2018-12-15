@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import imag from './images/crop1.jpg';
 import foot from './images/foot.jpg';
+import stele from './images/stele.jpg';
 import './App.css';
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
       <div className="App">
 
           <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
-          <img src={foot} className="footer" alt="crop1" width="1600" height="154" />
+          <img src={foot} className="footer" alt="footer" width="1600" height="154" />
 
           <div className="menu">
             <ul>
@@ -18,6 +19,10 @@ class App extends Component {
               <li><a href="#contact"><b>Contact</b></a></li>
               <li><a href="#about"><b>About</b></a></li>
             </ul>
+          </div>
+
+          <div className="content-right">
+            <img src={stele} className="stele" alt="stele" width="646" height="553" />
           </div>
 
       </div>
