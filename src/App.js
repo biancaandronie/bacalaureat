@@ -25,40 +25,40 @@ class App extends Component {
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
               </div>
 
-              <div id="demo" class="carousel slide" data-ride="carousel">
-                <ul class="carousel-indicators">
-                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <div id="demo" className="carousel slide" data-ride="carousel">
+                <ul className="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" className="active"></li>
                   <li data-target="#demo" data-slide-to="1"></li>
                   <li data-target="#demo" data-slide-to="2"></li>
                 </ul>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="la.jpg" alt="Los Angeles" width="1100" height="500">
-                    <div class="carousel-caption">
+                <div className="carousel-inner">
+                  <div className="carousel-item active">
+                    <img src={imag} alt="Los Angeles" width="1600" height="158">
+                    <div className="carousel-caption">
                       <h3>Los Angeles</h3>
                       <p>We had such a great time in LA!</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
-                    <div class="carousel-caption">
+                  <div className="carousel-item">
+                    <img src={foot} alt="Chicago" width="1600" height="154">
+                    <div className="carousel-caption">
                       <h3>Chicago</h3>
                       <p>Thank you, Chicago!</p>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <img src="ny.jpg" alt="New York" width="1100" height="500">
-                    <div class="carousel-caption">
+                  <div className="carousel-item">
+                    <img src={foot} alt="New York" width="1600" height="154">
+                    <div className="carousel-caption">
                       <h3>New York</h3>
                       <p>We love the Big Apple!</p>
                     </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                  <span class="carousel-control-prev-icon"></span>
+                <a className="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span className="carousel-control-prev-icon"></span>
                 </a>
-                <a class="carousel-control-next" href="#demo" data-slide="next">
-                  <span class="carousel-control-next-icon"></span>
+                <a className="carousel-control-next" href="#demo" data-slide="next">
+                  <span className="carousel-control-next-icon"></span>
                 </a>
               </div>
 
