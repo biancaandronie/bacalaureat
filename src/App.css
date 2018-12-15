@@ -4,16 +4,3 @@
     overflow: hidden;
 }
 
- .footer {
-     width: initial;
-     background-repeat: no-repeat;
-     max-width: initial;
-     max-height: initial;
-     background-size: contain;
-     background-position: center;
- }
-
- .content{
-    width: 100%;
-    max-width: 1000px;
-}
