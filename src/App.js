@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import imag from './images/crop1.jpg';
-import stg from './images/stg.jpg';
-import dr from './images/dr.jpg';
 import './App.css';
 
 class App extends Component {
