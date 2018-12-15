@@ -25,42 +25,60 @@ class App extends Component {
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
               </div>
 
-              <div id="demo" className="carousel slide" data-ride="carousel">
-                <ul className="carousel-indicators">
-                  <li data-target="#demo" data-slide-to="0" className="active"></li>
-                  <li data-target="#demo" data-slide-to="1"></li>
-                  <li data-target="#demo" data-slide-to="2"></li>
-                </ul>
-                <div className="carousel-inner">
-                  <div className="carousel-item active">
-                    <img src={imag} alt="Los Angeles" width="1600" height="158" />
-                    <div className="carousel-caption">
-                      <h3>Los Angeles</h3>
-                      <p>We had such a great time in LA!</p>
-                    </div>
+              <div>
+                  <div className="carousel">
+                      <ul className="slides">
+                          <input type="radio" name="radio-buttons" id="img-1" checked />
+                          <li className="slide-container">
+                              <div className="slide-image">
+                                  <img src={imag}>
+                              </div>
+                              <div className="carousel-controls">
+                                  <label for="img-3" className="prev-slide">
+                                      <span>&lsaquo;</span>
+                                  </label>
+                                  <label for="img-2" className="next-slide">
+                                    <span>&rsaquo;</span>
+                                  </label>
+                              </div>
+                          </li>
+                          <input type="radio" name="radio-buttons" id="img-2" />
+                          <li className="slide-container">
+                              <div className="slide-image">
+                                  <img src={imag}>
+                              </div>
+                              <div className="carousel-controls">
+                                  <label for="img-1" className="prev-slide">
+                                      <span>&lsaquo;</span>
+                                  </label>
+                                  <label for="img-3" className="next-slide">
+                                      <span>&rsaquo;</span>
+                                  </label>
+                              </div>
+                          </li>
+                          <input type="radio" name="radio-buttons" id="img-3" />
+                          <li className="slide-container">
+                              <div className="slide-image">
+                                  <img src={imag}>
+                              </div>
+                              <div className="carousel-controls">
+                                  <label for="img-2" className="prev-slide">
+                                      <span>&lsaquo;</span>
+                                  </label>
+                                  <label for="img-1" className="next-slide">
+                                      <span>&rsaquo;</span>
+                                  </label>
+                              </div>
+                          </li>
+                          <div className="carousel-dots">
+                              <label for="img-1" className="carousel-dot" id="img-dot-1"></label>
+                              <label for="img-2" className="carousel-dot" id="img-dot-2"></label>
+                              <label for="img-3" className="carousel-dot" id="img-dot-3"></label>
+                          </div>
+                      </ul>
                   </div>
-                  <div className="carousel-item">
-                    <img src={foot} alt="Chicago" width="1600" height="154" />
-                    <div className="carousel-caption">
-                      <h3>Chicago</h3>
-                      <p>Thank you, Chicago!</p>
-                    </div>
-                  </div>
-                  <div className="carousel-item">
-                    <img src={foot} alt="New York" width="1600" height="154" />
-                    <div className="carousel-caption">
-                      <h3>New York</h3>
-                      <p>We love the Big Apple!</p>
-                    </div>
-                  </div>
-                </div>
-                <a className="carousel-control-prev" href="#demo" data-slide="prev">
-                  <span className="carousel-control-prev-icon"></span>
-                </a>
-                <a className="carousel-control-next" href="#demo" data-slide="next">
-                  <span className="carousel-control-next-icon"></span>
-                </a>
               </div>
+
 
       </div>
 
