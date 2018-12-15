@@ -3,7 +3,7 @@ import imag from './images/crop1.jpg';
 import foot from './images/foot.jpg';
 import stele4 from './images/stele4.jpg';
 import './App.css';
-import ControlledCarousel from './components/ControlledCarousel';
+import { ControlledCarousel } from './components/ControlledCarousel';
 
 class App extends Component {
   render() {
