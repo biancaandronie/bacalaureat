@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import imag from './images/crop1.jpg';
 import foot from './images/foot.jpg';
 import stele4 from './images/stele4.jpg';
-import c1 from './images/c1.jpg';
+import math1 from './images/math1.jpg';
 import c3 from './images/c3.jpg';
 import './App.css';
 
@@ -47,7 +47,7 @@ class App extends Component {
 
                    <div className="carousel-inner">
                      <div className="item active">
-                       <img src={c1} alt="Los Angeles" className="poza" />
+                       <img src={math1} alt="math" className="poza" />
                      </div>
 
                      <div className="item">
