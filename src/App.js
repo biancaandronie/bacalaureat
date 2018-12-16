@@ -7,6 +7,11 @@ import c3 from './images/c3.jpg';
 import './App.css';
 
 class App extends Component {
+
+const divStyle = {
+  position: fixed;
+};
+
   render() {
     return (
       <div className="App">
@@ -32,7 +37,7 @@ class App extends Component {
 
 
                <div className="container">
-                 <div id="myCarousel" className="carousel slide" data-ride="carousel">
+                 <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
 
                    <ol className="carousel-indicators">
                      <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
