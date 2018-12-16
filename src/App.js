@@ -3,7 +3,7 @@ import imag from './images/crop1.jpg';
 import foot from './images/foot.jpg';
 import stele4 from './images/stele4.jpg';
 import math1 from './images/math1.jpg';
-import c3 from './images/c3.jpg';
+import chemistry from './images/chemistry.jpg';
 import './App.css';
 
 const divStyle = {
@@ -51,7 +51,7 @@ class App extends Component {
                      </div>
 
                      <div className="item">
-                       <img src={c3} alt="Chicago" className="poza" />
+                       <img src={chemistry} alt="chemistry" className="poza" />
                      </div>
                    </div>
 
