@@ -58,11 +58,18 @@
     overflow: hidden;
 }
 
-
-
 .poza{
     width: 100%;
 }
+
+.container{
+    padding-left: 190px;
+    padding-top:25px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 @media screen and (max-width: 1200px) {
   .content-right{
@@ -83,11 +90,28 @@
   }
 }
 
-.container{
-    padding-left: 190px;
-    padding-top:25px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (max-width: 1400px) {
+  .container{
+      padding-left: 100px;
+      padding-top: 0px;
+      padding-right: 15px;
+      margin-right: auto;
+      margin-left: auto;
+  }
+
+  .content-right{
+        height: auto;
+        padding-right: 20px;
+        padding-top: 0px;
+        overflow: hidden;
+        float: right;
+    }
+
+    .stele{
+        width: 64%;
+        height: auto;
+        overflow: hidden;
+    }
 }
+
 
