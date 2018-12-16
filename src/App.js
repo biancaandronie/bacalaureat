@@ -67,6 +67,12 @@ class App extends Component {
                      </div>
                    </div>
 
+                   <div className="overlay">
+                     <a href="#" className="icon" title="User Profile">
+                       <p>Learn math</p>
+                     </a>
+                   </div>
+
                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
                      <span className="glyphicon glyphicon-chevron-left"></span>
                      <span className="sr-only">Previous</span>
