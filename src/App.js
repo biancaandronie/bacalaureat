@@ -54,7 +54,7 @@ class App extends Component {
                        <img src={math1} alt="math" className="poza" />
                        <div className="overlay">
                         <a href="#home" className="icon" title="User Profile">
-                          <p>Learn math</p>
+                          <p>Apprendre les maths</p>
                         </a>
                       </div>
                      </div>
@@ -63,7 +63,7 @@ class App extends Component {
                        <img src={chemistry1} alt="chemistry" className="poza" />
                        <div className="overlay">
                         <a href="#home" className="icon" title="User Profile">
-                          <p>Learn math</p>
+                          <p>Apprendre la chimie</p>
                         </a>
                       </div>
                      </div>
@@ -72,7 +72,7 @@ class App extends Component {
                        <img src={bones1} alt="bones" className="poza" />
                        <div className="overlay">
                         <a href="#home" className="icon" title="User Profile">
-                          <p>Learn math</p>
+                          <p>Apprendre la biologie</p>
                         </a>
                       </div>
                      </div>
@@ -81,7 +81,7 @@ class App extends Component {
                        <img src={physic1} alt="physic" className="poza" />
                        <div className="overlay">
                         <a href="#home" className="icon" title="User Profile">
-                          <p>Learn math</p>
+                          <p>Apprendre la physique</p>
                         </a>
                       </div>
                      </div>
