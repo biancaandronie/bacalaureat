@@ -52,26 +52,42 @@ class App extends Component {
                    <div className="carousel-inner">
                      <div className="item active">
                        <img src={math1} alt="math" className="poza" />
+                       <div className="overlay">
+                        <a href="#home" className="icon" title="User Profile">
+                          <p>Learn math</p>
+                        </a>
+                      </div>
                      </div>
 
                      <div className="item">
                        <img src={chemistry1} alt="chemistry" className="poza" />
+                       <div className="overlay">
+                        <a href="#home" className="icon" title="User Profile">
+                          <p>Learn math</p>
+                        </a>
+                      </div>
                      </div>
 
                      <div className="item">
                        <img src={bones1} alt="bones" className="poza" />
+                       <div className="overlay">
+                        <a href="#home" className="icon" title="User Profile">
+                          <p>Learn math</p>
+                        </a>
+                      </div>
                      </div>
 
                      <div className="item">
                        <img src={physic1} alt="physic" className="poza" />
+                       <div className="overlay">
+                        <a href="#home" className="icon" title="User Profile">
+                          <p>Learn math</p>
+                        </a>
+                      </div>
                      </div>
                    </div>
 
-                   <div className="overlay">
-                     <a href="#home" className="icon" title="User Profile">
-                       <p>Learn math</p>
-                     </a>
-                   </div>
+
 
                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
                      <span className="glyphicon glyphicon-chevron-left"></span>
