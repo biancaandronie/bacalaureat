@@ -7,7 +7,7 @@ import c3 from './images/c3.jpg';
 import './App.css';
 
 const divStyle = {
-  position: fixed;
+  position: fixed
 };
 
 class App extends Component {
