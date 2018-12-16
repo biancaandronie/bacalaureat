@@ -154,7 +154,7 @@
 
         }
 
-.content-style{
+.carousel-inner{
     position: relative;
     width: 100%;
     max-width: 400px;
@@ -173,7 +173,7 @@
   background-color: black;
 }
 
-.content-style:hover .overlay {
+.carousel-inner:hover .overlay {
   opacity: 0.8;
 }
 
