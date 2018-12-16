@@ -102,5 +102,53 @@
         }
     }
 
+    @media (min-height: 1024px) and (min-width: 768px) {
+          .App-logo{
+              width: 200%;
+              height: auto;
+              overflow: hidden;
+          }
+
+          .menu{
+               width: 89%;
+               height: auto;
+               overflow: hidden;
+          }
+
+          .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding-right: 150px;
+            overflow: hidden;
+            float: right;
+            padding-top: 65px;
+          }
+
+          .footer{
+              width: 200%;
+              height: auto;
+              overflow: hidden;
+              position:absolute;
+              left:0;
+              bottom:0;
+              right:0;
+          }
+
+          .container{
+                padding-left: 227px;
+                padding-top: 169px;
+                padding-right: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .stele{
+                width: 0%;
+                height: auto;
+                overflow: hidden;
+            }
+
+        }
+
 
 
