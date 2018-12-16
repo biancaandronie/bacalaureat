@@ -66,4 +66,8 @@
     width: 100%;
 }
 
+.carousel{
+    position: fixed;
+}
+
 
