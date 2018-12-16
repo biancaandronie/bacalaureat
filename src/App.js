@@ -21,65 +21,47 @@ class App extends Component {
             </ul>
           </div>
 
-            <div className="tot">
+            <div className="content">
 
               <div className="content-right">
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
               </div>
 
 
-                  <div className="carousel">
-                      <ul className="slides">
-                          <input type="radio" name="radio-buttons" id="img-1" checked />
-                          <li className="slide-container">
-                              <div className="slide-image">
-                                  <img src={imag} />
-                              </div>
-                              <div className="carousel-controls">
-                                  <label for="img-3" className="prev-slide">
-                                      <span>&lsaquo;</span>
-                                  </label>
-                                  <label for="img-2" className="next-slide">
-                                    <span>&rsaquo;</span>
-                                  </label>
-                              </div>
-                          </li>
-                          <input type="radio" name="radio-buttons" id="img-2" />
-                          <li className="slide-container">
-                              <div className="slide-image">
-                                  <img src={imag} />
-                              </div>
-                              <div className="carousel-controls">
-                                  <label for="img-1" className="prev-slide">
-                                      <span>&lsaquo;</span>
-                                  </label>
-                                  <label for="img-3" className="next-slide">
-                                      <span>&rsaquo;</span>
-                                  </label>
-                              </div>
-                          </li>
-                          <input type="radio" name="radio-buttons" id="img-3" />
-                          <li className="slide-container">
-                              <div className="slide-image">
-                                  <img src={imag} />
-                              </div>
-                              <div className="carousel-controls">
-                                  <label for="img-2" className="prev-slide">
-                                      <span>&lsaquo;</span>
-                                  </label>
-                                  <label for="img-1" className="next-slide">
-                                      <span>&rsaquo;</span>
-                                  </label>
-                              </div>
-                          </li>
-                          <div className="carousel-dots">
-                              <label for="img-1" className="carousel-dot" id="img-dot-1"></label>
-                              <label for="img-2" className="carousel-dot" id="img-dot-2"></label>
-                              <label for="img-3" className="carousel-dot" id="img-dot-3"></label>
-                          </div>
-                      </ul>
-                  </div>
-              </div>
+
+               <div className="container">
+                 <div id="myCarousel" className="carousel slide" data-ride="carousel">
+
+                   <ol className="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                   </ol>
+
+
+                   <div className="carousel-inner">
+                     <div className="item active">
+                       <img src={imag} alt="Los Angeles" style="width:100%;">
+                     </div>
+
+                     <div className="item">
+                       <img src={imag} alt="Chicago" style="width:100%;">
+                     </div>
+
+
+                   <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                     <span className="glyphicon glyphicon-chevron-left"></span>
+                     <span className="sr-only">Previous</span>
+                   </a>
+                   <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                     <span className="glyphicon glyphicon-chevron-right"></span>
+                     <span className="sr-only">Next</span>
+                   </a>
+                 </div>
+               </div>
+
+
+            </div>
+
 
 
       </div>
