@@ -33,7 +33,7 @@ class App extends Component {
                           <input type="radio" name="radio-buttons" id="img-1" checked />
                           <li className="slide-container">
                               <div className="slide-image">
-                                  <img src={imag} />
+                                  <img src={stele4} />
                               </div>
                               <div className="carousel-controls">
                                   <label for="img-3" className="prev-slide">
@@ -47,7 +47,7 @@ class App extends Component {
                           <input type="radio" name="radio-buttons" id="img-2" />
                           <li className="slide-container">
                               <div className="slide-image">
-                                  <img src={imag} />
+                                  <img src={stele4} />
                               </div>
                               <div className="carousel-controls">
                                   <label for="img-1" className="prev-slide">
@@ -61,7 +61,7 @@ class App extends Component {
                           <input type="radio" name="radio-buttons" id="img-3" />
                           <li className="slide-container">
                               <div className="slide-image">
-                                  <img src={imag} />
+                                  <img src={stele4} />
                               </div>
                               <div className="carousel-controls">
                                   <label for="img-2" className="prev-slide">
