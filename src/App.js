@@ -68,7 +68,7 @@ class App extends Component {
                    </div>
 
                    <div className="overlay">
-                     <a href="#" className="icon" title="User Profile">
+                     <a href="#home" className="icon" title="User Profile">
                        <p>Learn math</p>
                      </a>
                    </div>
