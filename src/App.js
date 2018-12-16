@@ -6,11 +6,11 @@ import c1 from './images/c1.jpg';
 import c3 from './images/c3.jpg';
 import './App.css';
 
-class App extends Component {
-
 const divStyle = {
   position: fixed;
 };
+
+class App extends Component {
 
   render() {
     return (
