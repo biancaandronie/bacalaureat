@@ -46,7 +46,7 @@ class App extends Component {
                      <div className="item">
                        <img src={imag} alt="Chicago" style="width:100%;" />
                      </div>
-
+                   </div>
 
                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
                      <span className="glyphicon glyphicon-chevron-left"></span>
