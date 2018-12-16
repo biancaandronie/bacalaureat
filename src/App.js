@@ -4,6 +4,8 @@ import foot from './images/foot.jpg';
 import stele4 from './images/stele4.jpg';
 import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
+import bones1 from './images/bones1.jpg';
+import physic1 from './images/physic1.jpg';
 import './App.css';
 
 const divStyle = {
@@ -52,6 +54,14 @@ class App extends Component {
 
                      <div className="item">
                        <img src={chemistry1} alt="chemistry" className="poza" />
+                     </div>
+
+                     <div className="item">
+                       <img src={bones1} alt="bones" className="poza" />
+                     </div>
+
+                     <div className="item">
+                       <img src={physic1} alt="physic" className="poza" />
                      </div>
                    </div>
 
