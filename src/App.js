@@ -21,11 +21,13 @@ class App extends Component {
             </ul>
           </div>
 
+            <div className="tot">
+
               <div className="content-right">
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
               </div>
 
-              <div>
+
                   <div className="carousel">
                       <ul className="slides">
                           <input type="radio" name="radio-buttons" id="img-1" checked />
