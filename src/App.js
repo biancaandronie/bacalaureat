@@ -5,6 +5,7 @@ import stele4 from './images/stele4.jpg';
 import c1 from './images/c1.jpg';
 import c3 from './images/c3.jpg';
 import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
   render() {
