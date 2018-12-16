@@ -40,11 +40,11 @@ class App extends Component {
 
                    <div className="carousel-inner">
                      <div className="item active">
-                       <img src={imag} alt="Los Angeles" style="width:100%;" />
+                       <img src={imag} alt="Los Angeles" />
                      </div>
 
                      <div className="item">
-                       <img src={imag} alt="Chicago" style="width:100%;" />
+                       <img src={imag} alt="Chicago" />
                      </div>
                    </div>
 
