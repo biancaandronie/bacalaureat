@@ -25,7 +25,7 @@ class App extends Component {
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
               </div>
 
-              <div className="App-logo">
+              <div>
                   <div className="carousel">
                       <ul className="slides">
                           <input type="radio" name="radio-buttons" id="img-1" checked />
