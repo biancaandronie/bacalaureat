@@ -73,5 +73,14 @@
       float: right;
   }
 }
+@media screen and (max-width: 1288px) {
+  .content-right{
+      height: auto;
+      padding-right: 20px;
+      padding-top: 0px;
+      overflow: hidden;
+      float: right;
+  }
+}
 
 
