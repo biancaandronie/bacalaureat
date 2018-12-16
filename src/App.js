@@ -21,7 +21,7 @@ class App extends Component {
             </ul>
           </div>
 
-            <div className="content">
+
 
               <div className="content-right">
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
@@ -60,7 +60,7 @@ class App extends Component {
                </div>
 
 
-            </div>
+
 
 
 
