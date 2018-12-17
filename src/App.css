@@ -6,8 +6,10 @@
 
 
 .bac{
-    width: 7%;
+    width: 8%;
     height: auto;
     overflow: hidden;
+    padding-left: 38px;
+    padding-top: 35px;
 }
 
