@@ -14,7 +14,15 @@
 }
 
 .gri{
-    width: 100%;
-    height: auto;
-    overflow: hidden;
+    background-color: #212a39;
+    height: 600px;
+}
+
+.scris{
+    float: left;
+}
+
+.invata{
+    font-size: 16px;
+    color: white;
 }
