@@ -26,6 +26,7 @@ class App extends Component {
 
             <div className="scris">
                 <h1 className="invata">Learn the best JavaScript tools and frameworks from industry pros.</h1>
+                <h2 className="sans-serif css-1e10erk">Video tutorials pentru badass web developers.</h2>
                 <a className="sans-serif grow css-zfihb1" href="/browse"><span className="lh-solid">Click to Start Learning</span></a>
             </div>
 
