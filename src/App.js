@@ -32,18 +32,19 @@ class App extends Component {
               <li><a href="#contact"><b>Contact</b></a></li>
               <li><a href="#about"><b>About</b></a></li>
             </ul>
-            <img src={dr} className="dreapta-menu" alt="dr" width="30" height="451" />
           </div>
 
 
                 <img src={stg} className="stanga-menu" alt="stg" width="30" height="451" />
+
               </div>
 
               <div className="content-right">
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
               </div>
-
-
+              <div className="dreapta-menu">
+                <img src={dr} alt="dr" width="30" height="451" />
+              </div>
 
                <div className="container">
                  <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
