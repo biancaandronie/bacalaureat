@@ -31,9 +31,9 @@ class App extends Component {
                           <section className="css-1c0ecgf">
                              <div className="css-pzqzmn">
                                 <div className="css-17mv9vi">
-                                    <h1 className="sans-serif css-bbh5y6">Learn the best JavaScript tools and frameworks from industry pros.</h1>
-                                    <h2 className="sans-serif css-1e10erk">Video tutorials pt badass web developers.</h2>
-                                    <a className="sans-serif grow css-zfihb1" href="#"><span className="lh-solid">Click to Start Learning</span></a>
+                                    <h1 className="sans-serif css-bbh5y6">Regardez les meilleurs tutoriels à apprendre pour l`examen du baccalauréat.</h1>
+                                    <h2 className="sans-serif css-1e10erk">Tutoriels vidéo pour simplifier le temps de travail.</h2>
+                                    <a className="sans-serif grow css-zfihb1" href="#"><span className="lh-solid">Cliquez pour commencer à apprendre</span></a>
                                 </div>
                                  <div className="css-1pj66t4">
                                     <div className="container">
