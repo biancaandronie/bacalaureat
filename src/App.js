@@ -18,9 +18,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+        <div className="header">
           <img src={bac2} className="bac" alt="bac" width="80" height="90" />
-
+          <span className="logo">B!bac</span>
+        </div>
       </div>
 
 
