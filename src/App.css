@@ -67,92 +67,15 @@
 }
 
 .container{
-    padding-left: 190px;
-    padding-top:25px;
+    padding-left: 200px;
+    padding-top:70px;
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
 
-  @media (min-height: 640px) and (min-width: 480px) {
-      .container{
-          padding-left: 88px;
-          padding-top: 80px;
-          padding-right: 15px;
-          margin-right: auto;
-          margin-left: auto;
-      }
 
-        .stele{
-            width: 0%;
-            height: auto;
-            overflow: hidden;
-        }
-
-        .menu{
-            width: 110%;
-            height: auto;
-            overflow: hidden;
-        }
-
-        .menu ul {
-          list-style-type: none;
-          margin: 0;
-          padding-right: 150px;
-          overflow: hidden;
-          float: right;
-          padding-top: 45px;
-        }
-    }
-
-    @media (min-height: 1024px) and (min-width: 768px) {
-          .App-logo{
-              width: 200%;
-              height: auto;
-              overflow: hidden;
-          }
-
-          .menu{
-               width: 89%;
-               height: auto;
-               overflow: hidden;
-          }
-
-          .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding-right: 150px;
-            overflow: hidden;
-            float: right;
-            padding-top: 65px;
-          }
-
-          .footer{
-              width: 200%;
-              height: auto;
-              overflow: hidden;
-              position:absolute;
-              left:0;
-              bottom:0;
-              right:0;
-          }
-
-          .container{
-                padding-left: 227px;
-                padding-top: 169px;
-                padding-right: 15px;
-                margin-right: auto;
-                margin-left: auto;
-            }
-
-            .stele{
-                width: 0%;
-                height: auto;
-                overflow: hidden;
-            }
-
-        }
 
 .carousel-inner{
     position: relative;
@@ -190,9 +113,6 @@
 }
 
 
-.stanga{
-    float:left;
-}
 .stanga-menu{
     float:left;
 }
