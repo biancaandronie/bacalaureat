@@ -6,7 +6,7 @@ import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
-import bac2 from './images/bac2.png';
+import bac4 from './images/bac4.png';
 import './App.css';
 
 const divStyle = {
@@ -19,8 +19,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="header">
-          <img src={bac2} className="bac" alt="bac" width="80" height="90" />
-          <span className="logo">B!bac</span>
+          <img src={bac4} className="bac" alt="bac" width="162" height="63" />
+
         </div>
       </div>
 
