@@ -13,27 +13,136 @@
     padding-top: 35px;
 }
 
-.gri{
-    background-color: #212a39;
-    height: 600px;
+
+.bg-base-secondary {
+    background-color: #141618;
+}
+.items-stretch {
+
+    align-items: stretch;
+
+}
+.flex-column {
+
+    flex-direction: column;
+
+}
+.flex {
+
+    display: flex;
+
 }
 
-.scris{
+.css-1c0ecgf {
+
     padding: 80px 40px;
-}
 
-.invata{
-    color: white;
-    font-size: 48px;
-    line-height: 56px;
-    text-align: left;
+}
+.css-1c0ecgf {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    padding: 30px 15px 60px 15px;
+    background-image: linear-gradient(170deg,#212A39 0%,#181E28 100%);
+
+}
+.css-pzqzmn {
+    flex-direction: row;
+}
+.css-pzqzmn {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+.css-17mv9vi {
+
     width: 50%;
-}
+    flex-shrink: 0;
+    text-align: left;
 
+}
+.css-bbh5y6 {
+
+    font-size: 36px;
+    line-height: 48px;
+
+}
+.css-bbh5y6 {
+
+    color: #fff;
+    font-weight: 500;
+    margin: 0;
+
+}
+.sans-serif {
+
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+
+}
 .css-1e10erk {
-    margin: 10px 0 65px 0;
+
     font-size: 24px;
     line-height: 33px;
+
+}
+.css-1e10erk {
+
     color: #B0B6BE;
     font-weight: 400;
+    margin: 15px 0 55px 0;
+
+}
+.css-zfihb1 {
+
+    display: inline-flex;
+    height: 48px;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    padding: 8px 23px;
+    transition: all 150ms ease 0s;
+    min-width: 180px;
+    filter: contrast(1.1);
+    background: rgb(30, 128, 163) none repeat scroll 0% 0%;
+
+}
+.grow {
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+.css-1pj66t4 {
+    padding-left: 55px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    line-height: 33px;
+
+}
+.css-1pj66t4 {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.css-1shomd3 {
+    max-width: 100%;
+}
+.css-1shomd3 {
+    display: block;
+    width: 100%;
+    align-self: center;
 }

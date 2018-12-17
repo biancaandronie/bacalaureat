@@ -22,14 +22,25 @@ class App extends Component {
           <img src={bac5} className="bac" alt="bac" width="254" height="109" />
         </div>
 
-        <div className="gri">
-
-            <div className="scris">
-                <h1 className="invata">Learn the best JavaScript tools and frameworks from industry pros.</h1>
-                <h2 className="sans-serif css-1e10erk">Video tutorials pentru badass web developers.</h2>
-                <a className="sans-serif grow css-zfihb1" href="/browse"><span className="lh-solid">Click to Start Learning</span></a>
+        <div className="flex flex-column items-stretch bg-base-secondary">
+            <div>
+                <div>
+                      <div>
+                          <section className="css-1c0ecgf">
+                             <div className="css-pzqzmn">
+                                <div className="css-17mv9vi">
+                                    <h1 className="sans-serif css-bbh5y6">Learn the best JavaScript tools and frameworks from industry pros.</h1>
+                                    <h2 className="sans-serif css-1e10erk">Video tutorials pt badass web developers.</h2>
+                                    <a className="sans-serif grow css-zfihb1" href="#"><span className="lh-solid">Click to Start Learning</span></a>
+                                </div>
+                                 <div className="css-1pj66t4">
+                                    <a className="grow" href="#" aria-label="CSS Selectors in Depth"><img src={math1} alt="math1" className="css-1shomd3" /></a>
+                                 </div>
+                             </div>
+                          </section>
+                      </div>
+                </div>
             </div>
-
         </div>
 
       </div>
