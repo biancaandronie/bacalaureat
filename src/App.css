@@ -19,10 +19,11 @@
 }
 
 .scris{
-    float: left;
+    padding: 80px 40px;
 }
 
 .invata{
-    font-size: 16px;
     color: white;
+    font-size: 48px;
+    line-height: 56px;
 }

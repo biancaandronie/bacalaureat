@@ -25,7 +25,7 @@ class App extends Component {
         <div className="gri">
 
             <div className="scris">
-                <p className="invata">Learn the best JavaScript tools and frameworks from industry pros.</p>
+                <h1 className="invata">Learn the best JavaScript tools and frameworks from industry pros.</h1>
                 <a className="sans-serif grow css-zfihb1" href="/browse"><span className="lh-solid">Click to Start Learning</span></a>
             </div>
 
