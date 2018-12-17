@@ -6,8 +6,6 @@ import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
-import stg from './images/stg.jpg';
-import dr from './images/dr.jpg';
 import './App.css';
 
 const divStyle = {
@@ -23,7 +21,7 @@ class App extends Component {
           <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
           <img src={foot} className="footer" alt="footer" width="1600" height="154" />
 
-             <div>
+
 
           <div className="menu">
             <ul>
@@ -35,16 +33,12 @@ class App extends Component {
           </div>
 
 
-                <img src={stg} className="stanga-menu" alt="stg" width="30" height="451" />
 
-              </div>
 
               <div className="content-right">
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
               </div>
-              <div className="dreapta-menu">
-                <img src={dr} alt="dr" width="30" height="451" />
-              </div>
+
 
                <div className="container">
                  <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
