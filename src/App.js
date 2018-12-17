@@ -11,7 +11,8 @@ import giful2 from './images/giful2.gif';
 import './App.css';
 
 const divStyle = {
-  position: 'fixed'
+  position: 'fixed',
+  filter: 'drop-shadow(8px 8px 10px #1E80A3)'
 };
 
 class App extends Component {
