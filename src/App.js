@@ -35,7 +35,67 @@ class App extends Component {
                                     <a className="sans-serif grow css-zfihb1" href="#"><span className="lh-solid">Click to Start Learning</span></a>
                                 </div>
                                  <div className="css-1pj66t4">
-                                    <a className="grow" href="#" aria-label="CSS Selectors in Depth"><img src={giful2} alt="giful2" className="css-1shomd3" /></a>
+                                    <div className="container">
+                                                     <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
+
+                                                       <ol className="carousel-indicators">
+                                                         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                                                         <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                         <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                         <li data-target="#myCarousel" data-slide-to="3"></li>
+                                                       </ol>
+
+
+                                                       <div className="carousel-inner">
+                                                         <div className="item active">
+                                                           <img src={math1} alt="math" className="poza" />
+                                                           <div className="overlay">
+                                                            <a href="#home" className="icon" title="User Profile">
+                                                              <p>Apprendre les maths</p>
+                                                            </a>
+                                                          </div>
+                                                         </div>
+
+                                                         <div className="item">
+                                                           <img src={chemistry1} alt="chemistry" className="poza" />
+                                                           <div className="overlay">
+                                                            <a href="#home" className="icon" title="User Profile">
+                                                              <p>Apprendre la chimie</p>
+                                                            </a>
+                                                          </div>
+                                                         </div>
+
+                                                         <div className="item">
+                                                           <img src={bones1} alt="bones" className="poza" />
+                                                           <div className="overlay">
+                                                            <a href="#home" className="icon" title="User Profile">
+                                                              <p>Apprendre la biologie</p>
+                                                            </a>
+                                                          </div>
+                                                         </div>
+
+                                                         <div className="item">
+                                                           <img src={physic1} alt="physic" className="poza" />
+                                                           <div className="overlay">
+                                                            <a href="#home" className="icon" title="User Profile">
+                                                              <p>Apprendre la physique</p>
+                                                            </a>
+                                                          </div>
+                                                         </div>
+                                                       </div>
+
+
+
+                                                       <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                         <span className="glyphicon glyphicon-chevron-left"></span>
+                                                         <span className="sr-only">Previous</span>
+                                                       </a>
+                                                       <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                                                         <span className="glyphicon glyphicon-chevron-right"></span>
+                                                         <span className="sr-only">Next</span>
+                                                       </a>
+                                                     </div>
+                                                   </div>
                                  </div>
                              </div>
                           </section>
