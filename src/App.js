@@ -7,6 +7,7 @@ import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
 import bac5 from './images/bac5.png';
+import giful2 from './images/giful2.gif';
 import './App.css';
 
 const divStyle = {
@@ -34,7 +35,7 @@ class App extends Component {
                                     <a className="sans-serif grow css-zfihb1" href="#"><span className="lh-solid">Click to Start Learning</span></a>
                                 </div>
                                  <div className="css-1pj66t4">
-                                    <a className="grow" href="#" aria-label="CSS Selectors in Depth"><img src={math1} alt="math1" className="css-1shomd3" /></a>
+                                    <a className="grow" href="#" aria-label="CSS Selectors in Depth"><img src={giful2} alt="giful2" className="css-1shomd3" /></a>
                                  </div>
                              </div>
                           </section>
