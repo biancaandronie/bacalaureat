@@ -22,6 +22,8 @@ class App extends Component {
           <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
           <img src={foot} className="footer" alt="footer" width="1600" height="154" />
 
+          <div className="stanga">
+
           <div className="menu">
             <ul>
               <li><a href="#home"><b>Home</b></a></li>
@@ -31,8 +33,8 @@ class App extends Component {
             </ul>
           </div>
 
-              <div className="stanga">
-                <img src={stg} alt="stg" width="60" height="888" />
+
+                <img src={stg} className="stanga-menu" alt="stg" width="60" height="888" />
               </div>
 
               <div className="content-right">
