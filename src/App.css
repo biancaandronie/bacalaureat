@@ -124,9 +124,11 @@
     backface-visibility: hidden;
     transform: translateZ(0);
 }
+
+/*important*/
 .css-1pj66t4 {
     padding-left: 55px;
-    margin-top: 0;
+    margin-top: -262;
     margin-bottom: 0;
     font-size: 24px;
     line-height: 33px;
@@ -267,83 +269,6 @@
   text-decoration: none;
 }
 
-@media (min-height: 640px) and (min-width: 480px) {
-      .container{
-          padding-left: 88px;
-          padding-top: 80px;
-          padding-right: 15px;
-          margin-right: auto;
-          margin-left: auto;
-      }
 
-        .stele{
-            width: 0%;
-            height: auto;
-            overflow: hidden;
-        }
-
-        .menu{
-            width: 110%;
-            height: auto;
-            overflow: hidden;
-        }
-
-        .menu ul {
-          list-style-type: none;
-          margin: 0;
-          padding-right: 150px;
-          overflow: hidden;
-          float: right;
-          padding-top: 45px;
-        }
-    }
-
-    @media (min-height: 1024px) and (min-width: 768px) {
-          .App-logo{
-              width: 200%;
-              height: auto;
-              overflow: hidden;
-          }
-
-          .menu{
-               width: 89%;
-               height: auto;
-               overflow: hidden;
-          }
-
-          .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding-right: 150px;
-            overflow: hidden;
-            float: right;
-            padding-top: 65px;
-          }
-
-          .footer{
-              width: 200%;
-              height: auto;
-              overflow: hidden;
-              position:absolute;
-              left:0;
-              bottom:0;
-              right:0;
-          }
-
-          .container{
-                padding-left: 227px;
-                padding-top: 169px;
-                padding-right: 15px;
-                margin-right: auto;
-                margin-left: auto;
-            }
-
-            .stele{
-                width: 0%;
-                height: auto;
-                overflow: hidden;
-            }
-
-        }
 
 
