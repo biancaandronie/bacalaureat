@@ -7,6 +7,7 @@ import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
 import stg from './images/stg.jpg';
+import dr from './images/dr.jpg';
 import './App.css';
 
 const divStyle = {
@@ -35,6 +36,7 @@ class App extends Component {
 
 
                 <img src={stg} className="stanga-menu" alt="stg" width="30" height="451" />
+                <img src={dr} className="dreapta-menu" alt="dr" width="30" height="451" />
               </div>
 
               <div className="content-right">
