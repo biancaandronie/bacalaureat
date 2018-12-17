@@ -19,26 +19,7 @@ class App extends Component {
     return (
       <div className="App">
 
-          <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
           <img src={bac1} className="bac" alt="bac" width="80" height="90" />
-          <img src={foot} className="footer" alt="footer" width="1600" height="154" />
-
-
-
-          <div className="menu">
-            <ul>
-              <li><a href="#home"><b>Home</b></a></li>
-              <li><a href="#news"><b>News</b></a></li>
-              <li><a href="#contact"><b>Contact</b></a></li>
-              <li><a href="#about"><b>About</b></a></li>
-            </ul>
-          </div>
-
-
-
-
-
-
 
       </div>
 
