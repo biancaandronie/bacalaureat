@@ -6,7 +6,7 @@ import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
-import bac2 from './images/bac2.jpg';
+import bac2 from './images/bac2.png';
 import './App.css';
 
 const divStyle = {
