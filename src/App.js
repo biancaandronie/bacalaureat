@@ -6,6 +6,7 @@ import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
+import stg from './images/stg.jpg';
 import './App.css';
 
 const divStyle = {
@@ -30,7 +31,9 @@ class App extends Component {
             </ul>
           </div>
 
-
+              <div className="stanga">
+                <img src={stg} alt="stg" width="60" height="888" />
+              </div>
 
               <div className="content-right">
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
