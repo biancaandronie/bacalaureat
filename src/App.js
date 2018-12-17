@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
 
           <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
-          <img src={bac1} className="App-logo" alt="bac" width="80" height="90" />
+          <img src={bac1} className="bac" alt="bac" width="80" height="90" />
           <img src={foot} className="footer" alt="footer" width="1600" height="154" />
 
 
