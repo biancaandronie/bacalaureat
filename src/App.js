@@ -6,6 +6,7 @@ import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
+import bac1 from './images/bac1.jpg';
 import './App.css';
 
 const divStyle = {
@@ -19,6 +20,7 @@ class App extends Component {
       <div className="App">
 
           <img src={imag} className="App-logo" alt="crop1" width="1600" height="158" />
+          <img src={bac1} className="App-logo" alt="bac" width="80" height="90" />
           <img src={foot} className="footer" alt="footer" width="1600" height="154" />
 
 
@@ -34,7 +36,7 @@ class App extends Component {
 
 
 
-
+/*
               <div className="content-right">
                 <img src={stele4} className="stele" alt="stele" width="467" height="400" />
               </div>
@@ -102,7 +104,7 @@ class App extends Component {
                  </div>
                </div>
 
-
+*/
 
 
 
