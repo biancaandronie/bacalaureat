@@ -14,7 +14,7 @@ import trompa1 from './images/trompa1.png';
 import './App.css';
 
 const divStyle = {
-  position: 'fixed',
+  position: 'absolute',
   filter: 'drop-shadow(8px 8px 10px #1E80A3)'
 };
 
@@ -40,65 +40,65 @@ class App extends Component {
                                 </div>
                                  <div className="css-1pj66t4">
                                     <div className="container">
-                                                     <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
+                                         <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
 
-                                                       <ol className="carousel-indicators">
-                                                         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-                                                         <li data-target="#myCarousel" data-slide-to="1"></li>
-                                                         <li data-target="#myCarousel" data-slide-to="2"></li>
-                                                         <li data-target="#myCarousel" data-slide-to="3"></li>
-                                                       </ol>
-
-
-                                                       <div className="carousel-inner">
-                                                         <div className="item active">
-                                                           <img src={math1} alt="math" className="poza" />
-                                                           <div className="overlay">
-                                                            <a href="#home" className="icon" title="User Profile">
-                                                              <p>Apprendre les maths</p>
-                                                            </a>
-                                                          </div>
-                                                         </div>
-
-                                                         <div className="item">
-                                                           <img src={chemistry1} alt="chemistry" className="poza" />
-                                                           <div className="overlay">
-                                                            <a href="#home" className="icon" title="User Profile">
-                                                              <p>Apprendre la chimie</p>
-                                                            </a>
-                                                          </div>
-                                                         </div>
-
-                                                         <div className="item">
-                                                           <img src={bones1} alt="bones" className="poza" />
-                                                           <div className="overlay">
-                                                            <a href="#home" className="icon" title="User Profile">
-                                                              <p>Apprendre la biologie</p>
-                                                            </a>
-                                                          </div>
-                                                         </div>
-
-                                                         <div className="item">
-                                                           <img src={physic1} alt="physic" className="poza" />
-                                                           <div className="overlay">
-                                                            <a href="#home" className="icon" title="User Profile">
-                                                              <p>Apprendre la physique</p>
-                                                            </a>
-                                                          </div>
-                                                         </div>
-                                                       </div>
+                                           <ol className="carousel-indicators">
+                                             <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                                             <li data-target="#myCarousel" data-slide-to="1"></li>
+                                             <li data-target="#myCarousel" data-slide-to="2"></li>
+                                             <li data-target="#myCarousel" data-slide-to="3"></li>
+                                           </ol>
 
 
+                                           <div className="carousel-inner">
+                                             <div className="item active">
+                                               <img src={math1} alt="math" className="poza" />
+                                               <div className="overlay">
+                                                <a href="#home" className="icon" title="User Profile">
+                                                  <p>Apprendre les maths</p>
+                                                </a>
+                                              </div>
+                                             </div>
 
-                                                       <a className="left carousel-control" href="#myCarousel" data-slide="prev">
-                                                         <span className="glyphicon glyphicon-chevron-left"></span>
-                                                         <span className="sr-only">Previous</span>
-                                                       </a>
-                                                       <a className="right carousel-control" href="#myCarousel" data-slide="next">
-                                                         <span className="glyphicon glyphicon-chevron-right"></span>
-                                                         <span className="sr-only">Next</span>
-                                                       </a>
-                                                     </div>
+                                             <div className="item">
+                                               <img src={chemistry1} alt="chemistry" className="poza" />
+                                               <div className="overlay">
+                                                <a href="#home" className="icon" title="User Profile">
+                                                  <p>Apprendre la chimie</p>
+                                                </a>
+                                              </div>
+                                             </div>
+
+                                             <div className="item">
+                                               <img src={bones1} alt="bones" className="poza" />
+                                               <div className="overlay">
+                                                <a href="#home" className="icon" title="User Profile">
+                                                  <p>Apprendre la biologie</p>
+                                                </a>
+                                              </div>
+                                             </div>
+
+                                             <div className="item">
+                                               <img src={physic1} alt="physic" className="poza" />
+                                               <div className="overlay">
+                                                <a href="#home" className="icon" title="User Profile">
+                                                  <p>Apprendre la physique</p>
+                                                </a>
+                                              </div>
+                                             </div>
+                                           </div>
+
+
+
+                                           <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                                             <span className="glyphicon glyphicon-chevron-left"></span>
+                                             <span className="sr-only">Previous</span>
+                                           </a>
+                                           <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                                             <span className="glyphicon glyphicon-chevron-right"></span>
+                                             <span className="sr-only">Next</span>
+                                           </a>
+                                         </div>
                                     </div>
                                  </div>
                              </div>
