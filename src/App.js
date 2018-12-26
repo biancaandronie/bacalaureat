@@ -106,7 +106,7 @@ class App extends Component {
                       </div>
                 </div>
             </div>
-        </div>
+
 
         /* a 2-a parte */
 
@@ -150,6 +150,7 @@ class App extends Component {
                     </div>
 
                 </section>
+                </div>
       </div>
 
 
