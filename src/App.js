@@ -99,17 +99,17 @@ class App extends Component {
                                                          <span className="sr-only">Next</span>
                                                        </a>
                                                      </div>
-                                                   </div>
+                                    </div>
                                  </div>
                              </div>
                           </section>
                       </div>
                 </div>
             </div>
-
+        </div>
 
         /* a 2-a parte */
-
+        <div>
             <div class="pt5 ph3-ns pv4-ns pv2 center flex flex-column items-center justify-center w-100 css-1cvvhpb">
                 <div class="css-q5fqw0">
                     <img class="mt4-l mt3 css-1kd9lzd" src={trompa1} />
@@ -149,8 +149,7 @@ class App extends Component {
                         </div>
                     </div>
 
-                </section>
-                </div>
+                </section></div>
       </div>
 
 
