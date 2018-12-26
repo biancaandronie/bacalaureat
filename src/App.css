@@ -269,6 +269,111 @@
   text-decoration: none;
 }
 
+/* a 2-a parte */
 
+.css-1cvvhpb {
+    background: linear-gradient( to bottom,#107178 100%,#2a858e 0% );
+}
 
+.ph3-ns {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
+.pv4-ns {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+.w-100 {
+    width: 100%;
+}
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.css-q5fqw0 {
+    padding: 1rem;
+}
+
+.css-1kd9lzd {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+.mt4-l {
+    margin-top: 2rem;
+}
+
+.css-rlvjp6 {
+    padding: 40px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.css-asmds5 {
+    max-width: 1170px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.css-15uuwh5 {
+    width: 320px;
+    height: 405px;
+    padding: 15px 40px 50px 20px;
+    margin-top: 30px;
+    background-image: url("./images/alb1.png")
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+
+.css-b1m6vs {
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.css-gi8dy6 {
+    transition: all 150ms ease 0s;
+    transform: scale(1);
+}
+
+.css-15cipl {
+    max-width: 170px;
+    display: block;
+    width: 100%;
+}
+
+.css-1x63bss {
+    font-size: 22px;
+    line-height: 1.25;
+    text-decoration: none;
+    color: rgb(52, 64, 85);
+    margin-top: 15px;
+}

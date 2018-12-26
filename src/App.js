@@ -8,6 +8,9 @@ import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
 import bac5 from './images/bac5.png';
 import giful2 from './images/giful2.gif';
+import alb1 from './images/alb1.png';
+import unu1 from './images/unu1.png';
+import trompa1 from './images/trompa1.png';
 import './App.css';
 
 const divStyle = {
@@ -105,6 +108,48 @@ class App extends Component {
             </div>
         </div>
 
+        /* a 2-a parte */
+
+            <div class="pt5 ph3-ns pv4-ns pv2 center flex flex-column items-center justify-center w-100 css-1cvvhpb">
+                <div class="css-q5fqw0">
+                    <img class="mt4-l mt3 css-1kd9lzd" src={trompa1} >
+                </div>
+
+                <section class="css-rlvjp6">
+                    <div class="css-asmds5">
+                        <div class="css-15uuwh5">
+                            <div class="css-b1m6vs">
+                                <a class="css-gi8dy6" href="#home">
+                                    <img class="css-15cipl" src={unu1} />
+                                </a>
+                                <a href="#home" class="css-1x63bss">CSS Selectors i`n Depth</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="css-asmds5">
+                        <div class="css-15uuwh5">
+                            <div class="css-b1m6vs">
+                                <a class="css-gi8dy6" href="#home">
+                                    <img class="css-15cipl" src={unu1} />
+                                </a>
+                                <a href="#home" class="css-1x63bss">CSS Selectors i`n Depth</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="css-asmds5">
+                        <div class="css-15uuwh5">
+                            <div class="css-b1m6vs">
+                                <a class="css-gi8dy6" href="#home">
+                                    <img class="css-15cipl" src={unu1} />
+                                </a>
+                                <a href="#home" class="css-1x63bss">CSS Selectors i`n Depth</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
       </div>
 
 
