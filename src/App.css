@@ -339,7 +339,7 @@
     height: 405px;
     padding: 15px 40px 50px 20px;
     margin-top: 30px;
-    background-image: url("./images/alb1.png")
+    background-image: url("./images/alb1.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     display: flex;
