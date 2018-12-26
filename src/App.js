@@ -109,47 +109,47 @@ class App extends Component {
         </div>
 
         /* a 2-a parte */
-        <div>
-            <div class="pt5 ph3-ns pv4-ns pv2 center flex flex-column items-center justify-center w-100 css-1cvvhpb">
-                <div class="css-q5fqw0">
-                    <img class="mt4-l mt3 css-1kd9lzd" src={trompa1} />
+
+            <div className="pt5 ph3-ns pv4-ns pv2 center flex flex-column items-center justify-center w-100 css-1cvvhpb">
+                <div className="css-q5fqw0">
+                    <img className="mt4-l mt3 css-1kd9lzd" src={trompa1} />
                 </div>
 
-                <section class="css-rlvjp6">
-                    <div class="css-asmds5">
-                        <div class="css-15uuwh5">
-                            <div class="css-b1m6vs">
-                                <a class="css-gi8dy6" href="#home">
-                                    <img class="css-15cipl" src={unu1} />
+                <section className="css-rlvjp6">
+                    <div className="css-asmds5">
+                        <div className="css-15uuwh5">
+                            <div className="css-b1m6vs">
+                                <a className="css-gi8dy6" href="#home">
+                                    <img className="css-15cipl" src={unu1} />
                                 </a>
-                                <a href="#home" class="css-1x63bss">CSS Selectors i`n Depth</a>
+                                <a href="#home" className="css-1x63bss">CSS Selectors i`n Depth</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="css-asmds5">
-                        <div class="css-15uuwh5">
-                            <div class="css-b1m6vs">
-                                <a class="css-gi8dy6" href="#home">
-                                    <img class="css-15cipl" src={unu1} />
+                    <div className="css-asmds5">
+                        <div className="css-15uuwh5">
+                            <div className="css-b1m6vs">
+                                <a className="css-gi8dy6" href="#home">
+                                    <img className="css-15cipl" src={unu1} />
                                 </a>
-                                <a href="#home" class="css-1x63bss">CSS Selectors i`n Depth</a>
+                                <a href="#home" className="css-1x63bss">CSS Selectors i`n Depth</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="css-asmds5">
-                        <div class="css-15uuwh5">
-                            <div class="css-b1m6vs">
-                                <a class="css-gi8dy6" href="#home">
-                                    <img class="css-15cipl" src={unu1} />
+                    <div className="css-asmds5">
+                        <div className="css-15uuwh5">
+                            <div className="css-b1m6vs">
+                                <a className="css-gi8dy6" href="#home">
+                                    <img className="css-15cipl" src={unu1} />
                                 </a>
-                                <a href="#home" class="css-1x63bss">CSS Selectors i`n Depth</a>
+                                <a href="#home" className="css-1x63bss">CSS Selectors i`n Depth</a>
                             </div>
                         </div>
                     </div>
 
-                </section></div>
+                </section>
       </div>
 
 
