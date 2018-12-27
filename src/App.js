@@ -110,7 +110,7 @@ class App extends Component {
 
             <div className="pt5 ph3-ns pv4-ns pv2 center flex flex-column items-center justify-center w-100 css-1cvvhpb">
                 <div className="css-q5fqw0">
-                    <img className="mt4-l mt3 css-1kd9lzd" src={trompa1} />
+                    <img className="mt4-l mt3 css-1kd9lzd" src={trompa1} width="402" height="297" />
                 </div>
 
 
