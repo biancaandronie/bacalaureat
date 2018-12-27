@@ -323,8 +323,17 @@
 .col-sm-6 {
   background: #ccc;
   width: 50%;
+  height: 1250px;
 }
 
 .other {
   background: #a4a4a4;
+}
+
+.bibac {
+    padding-top: 350px;
+}
+
+.titlubibac{
+    font-size: 10px;
 }
