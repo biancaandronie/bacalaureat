@@ -321,13 +321,8 @@
 /*altcv*/
 
 .col-sm-6 {
-  background: #ccc;
   width: 50%;
   height: 650px;
-}
-
-.other {
-  background: #a4a4a4;
 }
 
 .bibac {
