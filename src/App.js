@@ -111,7 +111,38 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <h1>Bootstrap Grid Demo</h1>
+              <div className="w3-main" style="margin-left:300px">
+
+                <div className="w3-row-padding">
+                  <div className="w3-third w3-container w3-margin-bottom">
+                    <img src={bac5} alt="Norway" style="width:100%" className="w3-hover-opacity" />
+
+                  </div>
+                  <div className="w3-third w3-container w3-margin-bottom">
+                    <img src={bac5} alt="Norway" style="width:100%" className="w3-hover-opacity" />
+
+                  </div>
+                  <div className="w3-third w3-container">
+                    <img src={bac5} alt="Norway" style="width:100%" className="w3-hover-opacity" />
+
+                  </div>
+                </div>
+
+
+                <div className="w3-row-padding">
+                  <div className="w3-third w3-container w3-margin-bottom">
+                    <img src={bac5} alt="Norway" style="width:100%" className="w3-hover-opacity" />
+
+                  </div>
+                  <div className="w3-third w3-container w3-margin-bottom">
+                    <img src={bac5} alt="Norway" style="width:100%" className="w3-hover-opacity" />
+
+                  </div>
+                  <div className="w3-third w3-container">
+                    <img src={bac5} alt="Norway" style="width:100%" className="w3-hover-opacity" />
+
+                  </div>
+              </div>
             </div>
             <div className="col-sm-6 other">
               <div className="sans-serif bibac"><h3 className=" sans-serif titlubibac">Qu`est-ce que B!BAC?</h3>
