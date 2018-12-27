@@ -39,7 +39,7 @@ class App extends Component {
                                     <a className="sans-serif grow css-zfihb1" href="#"><span className="lh-solid">Cliquez pour commencer à apprendre</span></a>
                                 </div>
                                  <div className="css-1pj66t4">
-                                    <div className="container">
+                                    <div className="container1">
                                          <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
 
                                            <ol className="carousel-indicators">
@@ -108,12 +108,12 @@ class App extends Component {
             </div>
         </div>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6">
               <h1>Bootstrap Grid Demo</h1>
             </div>
-            <div class="col-sm-6 other">
+            <div className="col-sm-6 other">
               <h1>2 Columns</h1>
             </div>
           </div>
