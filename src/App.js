@@ -173,9 +173,6 @@ class App extends Component {
         </div>
 
 
-        <div className="footer">
-          <img src={bac5} className="bac" alt="bac" width="254" height="109" />
-        </div>
 
       </div>
 
