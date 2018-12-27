@@ -116,8 +116,7 @@ class App extends Component {
                 <div className="w3-row-padding">
                   <div className="w3-third w3-container w3-margin-bottom">
                     <a className="sans-serif grow css-uwcdxx" href="#home" aria-label="">
-                    <img src={bac5} className="css-19ui7ac" />
-                    <span className="css-awi60y">React</span><div></div>
+                    <img src={bac5} className="css-19ui7ac" /><div></div>
 
                     </a>
 
