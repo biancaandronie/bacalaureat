@@ -332,8 +332,31 @@
 
 .bibac {
     padding-top: 350px;
+
+    padding-left: 160px;
+    max-width: 660px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
 }
 
 .titlubibac{
-    font-size: 10px;
+    font-size: 36px;
+    line-height: 50px;
+    text-align: left;
+    margin: 0 0 30px 0;
+    color: inherit;
+}
+
+.parag1 {
+    font-weight: 500;
+    margin: 0 0 20px 0;
+}
+
+.parag2 {
+    margin: 0 0 50px 0;
+}
+
+.sans-serif {
+    font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
 }

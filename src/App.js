@@ -114,11 +114,14 @@ class App extends Component {
               <h1>Bootstrap Grid Demo</h1>
             </div>
             <div className="col-sm-6 other">
-              <p className="bibac"><span className="titlubibac">Qu`est-ce que B!BAC?</span>
+              <div className="sans-serif bibac"><h3 className=" sans-serif titlubibac">Qu`est-ce que B!BAC?</h3>
+                <p className="parag1">
                     B!bac vous propose des tutoriels vidéo concis et informatifs pour vous aider à obtenir le meilleur score à l`examen du baccalauréat.
-                    <br />
+                </p>
+                <p className="parag2">
                     Nous nous engageons à respecter votre temps. Cela signifie que les cours vont droit au but et fournissent les connaissances que vous pouvez utiliser aujourd`hui. Vous ne trouverez pas de cours ennuyeux de 8 heures sur B!bac, mais plutôt une profusion de cours minuscules contenant plus d’informations en une fraction du temps.
-              </p>
+                </p>
+              </div>
             </div>
           </div>
         </div>
