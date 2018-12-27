@@ -10,6 +10,13 @@ import bac5 from './images/bac5.png';
 import giful2 from './images/giful2.gif';
 import book1 from './images/book1.png';
 import hitler1 from './images/hitler1.png';
+import anatomy1 from './images/anatomy1.png';
+import bee1 from './images/bee1.png';
+import chimie1 from './images/chimie1.png';
+import einstein1 from './images/einstein1.png';
+import geo1 from './images/geo1.png';
+import java1 from './images/java1.png';
+import mate1 from './images/mate1.png';
 import './App.css';
 
 const divStyle = {
@@ -117,28 +124,39 @@ class App extends Component {
                        <img src={book1} alt="Norway" className="w3-hover-opacity" />
                   </div>
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <img src={hitler1} alt="Norway" className="w3-hover-opacity" />
+                    <img src={java1} alt="Norway" className="w3-hover-opacity" />
                   </div>
                   <div className="w3-third w3-container">
-                    <img src={book1} alt="Norway" className="w3-hover-opacity" />
+                    <img src={hitler1} alt="Norway" className="w3-hover-opacity" />
                   </div>
                 </div>
 
 
                 <div className="w3-row-padding">
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <img src={bac5} alt="Norway" className="w3-hover-opacity" />
+                    <img src={geo1} alt="Norway" className="w3-hover-opacity" />
 
                   </div>
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <img src={bac5} alt="Norway" className="w3-hover-opacity" />
+                    <img src={bee1} alt="Norway" className="w3-hover-opacity" />
 
                   </div>
                   <div className="w3-third w3-container">
-                    <img src={bac5} alt="Norway" className="w3-hover-opacity" />
-
+                    <img src={anatomy1} alt="Norway" className="w3-hover-opacity" />
                   </div>
-              </div>
+                </div>
+
+                <div className="w3-row-padding">
+                  <div className="w3-third w3-container w3-margin-bottom">
+                       <img src={chimie1} alt="Norway" className="w3-hover-opacity" />
+                  </div>
+                  <div className="w3-third w3-container w3-margin-bottom">
+                    <img src={einstein1} alt="Norway" className="w3-hover-opacity" />
+                  </div>
+                  <div className="w3-third w3-container">
+                    <img src={mate1} alt="Norway" className="w3-hover-opacity" />
+                  </div>
+                </div>
             </div>
             </div>
             <div className="col-sm-6 other">
