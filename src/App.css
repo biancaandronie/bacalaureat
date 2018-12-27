@@ -322,7 +322,6 @@
 
 .col-sm-6 {
   width: 50%;
-  padding-top: 160px;
 }
 
 .bibac {
@@ -364,5 +363,8 @@
     filter: drop-shadow(rgb(30, 128, 163) 8px 8px 10px);
 }
 
+.w3-main {
+    padding-top: 160px;
+}
 
 
