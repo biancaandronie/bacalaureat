@@ -111,19 +111,19 @@ class App extends Component {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <div className="w3-main" style={margin-left:300px}>
+              <div className="w3-main" style={margin-left:300px;}>
 
                 <div className="w3-row-padding">
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <img src={bac5} alt="Norway" style={width:100%} className="w3-hover-opacity" />
+                    <img src={bac5} alt="Norway" style={width:100%;} className="w3-hover-opacity" />
 
                   </div>
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <img src={bac5} alt="Norway" style={width:100%} className="w3-hover-opacity" />
+                    <img src={bac5} alt="Norway" style={width:100%;} className="w3-hover-opacity" />
 
                   </div>
                   <div className="w3-third w3-container">
-                    <img src={bac5} alt="Norway" style={width:100%} className="w3-hover-opacity" />
+                    <img src={bac5} alt="Norway" style={width:100%;} className="w3-hover-opacity" />
 
                   </div>
                 </div>
@@ -131,15 +131,15 @@ class App extends Component {
 
                 <div className="w3-row-padding">
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <img src={bac5} alt="Norway" style={width:100%} className="w3-hover-opacity" />
+                    <img src={bac5} alt="Norway" style={width:100%;} className="w3-hover-opacity" />
 
                   </div>
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <img src={bac5} alt="Norway" style={width:100%} className="w3-hover-opacity" />
+                    <img src={bac5} alt="Norway" style={width:100%;} className="w3-hover-opacity" />
 
                   </div>
                   <div className="w3-third w3-container">
-                    <img src={bac5} alt="Norway" style={width:100%} className="w3-hover-opacity" />
+                    <img src={bac5} alt="Norway" style={width:100%;} className="w3-hover-opacity" />
 
                   </div>
               </div>
