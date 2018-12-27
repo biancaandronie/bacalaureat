@@ -359,10 +359,8 @@
 
 .w3-hover-opacity {
     width:100%;
-}
-
-.css-19ui7ac {
-    background: #000;
     cursor: pointer;
     box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+    filter: drop-shadow(rgb(30, 128, 163) 8px 8px 10px);
 }
+
