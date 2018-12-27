@@ -113,41 +113,7 @@ class App extends Component {
                     <img className="mt4-l mt3 css-1kd9lzd" src={trompa1} />
                 </div>
 
-                <section className="css-rlvjp6">
-                    <div className="css-asmds5">
-                        <div className="css-15uuwh5">
-                            <div className="css-b1m6vs">
-                                <a className="css-gi8dy6" href="#home">
-                                    <img className="css-15cipl" src={unu1} />
-                                </a>
-                                <a href="#home" className="css-1x63bss">CSS Selectors i`n Depth</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div className="css-asmds5">
-                        <div className="css-15uuwh5">
-                            <div className="css-b1m6vs">
-                                <a className="css-gi8dy6" href="#home">
-                                    <img className="css-15cipl" src={unu1} />
-                                </a>
-                                <a href="#home" className="css-1x63bss">CSS Selectors i`n Depth</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="css-asmds5">
-                        <div className="css-15uuwh5">
-                            <div className="css-b1m6vs">
-                                <a className="css-gi8dy6" href="#home">
-                                    <img className="css-15cipl" src={unu1} />
-                                </a>
-                                <a href="#home" className="css-1x63bss">CSS Selectors i`n Depth</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
 
             </div>
       </div>
