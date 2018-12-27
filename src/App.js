@@ -115,18 +115,13 @@ class App extends Component {
 
                 <div className="w3-row-padding">
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <div className="w3-third w3-container w3-margin-bottom">
                        <img src={bac5} alt="Norway" className="w3-hover-opacity" />
-                    </div>
-
                   </div>
                   <div className="w3-third w3-container w3-margin-bottom">
                     <img src={bac5} alt="Norway" className="w3-hover-opacity" />
-
                   </div>
                   <div className="w3-third w3-container">
                     <img src={bac5} alt="Norway" className="w3-hover-opacity" />
-
                   </div>
                 </div>
 
