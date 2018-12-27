@@ -8,9 +8,7 @@ import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
 import bac5 from './images/bac5.png';
 import giful2 from './images/giful2.gif';
-import alb1 from './images/alb1.png';
-import unu1 from './images/unu1.png';
-import trompa1 from './images/trompa1.png';
+import book1 from './images/book1.png';
 import './App.css';
 
 const divStyle = {
@@ -115,13 +113,13 @@ class App extends Component {
 
                 <div className="w3-row-padding">
                   <div className="w3-third w3-container w3-margin-bottom">
-                       <img src={bac5} alt="Norway" className="w3-hover-opacity" />
+                       <img src={book1} alt="Norway" className="w3-hover-opacity" />
                   </div>
                   <div className="w3-third w3-container w3-margin-bottom">
-                    <img src={bac5} alt="Norway" className="w3-hover-opacity" />
+                    <img src={book1} alt="Norway" className="w3-hover-opacity" />
                   </div>
                   <div className="w3-third w3-container">
-                    <img src={bac5} alt="Norway" className="w3-hover-opacity" />
+                    <img src={book1} alt="Norway" className="w3-hover-opacity" />
                   </div>
                 </div>
 
