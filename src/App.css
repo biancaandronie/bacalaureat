@@ -360,3 +360,9 @@
 .w3-hover-opacity {
     width:100%;
 }
+
+.css-19ui7ac {
+    background: #000;
+    cursor: pointer;
+    box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+}
