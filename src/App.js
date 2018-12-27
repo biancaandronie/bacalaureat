@@ -144,6 +144,7 @@ class App extends Component {
                   </div>
               </div>
             </div>
+            </div>
             <div className="col-sm-6 other">
               <div className="sans-serif bibac"><h3 className=" sans-serif titlubibac">Qu`est-ce que B!BAC?</h3>
                 <p className="parag1">
