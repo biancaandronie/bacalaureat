@@ -3,16 +3,16 @@ import axios from 'axios'
 import Suggestions from './Suggestions'
 
 const { API_KEY } = process.env
-const API_URL = 'http://bacalaureat.local/lista'
+const API_URL = 'http://bacalaureat.local/videos.php'
 
 class Search extends Component {
   state = {
     query: '',
-    results: [{"name":"fizica","link":"http:\/\/bacalaureat.local\/videos\/fizica.mp4"},{"name":"mate234","link":"http:\/\/bacalaureat.local\/videos\/mate234.mp4"},{"name":"matematica","link":"http:\/\/bacalaureat.local\/videos\/matematica.mp4"}]
+    results: []
   }
 
   getInfo = () => {
-    axios.get(`${API_URL}?api_key=${API_KEY}&prefix=${this.state.query}&limit=10`)
+    axios.get(`${API_URL}`)
       .then(({ data }) => {
         this.setState({
           results: data.data
