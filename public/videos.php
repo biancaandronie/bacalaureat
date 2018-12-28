@@ -9,10 +9,13 @@ $list_videos = array();
     		if (isset($FILE['php']) || isset($FILE['mp4'])) {
 			$link = $domain.$file;
 			$video = substr($file,7,-4);
-			$list_videos[] = array("name" => "$video","link" => "$link");
+			$list_videos[]  =  array("name" => "$video","link" => "$link");
 	  
     		}
   	}
 }
-echo json_encode($list_videos);
+$obj_videos = array();
+$obj_videos["results"] = $list_videos;
+
+echo json_encode($obj_videos);
 ?>
