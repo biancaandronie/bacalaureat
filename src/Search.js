@@ -8,12 +8,7 @@ const API_URL = 'http://bacalaureat.local/videos.php'
 class Search extends Component {
   state = {
     query: '',
-    results: axios.get(`${API_URL}`)
-                   .then(({ data }) => {
-                     this.setState({
-                       results: data.data
-                     })
-                   })
+    results: []
   }
 
   getInfo = () => {
