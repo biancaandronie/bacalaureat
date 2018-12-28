@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Search from 'Search'
+import Search from './Search';
 import imag from './images/crop1.jpg';
 import foot from './images/foot.jpg';
 import stele4 from './images/stele4.jpg';
