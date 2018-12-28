@@ -8,7 +8,7 @@ const API_URL = 'http://bacalaureat.local/videos.php'
 class Search extends Component {
   state = {
     query: '',
-    results: []
+    results: [{"name":"fizica","link":"http:\/\/bacalaureat.local\/videos\/fizica.mp4"},{"name":"mate234","link":"http:\/\/bacalaureat.local\/videos\/mate234.mp4"},{"name":"matematica","link":"http:\/\/bacalaureat.local\/videos\/matematica.mp4"}]
   }
 
   getInfo = () => {
