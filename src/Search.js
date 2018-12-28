@@ -3,7 +3,7 @@ import axios from 'axios'
 import Suggestions from './Suggestions'
 
 const { API_KEY } = process.env
-const API_URL = 'http://bacalaureat.local/videos.php'
+const API_URL = 'http://bacalaureat.local/lista'
 
 class Search extends Component {
   state = {
