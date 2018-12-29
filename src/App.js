@@ -25,6 +25,11 @@ import './App.css';
 const API = 'https://hn.algolia.com/api/v1/search?query=';
 const DEFAULT_QUERY = 'redux';
 
+const items = [
+  {"name":"fizica","link":"http:\/\/bacalaureat.local\/videos\/fizica.mp4"},
+  {"name":"mate234","link":"http:\/\/bacalaureat.local\/videos\/mate234.mp4"},
+  {"name":"matematica","link":"http:\/\/bacalaureat.local\/videos\/matematica.mp4"}
+]
 
 const divStyle = {
   position: 'absolute',
@@ -48,17 +53,59 @@ class App extends Component {
         }
 
   render() {
-
-    const { hits } = this.state;
-
     return (
-       <ul>
-              {hits.map(hit =>
-                <li key={hit.objectID}>
-                  <a href={hit.url}>{hit.title}</a>
-                </li>
-              )}
-            </ul>
+      <div className="App">
+
+        <Downshift
+
+            itemToString={item => (item ? item.name : '')}
+          >
+            {({
+              getInputProps,
+              getItemProps,
+              getLabelProps,
+              isOpen,
+              inputValue,
+              highlightedIndex,
+              selectedItem,
+            }) => (
+              <div>
+                <label {...getLabelProps()}>Enter a fruit</label>
+                <input {...getInputProps()} />
+                {isOpen ? (
+                  <div>
+                    {items
+                      .filter(item => !inputValue || item.name.includes(inputValue))
+                      .map((item, index) => (
+                        <div
+                          {...getItemProps({
+                            key: item.name,
+                            index,
+                            item,
+                            style: {
+                              backgroundColor:
+                                highlightedIndex === index ? 'lightgray' : 'white',
+                              fontWeight: selectedItem === item ? 'bold' : 'normal',
+                            },
+                          })}
+                        >
+                          <ul>
+                                  {hits.map(hit =>
+                                    <li key={hit.objectID}>
+                                      <a href={hit.url}>{hit.title}</a>
+                                    </li>
+                                  )}
+                                </ul>
+                        </div>
+                      ))}
+                  </div>
+                ) : null}
+              </div>
+            )}
+          </Downshift>
+
+
+          </div>
 
     );
   }
