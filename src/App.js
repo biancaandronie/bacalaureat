@@ -49,6 +49,8 @@ class App extends Component {
         }
 
   render() {
+
+  const { hits } = this.state;
     return (
       <div className="App">
 
