@@ -230,8 +230,7 @@ class App extends Component {
                 ) : null}
               </div>
             )}
-          </Downshift>,
-          document.getElementById('root'),
+          </Downshift>
 
 
           </div>
