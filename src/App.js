@@ -186,7 +186,7 @@ class App extends Component {
 
 
         <Downshift
-            onChange={selection => alert(`<a href="/react"> ${selection.name} </a>`)}
+            onChange={selection => alert(<a href="/react"> ${selection.name} </a>)}
             itemToString={item => (item ? item.name : '')}
           >
             {({
