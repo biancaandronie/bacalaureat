@@ -23,7 +23,6 @@ import './App.css';
 
 
 const API = 'http://bacalaureat.local/videos.php';
-const DEFAULT_QUERY = 'redux';
 
 
 
@@ -43,7 +42,7 @@ class App extends Component {
       }
 
       componentDidMount() {
-          fetch(API + DEFAULT_QUERY)
+          fetch(API)
             .then(response => response.json())
             .then(data => this.setState({ results: data.results }));
         }
@@ -88,9 +87,13 @@ class App extends Component {
                             },
                           })}
                         >
-
-                                      <a href={item.link}>{item.name}</a>
-
+                          <ul>
+                                  {results.map(hit =>
+                                    <li key={hit.name}>
+                                      <a href={hit.link}>{hit.name}</a>
+                                    </li>
+                                  )}
+                                </ul>
                         </div>
                       ))}
                   </div>
