@@ -22,7 +22,7 @@ import mate1 from './images/mate1.png';
 import './App.css';
 
 
-const API = 'https://hn.algolia.com/api/v1/search?query=';
+const API = 'http://bacalaureat.local/videos.php';
 const DEFAULT_QUERY = 'redux';
 
 
@@ -38,19 +38,19 @@ class App extends Component {
         super(props);
 
         this.state = {
-          hits: [],
+          results: [],
         };
       }
 
       componentDidMount() {
           fetch(API + DEFAULT_QUERY)
             .then(response => response.json())
-            .then(data => this.setState({ hits: data.hits }));
+            .then(data => this.setState({ results: data.results }));
         }
 
   render() {
 
-  const { hits } = this.state;
+  const { results } = this.state;
 
     return (
       <div className="App">
@@ -73,7 +73,7 @@ class App extends Component {
                 <input {...getInputProps()} />
                 {isOpen ? (
                   <div>
-                    {hits
+                    {results
                       .filter(item => !inputValue || item.name.includes(inputValue))
                       .map((item, index) => (
                         <div
@@ -89,9 +89,9 @@ class App extends Component {
                           })}
                         >
                           <ul>
-                                  {hits.map(hit =>
-                                    <li key={hit.objectID}>
-                                      <a href={hit.url}>{hit.title}</a>
+                                  {results.map(hit =>
+                                    <li key={hit.name}>
+                                      <a href={hit.link}>{hit.name}</a>
                                     </li>
                                   )}
                                 </ul>
