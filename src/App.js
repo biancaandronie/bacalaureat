@@ -186,8 +186,8 @@ class App extends Component {
 
 
         <Downshift
-            onChange={selection => alert(`You selected ${selection.value}`)}
-            itemToString={item => (item ? item.value : '')}
+            onChange={selection => alert(`You selected ${selection.name}`)}
+            itemToString={item => (item ? item.name : '')}
           >
             {({
               getInputProps,
@@ -204,11 +204,11 @@ class App extends Component {
                 {isOpen ? (
                   <div>
                     {items
-                      .filter(item => !inputValue || item.value.includes(inputValue))
+                      .filter(item => !inputValue || item.name.includes(inputValue))
                       .map((item, index) => (
                         <div
                           {...getItemProps({
-                            key: item.value,
+                            key: item.name,
                             index,
                             item,
                             style: {
@@ -218,7 +218,7 @@ class App extends Component {
                             },
                           })}
                         >
-                          {item.value}
+                          {item.name}
                         </div>
                       ))}
                   </div>
