@@ -188,7 +188,7 @@ class App extends Component {
 
 
 
-      </div>
+
 
         <Downshift
             onChange={selection => alert(`You selected ${selection.value}`)}
@@ -232,6 +232,9 @@ class App extends Component {
             )}
           </Downshift>,
           document.getElementById('root'),
+
+
+          </div>
 
     );
   }
