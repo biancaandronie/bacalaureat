@@ -35,35 +35,6 @@ const divStyle = {
 
 class App extends Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-          requestFailed: false
-        }
-    }
-
-    componentDidMount() {
-        fetch('http://bacalaureat.local/videos.php')
-          .then(response => {
-            if (!response.ok) {
-              throw Error("Network request failed")
-            }
-
-            return response
-          })
-          .then(d => d.json())
-          .then(d => {
-            this.setState({
-              githubData: d
-            })
-          }, () => {
-            this.setState({
-              requestFailed: true
-            })
-          })
-      }
-
-
   render() {
     return (
       <div className="App">
@@ -256,7 +227,6 @@ class App extends Component {
             )}
           </Downshift>
 
-        {this.state.githubData.name}
 
           </div>
 
