@@ -55,7 +55,7 @@ class App extends Component {
       <div className="App">
 
         <Downshift
-            data={this.state.data} onChange={this.handleChange} placeholder='Search for a string...' searchKey='full_name' loading={this.state.loading} width={300} height={40} />
+            data={this.state.data} onChange={this.handleChange} placeholder='Search for a string...' searchKey='full_name' loading={this.state.loading} width={300} height={40} style={{background-color:'#000'}} />
 
 
 
