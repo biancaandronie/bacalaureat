@@ -35,6 +35,33 @@ const divStyle = {
 
 class App extends Component {
 
+    constructor () {
+        super()
+
+        this.state = { data: [], loading: false }
+      }
+
+    componentDidMount () {
+        this.setState({ loading: true })
+
+        fetch('http://bacalaureat.local/videos.php')
+          .then(res => res.json())
+          .then(data => {
+            this.setState({
+              data: data.results,
+              loading: false
+            })
+          })
+      };
+
+      handleChange =(selection) => {
+        selection ? console.log(selection.name) : console.log('reverted')
+    };
+
+
+
+
+
   render() {
     return (
       <div className="App">
@@ -186,8 +213,14 @@ class App extends Component {
 
 
         <Downshift
-            onChange={selection => alert(`You selected ${selection.name}`)}
-            itemToString={item => (item ? item.name : '')}
+            data={this.state.data}
+            onChange={this.handleChange}
+            placeholder='Search for a string...'
+            class='search-class'
+            searchKey='name'
+            loading={this.state.loading}
+            width={300}
+            height={40}
           >
             {({
               getInputProps,
@@ -203,7 +236,7 @@ class App extends Component {
                 <input {...getInputProps()} />
                 {isOpen ? (
                   <div>
-                    {items
+                    {data
                       .filter(item => !inputValue || item.name.includes(inputValue))
                       .map((item, index) => (
                         <div
