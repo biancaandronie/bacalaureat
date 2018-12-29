@@ -34,12 +34,27 @@ const divStyle = {
 };
 
 class App extends Component {
-    constructor (props) {
-        super(props)
-        this.state = {
-          value: '',
-        }
-      }
+    constructor () {
+        super()
+
+        this.state = { data: [] }
+    }
+
+    componentDidMount () {
+
+        fetch('http://bacalaureat.local/videos.php')
+          .then(res => res.json())
+          .then(data => {
+            this.setState({
+              data: data.items
+            })
+          })
+    };
+
+    handleChange =(selection) => {
+        selection ? console.log(selection.full_name) : console.log('reverted')
+    };
+
   render() {
     return (
       <div className="App">
@@ -191,7 +206,8 @@ class App extends Component {
 
 
         <Downshift
-
+            data={this.state.data}
+            onChange={this.handleChange}
             itemToString={item => (item ? item.name : '')}
           >
             {({
