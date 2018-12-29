@@ -89,7 +89,7 @@ class App extends Component {
                           })}
                         >
 
-                                      <a href={hit.link}>{hit.name}</a>
+                                      <a href={item.link}>{item.name}</a>
 
                         </div>
                       ))}
