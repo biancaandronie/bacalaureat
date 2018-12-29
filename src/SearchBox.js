@@ -29,7 +29,7 @@ const SearchBox = ({ items, placeholder, onChange }) => {
                       key={item}
                       style={{
                         backgroundColor:
-                          highlightedIndex === index ? 'gray' : 'white',
+                          highlightedIndex === index ? 'gray' : 'black',
                         fontWeight: selectedItem === item ? 'bold' : 'normal',
                       }}
                     >
