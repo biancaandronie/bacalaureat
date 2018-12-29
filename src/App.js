@@ -22,7 +22,7 @@ import mate1 from './images/mate1.png';
 import './App.css';
 
 
-const API = 'https://hn.algolia.com/api/v1/search?query=';
+const API = 'http://bacalaureat.local/videos.php';
 const DEFAULT_QUERY = 'redux';
 
 
