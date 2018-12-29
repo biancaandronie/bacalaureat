@@ -22,7 +22,7 @@ import mate1 from './images/mate1.png';
 import './App.css';
 
 
-const API = 'http://bacalaureat.local/videos.php';
+const API = 'https://hn.algolia.com/api/v1/search?query=';
 const DEFAULT_QUERY = 'redux';
 
 
@@ -51,6 +51,7 @@ class App extends Component {
   render() {
 
   const { hits } = this.state;
+
     return (
       <div className="App">
 
