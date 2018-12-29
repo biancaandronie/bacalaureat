@@ -22,6 +22,9 @@ import mate1 from './images/mate1.png';
 import './App.css';
 
 
+const API = 'https://hn.algolia.com/api/v1/search?query=';
+const DEFAULT_QUERY = 'redux';
+
 
 const divStyle = {
   position: 'absolute',
@@ -29,37 +32,33 @@ const divStyle = {
 };
 
 class App extends Component {
-    constructor () {
-        super()
 
-        this.state = { data: [] }
-    }
+    constructor(props) {
+        super(props);
 
-    componentDidMount () {
+        this.state = {
+          hits: [],
+        };
+      }
 
-        fetch('http://bacalaureat.local/videos.php')
-          .then(res => res.json())
-          .then(data => {
-            this.setState({
-              data: data.items
-            })
-          })
-    };
-
-    handleChange =(selection) => {
-        selection ? console.log(selection.full_name) : console.log('reverted')
-    };
+      componentDidMount() {
+          fetch(API + DEFAULT_QUERY)
+            .then(response => response.json())
+            .then(data => this.setState({ hits: data.hits }));
+        }
 
   render() {
+
+    const { hits } = this.state;
+
     return (
-      <div className="App">
-
-        <Downshift
-            data={this.state.data} onChange={this.handleChange} placeholder='Search for a string...' searchKey='full_name' loading={this.state.loading} width={300} height={40} style={{background-color:'#000'}} />
-
-
-
-          </div>
+       <ul>
+              {hits.map(hit =>
+                <li key={hit.objectID}>
+                  <a href={hit.url}>{hit.title}</a>
+                </li>
+              )}
+            </ul>
 
     );
   }
