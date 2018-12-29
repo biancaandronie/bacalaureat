@@ -182,11 +182,8 @@ class App extends Component {
         </div>
 
 
-
-
-
         <Downshift
-            onChange={selection => alert(`You selected ${selection.name}`)}
+            onChange={selection => onClick(${selection.link}`)}
             itemToString={item => (item ? item.name : '')}
           >
             {({
