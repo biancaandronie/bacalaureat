@@ -176,11 +176,12 @@ class App extends Component {
         </div>
 
 
-            <SearchBox
-              placeholder="Search for .."
-              items={['React Vienna', 'React Finland', 'Jest', 'Enzyme', 'Reactjs']} />
+
 
       </div>
+      <SearchBox
+                    placeholder="Search for .."
+                    items={['React Vienna', 'React Finland', 'Jest', 'Enzyme', 'Reactjs']} />
 
 
     );
