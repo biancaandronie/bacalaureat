@@ -25,11 +25,7 @@ import './App.css';
 const API = 'https://hn.algolia.com/api/v1/search?query=';
 const DEFAULT_QUERY = 'redux';
 
-const items = [
-  {"name":"fizica","link":"http:\/\/bacalaureat.local\/videos\/fizica.mp4"},
-  {"name":"mate234","link":"http:\/\/bacalaureat.local\/videos\/mate234.mp4"},
-  {"name":"matematica","link":"http:\/\/bacalaureat.local\/videos\/matematica.mp4"}
-]
+
 
 const divStyle = {
   position: 'absolute',
@@ -74,7 +70,7 @@ class App extends Component {
                 <input {...getInputProps()} />
                 {isOpen ? (
                   <div>
-                    {items
+                    {hits
                       .filter(item => !inputValue || item.name.includes(inputValue))
                       .map((item, index) => (
                         <div
