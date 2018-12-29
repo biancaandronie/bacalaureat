@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-
-
-
+import {render} from 'react-dom'
+import Downshift from 'downshift'
 import imag from './images/crop1.jpg';
 import foot from './images/foot.jpg';
 import stele4 from './images/stele4.jpg';
@@ -22,15 +21,11 @@ import java1 from './images/java1.png';
 import mate1 from './images/mate1.png';
 import './App.css';
 
-import {render} from 'react-dom'
-import Downshift from 'downshift'
 
 const items = [
-  {value: 'apple'},
-  {value: 'pear'},
-  {value: 'orange'},
-  {value: 'grape'},
-  {value: 'banana'},
+  {"name":"fizica","link":"http:\/\/bacalaureat.local\/videos\/fizica.mp4"},
+  {"name":"mate234","link":"http:\/\/bacalaureat.local\/videos\/mate234.mp4"},
+  {"name":"matematica","link":"http:\/\/bacalaureat.local\/videos\/matematica.mp4"}
 ]
 
 const divStyle = {
