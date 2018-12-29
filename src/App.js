@@ -20,10 +20,11 @@ import geo1 from './images/geo1.png';
 import java1 from './images/java1.png';
 import mate1 from './images/mate1.png';
 import './App.css';
+import { Link } from 'react-router'
 
 
 const items = [
-  {"name":"fizica","link":"http:\/\/bacalaureat.local\/videos\/fizica.mp4"},
+  {"name":"fizica","link":"<Link to='http:\/\/bacalaureat.local\/videos\/fizica.mp4'>fizica</Link>"},
   {"name":"mate234","link":"http:\/\/bacalaureat.local\/videos\/mate234.mp4"},
   {"name":"matematica","link":"http:\/\/bacalaureat.local\/videos\/matematica.mp4"}
 ]
@@ -183,7 +184,7 @@ class App extends Component {
 
 
         <Downshift
-
+            onChange={selection => alert(${selection.link})}
             itemToString={item => (item ? item.name : '')}
           >
             {({
