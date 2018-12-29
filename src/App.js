@@ -184,7 +184,7 @@ class App extends Component {
 
 
         <Downshift
-            onChange={selection => alert(${selection.link})}
+            onChange={this.props.link}
             itemToString={item => (item ? item.name : '')}
           >
             {({
