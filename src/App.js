@@ -247,7 +247,7 @@ class App extends Component {
                             },
                           })}
                         >
-                          {this.state.githubData.name}
+                          {item.name}
                         </div>
                       ))}
                   </div>
@@ -256,6 +256,7 @@ class App extends Component {
             )}
           </Downshift>
 
+        {this.state.githubData.name}
 
           </div>
 
