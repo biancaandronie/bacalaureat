@@ -35,31 +35,33 @@ const divStyle = {
 
 class App extends Component {
 
-    constructor () {
-        super()
+    constructor(props) {
+        super(props)
+        this.state = {
+          requestFailed: false
+        }
+    }
 
-        this.state = { data: [], loading: false }
-      }
-
-    componentDidMount () {
-        this.setState({ loading: true })
-
+    componentDidMount() {
         fetch('http://bacalaureat.local/videos.php')
-          .then(res => res.json())
-          .then(data => {
+          .then(response => {
+            if (!response.ok) {
+              throw Error("Network request failed")
+            }
+
+            return response
+          })
+          .then(d => d.json())
+          .then(d => {
             this.setState({
-              data: data.results,
-              loading: false
+              githubData: d
+            })
+          }, () => {
+            this.setState({
+              requestFailed: true
             })
           })
-      };
-
-      handleChange =(selection) => {
-        selection ? console.log(selection.name) : console.log('reverted')
-    };
-
-
-
+      }
 
 
   render() {
@@ -213,16 +215,45 @@ class App extends Component {
 
 
         <Downshift
-            data={this.state.data}
-            onChange={this.handleChange}
-            placeholder='Search for a string...'
-            class='search-class'
-            searchKey='name'
-            loading={this.state.loading}
-            width={300}
-            height={40}
+            onChange={selection => alert(`You selected ${selection.name}`)}
+            itemToString={item => (item ? item.name : '')}
           >
-
+            {({
+              getInputProps,
+              getItemProps,
+              getLabelProps,
+              isOpen,
+              inputValue,
+              highlightedIndex,
+              selectedItem,
+            }) => (
+              <div>
+                <label {...getLabelProps()}>Enter a fruit</label>
+                <input {...getInputProps()} />
+                {isOpen ? (
+                  <div>
+                    {items
+                      .filter(item => !inputValue || item.name.includes(inputValue))
+                      .map((item, index) => (
+                        <div
+                          {...getItemProps({
+                            key: item.name,
+                            index,
+                            item,
+                            style: {
+                              backgroundColor:
+                                highlightedIndex === index ? 'lightgray' : 'white',
+                              fontWeight: selectedItem === item ? 'bold' : 'normal',
+                            },
+                          })}
+                        >
+                          {this.state.githubData.name}
+                        </div>
+                      ))}
+                  </div>
+                ) : null}
+              </div>
+            )}
           </Downshift>
 
 
