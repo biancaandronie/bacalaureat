@@ -34,7 +34,12 @@ const divStyle = {
 };
 
 class App extends Component {
-
+    constructor (props) {
+        super(props)
+        this.state = {
+          value: '',
+        }
+      }
   render() {
     return (
       <div className="App">
@@ -186,7 +191,7 @@ class App extends Component {
 
 
         <Downshift
-            onChange={selection => alert(<a href="/react"> ${selection.name} </a>)}
+            onChange={selection => alert(${selection.name})}
             itemToString={item => (item ? item.name : '')}
           >
             {({
@@ -218,7 +223,7 @@ class App extends Component {
                             },
                           })}
                         >
-                          {item.name}
+                          {item.link}
                         </div>
                       ))}
                   </div>
