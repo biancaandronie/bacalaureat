@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Search from './Search';
+import SearchBox from './SearchBox';
 import imag from './images/crop1.jpg';
 import foot from './images/foot.jpg';
 import stele4 from './images/stele4.jpg';
@@ -173,7 +173,15 @@ class App extends Component {
           </div>
         </div>
 
-        <Search />
+        <div className="App22">
+
+            <p className="App-intro22">
+              Type something i`n the box below and you'll get suggestions!
+            </p>
+            <SearchBox
+              placeholder="Search for .."
+              items={['React Vienna', 'React Finland', 'Jest', 'Enzyme', 'Reactjs']} />
+        </div>
 
       </div>
 
