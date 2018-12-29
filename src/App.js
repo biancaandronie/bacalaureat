@@ -223,7 +223,7 @@ class App extends Component {
                             },
                           })}
                         >
-                          <a href="http:\/\/bacalaureat.local\/videos\/fizica.mp4">{item.name}</a>
+                          <a href={item.link}>{item.name}</a>
                         </div>
                       ))}
                   </div>
