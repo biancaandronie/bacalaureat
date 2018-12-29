@@ -87,13 +87,9 @@ class App extends Component {
                             },
                           })}
                         >
-                          <ul>
-                                  {results.map(hit =>
-                                    <li key={hit.name}>
-                                      <a href={hit.link}>{hit.name}</a>
-                                    </li>
-                                  )}
-                                </ul>
+
+                                      <a href={item.link}>{item.name}</a>
+
                         </div>
                       ))}
                   </div>
