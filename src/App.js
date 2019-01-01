@@ -204,7 +204,7 @@ class App extends Component {
                         </div>
                     </div>
                 </div>
-              </div>
+
 
         <Downshift
 
@@ -250,7 +250,7 @@ class App extends Component {
             )}
           </Downshift>
 
-
+            </div>
           </div>
 
     );

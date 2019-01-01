@@ -370,14 +370,11 @@
 
 
 .notice-streamer {
-    background-image: url('./images/work1.png');
+    background-color: #107178;
     align-items: center;
-    height: 500px;
+    height: 400px;
     padding: 0;
     display: flex;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
     width: 100%;
 }
 
@@ -411,8 +408,4 @@
     margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(41,48,59,0.55);
 
-}
-
-.container {
-    background-color: #f4f7f9;
 }
