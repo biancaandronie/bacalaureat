@@ -370,9 +370,9 @@
 
 
 .notice-streamer {
-    background-image: url('./images/alerg.jpg');
+    background-image: url('./images/invat.gif');
     align-items: center;
-    height: 500px;
+    height: 600px;
     padding: 0;
     display: flex;
     background-position: top;
