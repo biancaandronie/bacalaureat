@@ -369,5 +369,46 @@
 }
 
 
+.notice-streamer {
+    background-image: url('./images/alerg.jpg');
+    align-items: center;
+    height: 500px;
+    padding: 0;
+    display: flex;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
 
+.carousel-fullscreen-sidebar {
+    width: 1174px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 30px auto;
+}
 
+.notice-streamer__content {
+    max-width: 460px;
+    box-sizing: content-box;
+}
+
+.notice-streamer__headline {
+    max-width: 100%;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #FFF;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(41,48,59,0.55);
+}
+
+.notice-streamer__text {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 1.61;
+    color: #FFF;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(41,48,59,0.55);
+
+}

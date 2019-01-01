@@ -14,6 +14,7 @@ import einstein1 from './images/einstein1.png';
 import geo1 from './images/geo1.png';
 import java1 from './images/java1.png';
 import mate1 from './images/mate1.png';
+import alerg from './images/alerg.jpg';
 import './App.css';
 
 
@@ -62,7 +63,7 @@ class App extends Component {
                                       <div className="css-17mv9vi">
                                           <h1 className="sans-serif css-bbh5y6">Regardez les meilleurs tutoriels à apprendre pour l`examen du baccalauréat.</h1>
                                           <h2 className="sans-serif css-1e10erk">Tutoriels vidéo pour simplifier le temps de travail.</h2>
-                                          <a className="sans-serif grow css-zfihb1" href="#"><span className="lh-solid">Cliquez pour commencer à apprendre</span></a>
+                                          <a className="sans-serif grow css-zfihb1" href="#home"><span className="lh-solid">Cliquez pour commencer à apprendre</span></a>
                                       </div>
                                        <div className="css-1pj66t4">
                                           <div className="container1">
@@ -189,6 +190,19 @@ class App extends Component {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div class="notice-streamer">
+                <div class="carousel-fullscreen-sidebar">
+                    <div class="notice-streamer__content">
+                        <div class="notice-streamer__headline">
+                            Rise to the resolution
+                        </div>
+                        <div class="notice-streamer__text">
+                             This New Year’s, become the `you` you’ve always wanted to be. Courses from €9.99.
+                        </div>
+                    </div>
                 </div>
               </div>
 
