@@ -135,7 +135,7 @@ class App extends Component {
                   </div>
               </div>
 
-              <div className="container" style={{background-color: '#f4f7f9';}}>
+              <div className="container" style={{'background-color': '#f4f7f9';}}>
                 <div className="row">
                   <div className="col-sm-6">
                     <div className="w3-main">
