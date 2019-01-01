@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
-import {render} from 'react-dom'
 import Downshift from 'downshift'
-import imag from './images/crop1.jpg';
-import foot from './images/foot.jpg';
-import stele4 from './images/stele4.jpg';
 import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
 import physic1 from './images/physic1.jpg';
 import bac5 from './images/bac5.png';
-import giful2 from './images/giful2.gif';
 import book1 from './images/book1.png';
 import hitler1 from './images/hitler1.png';
 import anatomy1 from './images/anatomy1.png';
