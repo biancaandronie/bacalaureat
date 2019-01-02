@@ -36,12 +36,7 @@ class App extends Component {
           placeholder:'Par exemple: physique',
         };
 
-        onFocus() {
-          this.setState({
-              backgroundColor: 'green',
-          })
-        };
-      }
+     }
 
       componentDidMount() {
           fetch(API)
@@ -229,7 +224,7 @@ class App extends Component {
             }) => (
               <div>
 
-                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.state.placeholder} onFocus={ () => this.onFocus() } />
+                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.state.placeholder} autofocus />
                 {isOpen ? (
                   <div>
                     {results
