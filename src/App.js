@@ -33,6 +33,7 @@ class App extends Component {
 
         this.state = {
           results: [],
+          placeholder:'Par exemple: physique',
         };
       }
 
@@ -220,7 +221,7 @@ class App extends Component {
             }) => (
               <div>
 
-                <input {...getInputProps({style: {width: '345px'}})} />
+                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.props.placeholderText} />
                 {isOpen ? (
                   <div>
                     {results
