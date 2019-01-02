@@ -236,7 +236,7 @@ class App extends Component {
                                 highlightedIndex === index ? 'lightgray' : 'white',
                               fontWeight: selectedItem === item ? 'bold' : 'normal',
                               width: '345px',
-                              margin: '7px 0 0 0';
+                              margin: '7px 0 0 0',
                             },
                           })}
                         >
