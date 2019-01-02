@@ -37,10 +37,10 @@ class App extends Component {
         };
 
         onFocus() {
-                  this.setState({
-                      backgroundColor: 'green'
-                  })
-                }
+          this.setState({
+              backgroundColor: 'green'
+          })
+        };
       }
 
       componentDidMount() {
