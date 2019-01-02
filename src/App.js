@@ -196,10 +196,10 @@ class App extends Component {
                 <div class="carousel-fullscreen-sidebar">
                     <div class="notice-streamer__content">
                         <div class="notice-streamer__headline">
-                            Apprenez quelque chose de nouveau aujourd`hui
+                            Prêt à commencer?
                         </div>
                         <div class="notice-streamer__text">
-                             Prêt à commencer? Rechercher des tutoriels.
+                            Apprenez quelque chose de nouveau aujourd`hui. Rechercher des tutoriels.
                         </div>
                     </div>
 
