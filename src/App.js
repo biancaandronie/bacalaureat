@@ -43,11 +43,11 @@ class App extends Component {
             .then(data => this.setState({ results: data.results }));
         }
 
-        focusInput = (component) => {
-            if (component) {
-              component.focus();
-            }
-          };
+      onFocus() {
+          this.setState({
+              backgroundColor: 'green'
+          })
+        }
 
   render() {
 
@@ -227,7 +227,7 @@ class App extends Component {
             }) => (
               <div>
 
-                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.state.placeholder} ref={this.focusInput} />
+                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.state.placeholder} onFocus={ () => this.onFocus() } />
                 {isOpen ? (
                   <div>
                     {results
