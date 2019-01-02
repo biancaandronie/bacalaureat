@@ -35,6 +35,12 @@ class App extends Component {
           results: [],
           placeholder:'Par exemple: physique',
         };
+
+        onFocus() {
+                  this.setState({
+                      backgroundColor: 'green'
+                  })
+                }
       }
 
       componentDidMount() {
@@ -43,11 +49,7 @@ class App extends Component {
             .then(data => this.setState({ results: data.results }));
         }
 
-      onFocus() {
-          this.setState({
-              backgroundColor: 'green'
-          })
-        }
+
 
   render() {
 
