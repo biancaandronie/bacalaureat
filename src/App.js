@@ -224,7 +224,20 @@ class App extends Component {
             }) => (
               <div>
 
-                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.state.placeholder} autofocus />
+                <input {...getInputProps({
+                    style: {
+                        width: '345px',
+                        box-sizing: 'border-box',
+                        border: '2px solid #ccc',
+                        border-radius: '4px',
+                        font-size: '16px',
+                        background-color: 'white',
+                        background-image: "url('./images/searchicon.png')",
+                        background-position: '10px 10px',
+                        background-repeat: 'no-repeat',
+                        padding: '12px 20px 12px 40px',
+
+                    }})} placeholder={this.state.placeholder} autofocus />
                 {isOpen ? (
                   <div>
                     {results
