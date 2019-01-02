@@ -235,6 +235,7 @@ class App extends Component {
                               backgroundColor:
                                 highlightedIndex === index ? 'lightgray' : 'white',
                               fontWeight: selectedItem === item ? 'bold' : 'normal',
+                              width: '345px',
                             },
                           })}
                         >
