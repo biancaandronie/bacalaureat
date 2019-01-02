@@ -220,7 +220,7 @@ class App extends Component {
             }) => (
               <div>
 
-                <input {...getInputProps()} />
+                <input {...getInputProps({style: {width: '345px'}})} />
                 {isOpen ? (
                   <div>
                     {results
