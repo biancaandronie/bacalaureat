@@ -38,7 +38,7 @@ class App extends Component {
 
         onFocus() {
           this.setState({
-              backgroundColor: 'green'
+              backgroundColor: 'green',
           })
         };
       }
