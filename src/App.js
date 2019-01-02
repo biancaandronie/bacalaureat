@@ -229,12 +229,12 @@ class App extends Component {
                         width: '345px',
                         boxSizing: 'border-box',
                         border: '2px solid #ccc',
-                        border-radius: '4px',
-                        font-size: '16px',
-                        background-color: 'white',
-                        background-image: "url('./images/searchicon.png')",
-                        background-position: '10px 10px',
-                        background-repeat: 'no-repeat',
+                        borderRadius: '4px',
+                        fontSize: '16px',
+                        backgroundColor: 'white',
+                        backgroundImage: "url('./images/searchicon.png')",
+                        backgroundPosition: '10px 10px',
+                        backgroundRepeat: 'no-repeat',
                         padding: '12px 20px 12px 40px',
 
                     }})} placeholder={this.state.placeholder} autofocus />
