@@ -14,6 +14,8 @@ import einstein1 from './images/einstein1.png';
 import geo1 from './images/geo1.png';
 import java1 from './images/java1.png';
 import mate1 from './images/mate1.png';
+import Background from './images/searchicon.png';
+
 import './App.css';
 
 
@@ -232,7 +234,7 @@ class App extends Component {
                         borderRadius: '4px',
                         fontSize: '16px',
                         backgroundColor: 'white',
-                        backgroundImage: "url('./images/searchicon.png')",
+                        backgroundImage: `url(${Background})`,
                         backgroundPosition: '10px 10px',
                         backgroundRepeat: 'no-repeat',
                         padding: '12px 20px 12px 40px',
