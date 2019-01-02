@@ -219,7 +219,7 @@ class App extends Component {
               selectedItem,
             }) => (
               <div>
-                <label {...getLabelProps()}>Enter a fruit</label>
+
                 <input {...getInputProps()} />
                 {isOpen ? (
                   <div>
