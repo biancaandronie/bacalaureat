@@ -221,7 +221,7 @@ class App extends Component {
             }) => (
               <div>
 
-                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.props.placeholder} />
+                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.state.placeholder} />
                 {isOpen ? (
                   <div>
                     {results
