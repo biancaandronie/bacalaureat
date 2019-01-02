@@ -43,6 +43,12 @@ class App extends Component {
             .then(data => this.setState({ results: data.results }));
         }
 
+        focusInput = (component) => {
+            if (component) {
+              component.focus();
+            }
+          };
+
   render() {
 
   const { results } = this.state;
@@ -221,7 +227,7 @@ class App extends Component {
             }) => (
               <div>
 
-                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.state.placeholder} />
+                <input {...getInputProps({style: {width: '345px'}})} placeholder={this.state.placeholder} ref={this.focusInput} />
                 {isOpen ? (
                   <div>
                     {results
