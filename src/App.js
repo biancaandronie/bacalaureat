@@ -202,7 +202,7 @@ class App extends Component {
                              This New Year’s, become the `you` you’ve always wanted to be. Courses from €9.99.
                         </div>
                     </div>
-                </div>
+
 
 
         <Downshift
@@ -248,8 +248,9 @@ class App extends Component {
               </div>
             )}
           </Downshift>
-
+                </div>
             </div>
+
           </div>
 
     );

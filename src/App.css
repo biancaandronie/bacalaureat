@@ -374,7 +374,6 @@
     align-items: center;
     height: 500px;
     padding: 0;
-    display: flex;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -398,7 +397,7 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 1.33;
-    color: #FFF;
+    color: #328791;
     margin-bottom: 10px;
     text-shadow: 0 2px 4px rgba(41,48,59,0.55);
 }
@@ -407,7 +406,7 @@
     max-width: 100%;
     font-size: 18px;
     line-height: 1.61;
-    color: #FFF;
+    color: #328791;
     margin-bottom: 20px;
     text-shadow: 0 2px 4px rgba(41,48,59,0.55);
 
