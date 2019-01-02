@@ -227,7 +227,7 @@ class App extends Component {
                 <input {...getInputProps({
                     style: {
                         width: '345px',
-                        box-sizing: 'border-box',
+                        boxSizing: 'border-box',
                         border: '2px solid #ccc',
                         border-radius: '4px',
                         font-size: '16px',
