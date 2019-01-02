@@ -196,10 +196,10 @@ class App extends Component {
                 <div class="carousel-fullscreen-sidebar">
                     <div class="notice-streamer__content">
                         <div class="notice-streamer__headline">
-                            Rise to the resolution
+                            Apprenez quelque chose de nouveau aujourd`hui
                         </div>
                         <div class="notice-streamer__text">
-                             This New Year’s, become the `you` you’ve always wanted to be. Courses from €9.99.
+                             Prêt à commencer? Rechercher des tutoriels.
                         </div>
                     </div>
 
