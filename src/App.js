@@ -14,7 +14,6 @@ import einstein1 from './images/einstein1.png';
 import geo1 from './images/geo1.png';
 import java1 from './images/java1.png';
 import mate1 from './images/mate1.png';
-import alerg from './images/alerg.jpg';
 import './App.css';
 
 

@@ -370,11 +370,14 @@
 
 
 .notice-streamer {
-    background-color: #107178;
+    background-image: url('./images/alerg3.jpg');
     align-items: center;
-    height: 400px;
+    height: 500px;
     padding: 0;
     display: flex;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
 }
 
