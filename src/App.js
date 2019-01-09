@@ -28,13 +28,6 @@ const divStyle = {
   filter: 'drop-shadow(8px 8px 10px #1E80A3)'
 };
 
-var sectionStyle = {
-  width: "100%",
-  height: "400px",
-  backgroundImage: "url(" + { Background } + ")"
-};
-
-
 class App extends Component {
 
     constructor(props) {
