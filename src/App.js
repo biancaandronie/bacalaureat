@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Downshift from 'downshift'
+import Downshift from 'downshift';
 import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
@@ -18,9 +18,9 @@ import Background from './images/searchicon.png';
 
 import './App.css';
 
-import Popup from './Login';
-import Pop from './Login';
-
+import Popup from './Login.js';
+import Pop from './Login.js';
+import './Login.js';
 
 
 const API = 'http://bacalaureat.local/videos.php';
