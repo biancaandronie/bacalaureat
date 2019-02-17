@@ -28,7 +28,7 @@ class Pop extends Component {
     return (
       <div className='pop'>
 
-        <button onClick={this.togglePopup.bind(this)}>show popup</button>
+        <button class="btn aqua-gradient" onClick={this.togglePopup.bind(this)}>show popup</button>
 
         {this.state.showPopup ?
           <Popup
