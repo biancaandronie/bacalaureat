@@ -18,9 +18,8 @@ import Background from './images/searchicon.png';
 
 import './App.css';
 
-import Popup from './Login';
-import Pop from './Login';
-
+import {Popup, Pop} from './Login';
+import './Login.js';
 
 
 const API = 'http://bacalaureat.local/videos.php';
@@ -291,3 +290,4 @@ class App extends Component {
 }
 
 export default App;
+
