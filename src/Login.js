@@ -28,7 +28,7 @@ class Pop extends Component {
     return (
       <div className='pop'>
 
-        <button className="btn morpheus-den-gradient rounded-circle" onClick={this.togglePopup.bind(this)}>show popup</button>
+        <button className="btn morpheus-den-gradient rounded-circle" onClick={this.togglePopup.bind(this)}>Le login</button>
 
         {this.state.showPopup ?
           <Popup
