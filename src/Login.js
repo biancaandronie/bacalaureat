@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import React from 'react';
 import { Button } from './components/Buttons';
 import Modal from './components/Modal';
 
