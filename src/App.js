@@ -57,10 +57,6 @@ class App extends Component {
   const { results } = this.state;
 
     return (
-    <div>
-              <Popup />
-              <Pop />
-            </div>
       <div className="App">
 
       <div className="header">
@@ -282,6 +278,10 @@ class App extends Component {
 
           </div>
 
+        <div>
+          <Popup />
+
+        </div>
     );
 
   }
