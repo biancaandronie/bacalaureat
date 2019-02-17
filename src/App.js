@@ -20,7 +20,7 @@ import './App.css';
 
 import Popup from './Login';
 import Pop from './Login';
-import './Login.js';
+
 
 
 const API = 'http://bacalaureat.local/videos.php';
