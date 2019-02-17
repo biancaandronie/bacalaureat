@@ -278,6 +278,7 @@ class App extends Component {
 
         <div>
             <Popup />
+            <Pop />
         </div>
 
       </div>
