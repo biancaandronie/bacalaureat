@@ -413,6 +413,10 @@
 
 }
 
+/*
+Din cauza lui margin-top se strica partea de jos cu caruselul
+*/
+
 .conectare {
   float: right;
   margin-right: 115px;
