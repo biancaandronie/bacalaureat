@@ -17,6 +17,9 @@ import mate1 from './images/mate1.png';
 import Background from './images/searchicon.png';
 
 import './App.css';
+
+import Popup from './Login.js';
+import Pop from './Login.js';
 import './Login.js';
 
 
@@ -279,7 +282,6 @@ class App extends Component {
           <Pop  />
 
     );
-
 
   }
 }
