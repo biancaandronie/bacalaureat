@@ -278,7 +278,7 @@ class App extends Component {
 
       </div>
 
-     <Popup color="red" />;
+
 
     );
 
