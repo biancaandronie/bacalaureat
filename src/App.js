@@ -18,8 +18,7 @@ import Background from './images/searchicon.png';
 
 import './App.css';
 
-import {Pop} from './Login';
-import Popup from './Login';
+import {Popup, Pop} from './Login';
 import './Login.js';
 
 
