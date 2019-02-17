@@ -18,7 +18,7 @@ import Background from './images/searchicon.png';
 
 import './App.css';
 
-import {Popup, Pop} from './Login';
+import {Pop, Popup} from './Login';
 import './Login.js';
 
 
@@ -276,8 +276,8 @@ class App extends Component {
           </div>
 
         <div>
-            <Popup />
             <Pop />
+            <Popup />
         </div>
 
       </div>
