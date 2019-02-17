@@ -17,6 +17,7 @@ import mate1 from './images/mate1.png';
 import Background from './images/searchicon.png';
 
 import './App.css';
+import './Login.js';
 
 
 const API = 'http://bacalaureat.local/videos.php';
