@@ -1,30 +1,47 @@
-import React, { Component } from 'react';
-import { Button } from './components/Buttons';
-import Modal from './components/Modal';
+import './App.css';
 
-export default ({ size = 'sm', closeModal, ...props }) => (
-    <Modal {...props} size={size} onClose={closeModal}>
-        <Modal.Header>
-            <Modal.Title>
-                Modal Title
-            </Modal.Title>
-        </Modal.Header>
-        <Modal.Body padding>
-            Modal Body
-        </Modal.Body>
-        <Modal.Footer>
-            <Button
-                btnStyle="primary"
-                onClick={closeModal}
-            >
-                Save
-            </Button>
-            <Button
-                btnStyle="default"
-                onClick={closeModal}
-            >
-                Close
-            </Button>
-        </Modal.Footer>
-    </Modal>
-);
+class Popup extends React.Component {
+  render() {
+    return (
+      <div className='popup'>
+        <div className='popup_inner'>
+          <h1>{this.props.text}</h1>
+        <button onClick={this.props.closePopup}>sortie</button>
+        </div>
+      </div>
+    );
+  }
+}
+class Pop extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      showPopup: false
+    };
+  }
+  togglePopup() {
+    this.setState({
+      showPopup: !this.state.showPopup
+    });
+  }
+  render() {
+    return (
+      <div className='pop'>
+
+        <button onClick={this.togglePopup.bind(this)}>show popup</button>
+
+        {this.state.showPopup ?
+          <Popup
+            text='Close Me'
+            closePopup={this.togglePopup.bind(this)}
+          />
+          : null
+        }
+      </div>
+    );
+  }
+};
+
+
+
+ReactDOM.render(<Pop />,document.getElementById('root'));
