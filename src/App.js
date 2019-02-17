@@ -278,10 +278,11 @@ class App extends Component {
 
           </div>
 
-        <div>
-          <Popup />
+    <React.Fragment>
+      <Popup />
+      <Pop />
+    </React.Fragment>
 
-        </div>
     );
 
   }
