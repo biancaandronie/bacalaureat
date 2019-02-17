@@ -61,7 +61,7 @@ class App extends Component {
           <div className="header">
                 <img src={bac5} className="bac" alt="bac" width="254" height="109" />
 
-                <div className="conectare">
+                <div className="conectare1">
                     <Pop />
                 </div>
           </div>
