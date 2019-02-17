@@ -42,6 +42,3 @@ class Pop extends Component {
   }
 };
 
-
-
-ReactDOM.render(<Pop />,document.getElementById('root'));
