@@ -1,6 +1,6 @@
-import './App.css';
-
-class Popup extends React.Component {
+import React, { Component } from 'react';
+import './Login.css';
+class Popup extends Component {
   render() {
     return (
       <div className='popup'>
@@ -12,7 +12,7 @@ class Popup extends React.Component {
     );
   }
 }
-class Pop extends React.Component {
+class Pop extends Component {
   constructor() {
     super();
     this.state = {
