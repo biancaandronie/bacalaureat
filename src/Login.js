@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Login.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 class Popup extends Component {
   render() {
     return (
