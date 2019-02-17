@@ -279,11 +279,11 @@ class App extends Component {
 
 
     <div>
-      <Popup />;
+      <Popup />
       <Pop />
     </div>
 
-    )
+    );
 
   }
 }
