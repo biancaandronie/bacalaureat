@@ -283,7 +283,7 @@ class App extends Component {
       <Pop />
     </React.Fragment>
 
-    );
+    )
 
   }
 }
