@@ -41,4 +41,3 @@ class Pop extends Component {
     );
   }
 };
-
