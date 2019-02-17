@@ -41,4 +41,4 @@ class Pop extends Component {
     );
   }
 };
-export default {Popup , Pop};
+export default Popup;
