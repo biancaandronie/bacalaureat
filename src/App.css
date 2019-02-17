@@ -412,3 +412,11 @@
     text-shadow: 0 2px 4px rgba(41,48,59,0.55);
 
 }
+
+.conectare {
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+}
