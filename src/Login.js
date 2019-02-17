@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Login.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 class Popup extends Component {
   render() {
     return (
@@ -29,7 +28,7 @@ class Pop extends Component {
     return (
       <div className='pop'>
 
-        <button class="btn aqua-gradient" onClick={this.togglePopup.bind(this)}>show popup</button>
+        <button className="btn aqua-gradient" onClick={this.togglePopup.bind(this)}>show popup</button>
 
         {this.state.showPopup ?
           <Popup
