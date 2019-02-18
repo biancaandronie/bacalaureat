@@ -56,10 +56,6 @@ if ($_POST){
     $username = $_POST['fname'];
     $parola = $_POST['parola']
 
-    //Headers
-    $headers  = "MIME-Version: 1.0\r\n";
-    $headers .= "Content-type: text/html; charset=UTF-8\r\n";
-
     //echo json_encode( $_POST );
     login($username,$parola);
     echo json_encode(array("sent" => true));
