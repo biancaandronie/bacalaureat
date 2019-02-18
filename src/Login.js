@@ -52,14 +52,13 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
 
-                            <input type="submit" onClick = {e => this.handleFormSubmit(e)} value="Submit" />
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
 
                             <div>
                                 {this.state.error  &&
                                   <div className="error">Sorry we had some problems.</div>
                                 }
                             </div>
-                            <button id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()}>Login</button>
                         </form>
                     </div>
         <button id='exit' className='btn winter-neva-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
