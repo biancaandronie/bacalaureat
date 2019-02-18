@@ -6,6 +6,9 @@ class Popup extends Component {
       <div className='popup'>
         <div className='popup_inner'>
           <h1 className='bienvenue'>{this.props.text}</h1>
+          <form name="form">
+              <label htmlFor="username">Username</label>
+          </form>
         <button onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>
@@ -29,10 +32,6 @@ class Pop extends Component {
       <div className='pop'>
 
         <button className="btn morpheus-den-gradient rounded-circle" onClick={this.togglePopup.bind(this)}>Le login</button>
-
-        <form name="form">
-            <label htmlFor="username">Username</label>
-        </form>
 
         {this.state.showPopup ?
           <Popup
