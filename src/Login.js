@@ -30,6 +30,10 @@ class Pop extends Component {
 
         <button className="btn morpheus-den-gradient rounded-circle" onClick={this.togglePopup.bind(this)}>Le login</button>
 
+        <form name="form">
+            <label htmlFor="username">Username</label>
+        </form>
+
         {this.state.showPopup ?
           <Popup
             text='Bienvenue, connectez-vous pour continuer!'
