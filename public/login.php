@@ -1,13 +1,5 @@
 
 <?php
-header("Access-Control-Allow-Origin: *");
-$rest_json = file_get_contents("php://input");
-$_POST = json_decode($rest_json, true);
-
-if( empty($_POST['fname']) && empty($_POST['parola']) ) die();
-
-
-
 function conectare($host = "localhost", $username = "root", $password = "", $dbname = "LOGIN") {
 
     return mysqli_connect($host, $username, $password, $dbname);
@@ -50,6 +42,12 @@ function login($u, $p) {
         return null;
     }
 }
+
+header("Access-Control-Allow-Origin: *");
+$rest_json = file_get_contents("php://input");
+$_POST = json_decode($rest_json, true);
+
+if( empty($_POST['fname']) && empty($_POST['parola']) ) die();
 if ($_POST){
     // set response code - 200 OK
     http_response_code(200);
