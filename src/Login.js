@@ -16,17 +16,17 @@ constructor(props) {
           <h1 className='bienvenue'>{this.props.text}</h1>
             <div>
                 <form action="#">
-                    <input className='heavy-rain-gradient' type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
+                    <input className='deep-blue-gradient' type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
                            value={this.state.fname }
                            onChange={e => this.setState({ fname: e.target.value })}
                     /> <br />
-                    <input type="text" id="parola" name="password" placeholder="Mot de passe"
+                    <input className='deep-blue-gradient' type="text" id="parola" name="password" placeholder="Mot de passe"
                            value={this.state.parola }
                            onChange={e => this.setState({ parola: e.target.value })}
                     />
                 </form>
             </div>
-        <button className='exit' onClick={this.props.closePopup}>sortie</button>
+        <button id='exit' className='btn deep-blue-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>
     );
