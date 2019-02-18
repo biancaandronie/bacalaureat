@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
 import './Login.css';
 class Popup extends Component {
+
+constructor(props) {
+    super(props);
+    this.state = {
+      fname: ''
+    }
+}
   render() {
     return (
       <div className='popup'>
         <div className='popup_inner'>
           <h1 className='bienvenue'>{this.props.text}</h1>
-          <form name="form">
-              <label htmlFor="username">Username</label>
-          </form>
+            <div>
+                <form action="#">
+                    <input type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
+                           value={this.state.fname }
+                           onChange={e => this.setState({ fname: e.target.value })}
+                    />
+                </form>
+            </div>
         <button onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>
