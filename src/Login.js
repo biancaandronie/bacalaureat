@@ -28,6 +28,7 @@ constructor(props) {
                             />
                         </form>
                     </div>
+        <button id='log' className='btn deep-blue-gradient rounded-circle'>Login</button>
         <button id='exit' className='btn deep-blue-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>

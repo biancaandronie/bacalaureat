@@ -57,13 +57,20 @@ form{
 }
 
 #exit{
+    margin-right: 34px;
+    float: right;
+}
+
+#log{
     margin-left: 34px;
+    float: left;
 }
 
 .elev1{
-    width: 16%;
+    width: 50%;
     height: auto;
-    overflow: hidden;
-    padding-left: 38px;
-    padding-top: 35px;
+    padding-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
