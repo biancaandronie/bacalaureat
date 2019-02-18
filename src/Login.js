@@ -58,7 +58,7 @@ validateForm() {
                             <input type="submit" onClick = {e => this.handleFormSubmit(e)} value="Submit" />
                             <div>
                                 {this.state.mailSent  &&
-                                  <div className="sucsess">Thank you for contcting me.</div>
+                                  <div className="sucsess">Thank you for contacting me.</div>
                                 }
                                 {this.state.error  &&
                                   <div className="error">Sorry we had some problems.</div>
