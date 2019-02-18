@@ -23,8 +23,13 @@
   border-radius: 6px;
 }
 .bienvenue{
-  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
-  font-size: 27px;
-  text-align: center;
-  margin-top: 40px;
+   border-bottom: solid 1px #DEDFE0;
+   border-top-left-radius: 6px;
+   border-top-right-radius: 6px;
+   color: #29303B;
+   display: block;
+   font-weight: 600;
+   font-size: 15px;
+   padding: 24px 64px 24px 24px;
+   font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
