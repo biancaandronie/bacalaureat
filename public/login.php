@@ -55,7 +55,7 @@ if ($_POST){
     $parola = $_POST['parola']
 
     //echo json_encode( $_POST );
-    login($username,$parola);
+    $login_user = login($username,$parola);
     echo json_encode(array("sent" => true));
 } else {
  // tell the user about error
