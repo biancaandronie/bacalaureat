@@ -1,15 +1,40 @@
 import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
+import axios from 'axios';
 import './Login.css';
+
+const API_PATH = 'http://bacalaureat.local/api/contact/index.php';
+
 class Popup extends Component {
 
 constructor(props) {
     super(props);
     this.state = {
       fname: '',
-      parola: ''
+      parola: '',
+      error: null
     }
 }
+
+handleFormSubmit = e => {
+    e.preventDefault();
+    axios({
+        method: 'post',
+        url: `${API_PATH}`,
+        headers: { 'content-type': 'application/json' },
+        data: this.state
+      })
+    .then(result => {
+      console.log(this.state);
+    })
+    .catch(error => this.setState( { error: error.message } ));
+  };
+
+validateForm() {
+    return this.state.fname.length > 0 && this.state.parola.length > 0;
+}
+
+
   render() {
     return (
       <div className='popup'>
@@ -26,9 +51,17 @@ constructor(props) {
                                    value={this.state.parola }
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
+
+                            <input type="submit" onClick = {e => this.handleFormSubmit(e)} value="Submit" />
+
+                            <div>
+                                {this.state.error  &&
+                                  <div className="error">Sorry we had some problems.</div>
+                                }
+                            </div>
+                            <button id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()}>Login</button>
                         </form>
                     </div>
-        <button id='log' className='btn winter-neva-gradient rounded-circle'>Login</button>
         <button id='exit' className='btn winter-neva-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>
