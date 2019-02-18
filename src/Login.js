@@ -11,8 +11,7 @@ constructor(props) {
     super(props);
     this.state = {
       fname: '',
-      parola: '',
-      error: null
+      parola: ''
     }
 }
 
@@ -24,10 +23,6 @@ handleFormSubmit = e => {
         headers: { 'content-type': 'application/json' },
         data: this.state
       })
-    .then(result => {
-      console.log(this.state);
-    })
-    .catch(error => this.setState( { error: error.message } ));
   };
 
 validateForm() {
@@ -52,11 +47,7 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
                             <input type="submit" onClick = {e => this.handleFormSubmit(e)} value="Submit" />
-                            <div>
-                                {this.state.error  &&
-                                  <div className="error">Sorry we had some problems.</div>
-                                }
-                            </div>
+
                         </form>
                     </div>
 
