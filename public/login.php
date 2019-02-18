@@ -31,11 +31,11 @@ function login($u, $p) {
     $user = verificare_user($u);
     if ($user) {
         //daca user-ul este deja inregistrat, verificam parola
-        if(md5($p)==$user['parola']){
+        //if(md5($p)==$user['parola']){
             return $user;
-        }else{
-            return null;
-        }
+        //}else{
+        //    return null;
+        //}
 
     }else{
         //user-ul nu a fost inregistrat inainte
