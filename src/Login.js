@@ -11,7 +11,9 @@ constructor(props) {
     super(props);
     this.state = {
       fname: '',
-      parola: ''
+      parola: '',
+      mailSent: false,
+      error: null
     }
 }
 
@@ -23,7 +25,14 @@ handleFormSubmit = e => {
         headers: { 'content-type': 'application/json' },
         data: this.state
       })
-  };
+    .then(result => {
+      this.setState( {
+        mailSent: result.data.sent
+      })
+      console.log(this.state);
+    })
+    .catch(error => this.setState( { error: error.message } ));
+};
 
 validateForm() {
     return this.state.fname.length > 0 && this.state.parola.length > 0;
@@ -47,7 +56,14 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
                             <input type="submit" onClick = {e => this.handleFormSubmit(e)} value="Submit" />
-
+                            <div>
+                                {this.state.mailSent  &&
+                                  <div className="sucsess">Thank you for contcting me.</div>
+                                }
+                                {this.state.error  &&
+                                  <div className="error">Sorry we had some problems.</div>
+                                }
+                            </div>
                         </form>
                     </div>
 
