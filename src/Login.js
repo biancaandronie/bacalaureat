@@ -3,7 +3,7 @@ import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
 
-const API_PATH = 'http://bacalaureat.local/api/contact/index.php';
+const API_PATH = 'http://bacalaureat.local/login.php';
 
 class Popup extends Component {
 
@@ -51,9 +51,7 @@ validateForm() {
                                    value={this.state.parola }
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
-
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
-
+                            <input type="submit" onClick = {e => this.handleFormSubmit(e)} value="Submit" />
                             <div>
                                 {this.state.error  &&
                                   <div className="error">Sorry we had some problems.</div>
@@ -61,6 +59,7 @@ validateForm() {
                             </div>
                         </form>
                     </div>
+
         <button id='exit' className='btn winter-neva-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>
