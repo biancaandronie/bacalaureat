@@ -28,7 +28,7 @@ function login($u, $p) {
 
     $u = mysqli_real_escape_string($l, $u);
     $p = mysqli_real_escape_string($l, $p);
-    $user = verificare_email($u);
+    $user = verificare_user($u);
     if ($user) {
         //daca user-ul este deja inregistrat, verificam parola
         if(md5($p)==$user['parola']){
