@@ -39,7 +39,8 @@ function login($u, $p) {
     if ($user) {
         //daca user-ul este deja inregistrat, verificam parola
         //if(md5($p)==$user['parola']){
-            return redirect('https://google.ro');
+        echo json_encode(array("sent" => true));
+        return $user;
         //}else{
         //    return null;
         //}
@@ -63,7 +64,6 @@ if ($_POST){
 
     //echo json_encode( $_POST );
     $login_user = login($username,$parola);
-    echo json_encode(array("sent" => true));
 } else {
  // tell the user about error
  echo json_encode(
