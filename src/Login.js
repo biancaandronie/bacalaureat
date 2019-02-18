@@ -32,7 +32,7 @@ class Pop extends Component {
 
         {this.state.showPopup ?
           <Popup
-            text='Close Me'
+            text='Formulaire de connexion'
             closePopup={this.togglePopup.bind(this)}
           />
           : null
