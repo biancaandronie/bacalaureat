@@ -26,7 +26,7 @@ constructor(props) {
                     />
                 </form>
             </div>
-        <button onClick={this.props.closePopup}>sortie</button>
+        <button className='exit' onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>
     );

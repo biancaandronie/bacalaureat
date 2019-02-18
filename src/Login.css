@@ -33,3 +33,23 @@
    padding: 24px 64px 24px 24px;
    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
+
+form{
+    margin-left: 10px;
+    padding: 24px 64px 24px 24px;
+}
+
+#fname{
+    margin-bottom: 15px;
+    margin-top: 34px;
+    width: 100%;
+}
+
+#parola{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.exit{
+    margin-left: 34px;
+}
