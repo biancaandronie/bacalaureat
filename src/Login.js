@@ -5,7 +5,8 @@ class Popup extends Component {
 constructor(props) {
     super(props);
     this.state = {
-      fname: ''
+      fname: '',
+      parola: ''
     }
 }
   render() {
@@ -18,6 +19,10 @@ constructor(props) {
                     <input type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
                            value={this.state.fname }
                            onChange={e => this.setState({ fname: e.target.value })}
+                    />
+                    <input type="text" id="parola" name="password" placeholder="Mot de passe"
+                           value={this.state.parola }
+                           onChange={e => this.setState({ parola: e.target.value })}
                     />
                 </form>
             </div>
