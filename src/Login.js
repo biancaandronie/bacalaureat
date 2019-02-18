@@ -16,7 +16,7 @@ constructor(props) {
           <h1 className='bienvenue'>{this.props.text}</h1>
             <div>
                 <form action="#">
-                    <input type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
+                    <input className='heavy-rain-gradient' type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
                            value={this.state.fname }
                            onChange={e => this.setState({ fname: e.target.value })}
                     /> <br />
