@@ -5,7 +5,7 @@ class Popup extends Component {
     return (
       <div className='popup'>
         <div className='popup_inner'>
-          <h1>{this.props.text}</h1>
+          <h1 className='bienvenue'>{this.props.text}</h1>
         <button onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>

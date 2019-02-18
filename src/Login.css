@@ -20,3 +20,8 @@
   margin: auto;
   background: white;
 }
+.bienvenue{
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  font-size: 27px;
+  text-align: center;
+}
