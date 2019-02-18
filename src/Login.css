@@ -13,15 +13,18 @@
 }
 .popup_inner {
   position: absolute;
-  left: 25%;
-  right: 25%;
-  top: 25%;
-  bottom: 25%;
+  left: 34%;
+  right: 34%;
+  top: 10%;
+  bottom: 4%;
   margin: auto;
-  background: white;
+  background-color: #FFF;
+  border: none;
+  border-radius: 6px;
 }
 .bienvenue{
   font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
   font-size: 27px;
   text-align: center;
+  margin-top: 40px;
 }
