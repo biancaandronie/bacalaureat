@@ -61,7 +61,6 @@ if ($_POST){
     http_response_code(200);
     $username = $_POST['fname'];
     $parola = $_POST['parola'];
-
     //echo json_encode( $_POST );
     $login_user = login($username,$parola);
 } else {
