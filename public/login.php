@@ -21,6 +21,13 @@ function test_data($data) {
     return $data;
 }
 
+function redirect($url) {
+    ob_start();
+    header('Location: '.$url);
+    ob_end_flush();
+    die();
+}
+
 function login($u, $p) {
     $l = conectare();
     $u = test_data($u);
@@ -32,7 +39,7 @@ function login($u, $p) {
     if ($user) {
         //daca user-ul este deja inregistrat, verificam parola
         //if(md5($p)==$user['parola']){
-            return $user;
+            return redirect('https://google.ro');
         //}else{
         //    return null;
         //}
