@@ -19,7 +19,7 @@ constructor(props) {
                     <input type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
                            value={this.state.fname }
                            onChange={e => this.setState({ fname: e.target.value })}
-                    />
+                    /> <br />
                     <input type="text" id="parola" name="password" placeholder="Mot de passe"
                            value={this.state.parola }
                            onChange={e => this.setState({ parola: e.target.value })}
