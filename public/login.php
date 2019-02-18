@@ -52,7 +52,7 @@ if ($_POST){
     // set response code - 200 OK
     http_response_code(200);
     $username = $_POST['fname'];
-    $parola = $_POST['parola']
+    $parola = $_POST['parola'];
 
     //echo json_encode( $_POST );
     $login_user = login($username,$parola);
