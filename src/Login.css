@@ -59,3 +59,11 @@ form{
 #exit{
     margin-left: 34px;
 }
+
+.elev1{
+    width: 16%;
+    height: auto;
+    overflow: hidden;
+    padding-left: 38px;
+    padding-top: 35px;
+}
