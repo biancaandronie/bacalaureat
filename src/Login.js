@@ -5,21 +5,6 @@ import './Login.css';
 
 const API_PATH = 'http://bacalaureat.local/login.php';
 
-function requireAuth(nextState, replaceState) {
-  if (!auth.mailSent())
-    replaceState({ nextPathname: nextState.location.pathname }, '/login')
-}
-
-// And from the route configuration, use the requireAuth function in onEnter...
-<Router history={history}>
-  <Route path="/" component={Popup}>
-    <Route path="login" component={Popup} />
-    <Route path="logout" component={Popup} />
-    <Route path="about" component={Popup} />
-    <Route path="dashboard" component={Popup} onEnter={requireAuth} />
-  </Route>
-</Router>
-
 class Popup extends Component {
 
 constructor(props) {
@@ -44,6 +29,10 @@ handleFormSubmit = e => {
       this.setState( {
         mailSent: result.data.sent
       })
+              if(data.status == 200){
+              this.props.history.push("/");
+              console.log('Successfully Login');
+               }
       console.log(this.state);
     })
     .catch(error => this.setState( { error: error.message } ));
