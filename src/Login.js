@@ -69,7 +69,7 @@ validateForm() {
 
                             <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {this.handleFormSubmit.bind(this)} value="Login">Login</button>
 
-                            <Route path='' render={({match})=>(
+                            <Route path='/videos.php' render={({match})=>(
                                 this.state.mailSent ? ( <Redirect to='/videos.php' />) : (<Redirect to='/' />)
                             )}/>
 
