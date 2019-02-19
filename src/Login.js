@@ -30,7 +30,7 @@ handleFormSubmit = e => {
         mailSent: result.data.sent
       })
               if(result.status == 200){
-              this.props.history.push("/");
+              this.props.history.push("/videos.php");
               console.log('Successfully Login');
                }
       console.log(this.state);
