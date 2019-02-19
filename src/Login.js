@@ -30,13 +30,18 @@ handleFormSubmit = e => {
       })
     .then(result => {
       this.setState( {
-        redirect: true,
         mailSent: result.data.sent
       })
       console.log(this.state);
     })
     .catch(error => this.setState( { error: error.message } ));
 };
+
+setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
 
 renderRedirect = () => {
     if (this.state.redirect) {
@@ -67,7 +72,7 @@ validateForm() {
                             />
                             <div>
                                 {this.renderRedirect()}
-                                <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
+                                <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {e => this.handleFormSubmit(e) && this.setRedirect} value="Login">Login</button>
                             </div>
                             <div>
                                 {this.state.mailSent  &&
