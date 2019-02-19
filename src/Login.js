@@ -67,7 +67,7 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
 
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {this.handleFormSubmit.bind(this)} value="Login">Login</button>
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {this.loginHandle} value="Login">Login</button>
 
                             <Route exact path="/" render={()=>(
                                 this.state.mailSent ? ( <Redirect to='/videos.php' />) : (<Redirect to='/' />)
