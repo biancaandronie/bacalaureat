@@ -68,7 +68,7 @@ validateForm() {
                             />
 
                             <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {this.loginHandle.bind(this)} value="Login">Login</button>
-<Route path='/' render={({match})=>(
+<Route render={({match})=>(
           this.state.loggedIn ? ( <Redirect to='https://www.youtube.com/' />) : (<Redirect to='/aaa' />)
 )}/>
                             <div>
