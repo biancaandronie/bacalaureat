@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-import { Redirect } from 'react-router';
+import { browserHistory } from 'react-router';
 
 const API_PATH = 'http://bacalaureat.local/login.php';
 
@@ -14,8 +14,7 @@ constructor(props) {
       fname: '',
       parola: '',
       mailSent: false,
-      error: null,
-      fireRedirect: false
+      error: null
     }
 }
 
@@ -29,8 +28,8 @@ handleFormSubmit = e => {
       })
     .then(result => {
       this.setState( {
-        fireRedirect: true,
-        mailSent: result.data.sent
+        mailSent: result.data.sent,
+        browserHistory.push('https://google.ro');
       })
       console.log(this.state);
     })
