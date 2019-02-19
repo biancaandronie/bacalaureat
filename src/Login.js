@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-import { browserHistory } from 'react-router';
 
 const API_PATH = 'http://bacalaureat.local/login.php';
 
@@ -29,9 +28,7 @@ handleFormSubmit = e => {
     .then(result => {
       this.setState( {
         mailSent: result.data.sent
-
       })
-      browserHistory.push('https://google.ro');
       console.log(this.state);
     })
     .catch(error => this.setState( { error: error.message } ));
@@ -43,9 +40,6 @@ validateForm() {
 
 
   render() {
-  if(this.state.fireRedirect) {
-          return <Redirect to='https://google.ro'/>
-      }
     return (
       <div className='popup'>
         <div className='popup_inner'>
