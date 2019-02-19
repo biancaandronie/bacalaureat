@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-import { Redirect } from 'react-router-dom'
 
 const API_PATH = 'http://bacalaureat.local/login.php';
 
@@ -14,22 +13,10 @@ constructor(props) {
       fname: '',
       parola: '',
       mailSent: false,
-      error: null,
-      redirect: false
+      error: null
     }
 }
 
-setRedirect = () => {
-    this.setState({
-      redirect: true
-    })
-  }
-
-renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to='https://www.google.com/' />
-    }
-}
 
 handleFormSubmit = e => {
     e.preventDefault();
@@ -69,10 +56,9 @@ validateForm() {
                                    value={this.state.parola }
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
-                            <div>
-                            {this.renderRedirect()}
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {this.setRedirect} value="Login">Login</button>
-                            </div>
+
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {this.props.history.push('/path')} value="Login">Login</button>
+
                             <div>
                                 {this.state.mailSent  &&
                                   <div className="sucsess">Thank you for contacting me.</div>
