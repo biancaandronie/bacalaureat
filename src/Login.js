@@ -62,8 +62,9 @@ validateForm() {
 
                             <div>
                                 {this.state.mailSent  &&
+                                    <BrowserRouter>
                                     <Link to='/videos.php' />
-
+                                    </BrowserRouter>
                                 }
                                 {this.state.error  &&
                                   <div className="error">Sorry we had some problems.</div>
