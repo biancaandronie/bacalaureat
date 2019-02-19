@@ -46,7 +46,7 @@ validateForm() {
 
 
   render() {
-  const { from } = this.props.location.state || '/';
+  const { from } = '/';
   const { fireRedirect } = this.state;
     return (
       <div className='popup'>
