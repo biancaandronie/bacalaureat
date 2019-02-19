@@ -3,6 +3,9 @@ import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
 
+import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
+import Route from 'react-router-dom/Route';
+
 const API_PATH = 'http://bacalaureat.local/login.php';
 
 class Popup extends Component {
@@ -13,8 +16,15 @@ constructor(props) {
       fname: '',
       parola: '',
       mailSent: false,
-      error: null
+      error: null,
+      loggedIn:false
     }
+}
+
+loginHandle = () => {
+    this.setState(prevState => ({
+     loggedIn: !prevState.loggedIn
+    }))
 }
 
 handleFormSubmit = e => {
@@ -41,6 +51,7 @@ validateForm() {
 
   render() {
     return (
+<Router>
       <div className='popup'>
         <div className='popup_inner'>
             <img src={elev1} className="elev1" alt="elev1" width="254" height="191" />
@@ -56,7 +67,11 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
 
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {this.handleFormSubmit.bind(this)} value="Login">Login</button>
+
+                            <Route exact path="/" render={()=>(
+                                this.state.mailSent ? ( <Redirect to='/videos.php' />) : (<Redirect to='/' />)
+                            )}/>
 
                             <div>
                                 {this.state.mailSent  &&
@@ -72,6 +87,7 @@ validateForm() {
         <button id='exit' className='btn winter-neva-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
         </div>
       </div>
+</Router>
     );
   }
 }
