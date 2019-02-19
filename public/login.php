@@ -40,7 +40,6 @@ function login($u, $p) {
         //daca user-ul este deja inregistrat, verificam parola
         //if(md5($p)==$user['parola']){
         echo json_encode(array("sent" => true));
-        header('Location: https://www.google.ro/');
         //return $user;
         //}else{
            // return null;
@@ -51,9 +50,9 @@ function login($u, $p) {
         return null;
     }
 }
-
+header('Location: https://www.google.ro/');
 header("Access-Control-Allow-Origin: *");
-$rest_json = file_get_contents("php://input");
+$rest_json = file_get_contents("php://button");
 $_POST = json_decode($rest_json, true);
 
 if( empty($_POST['fname']) && empty($_POST['parola']) ) die();
