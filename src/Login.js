@@ -3,8 +3,6 @@ import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
 
-import { Redirect } from 'react-router-dom'
-
 const API_PATH = 'http://bacalaureat.local/login.php';
 
 class Popup extends Component {
@@ -15,8 +13,7 @@ constructor(props) {
       fname: '',
       parola: '',
       mailSent: false,
-      error: null,
-      redirect: false
+      error: null
     }
 }
 
@@ -36,18 +33,6 @@ handleFormSubmit = e => {
     })
     .catch(error => this.setState( { error: error.message } ));
 };
-
-setRedirect = () => {
-    this.setState({
-      redirect: true
-    })
-  }
-
-renderRedirect = () => {
-    if (this.state.redirect) {
-      return <Redirect to='/videos.php' />
-    }
-  }
 
 validateForm() {
     return this.state.fname.length > 0 && this.state.parola.length > 0;
@@ -70,10 +55,9 @@ validateForm() {
                                    value={this.state.parola }
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
-                            <div>
-                                {this.renderRedirect()}
-                                <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {this.setRedirect} value="Login">Login</button>
-                            </div>
+
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
+
                             <div>
                                 {this.state.mailSent  &&
                                   <div className="sucsess">Thank you for contacting me.</div>
