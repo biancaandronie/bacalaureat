@@ -61,7 +61,7 @@ validateForm() {
 
                             <div>
                                 {this.state.mailSent  &&
-                                <Redirect to="/your/redirect/page" />
+                                <Router><Redirect to="/your/redirect/page" /></Router>
                                   //<div className="sucsess">Thank you for contacting me.</div>
                                 }
                                 {this.state.error  &&
