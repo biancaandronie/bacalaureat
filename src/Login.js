@@ -19,6 +19,11 @@ constructor(props) {
     }
 }
 
+setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
 
 renderRedirect = () => {
     if (this.state.redirect) {
@@ -36,7 +41,6 @@ handleFormSubmit = e => {
       })
     .then(result => {
       this.setState( {
-        redirect: true,
         mailSent: result.data.sent
       })
       console.log(this.state);
@@ -67,7 +71,7 @@ validateForm() {
                             />
                             <div>
                             {this.renderRedirect()}
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {this.setRedirect} value="Login">Login</button>
                             </div>
                             <div>
                                 {this.state.mailSent  &&
