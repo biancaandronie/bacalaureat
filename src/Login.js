@@ -28,6 +28,7 @@ handleFormSubmit = e => {
     .then(result => {
       this.setState( {
         mailSent: result.data.sent
+        this.props.history.push("https://google.ro");
       })
       console.log(this.state);
     })
@@ -56,7 +57,7 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
 
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle'  onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
 
                             <div>
                                 {this.state.mailSent  &&
