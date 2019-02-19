@@ -46,7 +46,7 @@ validateForm() {
 
 
   render() {
-  const { from } = '/';
+  const { from } = '/videos.php';
   const { fireRedirect } = this.state;
     return (
       <div className='popup'>
