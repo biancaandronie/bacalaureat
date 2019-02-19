@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-import { Link } from 'react-router-dom'
+import { BrowserRouter, Link } from 'react-router-dom'
 
 const API_PATH = 'http://bacalaureat.local/login.php';
 
