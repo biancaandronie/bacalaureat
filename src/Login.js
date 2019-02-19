@@ -69,7 +69,7 @@ validateForm() {
 
                             <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {this.loginHandle} value="Login">Login</button>
 
-                            <Route exact path="/" render={()=>(
+                            <Route exact render={()=>(
                                 this.state.mailSent ? ( <Redirect to='/videos.php' />) : (<Redirect to='/' />)
                             )}/>
 
