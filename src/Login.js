@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
+import { Redirect } from 'react-router';
 
 const API_PATH = 'http://bacalaureat.local/login.php';
 
@@ -40,6 +41,11 @@ validateForm() {
 
 
   render() {
+      if(this.state.mailSent === true){
+          return (<Redirect to="/your/redirect/page" />);
+      }else{
+          return (<div>Login Please</div>);
+      }
     return (
       <div className='popup'>
         <div className='popup_inner'>
