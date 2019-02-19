@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-import { browserHistory } from 'react-router';
+import Link from 'react-router';
 
 const API_PATH = 'http://bacalaureat.local/login.php';
 
@@ -62,7 +62,7 @@ validateForm() {
 
                             <div>
                                 {this.state.mailSent  &&
-                                browserHistory.push("/path")
+                                    <Link to='/videos.php' />
 
                                 }
                                 {this.state.error  &&
