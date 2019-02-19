@@ -57,7 +57,7 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
 
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {this.props.history.push('/path')} value="Login">Login</button>
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {this.props.router.push('/some/path')} value="Login">Login</button>
 
                             <div>
                                 {this.state.mailSent  &&
