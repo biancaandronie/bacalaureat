@@ -2,9 +2,23 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-import { BrowserRouter, Link } from 'react-router-dom'
 
 const API_PATH = 'http://bacalaureat.local/login.php';
+
+function requireAuth(nextState, replaceState) {
+  if (!auth.mailSent())
+    replaceState({ nextPathname: nextState.location.pathname }, '/login')
+}
+
+// And from the route configuration, use the requireAuth function in onEnter...
+<Router history={history}>
+  <Route path="/" component={Popup}>
+    <Route path="login" component={Popup} />
+    <Route path="logout" component={Popup} />
+    <Route path="about" component={Popup} />
+    <Route path="dashboard" component={Popup} onEnter={requireAuth} />
+  </Route>
+</Router>
 
 class Popup extends Component {
 
@@ -57,14 +71,11 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
 
-                                <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
-
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
 
                             <div>
                                 {this.state.mailSent  &&
-                                    <BrowserRouter>
-                                    <Link to='/videos.php' />
-                                    </BrowserRouter>
+                                  <div className="sucsess">Thank you for contacting me.</div>
                                 }
                                 {this.state.error  &&
                                   <div className="error">Sorry we had some problems.</div>
