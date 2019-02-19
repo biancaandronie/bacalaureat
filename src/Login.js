@@ -55,7 +55,8 @@ validateForm() {
                                    value={this.state.parola }
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
+
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle'  onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
 
                             <div>
                                 {this.state.mailSent  &&
