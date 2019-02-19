@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-
+import { Redirect } from 'react-router';
 const API_PATH = 'http://bacalaureat.local/login.php';
 
 class Popup extends Component {
@@ -13,8 +13,14 @@ constructor(props) {
       fname: '',
       parola: '',
       mailSent: false,
-      error: null
+      error: null,
+      fireRedirect: false
     }
+}
+
+submitForm = (e) => {
+    e.preventDefault()
+    this.setState({ fireRedirect: true })
 }
 
 handleFormSubmit = e => {
@@ -29,10 +35,6 @@ handleFormSubmit = e => {
       this.setState( {
         mailSent: result.data.sent
       })
-              if(result.status == 200){
-              this.props.history.push("/videos.php");
-              console.log('Successfully Login');
-               }
       console.log(this.state);
     })
     .catch(error => this.setState( { error: error.message } ));
@@ -44,13 +46,15 @@ validateForm() {
 
 
   render() {
+  const { from } = this.props.location.state || '/';
+  const { fireRedirect } = this.state;
     return (
       <div className='popup'>
         <div className='popup_inner'>
             <img src={elev1} className="elev1" alt="elev1" width="254" height="191" />
                 <h1 className='bienvenue'>{this.props.text}</h1>
                     <div>
-                        <form action="#">
+                        <form action="#" onSubmit={this.submitForm}>
                             <input className='winter-neva-gradient' type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
                                    value={this.state.fname }
                                    onChange={e => this.setState({ fname: e.target.value })}
@@ -60,8 +64,10 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
 
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
-
+                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
+                            {fireRedirect && (
+                                      <Redirect to={from || '/thank-you'}/>
+                            )}
                             <div>
                                 {this.state.mailSent  &&
                                   <div className="sucsess">Thank you for contacting me.</div>
