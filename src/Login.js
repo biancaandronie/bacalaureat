@@ -27,7 +27,7 @@ handleFormSubmit = e => {
       })
     .then(result => {
       this.setState( {
-        mailSent: result.data.sent
+        mailSent: result.data.sent,
         this.props.history.push("https://google.ro");
       })
       console.log(this.state);
