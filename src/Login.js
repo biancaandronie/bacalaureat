@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-import { Route, Redirect } from 'react-router';
+
 const API_PATH = 'http://bacalaureat.local/login.php';
 
 class Popup extends Component {
@@ -56,18 +56,7 @@ validateForm() {
                                    onChange={e => this.setState({ parola: e.target.value })}
                             />
 
-
                             <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
-
-                            <Route path='' render={()=>(
-                                this.state.mailSent ? ( <Redirect
-                                                              to={{
-                                                                pathname: "/login",
-                                                                search: "?utm=your+face",
-                                                                state: { referrer: currentLocation }
-                                                              }}
-                                                            />: (<Redirect to='/aaa' />)
-                            )}/>
 
                             <div>
                                 {this.state.mailSent  &&
