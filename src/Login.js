@@ -61,17 +61,13 @@ validateForm() {
 
                             <div>
                                 {this.state.mailSent  &&
-                                  <div className="sucsess">Thank you for contacting me.</div>
+                                <Redirect to="/your/redirect/page" />
+                                  //<div className="sucsess">Thank you for contacting me.</div>
                                 }
                                 {this.state.error  &&
                                   <div className="error">Sorry we had some problems.</div>
                                 }
                             </div>
-                            if(this.state.mailSent === true){
-                                      return (<Redirect to="/your/redirect/page" />);
-                                  }else{
-                                      return (<div>Login Please</div>);
-                                  }
                         </form>
                     </div>
 
