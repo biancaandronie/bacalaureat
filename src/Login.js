@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import axios from 'axios';
 import './Login.css';
-import { Redirect } from 'react-router';
 
 const API_PATH = 'http://bacalaureat.local/login.php';
 
@@ -61,8 +60,7 @@ validateForm() {
 
                             <div>
                                 {this.state.mailSent  &&
-                                <Router><Redirect to="/your/redirect/page" /></Router>
-                                  //<div className="sucsess">Thank you for contacting me.</div>
+                                  <div className="sucsess">Thank you for contacting me.</div>
                                 }
                                 {this.state.error  &&
                                   <div className="error">Sorry we had some problems.</div>
