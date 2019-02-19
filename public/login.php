@@ -40,8 +40,7 @@ function login($u, $p) {
         //daca user-ul este deja inregistrat, verificam parola
         //if(md5($p)==$user['parola']){
         echo json_encode(array("sent" => true));
-        $url = 'https://google.ro';
-        redirect($url);
+        header('Location: https://www.google.ro/');
         //return $user;
         //}else{
            // return null;
