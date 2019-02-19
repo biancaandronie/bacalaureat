@@ -41,11 +41,6 @@ validateForm() {
 
 
   render() {
-      if(this.state.mailSent === true){
-          return (<Redirect to="/your/redirect/page" />);
-      }else{
-          return (<div>Login Please</div>);
-      }
     return (
       <div className='popup'>
         <div className='popup_inner'>
@@ -72,6 +67,11 @@ validateForm() {
                                   <div className="error">Sorry we had some problems.</div>
                                 }
                             </div>
+                            if(this.state.mailSent === true){
+                                      return (<Redirect to="/your/redirect/page" />);
+                                  }else{
+                                      return (<div>Login Please</div>);
+                                  }
                         </form>
                     </div>
 
