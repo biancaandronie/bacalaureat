@@ -45,7 +45,7 @@ setRedirect = () => {
 
 renderRedirect = () => {
     if (this.state.redirect) {
-      return <Redirect to='/target' />
+      return <Redirect to='/videos.php' />
     }
   }
 
