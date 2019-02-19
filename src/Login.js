@@ -29,7 +29,7 @@ handleFormSubmit = e => {
       this.setState( {
         mailSent: result.data.sent
       })
-              if(data.status == 200){
+              if(result.status == 200){
               this.props.history.push("/");
               console.log('Successfully Login');
                }
