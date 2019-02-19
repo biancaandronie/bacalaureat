@@ -28,9 +28,10 @@ handleFormSubmit = e => {
       })
     .then(result => {
       this.setState( {
-        mailSent: result.data.sent,
-        browserHistory.push('https://google.ro')
+        mailSent: result.data.sent
+
       })
+      browserHistory.push('https://google.ro');
       console.log(this.state);
     })
     .catch(error => this.setState( { error: error.message } ));
