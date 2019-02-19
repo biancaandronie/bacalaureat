@@ -50,7 +50,6 @@ function login($u, $p) {
         return null;
     }
 }
-header('Location: https://www.google.ro/');
 header("Access-Control-Allow-Origin: *");
 $rest_json = file_get_contents("php://button");
 $_POST = json_decode($rest_json, true);
