@@ -72,7 +72,7 @@ validateForm() {
                             />
                             <div>
                                 {this.renderRedirect()}
-                                <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {e => this.handleFormSubmit(e) && this.setRedirect} value="Login">Login</button>
+                                <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' onClick = {this.setRedirect} value="Login">Login</button>
                             </div>
                             <div>
                                 {this.state.mailSent  &&
