@@ -11,8 +11,8 @@ class Popup extends Component {
 constructor(props) {
     super(props);
     this.state = {
-      username: 'bianca',
-      password: 'parola',
+      username: '',
+      password: '',
       redirectToReferrer: false
     }
     this.login = this.login.bind(this);
