@@ -247,7 +247,7 @@ class App extends Component {
                                     backgroundRepeat: 'no-repeat',
                                     padding: '12px 20px 12px 40px',
 
-                                }})} placeholder={this.state.placeholder} autofocus />
+                                }})} placeholder={this.state.placeholder} autoFocus />
                             {isOpen ? (
                               <div>
                                 {results
