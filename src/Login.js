@@ -41,7 +41,7 @@ onChange(e){
   render() {
 
     if (this.state.redirectToReferrer || sessionStorage.getItem('userData')){
-        return (<Redirect to={'/videos.php'}/>)
+        return (<Redirect to={'/aaa'}/>)
     }
 
     return (
