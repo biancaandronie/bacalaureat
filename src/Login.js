@@ -21,14 +21,16 @@ constructor(props) {
 
 login() {
     if(this.state.username && this.state.password){
-    PostData('login',this.state).then((result) => {
-    let responseJson = result;
-    console.log(responseJson);
-    if(responseJson.userData){
-    sessionStorage.setItem('userData',JSON.stringify(responseJson));
-    this.setState({redirectToReferrer: true});
-    }
-    });
+        PostData('login',this.state).then((result) => {
+        let responseJson = result;
+        console.log(responseJson);
+        if(responseJson.userData){
+            sessionStorage.setItem('userData',JSON.stringify(responseJson));
+            this.setState({redirectToReferrer: true});
+            } else {
+            console.log('Login bad');
+            }
+        });
     }
 }
 
