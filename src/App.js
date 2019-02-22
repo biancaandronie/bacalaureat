@@ -206,13 +206,13 @@ class App extends Component {
             </div>
           </div>
 
-          <div class="notice-streamer">
-            <div class="carousel-fullscreen-sidebar">
-                <div class="notice-streamer__content">
-                    <div class="notice-streamer__headline">
+          <div className ="notice-streamer">
+            <div className ="carousel-fullscreen-sidebar">
+                <div className ="notice-streamer__content">
+                    <div className ="notice-streamer__headline">
                         Prêt à commencer?
                     </div>
-                    <div class="notice-streamer__text">
+                    <div className ="notice-streamer__text">
                         Apprenez quelque chose de nouveau aujourd`hui. Rechercher des tutoriels.
                     </div>
                 </div>
