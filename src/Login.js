@@ -29,11 +29,11 @@ login() {
     }
     });
     }
+    console.log(this.state);
 }
 
 onChange(e){
     this.setState({[e.target.name]:e.target.value});
-    console.log(this.state);
 }
 
   render() {
