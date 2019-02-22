@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import './Login.css';
 import {Redirect} from 'react-router-dom';
-import {PostData} from './services/PostData';
+import {PostData} from './service/PostData';
 
 //const API_PATH = 'http://bacalaureat.local/login.php';
 
