@@ -1,106 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e78ebda-43e5-4c9d-891b-ccb0200898d4" name="Default Changelist" comment="[primul com]">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Bianca.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/.env.old" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Console/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Exceptions/Handler.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Kernel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Middleware/Authenticate.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Middleware/EncryptCookies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Middleware/TrimStrings.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Middleware/TrustProxies.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Providers/AppServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Providers/AuthServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Providers/BroadcastServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Providers/EventServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/Providers/RouteServiceProvider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/app/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/artisan" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/bootstrap/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/bootstrap/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/broadcasting.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/filesystems.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/hashing.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/logging.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/mail.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/queue.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/services.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/config/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/database/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/database/factories/UserFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/database/seeds/DatabaseSeeder.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/phpunit.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/svg/403.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/svg/404.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/svg/500.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/svg/503.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/public/web.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/js/components/ExampleComponent.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/lang/en/auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/lang/en/pagination.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/lang/en/passwords.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/lang/en/validation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/sass/_variables.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/sass/app.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/resources/views/welcome.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/routes/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/routes/channels.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/routes/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/routes/web.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/server.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/app/public/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/framework/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/framework/cache/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/framework/cache/data/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/framework/sessions/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/framework/testing/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/framework/views/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/storage/logs/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/tests/CreatesApplication.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/tests/TestCase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/tests/Unit/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bacalaureat/webpack.mix.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+    <list default="true" id="9e78ebda-43e5-4c9d-891b-ccb0200898d4" name="Default Changelist" comment="wdasda">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/api/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/api/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/user.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +13,109 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="214" column="35" selection-start-line="214" selection-start-column="35" selection-end-line="214" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/PostData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/api/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/api/config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/api/user.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="79" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>gte mso 9</find>
+      <find>128</find>
+      <find>container</find>
+      <find>sty</find>
+      <find>item</find>
+      <find>items</find>
+      <find>hits</find>
+      <find>imag</find>
+      <find>background</find>
+      <find>contai</find>
+      <find>style</find>
+      <find>sectionStyle</find>
+      <find>class</find>
+      <find>autofo</find>
+      <find>class</find>
+      <find>base_url</find>
+      <find>token</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>className</replace>
+      <replace>results</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\Bianca\IdeaProjects\bacalaureat\src</dir>
+      <dir>C:\Users\Bianca\IdeaProjects\bacalaureat</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -132,13 +138,39 @@
         <option value="$PROJECT_DIR$/bacalaureat/resources/js/components/ExampleComponent.vue" />
         <option value="$PROJECT_DIR$/bacalaureat/resources/js/components/Message.js" />
         <option value="$PROJECT_DIR$/bacalaureat/resources/js/app.js" />
+        <option value="$PROJECT_DIR$/src/App.test.js" />
+        <option value="$PROJECT_DIR$/src/components/ControlledCarousel.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/Suggestions.js" />
+        <option value="$PROJECT_DIR$/src/Search.js" />
+        <option value="$PROJECT_DIR$/src/SearchBox.js" />
+        <option value="$PROJECT_DIR$/src/components/Buttons/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Modal/index.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/public/api/contact/index.php" />
+        <option value="$PROJECT_DIR$/src/Login.css" />
+        <option value="$PROJECT_DIR$/public/login.php" />
+        <option value="$PROJECT_DIR$/public/config.php" />
+        <option value="$PROJECT_DIR$/src/Login.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/service/PostData.js" />
+        <option value="$PROJECT_DIR$/public/api/config.php" />
+        <option value="$PROJECT_DIR$/public/api/login.php" />
+        <option value="$PROJECT_DIR$/public/api/user.json" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="15" />
-    <option name="y" value="30" />
-    <option name="width" value="1890" />
+    <option name="x" value="298" />
+    <option name="y" value="199" />
+    <option name="width" value="663" />
     <option name="height" value="960" />
   </component>
   <component name="ProjectView">
@@ -146,8 +178,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,23 +185,71 @@
               <item name="bacalaureat" type="b2602c69:ProjectViewProjectNode" />
               <item name="bacalaureat" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bacalaureat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bacalaureat" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bacalaureat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bacalaureat" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="ws" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bacalaureat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bacalaureat" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="ws" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bacalaureat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bacalaureat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bacalaureat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bacalaureat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bacalaureat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bacalaureat" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="Slim" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bacalaureat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bacalaureat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544870979418" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550822672832" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/L3" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Bianca\IdeaProjects\bacalaureat\public\api" />
+      <recent name="C:\Users\Bianca\IdeaProjects\bacalaureat\src" />
+      <recent name="C:\Users\Bianca\IdeaProjects\bacalaureat\public" />
       <recent name="C:\Users\Bianca\IdeaProjects\bacalaureat\bacalaureat\resources\js\components" />
       <recent name="C:\Users\Bianca\IdeaProjects\bacalaureat\bacalaureat\resources\js" />
-      <recent name="C:\Users\Bianca\IdeaProjects\bacalaureat\bacalaureat" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -197,27 +275,357 @@
       <option name="presentableId" value="Default" />
       <updated>1544863220417</updated>
     </task>
-    <task id="LOCAL-00001" summary="[primul com]">
-      <created>1544864525744</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
+    <task id="LOCAL-00383" summary="wdasda">
+      <created>1550569242168</created>
+      <option name="number" value="00383" />
+      <option name="presentableId" value="LOCAL-00383" />
       <option name="project" value="LOCAL" />
-      <updated>1544864525744</updated>
+      <updated>1550569242168</updated>
     </task>
-    <task id="LOCAL-00002" summary="[2 com]">
-      <created>1544866058468</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
+    <task id="LOCAL-00384" summary="wdasda">
+      <created>1550569326379</created>
+      <option name="number" value="00384" />
+      <option name="presentableId" value="LOCAL-00384" />
       <option name="project" value="LOCAL" />
-      <updated>1544866058468</updated>
+      <updated>1550569326379</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00385" summary="wdasda">
+      <created>1550569429951</created>
+      <option name="number" value="00385" />
+      <option name="presentableId" value="LOCAL-00385" />
+      <option name="project" value="LOCAL" />
+      <updated>1550569429951</updated>
+    </task>
+    <task id="LOCAL-00386" summary="wdasda">
+      <created>1550569625206</created>
+      <option name="number" value="00386" />
+      <option name="presentableId" value="LOCAL-00386" />
+      <option name="project" value="LOCAL" />
+      <updated>1550569625206</updated>
+    </task>
+    <task id="LOCAL-00387" summary="wdasda">
+      <created>1550569689402</created>
+      <option name="number" value="00387" />
+      <option name="presentableId" value="LOCAL-00387" />
+      <option name="project" value="LOCAL" />
+      <updated>1550569689402</updated>
+    </task>
+    <task id="LOCAL-00388" summary="wdasda">
+      <created>1550574095912</created>
+      <option name="number" value="00388" />
+      <option name="presentableId" value="LOCAL-00388" />
+      <option name="project" value="LOCAL" />
+      <updated>1550574095913</updated>
+    </task>
+    <task id="LOCAL-00389" summary="wdasda">
+      <created>1550574194078</created>
+      <option name="number" value="00389" />
+      <option name="presentableId" value="LOCAL-00389" />
+      <option name="project" value="LOCAL" />
+      <updated>1550574194078</updated>
+    </task>
+    <task id="LOCAL-00390" summary="wdasda">
+      <created>1550574312963</created>
+      <option name="number" value="00390" />
+      <option name="presentableId" value="LOCAL-00390" />
+      <option name="project" value="LOCAL" />
+      <updated>1550574312963</updated>
+    </task>
+    <task id="LOCAL-00391" summary="wdasda">
+      <created>1550574688186</created>
+      <option name="number" value="00391" />
+      <option name="presentableId" value="LOCAL-00391" />
+      <option name="project" value="LOCAL" />
+      <updated>1550574688186</updated>
+    </task>
+    <task id="LOCAL-00392" summary="wdasda">
+      <created>1550574854654</created>
+      <option name="number" value="00392" />
+      <option name="presentableId" value="LOCAL-00392" />
+      <option name="project" value="LOCAL" />
+      <updated>1550574854654</updated>
+    </task>
+    <task id="LOCAL-00393" summary="wdasda">
+      <created>1550575999980</created>
+      <option name="number" value="00393" />
+      <option name="presentableId" value="LOCAL-00393" />
+      <option name="project" value="LOCAL" />
+      <updated>1550575999980</updated>
+    </task>
+    <task id="LOCAL-00394" summary="wdasda">
+      <created>1550576065922</created>
+      <option name="number" value="00394" />
+      <option name="presentableId" value="LOCAL-00394" />
+      <option name="project" value="LOCAL" />
+      <updated>1550576065922</updated>
+    </task>
+    <task id="LOCAL-00395" summary="wdasda">
+      <created>1550576116741</created>
+      <option name="number" value="00395" />
+      <option name="presentableId" value="LOCAL-00395" />
+      <option name="project" value="LOCAL" />
+      <updated>1550576116741</updated>
+    </task>
+    <task id="LOCAL-00396" summary="wdasda">
+      <created>1550576313901</created>
+      <option name="number" value="00396" />
+      <option name="presentableId" value="LOCAL-00396" />
+      <option name="project" value="LOCAL" />
+      <updated>1550576313902</updated>
+    </task>
+    <task id="LOCAL-00397" summary="wdasda">
+      <created>1550576408759</created>
+      <option name="number" value="00397" />
+      <option name="presentableId" value="LOCAL-00397" />
+      <option name="project" value="LOCAL" />
+      <updated>1550576408759</updated>
+    </task>
+    <task id="LOCAL-00398" summary="wdasda">
+      <created>1550576574089</created>
+      <option name="number" value="00398" />
+      <option name="presentableId" value="LOCAL-00398" />
+      <option name="project" value="LOCAL" />
+      <updated>1550576574089</updated>
+    </task>
+    <task id="LOCAL-00399" summary="wdasda">
+      <created>1550594490474</created>
+      <option name="number" value="00399" />
+      <option name="presentableId" value="LOCAL-00399" />
+      <option name="project" value="LOCAL" />
+      <updated>1550594490475</updated>
+    </task>
+    <task id="LOCAL-00400" summary="wdasda">
+      <created>1550594579119</created>
+      <option name="number" value="00400" />
+      <option name="presentableId" value="LOCAL-00400" />
+      <option name="project" value="LOCAL" />
+      <updated>1550594579119</updated>
+    </task>
+    <task id="LOCAL-00401" summary="wdasda">
+      <created>1550594948859</created>
+      <option name="number" value="00401" />
+      <option name="presentableId" value="LOCAL-00401" />
+      <option name="project" value="LOCAL" />
+      <updated>1550594948860</updated>
+    </task>
+    <task id="LOCAL-00402" summary="wdasda">
+      <created>1550595189372</created>
+      <option name="number" value="00402" />
+      <option name="presentableId" value="LOCAL-00402" />
+      <option name="project" value="LOCAL" />
+      <updated>1550595189372</updated>
+    </task>
+    <task id="LOCAL-00403" summary="wdasda">
+      <created>1550595288785</created>
+      <option name="number" value="00403" />
+      <option name="presentableId" value="LOCAL-00403" />
+      <option name="project" value="LOCAL" />
+      <updated>1550595288785</updated>
+    </task>
+    <task id="LOCAL-00404" summary="wdasda">
+      <created>1550595343067</created>
+      <option name="number" value="00404" />
+      <option name="presentableId" value="LOCAL-00404" />
+      <option name="project" value="LOCAL" />
+      <updated>1550595343067</updated>
+    </task>
+    <task id="LOCAL-00405" summary="wdasda">
+      <created>1550595665290</created>
+      <option name="number" value="00405" />
+      <option name="presentableId" value="LOCAL-00405" />
+      <option name="project" value="LOCAL" />
+      <updated>1550595665290</updated>
+    </task>
+    <task id="LOCAL-00406" summary="wdasda">
+      <created>1550596459862</created>
+      <option name="number" value="00406" />
+      <option name="presentableId" value="LOCAL-00406" />
+      <option name="project" value="LOCAL" />
+      <updated>1550596459862</updated>
+    </task>
+    <task id="LOCAL-00407" summary="wdasda">
+      <created>1550596607896</created>
+      <option name="number" value="00407" />
+      <option name="presentableId" value="LOCAL-00407" />
+      <option name="project" value="LOCAL" />
+      <updated>1550596607896</updated>
+    </task>
+    <task id="LOCAL-00408" summary="wdasda">
+      <created>1550596777975</created>
+      <option name="number" value="00408" />
+      <option name="presentableId" value="LOCAL-00408" />
+      <option name="project" value="LOCAL" />
+      <updated>1550596777975</updated>
+    </task>
+    <task id="LOCAL-00409" summary="wdasda">
+      <created>1550596867870</created>
+      <option name="number" value="00409" />
+      <option name="presentableId" value="LOCAL-00409" />
+      <option name="project" value="LOCAL" />
+      <updated>1550596867870</updated>
+    </task>
+    <task id="LOCAL-00410" summary="wdasda">
+      <created>1550596943228</created>
+      <option name="number" value="00410" />
+      <option name="presentableId" value="LOCAL-00410" />
+      <option name="project" value="LOCAL" />
+      <updated>1550596943228</updated>
+    </task>
+    <task id="LOCAL-00411" summary="wdasda">
+      <created>1550597020054</created>
+      <option name="number" value="00411" />
+      <option name="presentableId" value="LOCAL-00411" />
+      <option name="project" value="LOCAL" />
+      <updated>1550597020054</updated>
+    </task>
+    <task id="LOCAL-00412" summary="wdasda">
+      <created>1550597486781</created>
+      <option name="number" value="00412" />
+      <option name="presentableId" value="LOCAL-00412" />
+      <option name="project" value="LOCAL" />
+      <updated>1550597486781</updated>
+    </task>
+    <task id="LOCAL-00413" summary="wdasda">
+      <created>1550597555291</created>
+      <option name="number" value="00413" />
+      <option name="presentableId" value="LOCAL-00413" />
+      <option name="project" value="LOCAL" />
+      <updated>1550597555291</updated>
+    </task>
+    <task id="LOCAL-00414" summary="wdasda">
+      <created>1550598203684</created>
+      <option name="number" value="00414" />
+      <option name="presentableId" value="LOCAL-00414" />
+      <option name="project" value="LOCAL" />
+      <updated>1550598203684</updated>
+    </task>
+    <task id="LOCAL-00415" summary="wdasda">
+      <created>1550598362098</created>
+      <option name="number" value="00415" />
+      <option name="presentableId" value="LOCAL-00415" />
+      <option name="project" value="LOCAL" />
+      <updated>1550598362098</updated>
+    </task>
+    <task id="LOCAL-00416" summary="wdasda">
+      <created>1550598428689</created>
+      <option name="number" value="00416" />
+      <option name="presentableId" value="LOCAL-00416" />
+      <option name="project" value="LOCAL" />
+      <updated>1550598428689</updated>
+    </task>
+    <task id="LOCAL-00417" summary="wdasda">
+      <created>1550598530343</created>
+      <option name="number" value="00417" />
+      <option name="presentableId" value="LOCAL-00417" />
+      <option name="project" value="LOCAL" />
+      <updated>1550598530343</updated>
+    </task>
+    <task id="LOCAL-00418" summary="wdasda">
+      <created>1550598661856</created>
+      <option name="number" value="00418" />
+      <option name="presentableId" value="LOCAL-00418" />
+      <option name="project" value="LOCAL" />
+      <updated>1550598661856</updated>
+    </task>
+    <task id="LOCAL-00419" summary="wdasda">
+      <created>1550599100171</created>
+      <option name="number" value="00419" />
+      <option name="presentableId" value="LOCAL-00419" />
+      <option name="project" value="LOCAL" />
+      <updated>1550599100171</updated>
+    </task>
+    <task id="LOCAL-00420" summary="wdasda">
+      <created>1550599252499</created>
+      <option name="number" value="00420" />
+      <option name="presentableId" value="LOCAL-00420" />
+      <option name="project" value="LOCAL" />
+      <updated>1550599252499</updated>
+    </task>
+    <task id="LOCAL-00421" summary="wdasda">
+      <created>1550599291358</created>
+      <option name="number" value="00421" />
+      <option name="presentableId" value="LOCAL-00421" />
+      <option name="project" value="LOCAL" />
+      <updated>1550599291358</updated>
+    </task>
+    <task id="LOCAL-00422" summary="wdasda">
+      <created>1550599377428</created>
+      <option name="number" value="00422" />
+      <option name="presentableId" value="LOCAL-00422" />
+      <option name="project" value="LOCAL" />
+      <updated>1550599377428</updated>
+    </task>
+    <task id="LOCAL-00423" summary="wdasda">
+      <created>1550599656447</created>
+      <option name="number" value="00423" />
+      <option name="presentableId" value="LOCAL-00423" />
+      <option name="project" value="LOCAL" />
+      <updated>1550599656447</updated>
+    </task>
+    <task id="LOCAL-00424" summary="wdasda">
+      <created>1550599753235</created>
+      <option name="number" value="00424" />
+      <option name="presentableId" value="LOCAL-00424" />
+      <option name="project" value="LOCAL" />
+      <updated>1550599753235</updated>
+    </task>
+    <task id="LOCAL-00425" summary="wdasda">
+      <created>1550599832780</created>
+      <option name="number" value="00425" />
+      <option name="presentableId" value="LOCAL-00425" />
+      <option name="project" value="LOCAL" />
+      <updated>1550599832780</updated>
+    </task>
+    <task id="LOCAL-00426" summary="wdasda">
+      <created>1550599888494</created>
+      <option name="number" value="00426" />
+      <option name="presentableId" value="LOCAL-00426" />
+      <option name="project" value="LOCAL" />
+      <updated>1550599888494</updated>
+    </task>
+    <task id="LOCAL-00427" summary="add login">
+      <created>1550820607741</created>
+      <option name="number" value="00427" />
+      <option name="presentableId" value="LOCAL-00427" />
+      <option name="project" value="LOCAL" />
+      <updated>1550820607742</updated>
+    </task>
+    <task id="LOCAL-00428" summary="wdasda">
+      <created>1550820696508</created>
+      <option name="number" value="00428" />
+      <option name="presentableId" value="LOCAL-00428" />
+      <option name="project" value="LOCAL" />
+      <updated>1550820696508</updated>
+    </task>
+    <task id="LOCAL-00429" summary="wdasda">
+      <created>1550821431012</created>
+      <option name="number" value="00429" />
+      <option name="presentableId" value="LOCAL-00429" />
+      <option name="project" value="LOCAL" />
+      <updated>1550821431012</updated>
+    </task>
+    <task id="LOCAL-00430" summary="wdasda">
+      <created>1550821526006</created>
+      <option name="number" value="00430" />
+      <option name="presentableId" value="LOCAL-00430" />
+      <option name="project" value="LOCAL" />
+      <updated>1550821526006</updated>
+    </task>
+    <task id="LOCAL-00431" summary="wdasda">
+      <created>1550821802180</created>
+      <option name="number" value="00431" />
+      <option name="presentableId" value="LOCAL-00431" />
+      <option name="project" value="LOCAL" />
+      <updated>1550821802180</updated>
+    </task>
+    <option name="localTasksCounter" value="432" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23238866" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23481782" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -231,20 +639,20 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.053285968" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.053285968" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.08348135" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.24939272" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.32955465" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2769231" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19838056" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -258,21 +666,23 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.053285968" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.053285968" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.08348135" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Ant Build" order="6" weight="0.24939272" />
+      <window_info anchor="right" id="Maven" order="7" weight="0.32955465" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.php" />
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -299,140 +709,299 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[primul com]" />
+    <MESSAGE value="added semicolon" />
+    <MESSAGE value="change divStyle in position absolute" />
+    <MESSAGE value="remove" />
+    <MESSAGE value="sans serif" />
+    <MESSAGE value="added search component" />
+    <MESSAGE value="API URL" />
+    <MESSAGE value="added search box" />
+    <MESSAGE value="bun" />
+    <MESSAGE value="rename videos" />
+    <MESSAGE value="popup" />
+    <MESSAGE value="create login.js" />
+    <MESSAGE value="call child" />
+    <MESSAGE value="button css" />
+    <MESSAGE value="buton complet in header" />
+    <MESSAGE value="button login complete" />
+    <MESSAGE value="un comentariu" />
+    <MESSAGE value="scrolling popup" />
+    <MESSAGE value="something" />
+    <MESSAGE value="xasda" />
     <MESSAGE value="[2 com]" />
-    <option name="LAST_COMMIT_MESSAGE" value="[2 com]" />
+    <MESSAGE value="2/19" />
+    <MESSAGE value="initial" />
+    <MESSAGE value="added type password" />
+    <MESSAGE value="add login" />
+    <MESSAGE value="wdasda" />
+    <option name="LAST_COMMIT_MESSAGE" value="wdasda" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bacalaureat/server.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/assets/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/assets/js/index.html" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/index.js" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/components/ExampleComponent.vue" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/components/Message.js" />
+    <entry file="file://$PROJECT_DIR$/config.js" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/bootstrap.js" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/webpack.mix.js" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/public/js/app.js" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/public/css/app.css" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/public/index.php" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/components/style.css" />
+    <entry file="file://$PROJECT_DIR$/index.js" />
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/App.js" />
+    <entry file="file://$PROJECT_DIR$/public/manifest.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpinfo.php">
+    <entry file="file://$PROJECT_DIR$/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/phpunit.xml">
+    <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/assets/js/App.js">
+    <entry file="file://$PROJECT_DIR$/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/crop1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/imag.png" />
+    <entry file="file://$PROJECT_DIR$/src/logo.svg" />
+    <entry file="file://$PROJECT_DIR$/src/components/ControlledCarousel.js" />
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/c1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/stg.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/bac1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/bac4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/bac5.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/math1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/chemistry1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Suggestions.js" />
+    <entry file="file://$PROJECT_DIR$/src/Downshift.js" />
+    <entry file="file://$PROJECT_DIR$/public/videos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/assets/js/config.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Modal/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Buttons/index.js" />
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        <state relative-caret-position="140">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/assets/js/index.js">
+    <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+        <state relative-caret-position="7904">
+          <caret line="416" column="61" selection-start-line="416" selection-start-column="61" selection-end-line="416" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/assets/js/style.css">
+    <entry file="file://$PROJECT_DIR$/public/api/contact/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+        <state relative-caret-position="171">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/assets/js/components/Message.js">
+    <entry file="file://$PROJECT_DIR$/src/Login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="500">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/assets/js/index.html">
+    <entry file="file://$PROJECT_DIR$/public/api/Slim/Environment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/index.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/components/ExampleComponent.vue">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="214" column="35" selection-start-line="214" selection-start-column="35" selection-end-line="214" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/ws/lib/websocket-server.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/components/Message.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/ws/lib/websocket.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="76">
+          <caret line="100" column="19" lean-forward="true" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/App.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
+    <entry file="file://$PROJECT_DIR$/src/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="247">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/webpack.mix.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/public/js/app.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/public/css/app.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/public/index.php">
+    <entry file="file://$PROJECT_DIR$/public/api/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-743" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/components/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3610">
-          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+        <state relative-caret-position="17">
+          <caret line="24" column="47" lean-forward="true" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/public/api/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+        <state relative-caret-position="171">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/service/PostData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="171">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bacalaureat/resources/js/App.js">
+    <entry file="file://$PROJECT_DIR$/public/api/user.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="79" />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>bacalaureat</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
