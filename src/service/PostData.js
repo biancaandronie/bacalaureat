@@ -6,7 +6,7 @@ export function PostData(type, userData) {
 method: 'POST',
 body: JSON.stringify(userData)
 })
-.then((response) => response.json())
+//.then((response) => response.json())
 .then((res) => {
  resolve(res);
 })
