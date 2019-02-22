@@ -1,73 +1,61 @@
 import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
-import axios from 'axios';
 import './Login.css';
+import {Redirect} from 'react-router-dom';
+import {PostData} from './services/PostData';
 
-const API_PATH = 'http://bacalaureat.local/login.php';
+//const API_PATH = 'http://bacalaureat.local/login.php';
 
 class Popup extends Component {
 
 constructor(props) {
     super(props);
     this.state = {
-      fname: '',
-      parola: '',
-      mailSent: false,
-      error: null
+      username: '',
+      password: '',
+      redirectToReferrer: false
+    }
+    this.login = this.login.bind(this);
+    this.onChange = this.onChange.bind(this);
+}
+
+login() {
+    if(this.state.username && this.state.password){
+    PostData('login',this.state).then((result) => {
+    let responseJson = result;
+    if(responseJson.userData){
+    sessionStorage.setItem('userData',JSON.stringify(responseJson));
+    this.setState({redirectToReferrer: true});
+    }
+    });
     }
 }
 
-handleFormSubmit = e => {
-    e.preventDefault();
-    axios({
-        method: 'post',
-        url: `${API_PATH}`,
-        headers: { 'content-type': 'application/json' },
-        data: this.state
-      })
-    .then(result => {
-      this.setState( {
-        mailSent: result.data.sent
-      })
-      console.log(this.state);
-    })
-    .catch(error => this.setState( { error: error.message } ));
-};
-
-validateForm() {
-    return this.state.fname.length > 0 && this.state.parola.length > 0;
+onChange(e){
+    this.setState({[e.target.name]:e.target.value});
 }
 
-
   render() {
+
+    if (this.state.redirectToReferrer || sessionStorage.getItem('userData')){
+        return (<Redirect to={'/videos.php'}/>)
+    }
+
     return (
       <div className='popup'>
         <div className='popup_inner'>
             <img src={elev1} className="elev1" alt="elev1" width="254" height="191" />
                 <h1 className='bienvenue'>{this.props.text}</h1>
-                    <div>
-                        <form action="#">
-                            <input className='winter-neva-gradient' type="text" id="fname" name="firstname" placeholder="Nom d'utilisateur"
-                                   value={this.state.fname }
-                                   onChange={e => this.setState({ fname: e.target.value })}
-                            /> <br />
-                            <input className='winter-neva-gradient' type="password" id="parola" name="password" placeholder="Mot de passe"
-                                   value={this.state.parola }
-                                   onChange={e => this.setState({ parola: e.target.value })}
-                            />
-
-                            <button type="submit" id='log' className='btn winter-neva-gradient rounded-circle' disabled={!this.validateForm()} onClick = {e => this.handleFormSubmit(e)} value="Login">Login</button>
-
-                            <div>
-                                {this.state.mailSent  &&
-                                  <div className="sucsess">Thank you for contacting me.</div>
-                                }
-                                {this.state.error  &&
-                                  <div className="error">Sorry we had some problems.</div>
-                                }
-                            </div>
-                        </form>
-                    </div>
+                     <div className="row" id="Body">
+                         <div className="medium-5 columns left">
+                         <h4>Login</h4>
+                         <label>Username</label>
+                         <input type="text" name="username" onChange={this.onChange}/>
+                         <label>Password</label>
+                         <input type="password" name="password" onChange={this.onChange}/>
+                         <input type="submit" value="Login" onClick={this.login}/>
+                         </div>
+                     </div>
 
         <button id='exit' className='btn winter-neva-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
         </div>
