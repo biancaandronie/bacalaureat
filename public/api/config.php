@@ -7,7 +7,7 @@ define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');
 define('DB_DATABASE', 'LOGIN');
-define("BASE_URL", "http://bacalaureat.local/api/");
+define("BASE_URL", "http://api.bacalaureat.local/");
 define("SITE_KEY", 'yourSecretKey');
 function getDB()
 {
