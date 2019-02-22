@@ -23,13 +23,13 @@ login() {
     if(this.state.username && this.state.password){
     PostData('login',this.state).then((result) => {
     let responseJson = result;
+    console.log(responseJson);
     if(responseJson.userData){
     sessionStorage.setItem('userData',JSON.stringify(responseJson));
     this.setState({redirectToReferrer: true});
     }
     });
     }
-    console.log(this.state);
 }
 
 onChange(e){
