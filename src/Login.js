@@ -25,7 +25,7 @@ login() {
         let responseJson = result;
         console.log(responseJson);
         if(responseJson.userData){
-            sessionStorage.setItem('userData',JSON.stringify(responseJson));
+           // sessionStorage.setItem('userData',JSON.stringify(responseJson));
             this.setState({redirectToReferrer: true});
             console.log('Login good');
             } else {
