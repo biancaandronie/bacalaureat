@@ -42,7 +42,7 @@ onChange(e){
   render() {
 
     <Route exact path="/" render={() => (
-      redirectToReferrer ? (
+      this.state.redirectToReferrer ? (
         <Redirect to="/dashboard"/>
       ) : (
         <Redirect to="/aaa"/>
