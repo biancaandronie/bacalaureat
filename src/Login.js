@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import './Login.css';
-import {Redirect} from 'react-router-dom';
+import {Route, Redirect} from 'react-router-dom';
 import {PostData} from './service/PostData';
 
 //const API_PATH = 'http://bacalaureat.local/login.php';
@@ -40,7 +40,7 @@ onChange(e){
 }
 
   render() {
-
+<Router>
     if (this.state.redirectToReferrer){
         return (<Redirect to={'/videos.php'}/>)
     }
@@ -65,6 +65,7 @@ onChange(e){
         </div>
       </div>
     );
+</Router>
   }
 }
 class Pop extends Component {
