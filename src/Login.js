@@ -39,15 +39,13 @@ onChange(e){
     this.setState({[e.target.name]:e.target.value});
 }
 
-  render() {
-
     <Route exact path="/" render={() => (
       this.state.redirectToReferrer ? (
         <Redirect to="/dashboard"/>
       ) : (
         <Redirect to="/aaa"/>
       )
-    )}/>
+    )/>
 
 //    if (this.state.redirectToReferrer === true){
 //        return <Redirect to='/videos.php' />
