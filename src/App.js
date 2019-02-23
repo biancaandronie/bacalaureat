@@ -212,7 +212,7 @@ class App extends Component {
                     <div className ="notice-streamer__headline">
                         Prêt à commencer?
                     </div>
-                    <div className ="notice-streamer__text">
+                    <div className="notice-streamer__text">
                         Apprenez quelque chose de nouveau aujourd`hui. Rechercher des tutoriels.
                     </div>
                 </div>

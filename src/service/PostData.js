@@ -1,5 +1,5 @@
 export function PostData(type, userData) {
- let BaseURL = 'http://api.bacalaureat.local/';
+ let BaseURL = 'http://api.bacalaureat.local/api/';
  //let BaseURL = 'http://localhost/PHP-Slim-Restful/api/';
  return new Promise((resolve, reject) =>{
  fetch(BaseURL+type, {
