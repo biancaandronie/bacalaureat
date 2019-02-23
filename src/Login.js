@@ -42,7 +42,7 @@ onChange(e){
   render() {
 
     if (this.state.redirectToReferrer){
-        return (<Redirect to={'/'}/>)
+        return (<Redirect to={'/videos.php'}/>)
     }
 
     return (
