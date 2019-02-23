@@ -25,7 +25,7 @@ login() {
         let responseJson = result;
         console.log(responseJson);
         if(responseJson.userData){
-           // sessionStorage.setItem('userData',JSON.stringify(responseJson));
+            sessionStorage.setItem('userData',JSON.stringify(responseJson));
             this.setState({redirectToReferrer: true});
             console.log('Login good');
             } else {
@@ -43,7 +43,7 @@ onChange(e){
     const { redirectToReferrer } = this.state;
 
      if (redirectToReferrer) {
-       return <Redirect to='/somewhere'/>;
+       return <Redirect to='/videos.php'/>;
      }
 //    if (this.state.redirectToReferrer === true){
 //        return <Redirect to='/videos.php' />
