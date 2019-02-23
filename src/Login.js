@@ -40,15 +40,11 @@ onChange(e){
 }
 
   render() {
+    const { redirectToReferrer } = this.state;
 
-    <Route exact path="/" render={() => (
-      login ? (
-        <Redirect to="/dashboard"/>
-      ) : (
-        <Redirect to="/aaa"/>
-      )
-    )}/>
-
+     if (redirectToReferrer) {
+       return <Redirect to='/somewhere'/>;
+     }
 //    if (this.state.redirectToReferrer === true){
 //        return <Redirect to='/videos.php' />
 //        //return history.push('/videos.php')
