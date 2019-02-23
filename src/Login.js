@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import './Login.css';
-import {withRouter, Redirect} from 'react-router-dom';
+import { Route, Redirect } from 'react-router'
 import {PostData} from './service/PostData';
-import history from './history';
 
 //const API_PATH = 'http://bacalaureat.local/login.php';
 
@@ -42,10 +41,18 @@ onChange(e){
 
   render() {
 
-    if (this.state.redirectToReferrer === true){
-        //return <Redirect to='/videos.php' />
-        return history.push('/videos.php')
-    }
+    <Route exact path="/" render={() => (
+      redirectToReferrer ? (
+        <Redirect to="/dashboard"/>
+      ) : (
+        <Redirect to="/aaa"/>
+      )
+    )}/>
+
+//    if (this.state.redirectToReferrer === true){
+//        return <Redirect to='/videos.php' />
+//        //return history.push('/videos.php')
+//    }
 
     return (
       <div className='popup'>
@@ -98,5 +105,4 @@ class Pop extends Component {
     );
   }
 };
-export {Pop};
-export default withRouter(Popup);
+export {Pop, Popup};
