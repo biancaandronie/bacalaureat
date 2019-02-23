@@ -40,9 +40,9 @@ onChange(e){
 }
 
   render() {
-<Router>
-    if (this.state.redirectToReferrer){
-        return (<Redirect to={'/videos.php'}/>)
+
+    if (this.state.redirectToReferrer === true){
+        return <Redirect to='/videos.php' />
     }
 
     return (
@@ -65,7 +65,6 @@ onChange(e){
         </div>
       </div>
     );
-</Router>
   }
 }
 class Pop extends Component {
