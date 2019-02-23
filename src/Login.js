@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import './Login.css';
-import {Route, Redirect} from 'react-router-dom';
+import {withRouter, Redirect} from 'react-router-dom';
 import {PostData} from './service/PostData';
 
 //const API_PATH = 'http://bacalaureat.local/login.php';
@@ -97,4 +97,5 @@ class Pop extends Component {
     );
   }
 };
-export {Pop, Popup};
+export {Pop};
+export default withRouter(Popup);
