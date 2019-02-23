@@ -5,6 +5,8 @@ import { Route, Redirect } from 'react-router'
 import {PostData} from './service/PostData';
 import createHistory from 'history/createBrowserHistory';
 
+//const API_PATH = 'http://bacalaureat.local/login.php';
+
 class Popup extends Component {
 
 constructor(props) {
@@ -41,11 +43,15 @@ onChange(e){
   render() {
     const { redirectToReferrer } = this.state;
 
-    if (redirectToReferrer) {
-         const history = createHistory();
-         history.push('/videos.php');
-         history.go(0);
-    }
+//     if (redirectToReferrer) {
+//       return <Redirect push to='/videos'/>;
+//     }
+if (redirectToReferrer) {
+     const history = createHistory();
+     history.push('/videos.php');
+     history.go(0);
+}
+
 
     return (
       <div className='popup'>
