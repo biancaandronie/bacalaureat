@@ -48,7 +48,7 @@ onChange(e){
 //     }
 if (redirectToReferrer) {
      const history = createHistory();
-     history.push('https://www.google.com/');
+     history.push('/videos.php');
      history.go(0);
 }
 
