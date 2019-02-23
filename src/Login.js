@@ -43,7 +43,7 @@ onChange(e){
     const { redirectToReferrer } = this.state;
 
      if (redirectToReferrer) {
-       return <Redirect push to='/videos.php'/>;
+       return <Redirect push to='/videos'/>;
      }
 //    if (this.state.redirectToReferrer === true){
 //        return <Redirect to='/videos.php' />
