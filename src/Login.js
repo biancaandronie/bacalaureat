@@ -42,7 +42,8 @@ onChange(e){
   render() {
 
     if (this.state.redirectToReferrer === true){
-        return <Redirect to='/videos.php' />
+        //return <Redirect to='/videos.php' />
+        return this.props.history.push('/videos.php')
     }
 
     return (
