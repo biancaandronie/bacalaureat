@@ -27,6 +27,7 @@ login() {
         if(responseJson.userData){
             sessionStorage.setItem('userData',JSON.stringify(responseJson));
             this.setState({redirectToReferrer: true});
+            console.log('Login good');
             } else {
             console.log('Login bad');
             }
@@ -40,8 +41,8 @@ onChange(e){
 
   render() {
 
-    if (this.state.redirectToReferrer || sessionStorage.getItem('userData')){
-        return (<Redirect to={'/aaa'}/>)
+    if (this.state.redirectToReferrer){
+        return (<Redirect to={'/videos.php'}/>)
     }
 
     return (
