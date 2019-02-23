@@ -3,6 +3,7 @@ import elev1 from './images/elev1.jpg';
 import './Login.css';
 import { Route, Redirect } from 'react-router'
 import {PostData} from './service/PostData';
+import createHistory from 'history/createBrowserHistory';
 
 //const API_PATH = 'http://bacalaureat.local/login.php';
 
@@ -42,13 +43,15 @@ onChange(e){
   render() {
     const { redirectToReferrer } = this.state;
 
-     if (redirectToReferrer) {
-       return <Redirect push to='/videos'/>;
-     }
-//    if (this.state.redirectToReferrer === true){
-//        return <Redirect to='/videos.php' />
-//        //return history.push('/videos.php')
-//    }
+//     if (redirectToReferrer) {
+//       return <Redirect push to='/videos'/>;
+//     }
+if (redirectToReferrer) {
+     const history = createHistory();
+     history.push('https://www.google.com/');
+     history.go(0);
+}
+
 
     return (
       <div className='popup'>
