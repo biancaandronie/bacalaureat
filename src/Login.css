@@ -57,7 +57,7 @@ form{
 }
 
 #exit{
-    margin-right: 35px;
+    margin-right: 65px;
     float: right;
 }
 
@@ -77,4 +77,5 @@ form{
 .logare{
     margin-left: auto;
     margin-right: auto;
+    width: 270px;
 }

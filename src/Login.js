@@ -59,7 +59,7 @@ if (redirectToReferrer) {
                          <div className="logare">
                              <input className="w3-input w3-border" type="text" name="username" onChange={this.onChange} style={{display: 'block', marginBottom: '30px', marginTop: '30px'}} placeholder={this.state.placeholder1}/>
                              <input className="w3-input w3-border" type="password" name="password" onChange={this.onChange} style={{display: 'block', marginBottom: '30px'}} placeholder={this.state.placeholder2}/>
-                             <input type="submit" value="Login" onClick={this.login}/>
+                             <input className='btn rainy-ashville-gradient rounded-circle' type="submit" value="Login" onClick={this.login}/>
                          </div>
                      </div>
 
