@@ -60,10 +60,11 @@ if (redirectToReferrer) {
                              <input className="w3-input w3-border" type="text" name="username" onChange={this.onChange} style={{display: 'block', marginBottom: '30px', marginTop: '30px'}} placeholder={this.state.placeholder1}/>
                              <input className="w3-input w3-border" type="password" name="password" onChange={this.onChange} style={{display: 'block', marginBottom: '30px'}} placeholder={this.state.placeholder2}/>
                              <input className='btn winter-neva-gradient rounded-circle' type="submit" value="Login" onClick={this.login}/>
+                            <button id='exit' className='btn rainy-ashville-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
                          </div>
                      </div>
 
-        <button id='exit' className='btn rainy-ashville-gradient rounded-circle' onClick={this.props.closePopup}>sortie</button>
+
         </div>
       </div>
     );
