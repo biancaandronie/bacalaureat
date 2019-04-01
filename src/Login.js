@@ -12,7 +12,9 @@ constructor(props) {
     this.state = {
       username: '',
       password: '',
-      redirectToReferrer: false
+      redirectToReferrer: false,
+      placeholder1:'Username',
+      placeholder2:'Password'
     }
     this.login = this.login.bind(this);
     this.onChange = this.onChange.bind(this);
@@ -55,10 +57,8 @@ if (redirectToReferrer) {
                 <h1 className='bienvenue'>{this.props.text}</h1>
                      <div className="row" id="Body">
                          <div className="medium-5 columns left">
-                             <label>Username</label>
-                             <input type="text" name="username" onChange={this.onChange} style={{display: 'block'}}/>
-                             <label>Password</label>
-                             <input type="password" name="password" onChange={this.onChange} style={{display: 'block'}}/>
+                             <input type="text" name="username" onChange={this.onChange} style={{display: 'block'}} placeholder={this.state.placeholder1}/>
+                             <input type="password" name="password" onChange={this.onChange} style={{display: 'block'}} placeholder={this.state.placeholder2}/>
                              <input type="submit" value="Login" onClick={this.login}/>
                          </div>
                      </div>
