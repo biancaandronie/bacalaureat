@@ -56,9 +56,9 @@ if (redirectToReferrer) {
                      <div className="row" id="Body">
                          <div className="medium-5 columns left">
                              <label>Username</label>
-                             <input type="text" name="username" onChange={this.onChange}/>
+                             <input type="text" name="username" onChange={this.onChange} style={{display: block}}/>
                              <label>Password</label>
-                             <input type="password" name="password" onChange={this.onChange}/>
+                             <input type="password" name="password" onChange={this.onChange} style={{display: block}}/>
                              <input type="submit" value="Login" onClick={this.login}/>
                          </div>
                      </div>
