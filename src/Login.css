@@ -74,3 +74,7 @@ form{
     margin-left: auto;
     margin-right: auto;
 }
+
+.medium-5 columns left.input{
+    display: block;
+}
