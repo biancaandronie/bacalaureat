@@ -55,7 +55,7 @@ if (redirectToReferrer) {
         <div className='popup_inner'>
             <img src={elev1} className="elev1" alt="elev1" width="254" height="191" />
                 <h1 className='bienvenue'>{this.props.text}</h1>
-                     <div className="row" id="Body">
+                     <div className="row" id="Body" style={{marginLeft: 'auto'; marginRight: 'auto';}}>
                          <div className="medium-5 columns left">
                              <input type="text" name="username" onChange={this.onChange} style={{display: 'block'}} placeholder={this.state.placeholder1}/>
                              <input type="password" name="password" onChange={this.onChange} style={{display: 'block'}} placeholder={this.state.placeholder2}/>
