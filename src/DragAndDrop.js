@@ -12,7 +12,7 @@ class Page extends Component {
           description: '',
           tags: ''
         }
-    this.handleDrop = this.handleDrop.bind(this);
+    //this.handleDrop = this.handleDrop.bind(this);
     this.submit = this.submit.bind(this);
   }
 
@@ -37,28 +37,28 @@ onChange(e){
     this.setState({[e.target.name]:e.target.value});
 }
 
-  handleDrop(files) {
-    var data = new FormData();
-
-    files.forEach((file, index) => {
-      data.append('file' + index, file);
-    });
-
-    fetch('/upload', {
-      method: 'POST',
-      body: data
-    });
-  }
+//  handleDrop(files) {
+//    var data = new FormData();
+//
+//    files.forEach((file, index) => {
+//      data.append('file' + index, file);
+//    });
+//
+//    fetch('/upload', {
+//      method: 'POST',
+//      body: data
+//    });
+//  }
 
   render() {
     return (
         <div className="container">
 
-              <DropToUpload
-                onDrop={ this.handleDrop }
-              >
-                Drop file here to upload
-              </DropToUpload>
+//              <DropToUpload
+//                onDrop={ this.handleDrop }
+//              >
+//                Drop file here to upload
+//              </DropToUpload>
 
                 <form>
                     <div className="form-group">
