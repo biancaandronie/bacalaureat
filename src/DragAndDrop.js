@@ -11,28 +11,19 @@ class Page extends Component {
       event.preventDefault();
       const data = new FormData(event.target);
 
-      fetch('http://api.bacalaureat.local/api/v1/create')
-            .then(function (res) {
-                      return res, json()
-                  })
-                  .then(function (data) {
-                      Console.log(data);
-                  }).catch(function (err) {
-                      console.log(err)
-                  })
-
-//        headers: {
-//              'Accept': 'application/json',
-//              'Content-Type': 'application/json'
-//            },
-//        method: 'POST',
-//        body: JSON.stringify(data),
-//      })
-//        .then(res => res.json())
-//        .then(data => {
-//          console.log('This data was successfully received by the server:');
-//          console.log(data.form);
-//        });
+      fetch('http://api.bacalaureat.local/api/v1/create', {
+        headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+        method: 'POST',
+        body: JSON.stringify(data),
+      })
+        .then(res => res.json())
+        .then(data => {
+          console.log('This data was successfully received by the server:');
+          console.log(data.form);
+        });
  }
 
   render() {
