@@ -21,7 +21,7 @@ class MyForm extends Component {
               .then((data) =>  console.log(data))
               .catch((err)=>console.log(err))
           }
-
+  }
   render() {
     return (
       <form  id="postData">
