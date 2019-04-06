@@ -54,11 +54,6 @@ onChange(e){
     return (
         <div className="container">
 
-//              <DropToUpload
-//                onDrop={ this.handleDrop }
-//              >
-//                Drop file here to upload
-//              </DropToUpload>
 
                 <form>
                     <div className="form-group">
