@@ -3,7 +3,6 @@ import './SimpleReactFileUpload.css';
 import 'react-dropzone-uploader/dist/styles.css';
 import Dropzone from 'react-dropzone-uploader';
 
-class SimpleReactFileUpload extends Component {
     const MyUploader = () => {
       // specify upload params and url for your files
       const getUploadParams = ({ meta }) => { return { url: 'https://httpbin.org/post' } }
@@ -28,8 +27,5 @@ class SimpleReactFileUpload extends Component {
     }
 
     <MyUploader />
-}
-
-export default SimpleReactFileUpload;
 
 
