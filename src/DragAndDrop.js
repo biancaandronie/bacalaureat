@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DropToUpload from 'react-drop-to-upload';
+import {VideoData} from './service/VideoData';
 
 class Page extends Component {
   constructor(props) {
