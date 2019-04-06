@@ -16,6 +16,7 @@ import Dropzone from 'react-dropzone-uploader';
       }
 
       return (
+      <div>
         <Dropzone
           getUploadParams={getUploadParams}
           onChangeStatus={handleChangeStatus}
@@ -33,6 +34,7 @@ import Dropzone from 'react-dropzone-uploader';
               <input type="password" class="form-control" id="pwd">
             </div>
           </form>
+        </div>
         </div>
       )
     }
