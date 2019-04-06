@@ -12,9 +12,9 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render((
   <BrowserRouter>
-    <Route path="/users" component={SimpleReactFileUpload}/>
+    <SimpleReactFileUpload />
   </BrowserRouter >
-), document.getElementById('root_admin'));
+), document.getElementById('admin'));
 
 //ReactDOM.render(<App />, document.getElementById('root'));
 
