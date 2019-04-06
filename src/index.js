@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import DragAndDrop from './DragAndDrop';
+import test from './test';
 import * as serviceWorker from './serviceWorker';
 //pt butonul din header--pt culoare am instalat mdbreact
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -18,6 +19,7 @@ ReactDOM.render((
     <div>
       <Route exact path="/" component={App} />
       <Route path="/admin" component={DragAndDrop} />
+      <Route path="/test" component={test} />
     </div>
   </BrowserRouter >
 ), document.getElementById('root'));
