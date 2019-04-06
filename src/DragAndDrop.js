@@ -25,6 +25,7 @@ class Page extends Component {
           });
       }
   }
+  }
 
   handleDrop(files) {
     var data = new FormData();
