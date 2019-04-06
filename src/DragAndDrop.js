@@ -17,6 +17,7 @@ class Page extends Component {
   }
 
   submit() {
+    console.log("cacat");
       if(this.state.data && this.state.name && this.state.course && this.state.tags){
           VideoData('submit',this.state).then((result) => {
           let responseJson = result;
@@ -34,6 +35,7 @@ class Page extends Component {
   }
 
 onChange(e){
+    console.log("onchange");
     this.setState({[e.target.name]:e.target.value});
 }
 
