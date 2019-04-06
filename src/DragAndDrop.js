@@ -17,6 +17,7 @@ class Page extends Component {
         method: 'POST',
         body: JSON.stringify(data)
       });
+      console.log(JSON.stringify(data));
   }
 
   render() {
