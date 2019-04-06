@@ -8,6 +8,13 @@ import * as serviceWorker from './serviceWorker';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
+
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
+import $ from 'jquery';
+import Popper from 'popper.js';
+
 import {Switch, Route} from 'react-router';
 
 import { BrowserRouter } from 'react-router-dom';
