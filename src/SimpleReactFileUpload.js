@@ -25,6 +25,5 @@ import Dropzone from 'react-dropzone-uploader';
       )
     }
 
-    <MyUploader />
 
-export default SimpleReactFileUpload;
+export default MyUploader;
