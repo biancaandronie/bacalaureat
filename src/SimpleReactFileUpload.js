@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './SimpleReactFileUpload.css';
 import 'react-dropzone-uploader/dist/styles.css';
 import Dropzone from 'react-dropzone-uploader';
 
