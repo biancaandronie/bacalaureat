@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import SimpleReactFileUpload from './SimpleReactFileUpload';
 import * as serviceWorker from './serviceWorker';
 //pt butonul din header--pt culoare am instalat mdbreact
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
 import {Switch} from 'react-router';
+import { Route } from 'react-router';
 
 import { BrowserRouter } from 'react-router-dom';
 
