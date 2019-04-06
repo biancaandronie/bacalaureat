@@ -1,10 +1,10 @@
-export function PostData(type, userData) {
- let BaseURL = 'http://api.bacalaureat.local/api/';
+export function VideoData(type, videoData) {
+ let BaseURL = 'http://api.bacalaureat.local/api/v1/create';
  //let BaseURL = 'http://localhost/PHP-Slim-Restful/api/';
  return new Promise((resolve, reject) =>{
- fetch(BaseURL+type, {
+ fetch(BaseURL, {
     method: 'POST',
-    body: JSON.stringify(userData)
+    body: JSON.stringify(videoData)
 })
 .then((response) => response.json())
 .then((res) => {
