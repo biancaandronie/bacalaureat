@@ -12,6 +12,10 @@ class Page extends Component {
       const data = new FormData(event.target);
 
       fetch('http://api.bacalaureat.local/api/v1/create', {
+        headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
         method: 'POST',
         body: JSON.stringify(data),
       })
