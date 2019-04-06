@@ -13,10 +13,10 @@ class Page extends Component {
 
       fetch('http://api.bacalaureat.local/api/v1/create', {
         method: 'POST',
-        body: JSON.stringify(data)
+        body: JSON.stringify(data),
       })
         .then(res => res.json())
-        .then(JSON.stringify(data) => {
+        .then(data => {
           console.log('This data was successfully received by the server:');
           console.log(data.form);
         });
