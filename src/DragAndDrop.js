@@ -33,7 +33,9 @@ class Page extends Component {
       }
   }
 
-
+onChange(e){
+    this.setState({[e.target.name]:e.target.value});
+}
 
   handleDrop(files) {
     var data = new FormData();
@@ -61,11 +63,11 @@ class Page extends Component {
                 <form>
                     <div className="form-group">
                       <label htmlFor="usr">Le nom:</label>
-                      <input type="text" className="form-control" id="usr" />
+                      <input type="text" name="name" value={name} className="form-control" id="usr" onChange={this.onChange} />
                     </div>
 
                     <div>
-                        <select className="browser-default custom-select">
+                        <select name="course" className="browser-default custom-select" onChange={this.onChange}>
                           <option selected>Choisir une matière</option>
                           <option value="1">Littérature</option>
                           <option value="2">Informatique</option>
@@ -81,12 +83,12 @@ class Page extends Component {
 
                     <div className="form-group">
                       <label htmlFor="des">La description:</label>
-                      <input type="text" className="form-control" id="des" />
+                      <input type="text" name="description" value={description} className="form-control" id="des" onChange={this.onChange} />
                     </div>
 
                     <div className="form-group">
                       <label htmlFor="mot">Les mots-clés:</label>
-                      <input type="text" className="form-control" id="mot" />
+                      <input type="text" name="tags" value={tags} className="form-control" id="mot" onChange={this.onChange} />
                     </div>
 
                     <input className='btn winter-neva-gradient rounded-circle' type="submit" value="Envoyer" onClick={this.submit}/>
