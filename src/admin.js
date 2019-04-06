@@ -12,7 +12,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render((
   <BrowserRouter>
-    <SimpleReactFileUpload />
+    <Route path="/users" component={SimpleReactFileUpload}/>
   </BrowserRouter >
 ), document.getElementById('root_admin'));
 
