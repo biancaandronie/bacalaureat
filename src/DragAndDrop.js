@@ -8,7 +8,6 @@ class Page extends Component {
     this.state = {
           name: '',
           course: '',
-          description: '',
           tags: ''
         }
     this.handleDrop = this.handleDrop.bind(this);
@@ -68,20 +67,7 @@ class Page extends Component {
                       <input type="text" name="name" className="form-control" id="usr" onChange={this.onChange} />
                     </div>
 
-                    <div>
-                        <select name="course" className="browser-default custom-select" onChange={this.onChange}>
-                          <option selected>Choisir une matière</option>
-                          <option value="1">Littérature</option>
-                          <option value="2">Informatique</option>
-                          <option value="3">Histoire</option>
-                          <option value="4">Géographie</option>
-                          <option value="5">Biologie végétale et animale</option>
-                          <option value="6">Anatomie et physiologie humaine</option>
-                          <option value="7">Chimie</option>
-                          <option value="8">Physique</option>
-                          <option value="9">Mathématiques</option>
-                        </select>
-                    </div>
+
 
                     <div className="form-group">
                       <label htmlFor="des">La description:</label>
