@@ -21,7 +21,7 @@ class Page extends Component {
       if(this.state.name && this.state.course && this.state.tags){
           VideoData('submit',this.state).then((result) => {
           let responseJson = result;
-          console.log(responseJson+"something response");
+          console.log(responseJson);
           if(responseJson.videoData){
               sessionStorage.setItem('videoData',JSON.stringify(responseJson));
               console.log("Data sent successful");
