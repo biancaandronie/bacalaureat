@@ -16,7 +16,7 @@ ReactDOM.render((
   <BrowserRouter>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/xxx" component={SimpleReactFileUpload} />
+      <Route path="/admin" component={SimpleReactFileUpload} />
     </div>
   </BrowserRouter >
 ), document.getElementById('root'));
