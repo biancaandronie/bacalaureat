@@ -45,7 +45,7 @@ onChange(e){
 
 if (redirectToReferrer) {
      const history = createHistory();
-     history.push('/videos.php');
+     history.push('/admin.html');
      history.go(0);
 }
 
