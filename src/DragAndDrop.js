@@ -15,7 +15,7 @@ class Page extends Component {
 
       fetch('http://api.bacalaureat.local/api/v1/create', {
         method: 'POST',
-        body: data,
+        body: JSON.stringify(data)
       });
   }
 
