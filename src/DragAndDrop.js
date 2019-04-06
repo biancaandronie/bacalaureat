@@ -12,7 +12,7 @@ class Page extends Component {
 
   handleDrop(files) {
     console.log(files.length > 0); // true
-    console.log(files[0]); // true
+    console.log(files[0].path); // true
   }
 
   handleDropArrayBuffer(arrayBuffers, files) {
