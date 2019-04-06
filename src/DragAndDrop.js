@@ -85,7 +85,7 @@ class Page extends Component {
                       <input type="text" className="form-control" id="mot" />
                     </div>
 
-                    <button id='send' className='btn rainy-ashville-gradient rounded-circle' onClick={this.submit}>Envoyer</button>
+                    <input className='btn winter-neva-gradient rounded-circle' type="submit" value="Envoyer" onClick={this.submit}/>
 
                 </form>
         </div>
