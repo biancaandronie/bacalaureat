@@ -14,6 +14,7 @@ class Page extends Component {
         }
     this.handleDrop = this.handleDrop.bind(this);
     this.submit = this.submit.bind(this);
+    this.onClick = this.onClick.bind(this);
   }
 
   submit() {
