@@ -28,8 +28,8 @@ class Page extends Component {
                       <label htmlFor="name">Le nom:</label>
                       <input id="name" name="name" type="text" />
 
-                      <label htmlFor="description">La description:</label>
-                      <input id="description" name="description" type="text" />
+                      <label htmlFor="course">La description:</label>
+                      <input id="course" name="course" type="text" />
 
                       <label htmlFor="tag">Les mots-clés:</label>
                       <input id="tag" name="tag" type="text" />
