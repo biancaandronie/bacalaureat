@@ -9,10 +9,17 @@ class MyForm extends Component {
     event.preventDefault();
     const data = new FormData(event.target);
 
-    fetch('/api/form-submit-url', {
-      method: 'POST',
-      body: data,
-    });
+    fetch('/api/add-user', {
+          method: 'post',
+          body: JSON.stringify({
+            name: data.get('name'),
+            email: data.get('email'),
+            country: data.get('country')
+          }),
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        });
     console.log(data);
   }
 
@@ -25,8 +32,8 @@ class MyForm extends Component {
         <label htmlFor="email">Enter your email</label>
         <input id="email" name="email" type="email" />
 
-        <label htmlFor="birthdate">Enter your birth date</label>
-        <input id="birthdate" name="birthdate" type="text" />
+        <label htmlFor="country">Enter your birth date</label>
+        <input id="country" name="country" type="text" />
 
         <button>Send data!</button>
       </form>
