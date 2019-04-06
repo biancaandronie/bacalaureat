@@ -63,7 +63,7 @@ onChange(e){
                 <form>
                     <div className="form-group">
                       <label htmlFor="usr">Le nom:</label>
-                      <input type="text" name="name" value={name} className="form-control" id="usr" onChange={this.onChange} />
+                      <input type="text" name="name" className="form-control" id="usr" onChange={this.onChange} />
                     </div>
 
                     <div>
@@ -83,12 +83,12 @@ onChange(e){
 
                     <div className="form-group">
                       <label htmlFor="des">La description:</label>
-                      <input type="text" name="description" value={description} className="form-control" id="des" onChange={this.onChange} />
+                      <input type="text" name="description" className="form-control" id="des" onChange={this.onChange} />
                     </div>
 
                     <div className="form-group">
                       <label htmlFor="mot">Les mots-clés:</label>
-                      <input type="text" name="tags" value={tags} className="form-control" id="mot" onChange={this.onChange} />
+                      <input type="text" name="tags" className="form-control" id="mot" onChange={this.onChange} />
                     </div>
 
                     <input className='btn winter-neva-gradient rounded-circle' type="submit" value="Envoyer" onClick={this.submit}/>
