@@ -7,7 +7,7 @@ class Page extends Component {
     super(props);
     this.state = {
           data: '',
-          videoname: '',
+          name: '',
           course: '',
           description: '',
           tags: ''
@@ -22,7 +22,7 @@ class Page extends Component {
       if(this.state.data && this.state.name && this.state.course && this.state.tags){
           VideoData('submit',this.state).then((result) => {
           let responseJson = result;
-          console.log(responseJson);
+          console.log(responseJson+"something response");
           if(responseJson.videoData){
               sessionStorage.setItem('videoData',JSON.stringify(responseJson));
               console.log("Data sent successful");
@@ -35,10 +35,10 @@ class Page extends Component {
       }
   }
 
-onChange(e){
+  onChange(e) {
     console.log("onchange");
     this.setState({[e.target.name]:e.target.value});
-}
+  }
 
   handleDrop(files) {
     var data = new FormData();
@@ -66,7 +66,7 @@ onChange(e){
                  <div className="logare2">
                     <div className="form-group">
                       <label htmlFor="usr">Le nom:</label>
-                      <input type="text" name="videoname" className="form-control" id="usr" onChange={this.onChange} />
+                      <input type="text" name="name" className="form-control" id="usr" onChange={this.onChange} />
                     </div>
 
                     <div>
