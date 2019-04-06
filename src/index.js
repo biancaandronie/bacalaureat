@@ -17,7 +17,7 @@ ReactDOM.render((
   <BrowserRouter>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/admin" component={SimpleReactFileUpload} />
+      <Route path="/admin" component={DragAndDrop} />
     </div>
   </BrowserRouter >
 ), document.getElementById('root'));
