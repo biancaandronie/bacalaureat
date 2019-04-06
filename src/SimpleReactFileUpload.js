@@ -33,21 +33,19 @@ import Dropzone from 'react-dropzone-uploader';
               <label htmlFor="pwd">Password:</label>
               <input type="password" className="form-control" id="pwd" />
             </div>
-            <div className="form-group drop-down-list">
-                <label htmlFor="test1">Select Person</label>
-                <input id="test1" className="form-control" placeholder="Choisir une matière" />
-                <span className="ddl-caret"></span>
-                <ul className="dropdown-menu">
-                    <li><a>Littérature</a></li>
-                    <li><a>Informatique</a></li>
-                    <li><a>Histoire</a></li>
-                    <li><a>Géographie</a></li>
-                    <li><a>Biologie végétale et animale</a></li>
-                    <li><a>Anatomie et physiologie humaine</a></li>
-                    <li><a>Chimie</a></li>
-                    <li><a>Physique</a></li>
-                    <li><a>Mathématiques</a></li>
-                </ul>
+            <div>
+                <select className="browser-default custom-select">
+                  <option selected>Choisir une matière</option>
+                  <option value="1">Littérature</option>
+                  <option value="2">Informatique</option>
+                  <option value="3">Histoire</option>
+                  <option value="4">Géographie</option>
+                  <option value="5">Biologie végétale et animale</option>
+                  <option value="6">Anatomie et physiologie humaine</option>
+                  <option value="7">Chimie</option>
+                  <option value="8">Physique</option>
+                  <option value="9">Mathématiques</option>
+                </select>
             </div>
           </form>
         </div>
