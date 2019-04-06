@@ -23,29 +23,13 @@ class Page extends Component {
   render() {
     return (
         <form onSubmit={this.handleSubmit}>
-
-
-                 <div className="logare2">
-                    <div className="form-group">
                       <label htmlFor="usr">Le nom:</label>
                       <input type="text" name="name" className="form-control" id="name" />
-                    </div>
-
-
-
-                    <div className="form-group">
                       <label htmlFor="des">La description:</label>
                       <input type="text" name="description" className="form-control" id="description" />
-                    </div>
-
-                    <div className="form-group">
                       <label htmlFor="mot">Les mots-clés:</label>
                       <input type="text" name="tag" className="form-control" id="tag"/>
-                    </div>
-
                     <button>Send data!</button>
-                </div>
-
         </form>
     );
   }
