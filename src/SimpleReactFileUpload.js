@@ -16,17 +16,17 @@ import Dropzone from 'react-dropzone-uploader';
       }
 
       return (
-      <div>
+      <div className="upload">
         <Dropzone
           getUploadParams={getUploadParams}
           onChangeStatus={handleChangeStatus}
           onSubmit={handleSubmit}
           accept="image/*,audio/*,video/*"
         />
-        <div class="container">
+        <div className="container">
           <form>
             <div className="form-group">
-              <label htmlFor="usr">Name:</label>
+              <label htmlFor="usr">Le nom:</label>
               <input type="text" className="form-control" id="usr" />
             </div>
             <div class="form-group">
