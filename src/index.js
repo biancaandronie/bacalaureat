@@ -13,15 +13,15 @@ import {Switch, Route} from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render((
-
-  <Switch>
-
+  <BrowserRouter>
+ // <Switch>
+    <div>
       <Route exact path="/" component={App} />
       <Route path="/xxx" component={SimpleReactFileUpload} />
-
-    </Switch>
+ //   </Switch>
 //    <App />
-
+    </div>
+  </BrowserRouter >
 ), document.getElementById('root'));
 
 //ReactDOM.render(<App />, document.getElementById('root'));
