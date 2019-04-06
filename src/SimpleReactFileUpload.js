@@ -29,10 +29,7 @@ import Dropzone from 'react-dropzone-uploader';
               <label htmlFor="usr">Le nom:</label>
               <input type="text" className="form-control" id="usr" />
             </div>
-            <div className="form-group">
-              <label htmlFor="pwd">Password:</label>
-              <input type="password" className="form-control" id="pwd" />
-            </div>
+
             <div>
                 <select className="browser-default custom-select">
                   <option selected>Choisir une matière</option>
@@ -46,6 +43,16 @@ import Dropzone from 'react-dropzone-uploader';
                   <option value="8">Physique</option>
                   <option value="9">Mathématiques</option>
                 </select>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="des">La description:</label>
+              <input type="text" className="form-control" id="des" />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="mot">Les mots-clés:</label>
+              <input type="text" className="form-control" id="mot" />
             </div>
           </form>
         </div>
