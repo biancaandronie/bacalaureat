@@ -28,14 +28,12 @@ class Page extends Component {
     return (
         <form onSubmit={this.handleSubmit}>
                       <label htmlFor="name">Le nom:</label>
-                      <input type="text" name="name" className="form-control" id="name" />
-
+                      <input type="text" name="name" id="name" />
                       <label htmlFor="description">La description:</label>
-                      <input type="text" name="description" className="form-control" id="description" />
-
+                      <input type="text" name="description" id="description" />
                       <label htmlFor="tag">Les mots-clés:</label>
-                      <input type="text" name="tag" className="form-control" id="tag"/>
-                    <button>Send data!</button>
+                      <input type="text" name="tag" id="tag"/>
+                      <button>Send data!</button>
         </form>
     );
   }
