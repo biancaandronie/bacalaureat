@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import DropToUpload from 'react-drop-to-upload';
-import {VideoData} from './service/VideoData';
 
 class Page extends Component {
   constructor() {
@@ -15,7 +13,7 @@ class Page extends Component {
 
       fetch('http://api.bacalaureat.local/api/v1/create', {
         method: 'POST',
-        body: data,
+        body: data
       })
         .then(res => res.json())
         .then(data => {
