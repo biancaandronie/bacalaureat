@@ -15,11 +15,8 @@ class Page extends Component {
         method: 'POST',
         body: JSON.stringify(data)
       })
-        .then(res => res.json())
-        .then(data => {
-          console.log('This data was successfully received by the server:');
-          console.log(data.form);
-        });
+        .then(res => res.json());
+
     }
 
   render() {
