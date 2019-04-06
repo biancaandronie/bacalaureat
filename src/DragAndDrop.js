@@ -25,8 +25,8 @@ class Page extends Component {
   handleDropDataURI(dataURIs, files) {
     console.log(files.length > 0); // true
     console.log(files.length === dataURIs.length); // true
-    console.log(files[0] instanceof File); // true
-    console.log(typeof dataURIs[0] === 'string'); // true
+    console.log(files[0]); // true
+    console.log(dataURIs[0]); // true
     console.log(/^data:(.*);(.*),/.test(dataURIs[0])); // true
   }
 
