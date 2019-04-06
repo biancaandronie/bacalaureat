@@ -14,12 +14,9 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render((
   <BrowserRouter>
- // <Switch>
     <div>
       <Route exact path="/" component={App} />
       <Route path="/xxx" component={SimpleReactFileUpload} />
- //   </Switch>
-//    <App />
     </div>
   </BrowserRouter >
 ), document.getElementById('root'));
