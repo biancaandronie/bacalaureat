@@ -23,6 +23,7 @@ class Page extends Component {
           console.log(responseJson);
           if(responseJson.videoData){
               sessionStorage.setItem('videoData',JSON.stringify(responseJson));
+              console.log("Data sent successful");
               }
           });
       }
