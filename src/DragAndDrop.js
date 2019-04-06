@@ -32,46 +32,15 @@ class Page extends Component {
 
   render() {
     return (
-    <div className="container">
-      <DropToUpload
-        onDrop={ this.handleDrop }
-        onDropArrayBuffer={ this.handleDropArrayBuffer }
-        onDropDataURI={ this.handleDropDataURI }
-      >
-        Drop file here to upload
-      </DropToUpload>
-                <form>
-                  <div className="form-group">
-                    <label htmlFor="usr">Le nom:</label>
-                    <input type="text" className="form-control" id="usr" />
-                  </div>
 
-                  <div>
-                      <select className="browser-default custom-select">
-                        <option selected>Choisir une matière</option>
-                        <option value="1">Littérature</option>
-                        <option value="2">Informatique</option>
-                        <option value="3">Histoire</option>
-                        <option value="4">Géographie</option>
-                        <option value="5">Biologie végétale et animale</option>
-                        <option value="6">Anatomie et physiologie humaine</option>
-                        <option value="7">Chimie</option>
-                        <option value="8">Physique</option>
-                        <option value="9">Mathématiques</option>
-                      </select>
-                  </div>
+          <DropToUpload
+            onDrop={ this.handleDrop }
+            onDropArrayBuffer={ this.handleDropArrayBuffer }
+            onDropDataURI={ this.handleDropDataURI }
+          >
+            Drop file here to upload
+          </DropToUpload>
 
-                  <div className="form-group">
-                    <label htmlFor="des">La description:</label>
-                    <input type="text" className="form-control" id="des" />
-                  </div>
-
-                  <div className="form-group">
-                    <label htmlFor="mot">Les mots-clés:</label>
-                    <input type="text" className="form-control" id="mot" />
-                  </div>
-                </form>
-              </div>
     );
   }
 }
