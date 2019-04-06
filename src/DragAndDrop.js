@@ -19,7 +19,7 @@ class Page extends Component {
 
   submit() {
     console.log("cacat");
-      if(this.state.data && this.state.name && this.state.course && this.state.tags){
+      if(this.state.name && this.state.course && this.state.tags){
           VideoData('submit',this.state).then((result) => {
           let responseJson = result;
           console.log(responseJson+"something response");
