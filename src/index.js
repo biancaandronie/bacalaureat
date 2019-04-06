@@ -8,21 +8,20 @@ import * as serviceWorker from './serviceWorker';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap-css-only/css/bootstrap.min.css";
 import "mdbreact/dist/css/mdb.css";
-import {Switch} from 'react-router';
-import { Route } from 'react-router';
+import {Switch, Route} from 'react-router';
 
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render((
-  <BrowserRouter>
+
   <Switch>
-    <div>
+
       <Route exact path="/" component={App} />
       <Route path="/xxx" component={SimpleReactFileUpload} />
-      </div>
+
     </Switch>
 //    <App />
-  </BrowserRouter >
+
 ), document.getElementById('root'));
 
 //ReactDOM.render(<App />, document.getElementById('root'));
