@@ -29,9 +29,25 @@ import Dropzone from 'react-dropzone-uploader';
               <label htmlFor="usr">Le nom:</label>
               <input type="text" className="form-control" id="usr" />
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <label htmlFor="pwd">Password:</label>
               <input type="password" className="form-control" id="pwd" />
+            </div>
+            <div className="form-group drop-down-list">
+                <label htmlFor="test1">Select Person</label>
+                <input id="test1" className="form-control" placeholder="Choisir une matière" />
+                <span className="ddl-caret"></span>
+                <ul className="dropdown-menu">
+                    <li><a>Littérature</a></li>
+                    <li><a>Informatique</a></li>
+                    <li><a>Histoire</a></li>
+                    <li><a>Géographie</a></li>
+                    <li><a>Biologie végétale et animale</a></li>
+                    <li><a>Anatomie et physiologie humaine</a></li>
+                    <li><a>Chimie</a></li>
+                    <li><a>Physique</a></li>
+                    <li><a>Mathématiques</a></li>
+                </ul>
             </div>
           </form>
         </div>
