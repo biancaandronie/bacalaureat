@@ -25,6 +25,10 @@ class Page extends Component {
               sessionStorage.setItem('videoData',JSON.stringify(responseJson));
               console.log("Data sent successful");
               }
+              else
+              {
+              console.log('Data failed');
+              }
           });
       }
   }
