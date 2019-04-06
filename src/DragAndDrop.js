@@ -30,19 +30,6 @@ class Page extends Component {
                       <label htmlFor="name">Le nom:</label>
                       <input type="text" name="name" className="form-control" id="name" />
 
-                      <select name="course" className="browser-default custom-select">
-                            <option selected>Choisir une matière</option>
-                            <option value="1">Littérature</option>
-                            <option value="2">Informatique</option>
-                            <option value="3">Histoire</option>
-                            <option value="4">Géographie</option>
-                            <option value="5">Biologie végétale et animale</option>
-                            <option value="6">Anatomie et physiologie humaine</option>
-                            <option value="7">Chimie</option>
-                            <option value="8">Physique</option>
-                            <option value="9">Mathématiques</option>
-                      </select>
-
                       <label htmlFor="description">La description:</label>
                       <input type="text" name="description" className="form-control" id="description" />
 
