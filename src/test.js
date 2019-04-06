@@ -9,15 +9,15 @@ class MyForm extends Component {
     event.preventDefault();
     const data = new FormData(event.target);
 
-    fetch('/api/form-submit-url', {
+    fetch('https://httpbin.org/post', {
       method: 'POST',
-      body: {
-        username: data.get('username'),
-        email: data.get('email'),
-        birthdate: data.get('birthdate'),
-      },
-    });
-    console.log(data);
+      body: data,
+    })
+      .then(res => res.json())
+      .then(data => {
+        console.log('This data was successfully received by the server:');
+        console.log(data.form);
+      });
   }
 
   render() {
