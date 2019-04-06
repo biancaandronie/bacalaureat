@@ -7,12 +7,12 @@ class Page extends Component {
     super(props);
     this.state = {
           data: '',
-          name: '',
+          videoname: '',
           course: '',
           description: '',
           tags: ''
         }
-    //this.handleDrop = this.handleDrop.bind(this);
+    this.handleDrop = this.handleDrop.bind(this);
     this.submit = this.submit.bind(this);
   }
 
@@ -37,28 +37,33 @@ onChange(e){
     this.setState({[e.target.name]:e.target.value});
 }
 
-//  handleDrop(files) {
-//    var data = new FormData();
-//
-//    files.forEach((file, index) => {
-//      data.append('file' + index, file);
-//    });
-//
-//    fetch('/upload', {
-//      method: 'POST',
-//      body: data
-//    });
-//  }
+  handleDrop(files) {
+    var data = new FormData();
+
+    files.forEach((file, index) => {
+      data.append('file' + index, file);
+    });
+
+    fetch('/upload', {
+      method: 'POST',
+      body: data
+    });
+  }
 
   render() {
     return (
         <div className="container">
+              <DropToUpload
+                onDrop={ this.handleDrop }
+              >
+                Drop file here to upload
+              </DropToUpload>
 
-
-                <form>
+                <div className="row" id="Body">
+                 <div className="logare2">
                     <div className="form-group">
                       <label htmlFor="usr">Le nom:</label>
-                      <input type="text" name="name" className="form-control" id="usr" onChange={this.onChange} />
+                      <input type="text" name="videoname" className="form-control" id="usr" onChange={this.onChange} />
                     </div>
 
                     <div>
@@ -88,7 +93,8 @@ onChange(e){
 
                     <input className='btn winter-neva-gradient rounded-circle' type="submit" value="Envoyer" onClick={this.submit}/>
 
-                </form>
+                </div>
+             </div>
         </div>
     );
   }
