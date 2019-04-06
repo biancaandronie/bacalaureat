@@ -22,10 +22,12 @@ class Page extends Component {
           console.log(responseJson);
           if(responseJson.videoData){
               sessionStorage.setItem('videoData',JSON.stringify(responseJson));
+              }
           });
       }
   }
-  }
+
+
 
   handleDrop(files) {
     var data = new FormData();
