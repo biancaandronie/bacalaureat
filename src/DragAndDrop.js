@@ -12,9 +12,9 @@ class Page extends Component {
             description: '',
             file:null
         };
-        this.fileUpload = this.fileUpload.bind(this);
-        this.onChange = this.onChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
+//        this.fileUpload = this.fileUpload.bind(this);
+//        this.onChange = this.onChange.bind(this);
+//        this.onSubmit = this.onSubmit.bind(this);
     }
 
     onChange = (e) => {
@@ -24,16 +24,15 @@ class Page extends Component {
          super easy to update the state
          */
         this.setState({ [e.target.name]: e.target.value });
-        this.setState({file:e.target.files[0]})
     }
 
     onSubmit = (e) => {
         e.preventDefault();
 
-        const { name, course, tag, description } = this.state;
+        const { name, course, tag, description, file } = this.state;
 
         axios.post('http://api.bacalaureat.local/api/v1/create',
-            { name, course, tag, description },
+            { name, course, tag, description, file },
                 { headers: {
                     'content-type': 'multipart/form-data'
                 }}
@@ -42,29 +41,29 @@ class Page extends Component {
             .then((result) => {
                 //access the results here....
             });
-        this.fileUpload(this.state.file).then((response)=>{
-              console.log(response.data);
-            })
+//        this.fileUpload(this.state.file).then((response)=>{
+//              console.log(response.data);
+//            })
 
     }
 
-    fileUpload(file){
-        const url = 'http://example.com/file-upload';
-        const formData = new FormData();
-        formData.append('file',file)
-        const config = {
-            headers: {
-                'content-type': 'multipart/form-data'
-            }
-        }
-        return  post(url, formData,config)
-      }
+//    fileUpload(file){
+//        const url = 'http://example.com/file-upload';
+//        const formData = new FormData();
+//        formData.append('file',file)
+//        const config = {
+//            headers: {
+//                'content-type': 'multipart/form-data'
+//            }
+//        }
+//        return  post(url, formData,config)
+//      }
 
     render() {
-        const { name, course, tag, description, data } = this.state;
+        const { name, course, tag, description, data, file } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <input type="file" name="video" onChange={this.onChange} />
+                <input type="file" name="file" onChange={this.onChange} />
                 <label htmlFor="name">Le nom:</label>
                 <input
                     type="text"
