@@ -14,6 +14,14 @@ class Page extends Component {
         };
     }
 
+    fileChangedHandler = event => {
+      this.setState({ file: event.target.files[0] })
+    }
+
+    uploadHandler = () => {
+      console.log(this.state.file);
+    }
+
     onChange = (e) => {
         /*
          Because we named the inputs to match their
@@ -26,15 +34,20 @@ class Page extends Component {
     onSubmit = (e) => {
         e.preventDefault();
 
-        const { name, course, tag, description, file } = this.state;
-
-        axios.post('http://api.bacalaureat.local/api/v1/create',
-            { name, course, tag, description, file }
-//                { headers: {
-//                    'content-type': 'multipart/form-data'
-//                }}
-
-        )
+       // const { name, course, tag, description, file } = this.state;
+        const formData = new FormData()
+          formData.append(
+            this.state.name,
+            this.state.course,
+            this.state.tag,
+            this.state.description,
+            this.state.file
+          )
+        axios.post('http://api.bacalaureat.local/api/v1/create', formData,
+                {
+                onUploadProgress: progressEvent => {
+                console.log(progressEvent.loaded / progressEvent.total)}
+                })
             .then((result) => {
                 //access the results here....
             });
