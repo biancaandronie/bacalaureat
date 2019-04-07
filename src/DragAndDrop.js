@@ -22,7 +22,7 @@ class Page extends Component {
          super easy to update the state
          */
         this.setState({ [e.target.name]: e.target.value });
-        this.setState({ selectedFile: event.target.files[0] });
+        this.setState({ selectedFile: e.target.files[0] });
     }
 
     uploadHandler = () => {
