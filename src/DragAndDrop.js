@@ -40,12 +40,12 @@ class Page extends Component {
             });
     }
 
-
+//<input type="file" name="file" onChange={this.onChange} />
     render() {
         const { name, course, tag, description, data, file } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <input type="file" name="file" onChange={this.onChange} />
+
                 <label htmlFor="name">Le nom:</label>
                 <input
                     type="text"
