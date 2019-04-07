@@ -26,18 +26,14 @@ class Page extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
-function postVideoDetails() {
-  return axios.post('http://api.bacalaureat.local/api/v1/create',
-                                { name, course, tag, description}
-                    //                { headers: {
-                    //                    'content-type': 'multipart/form-data'
-                    //                }}
-
+function postVideoDetails(){
+  return post('http://api.bacalaureat.local/api/v1/create',
+                     { name, course, tag, description}
                             );
 }
 
-function postVideoFile() {
-  return axios.post('http://api.bacalaureat.local/api/v1/create',
+function postVideoFile(){
+  return post('http://api.bacalaureat.local/api/v1/create',
                                 { file }
                                     { headers: {
                                         'content-type': 'multipart/form-data'
@@ -55,7 +51,7 @@ function postVideoFile() {
         const { name, course, tag, description, file } = this.state;
 
         axios.all([postVideoDetails(),postVideoFile()])
-        .then(axios.spread(function (acct, perms) {
+        .then(axios.spread(function (pvd, pvf) {
             // Both requests are now complete
           }));
 //        .then((result) => {
