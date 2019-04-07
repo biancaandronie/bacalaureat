@@ -14,7 +14,6 @@ class Page extends Component {
         };
     }
 
-
     onChange = (e) => {
         /*
          Because we named the inputs to match their
@@ -22,35 +21,30 @@ class Page extends Component {
          super easy to update the state
          */
         this.setState({ [e.target.name]: e.target.value });
-        this.setState({ file: e.target.files[0] });
     }
 
-    onSubmit = () => {
-       // const { name, course, tag, description, file } = this.state;
-        const formData = new FormData()
-          formData.append(
-            this.state.name,
-            this.state.course,
-            this.state.tag,
-            this.state.description,
-            this.state.file
-          )
-        axios.post('http://api.bacalaureat.local/api/v1/create', formData,
-                {
-                onUploadProgress: progressEvent => {
-                console.log(progressEvent.loaded / progressEvent.total)}
-                })
+    onSubmit = (e) => {
+        e.preventDefault();
+
+        const { name, course, tag, description, file } = this.state;
+
+        axios.post('http://api.bacalaureat.local/api/v1/create',
+            { name, course, tag, description, file }
+//                { headers: {
+//                    'content-type': 'multipart/form-data'
+//                }}
+
+        )
             .then((result) => {
                 //access the results here....
             });
-            console.log(this.state.file);
     }
 
 
     render() {
         const { name, course, tag, description, data, file } = this.state;
         return (
-            <form>
+            <form onSubmit={this.onSubmit}>
                 <input type="file" name="file" onChange={this.onChange} />
                 <label htmlFor="name">Le nom:</label>
                 <input
@@ -85,7 +79,7 @@ class Page extends Component {
                     value={tag}
                     onChange={this.onChange}
                 />
-                <button id='send' className='btn rainy-ashville-gradient rounded-circle' onClick={this.onSubmit}>Envoyer</button>
+                <button id='send' className='btn rainy-ashville-gradient rounded-circle'>Envoyer</button>
             </form>
         );
     }
