@@ -48,7 +48,7 @@ class Page extends Component {
     render() {
         const { name, course, tag, description, data } = this.state;
         return (
-            <form onSubmit={this.onSubmit}>
+            <form onSubmit={this.onSubmit} method="post" enctype="multipart/form-data">
                 <DropToUpload
                   onDrop={ this.onSubmit }
                 >
