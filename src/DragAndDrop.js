@@ -29,6 +29,7 @@ class Page extends React.Component {
     fileUpload(file) {
     		let data = new FormData();
     		data.append('data', file);
+    		const { name, course, tag, description, file } = this.state;
     		axios.post('http://api.bacalaureat.local/api/v1/create', { name, course, tag, description, file }, data, {
     				headers: {
     					'Content-Type': 'multipart/form-data',
