@@ -3,13 +3,15 @@ import axios, { post } from 'axios';
 import DropToUpload from 'react-drop-to-upload';
 
 class Page extends Component {
-    constructor(props) {
-        super(props);
-        this.state ={
-          file:''
-        }
-        this.onSubmit = this.onSubmit.bind(this);
-        this.onChange = this.onChange.bind(this);
+    constructor() {
+        super();
+        this.state = {
+            name: '',
+            course: '',
+            tag: '',
+            description: '',
+            file: null
+        };
     }
 
     onChange = (e) => {
@@ -18,19 +20,16 @@ class Page extends Component {
          corresponding values in state, it's
          super easy to update the state
          */
-        //this.setState({ [e.target.name]: e.target.value });
-        let file = e.target.files[0];
-        this.setState(() => ({ file: file }));
+        this.setState({ [e.target.name]: e.target.value });
     }
 
     onSubmit = (e) => {
-        e.preventDefault(); // Stop form submit
+        e.preventDefault();
 
         const { name, course, tag, description, file } = this.state;
 
-        const url = 'http://api.bacalaureat.local/api/v1/create';
-
-        axios.post(url, { name, course, tag, description, file }
+        axios.post('http://api.bacalaureat.local/api/v1/create',
+            { name, course, tag, description, file }
 //                { headers: {
 //                    'content-type': 'multipart/form-data'
 //                }}
@@ -39,17 +38,8 @@ class Page extends Component {
             .then((result) => {
                 //access the results here....
             });
-
-        const formData = new FormData();
-        formData.append('file',file)
-        const config = {
-            headers: {
-                'content-type': 'multipart/form-data'
-            }
-        }
-        return  post(url, formData,config);
-
     }
+
 
     render() {
         const { name, course, tag, description, data, file } = this.state;
@@ -89,7 +79,7 @@ class Page extends Component {
                     value={tag}
                     onChange={this.onChange}
                 />
-                <button type="submit">Upload</button>
+                <button id='send' className='btn rainy-ashville-gradient rounded-circle'>Envoyer</button>
             </form>
         );
     }
