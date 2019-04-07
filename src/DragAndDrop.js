@@ -6,7 +6,7 @@ class Page extends Component {
     constructor(props) {
         super(props);
         this.state ={
-          file:null
+          file:''
         }
         this.onSubmit = this.onSubmit.bind(this);
         this.onChange = this.onChange.bind(this);
@@ -19,8 +19,8 @@ class Page extends Component {
          super easy to update the state
          */
         //this.setState({ [e.target.name]: e.target.value });
-        const file = e.target.files[0];
-        this.setState(() => ({ file: e.target.files[0] }));
+        let file = e.target.files[0];
+        this.setState(() => ({ file: file }));
     }
 
     onSubmit = (e) => {
