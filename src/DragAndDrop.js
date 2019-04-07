@@ -25,9 +25,7 @@ class Page extends Component {
         this.setState({ file: e.target.files[0] });
     }
 
-    onSubmit = (e) => {
-        e.preventDefault();
-
+    onSubmit = () => {
        // const { name, course, tag, description, file } = this.state;
         const formData = new FormData()
           formData.append(
