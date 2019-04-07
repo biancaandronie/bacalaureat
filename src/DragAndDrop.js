@@ -27,17 +27,21 @@ class Page extends Component {
     }
 
 function postVideoDetails(){
-  return post('http://api.bacalaureat.local/api/v1/create',
-                     { name, course, tag, description}
+  const { name, course, tag, description, file } = this.state;
+  return axios.post('http://api.bacalaureat.local/api/v1/create',
+                     { name, course, tag, description }
                             );
 }
 
 function postVideoFile(){
-  return post('http://api.bacalaureat.local/api/v1/create',
-                                { file }
-                                    { headers: {
+  const { name, course, tag, description, file } = this.state;
+  return axios.post('http://api.bacalaureat.local/api/v1/create',
+                                { file },
+                                    {
+                                    headers: {
                                         'content-type': 'multipart/form-data'
-                                    }}
+                                        }
+                                    }
 
                             );
 }
