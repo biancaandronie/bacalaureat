@@ -25,10 +25,6 @@ class Page extends Component {
         this.setState({ file: e.target.files[0] });
     }
 
-    uploadHandler = () => {
-      console.log(this.state.file);
-    }
-
     onSubmit = (e) => {
         e.preventDefault();
 
@@ -49,6 +45,7 @@ class Page extends Component {
             .then((result) => {
                 //access the results here....
             });
+            console.log(this.state.file);
     }
 
 
@@ -90,7 +87,7 @@ class Page extends Component {
                     value={tag}
                     onChange={this.onChange}
                 />
-                <button id='send' className='btn rainy-ashville-gradient rounded-circle'>Envoyer</button>
+                <button id='send' className='btn rainy-ashville-gradient rounded-circle' onClick={this.onSubmit}>Envoyer</button>
             </form>
         );
     }
