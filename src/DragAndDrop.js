@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import DropToUpload from 'react-drop-to-upload';
 
 class Page extends Component {
     constructor() {
@@ -21,21 +22,40 @@ class Page extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
-    onSubmit = (e) => {
+    onSubmit = (files, e) => {
         e.preventDefault();
         // get our form data out of state
+        var data = new FormData();
+
+        files.forEach((file, index) => {
+           data.append('file' + index, file);
+        });
+
         const { name, course, tag, description } = this.state;
 
-        axios.post('http://api.bacalaureat.local/api/v1/create', { name, course, tag, description })
+        axios.post('http://api.bacalaureat.local/api/v1/create', { name, course, tag, description, data }
+            headers: {
+                'content-type': 'multipart/form-data'
+            }
+
+        )
             .then((result) => {
                 //access the results here....
             });
     }
 
     render() {
-        const { name, course, tag, description } = this.state;
+        const { name, course, tag, description, data } = this.state;
         return (
+            <DropToUpload
+              onDrop={ this.onSubmit }
+            >
+              Drop file here to upload
+            </DropToUpload>
+
             <form onSubmit={this.onSubmit}>
+                <input type="file" name="video"/>
+
                 <label htmlFor="name">Le nom:</label>
                 <input
                     type="text"
