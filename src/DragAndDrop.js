@@ -58,7 +58,7 @@ class Page extends Component {
         const { name, course, tag, description, data, file } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <input type="file" name="file" onChange={this.onChange} />
+                <input type="file" name="file" onChange={this.fileChangedHandler}} />
                 <label htmlFor="name">Le nom:</label>
                 <input
                     type="text"
