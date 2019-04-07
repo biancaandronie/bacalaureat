@@ -9,8 +9,12 @@ class Page extends Component {
             name: '',
             course: '',
             tag: '',
-            description: ''
+            description: '',
+            file:null
         };
+        this.fileUpload = this.fileUpload.bind(this);
+        this.onChange = this.onChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
     }
 
     onChange = (e) => {
