@@ -19,7 +19,7 @@ ReactDOM.render((
     <div>
       <Route exact path="/" component={App} />
       <Route path="/admin" component={DragAndDrop} />
-      <Route path="/test" component={test} />
+      <Route path="/test" component={Test} />
     </div>
   </BrowserRouter >
 ), document.getElementById('root'));
