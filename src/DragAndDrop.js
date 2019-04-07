@@ -32,10 +32,10 @@ class Page extends Component {
         const { name, course, tag, description, file } = this.state;
 
         axios.post('http://api.bacalaureat.local/api/v1/create',
-            { name, course, tag, description, file },
-                { headers: {
-                    'content-type': 'multipart/form-data'
-                }}
+            { name, course, tag, description, file }
+//                { headers: {
+//                    'content-type': 'multipart/form-data'
+//                }}
 
         )
             .then((result) => {
