@@ -48,14 +48,14 @@ class Page extends Component {
     render() {
         const { name, course, tag, description, data } = this.state;
         return (
-            <DropToUpload
-              onDrop={ this.onSubmit }
-            >
-              Drop file here to upload
-            </DropToUpload>
-
             <form onSubmit={this.onSubmit}>
-                <input type="file" name="video"/>
+                <DropToUpload
+                  onDrop={ this.onSubmit }
+                >
+                  Drop file here to upload
+                </DropToUpload>
+
+                <input type="file" name="video" />
 
                 <label htmlFor="name">Le nom:</label>
                 <input
