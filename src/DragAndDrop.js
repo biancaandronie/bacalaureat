@@ -1,17 +1,20 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios, { post } from 'axios';
-import DropToUpload from 'react-drop-to-upload';
 
-class Page extends Component {
-    constructor() {
-        super();
-        this.state = {
-            name: '',
-            course: '',
-            tag: '',
-            description: '',
-            file: null
-        };
+class Page extends React.Component {
+    constructor(props) {
+    		super(props);
+    		this.state = {
+    			file: null,
+    		};
+    		this.onFormSubmit = this.onFormSubmit.bind(this);
+    		this.onChange = this.onChange.bind(this);
+    		this.fileUpload = this.fileUpload.bind(this);
+    	}
+
+    onFormSubmit(e) {
+        e.preventDefault();
+        this.fileUpload(this.state.file);
     }
 
     onChange = (e) => {
@@ -20,31 +23,27 @@ class Page extends Component {
          corresponding values in state, it's
          super easy to update the state
          */
-        this.setState({ [e.target.name]: e.target.value });
+        this.setState({ file: e.target.files[0] });
     }
 
-    onSubmit = (e) => {
-        e.preventDefault();
-
-        const { name, course, tag, description, file } = this.state;
-
-        axios.post('http://api.bacalaureat.local/api/v1/create',
-            { name, course, tag, description, file }
-//                { headers: {
-//                    'content-type': 'multipart/form-data'
-//                }}
-
-        )
-            .then((result) => {
-                //access the results here....
-            });
-    }
+    fileUpload(file) {
+    		let data = new FormData();
+    		data.append('data', file);
+    		axios.post('http://api.bacalaureat.local/api/v1/create', data, {
+    				headers: {
+    					'Content-Type': 'multipart/form-data',
+    				},
+    			})
+    			.then(response => {
+    				console.log('file upload response', response);
+    			});
+    	}
 
 
     render() {
-        const { name, course, tag, description, data, file } = this.state;
+
         return (
-            <form onSubmit={this.onSubmit}>
+            <form onSubmit={this.onFormSubmit}>
                 <input type="file" name="file" onChange={this.onChange} />
                 <label htmlFor="name">Le nom:</label>
                 <input
@@ -79,7 +78,7 @@ class Page extends Component {
                     value={tag}
                     onChange={this.onChange}
                 />
-                <button id='send' className='btn rainy-ashville-gradient rounded-circle'>Envoyer</button>
+                <button type="submit">Upload</button>
             </form>
         );
     }
