@@ -45,15 +45,15 @@ class Page extends Component {
                 />
                 <select name="course" value={course} onChange={this.onChange}>
                   <option selected>Choisir une matière</option>
-                  <option value="1">Littérature</option>
-                  <option value="2">Informatique</option>
-                  <option value="3">Histoire</option>
-                  <option value="4">Géographie</option>
-                  <option value="5">Biologie végétale et animale</option>
-                  <option value="6">Anatomie et physiologie humaine</option>
-                  <option value="7">Chimie</option>
-                  <option value="8">Physique</option>
-                  <option value="9">Mathématiques</option>
+                  <option value="littérature">Littérature</option>
+                  <option value="informatique">Informatique</option>
+                  <option value="histoire">Histoire</option>
+                  <option value="géographie">Géographie</option>
+                  <option value="biologie">Biologie végétale et animale</option>
+                  <option value="anatomie">Anatomie et physiologie humaine</option>
+                  <option value="chimie">Chimie</option>
+                  <option value="physique">Physique</option>
+                  <option value="mathématiques">Mathématiques</option>
                 </select>
                 <label htmlFor="description">La description:</label>
                 <input
