@@ -26,38 +26,42 @@ class Page extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
+function postVideoDetails() {
+  return axios.post('http://api.bacalaureat.local/api/v1/create',
+                                { name, course, tag, description}
+                    //                { headers: {
+                    //                    'content-type': 'multipart/form-data'
+                    //                }}
+
+                            );
+}
+
+function postVideoFile() {
+  return axios.post('http://api.bacalaureat.local/api/v1/create',
+                                { file }
+                                    { headers: {
+                                        'content-type': 'multipart/form-data'
+                                    }}
+
+                            );
+}
+
+
+
+
     onSubmit = (e) => {
         e.preventDefault();
 
         const { name, course, tag, description, file } = this.state;
 
-        axios.post('http://api.bacalaureat.local/api/v1/create',
-            { name, course, tag, description, file }
-//                { headers: {
-//                    'content-type': 'multipart/form-data'
-//                }}
-
-        )
-            .then((result) => {
-                //access the results here....
-            });
-//        this.fileUpload(this.state.file).then((response)=>{
-//              console.log(response.data);
-//            })
-
+        axios.all([postVideoDetails(),postVideoFile()])
+        .then(axios.spread(function (acct, perms) {
+            // Both requests are now complete
+          }));
+//        .then((result) => {
+//                //access the results here....
+//            });
     }
-
-//    fileUpload(file){
-//        const url = 'http://example.com/file-upload';
-//        const formData = new FormData();
-//        formData.append('file',file)
-//        const config = {
-//            headers: {
-//                'content-type': 'multipart/form-data'
-//            }
-//        }
-//        return  post(url, formData,config)
-//      }
 
     render() {
         const { name, course, tag, description, data, file } = this.state;
