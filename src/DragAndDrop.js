@@ -12,9 +12,6 @@ class Page extends Component {
             description: '',
             file:null
         };
-//        this.fileUpload = this.fileUpload.bind(this);
-//        this.onChange = this.onChange.bind(this);
-//        this.onSubmit = this.onSubmit.bind(this);
     }
 
     onChange = (e) => {
@@ -26,42 +23,23 @@ class Page extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
-function postVideoDetails(){
-  const { name, course, tag, description, file } = this.state;
-  return axios.post('http://api.bacalaureat.local/api/v1/create',
-                     { name, course, tag, description }
-                            );
-}
-
-function postVideoFile(){
-  const { name, course, tag, description, file } = this.state;
-  return axios.post('http://api.bacalaureat.local/api/v1/create',
-                                { file },
-                                    {
-                                    headers: {
-                                        'content-type': 'multipart/form-data'
-                                        }
-                                    }
-
-                            );
-}
-
-
-
-
     onSubmit = (e) => {
         e.preventDefault();
 
         const { name, course, tag, description, file } = this.state;
 
-        axios.all([postVideoDetails(),postVideoFile()])
-        .then(axios.spread(function (pvd, pvf) {
-            // Both requests are now complete
-          }));
-//        .then((result) => {
-//                //access the results here....
-//            });
+        axios.post('http://api.bacalaureat.local/api/v1/create',
+            { name, course, tag, description, file }
+//                { headers: {
+//                    'content-type': 'multipart/form-data'
+//                }}
+
+        )
+            .then((result) => {
+                //access the results here....
+            });
     }
+
 
     render() {
         const { name, course, tag, description, data, file } = this.state;
