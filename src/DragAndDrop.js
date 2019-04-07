@@ -29,7 +29,7 @@ class Page extends Component {
         const { name, course, tag, description } = this.state;
 
         axios.post('http://api.bacalaureat.local/api/v1/create',
-            { name, course, tag, description, data },
+            { name, course, tag, description },
                 { headers: {
                     'content-type': 'multipart/form-data'
                 }}
