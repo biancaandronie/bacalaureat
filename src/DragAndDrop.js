@@ -20,16 +20,11 @@ class Page extends Component {
          super easy to update the state
          */
         this.setState({ [e.target.name]: e.target.value });
+        this.setState({file:e.target.files[0]})
     }
 
-    onSubmit = (files, e) => {
+    onSubmit = (e) => {
         e.preventDefault();
-        // get our form data out of state
-        var data = new FormData();
-
-        files.forEach((file, index) => {
-           data.append('file' + index, file);
-        });
 
         const { name, course, tag, description } = this.state;
 
@@ -43,20 +38,29 @@ class Page extends Component {
             .then((result) => {
                 //access the results here....
             });
+        this.fileUpload(this.state.file).then((response)=>{
+              console.log(response.data);
+            })
+
     }
+
+    fileUpload(file){
+        const url = 'http://example.com/file-upload';
+        const formData = new FormData();
+        formData.append('file',file)
+        const config = {
+            headers: {
+                'content-type': 'multipart/form-data'
+            }
+        }
+        return  post(url, formData,config)
+      }
 
     render() {
         const { name, course, tag, description, data } = this.state;
         return (
-            <form onSubmit={this.onSubmit} method="post" enctype="multipart/form-data">
-                <DropToUpload
-                  onDrop={ this.onSubmit }
-                >
-                  Drop file here to upload
-                </DropToUpload>
-
-                <input type="file" name="video" />
-
+            <form onSubmit={this.onSubmit}>
+                <input type="file" name="video" onChange={this.onChange} />
                 <label htmlFor="name">Le nom:</label>
                 <input
                     type="text"
