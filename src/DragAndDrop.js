@@ -41,7 +41,7 @@ class Page extends React.Component {
 
 
     render() {
-
+        const { name, course, tag, description, data, file } = this.state;
         return (
             <form onSubmit={this.onFormSubmit}>
                 <input type="file" name="file" onChange={this.onChange} />
