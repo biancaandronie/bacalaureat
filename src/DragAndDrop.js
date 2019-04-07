@@ -14,13 +14,6 @@ class Page extends Component {
         };
     }
 
-    fileChangedHandler = event => {
-      this.setState({ file: event.target.files[0] })
-    }
-
-    uploadHandler = () => {
-      console.log(this.state.file);
-    }
 
     onChange = (e) => {
         /*
@@ -29,6 +22,11 @@ class Page extends Component {
          super easy to update the state
          */
         this.setState({ [e.target.name]: e.target.value });
+        this.setState({ selectedFile: event.target.files[0] });
+    }
+
+    uploadHandler = () => {
+      console.log(this.state.file);
     }
 
     onSubmit = (e) => {
@@ -58,7 +56,7 @@ class Page extends Component {
         const { name, course, tag, description, data, file } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <input type="file" name="file" onChange={this.fileChangedHandler}} />
+                <input type="file" name="file" onChange={this.onChange}} />
                 <label htmlFor="name">Le nom:</label>
                 <input
                     type="text"
