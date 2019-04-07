@@ -1,42 +1,68 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
-class MyForm extends Component {
-  constructor() {
-    super();
-    this.postData = this.postData.bind(this);
-  }
+class Page extends Component {
+    constructor() {
+        super();
+        this.state = {
+            name: '',
+            course: '',
+            tag: '',
+            description: ''
+        };
+    }
 
-   function postData(event){
-              event.preventDefault();
+    onChange = (e) => {
+        /*
+         Because we named the inputs to match their
+         corresponding values in state, it's
+         super easy to update the state
+         */
+        this.setState({ [e.target.name]: e.target.value });
+    }
 
-              let name = document.getElementById('name').value;
-              let course = document.getElementById('course').value;
-              let course = document.getElementById('tag').value;
+    onSubmit = (e) => {
+        e.preventDefault();
+        // get our form data out of state
+        const { name, course, tag, description } = this.state;
 
-              fetch('http://api.bacalaureat.local/api/v1/create', {
-                  method: 'POST',
-                  headers : new Headers(),
-                  body:JSON.stringify({name:name, course:course, tag:[tag]})
-              }).then((res) => res.json())
-              .then((data) =>  console.log(data))
-              .catch((err)=>console.log(err))
-          }
-  }
-  render() {
-    return (
-      <form  id="postData">
-              <div>
-                  <input type="text" name="" id="name">
-              </div>
-              <div>
-                  <textarea name="" id="course" cols="20" rows="5"></textarea>
-              </div>
-              <div>
-                                <textarea name="" id="tag" cols="20" rows="5"></textarea>
-              </div>
-              <input type="submit" value="SEND POST">
-          </form>
-    );
-  }
+        axios.post('http://api.bacalaureat.local/api/v1/create', { name, course, tag, description })
+            .then((result) => {
+                //access the results here....
+            });
+    }
+
+    render() {
+        const { name, course, tag, description } = this.state;
+        return (
+            <form onSubmit={this.onSubmit}>
+                <input
+                    type="text"
+                    name="name"
+                    value={name}
+                    onChange={this.onChange}
+                />
+                <input
+                    type="text"
+                    name="course"
+                    value={course}
+                    onChange={this.onChange}
+                />
+                <input
+                    type="text"
+                    name="tag"
+                    value={tag}
+                    onChange={this.onChange}
+                />
+                <input
+                    type="text"
+                    name="description"
+                    value={description}
+                    onChange={this.onChange}
+                />
+                <button type="submit">Submit</button>
+            </form>
+        );
+    }
 }
-export default MyForm;
+export default Page;
