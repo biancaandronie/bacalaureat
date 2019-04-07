@@ -35,9 +35,9 @@ class Page extends Component {
 
         axios.post('http://api.bacalaureat.local/api/v1/create',
             { name, course, tag, description, data },
-                headers: {
+                { headers: {
                     'content-type': 'multipart/form-data'
-                }
+                }}
 
         )
             .then((result) => {
