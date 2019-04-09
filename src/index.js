@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import DragAndDrop from './DragAndDrop';
+import Admin from './Admin';
 import test from './test';
 import * as serviceWorker from './serviceWorker';
 //pt butonul din header--pt culoare am instalat mdbreact
@@ -18,7 +18,7 @@ ReactDOM.render((
   <BrowserRouter>
     <div>
       <Route exact path="/" component={App} />
-      <Route path="/admin" component={DragAndDrop} />
+      <Route path="/admin" component={Admin} />
       <Route path="/test" component={test} />
     </div>
   </BrowserRouter >

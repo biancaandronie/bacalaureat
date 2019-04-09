@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e78ebda-43e5-4c9d-891b-ccb0200898d4" name="Default Changelist" comment="">
+    <list default="true" id="9e78ebda-43e5-4c9d-891b-ccb0200898d4" name="Default Changelist" comment="api ok2">
+      <change afterPath="$PROJECT_DIR$/src/Admin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DragAndDrop.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/DragAndDrop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DragAndDrop.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
     </list>
@@ -21,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+            <state relative-caret-position="500">
+              <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -30,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="418">
+              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -39,26 +40,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DragAndDrop.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+            <state relative-caret-position="120">
+              <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test.js">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
+            <state relative-caret-position="114">
+              <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Admin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1653">
+              <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -170,15 +171,16 @@
         <option value="$PROJECT_DIR$/src/admin.js" />
         <option value="$PROJECT_DIR$/node_modules/react-dropzone-uploader/dist/react-dropzone-uploader.umd.js" />
         <option value="$PROJECT_DIR$/node_modules/react-dropzone-uploader/dist/react-dropzone-uploader.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/SimpleReactFileUpload.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/service/PostData.js" />
         <option value="$PROJECT_DIR$/src/Login.js" />
         <option value="$PROJECT_DIR$/src/service/VideoData.js" />
-        <option value="$PROJECT_DIR$/src/test.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/DragAndDrop.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/test.js" />
+        <option value="$PROJECT_DIR$/src/Admin.js" />
       </list>
     </option>
   </component>
@@ -232,7 +234,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554621725287" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554636118393" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../api.bacalaureat.local" />
     <property name="project.structure.last.edited" value="Project" />
@@ -276,293 +278,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544863220417</updated>
-    </task>
-    <task id="LOCAL-00523" summary="upload16">
-      <created>1554564537769</created>
-      <option name="number" value="00523" />
-      <option name="presentableId" value="LOCAL-00523" />
-      <option name="project" value="LOCAL" />
-      <updated>1554564537769</updated>
-    </task>
-    <task id="LOCAL-00524" summary="upload16">
-      <created>1554566612303</created>
-      <option name="number" value="00524" />
-      <option name="presentableId" value="LOCAL-00524" />
-      <option name="project" value="LOCAL" />
-      <updated>1554566612303</updated>
-    </task>
-    <task id="LOCAL-00525" summary="upload16">
-      <created>1554566741065</created>
-      <option name="number" value="00525" />
-      <option name="presentableId" value="LOCAL-00525" />
-      <option name="project" value="LOCAL" />
-      <updated>1554566741065</updated>
-    </task>
-    <task id="LOCAL-00526" summary="upload16">
-      <created>1554566903371</created>
-      <option name="number" value="00526" />
-      <option name="presentableId" value="LOCAL-00526" />
-      <option name="project" value="LOCAL" />
-      <updated>1554566903371</updated>
-    </task>
-    <task id="LOCAL-00527" summary="upload16">
-      <created>1554566974851</created>
-      <option name="number" value="00527" />
-      <option name="presentableId" value="LOCAL-00527" />
-      <option name="project" value="LOCAL" />
-      <updated>1554566974851</updated>
-    </task>
-    <task id="LOCAL-00528" summary="upload16">
-      <created>1554567024885</created>
-      <option name="number" value="00528" />
-      <option name="presentableId" value="LOCAL-00528" />
-      <option name="project" value="LOCAL" />
-      <updated>1554567024885</updated>
-    </task>
-    <task id="LOCAL-00529" summary="upload16">
-      <created>1554567334752</created>
-      <option name="number" value="00529" />
-      <option name="presentableId" value="LOCAL-00529" />
-      <option name="project" value="LOCAL" />
-      <updated>1554567334752</updated>
-    </task>
-    <task id="LOCAL-00530" summary="upload16">
-      <created>1554567741146</created>
-      <option name="number" value="00530" />
-      <option name="presentableId" value="LOCAL-00530" />
-      <option name="project" value="LOCAL" />
-      <updated>1554567741146</updated>
-    </task>
-    <task id="LOCAL-00531" summary="upload16">
-      <created>1554568348047</created>
-      <option name="number" value="00531" />
-      <option name="presentableId" value="LOCAL-00531" />
-      <option name="project" value="LOCAL" />
-      <updated>1554568348047</updated>
-    </task>
-    <task id="LOCAL-00532" summary="upload16">
-      <created>1554568427862</created>
-      <option name="number" value="00532" />
-      <option name="presentableId" value="LOCAL-00532" />
-      <option name="project" value="LOCAL" />
-      <updated>1554568427862</updated>
-    </task>
-    <task id="LOCAL-00533" summary="upload16">
-      <created>1554568524857</created>
-      <option name="number" value="00533" />
-      <option name="presentableId" value="LOCAL-00533" />
-      <option name="project" value="LOCAL" />
-      <updated>1554568524857</updated>
-    </task>
-    <task id="LOCAL-00534" summary="upload16">
-      <created>1554568820390</created>
-      <option name="number" value="00534" />
-      <option name="presentableId" value="LOCAL-00534" />
-      <option name="project" value="LOCAL" />
-      <updated>1554568820390</updated>
-    </task>
-    <task id="LOCAL-00535" summary="upload16">
-      <created>1554568887451</created>
-      <option name="number" value="00535" />
-      <option name="presentableId" value="LOCAL-00535" />
-      <option name="project" value="LOCAL" />
-      <updated>1554568887451</updated>
-    </task>
-    <task id="LOCAL-00536" summary="upload16">
-      <created>1554569496862</created>
-      <option name="number" value="00536" />
-      <option name="presentableId" value="LOCAL-00536" />
-      <option name="project" value="LOCAL" />
-      <updated>1554569496862</updated>
-    </task>
-    <task id="LOCAL-00537" summary="upload16">
-      <created>1554569800617</created>
-      <option name="number" value="00537" />
-      <option name="presentableId" value="LOCAL-00537" />
-      <option name="project" value="LOCAL" />
-      <updated>1554569800617</updated>
-    </task>
-    <task id="LOCAL-00538" summary="upload16">
-      <created>1554569950128</created>
-      <option name="number" value="00538" />
-      <option name="presentableId" value="LOCAL-00538" />
-      <option name="project" value="LOCAL" />
-      <updated>1554569950128</updated>
-    </task>
-    <task id="LOCAL-00539" summary="upload16">
-      <created>1554569992374</created>
-      <option name="number" value="00539" />
-      <option name="presentableId" value="LOCAL-00539" />
-      <option name="project" value="LOCAL" />
-      <updated>1554569992374</updated>
-    </task>
-    <task id="LOCAL-00540" summary="upload16">
-      <created>1554575919837</created>
-      <option name="number" value="00540" />
-      <option name="presentableId" value="LOCAL-00540" />
-      <option name="project" value="LOCAL" />
-      <updated>1554575919837</updated>
-    </task>
-    <task id="LOCAL-00541" summary="upload16">
-      <created>1554576010877</created>
-      <option name="number" value="00541" />
-      <option name="presentableId" value="LOCAL-00541" />
-      <option name="project" value="LOCAL" />
-      <updated>1554576010877</updated>
-    </task>
-    <task id="LOCAL-00542" summary="upload16">
-      <created>1554576175546</created>
-      <option name="number" value="00542" />
-      <option name="presentableId" value="LOCAL-00542" />
-      <option name="project" value="LOCAL" />
-      <updated>1554576175546</updated>
-    </task>
-    <task id="LOCAL-00543" summary="upload16">
-      <created>1554576197443</created>
-      <option name="number" value="00543" />
-      <option name="presentableId" value="LOCAL-00543" />
-      <option name="project" value="LOCAL" />
-      <updated>1554576197443</updated>
-    </task>
-    <task id="LOCAL-00544" summary="upload16">
-      <created>1554576364282</created>
-      <option name="number" value="00544" />
-      <option name="presentableId" value="LOCAL-00544" />
-      <option name="project" value="LOCAL" />
-      <updated>1554576364282</updated>
-    </task>
-    <task id="LOCAL-00545" summary="upload16">
-      <created>1554576583491</created>
-      <option name="number" value="00545" />
-      <option name="presentableId" value="LOCAL-00545" />
-      <option name="project" value="LOCAL" />
-      <updated>1554576583491</updated>
-    </task>
-    <task id="LOCAL-00546" summary="up">
-      <created>1554577000672</created>
-      <option name="number" value="00546" />
-      <option name="presentableId" value="LOCAL-00546" />
-      <option name="project" value="LOCAL" />
-      <updated>1554577000672</updated>
-    </task>
-    <task id="LOCAL-00547" summary="up">
-      <created>1554577186372</created>
-      <option name="number" value="00547" />
-      <option name="presentableId" value="LOCAL-00547" />
-      <option name="project" value="LOCAL" />
-      <updated>1554577186372</updated>
-    </task>
-    <task id="LOCAL-00548" summary="up">
-      <created>1554577387304</created>
-      <option name="number" value="00548" />
-      <option name="presentableId" value="LOCAL-00548" />
-      <option name="project" value="LOCAL" />
-      <updated>1554577387304</updated>
-    </task>
-    <task id="LOCAL-00549" summary="up">
-      <created>1554577581417</created>
-      <option name="number" value="00549" />
-      <option name="presentableId" value="LOCAL-00549" />
-      <option name="project" value="LOCAL" />
-      <updated>1554577581418</updated>
-    </task>
-    <task id="LOCAL-00550" summary="up">
-      <created>1554577788119</created>
-      <option name="number" value="00550" />
-      <option name="presentableId" value="LOCAL-00550" />
-      <option name="project" value="LOCAL" />
-      <updated>1554577788119</updated>
-    </task>
-    <task id="LOCAL-00551" summary="up">
-      <created>1554577974513</created>
-      <option name="number" value="00551" />
-      <option name="presentableId" value="LOCAL-00551" />
-      <option name="project" value="LOCAL" />
-      <updated>1554577974513</updated>
-    </task>
-    <task id="LOCAL-00552" summary="up">
-      <created>1554578462612</created>
-      <option name="number" value="00552" />
-      <option name="presentableId" value="LOCAL-00552" />
-      <option name="project" value="LOCAL" />
-      <updated>1554578462612</updated>
-    </task>
-    <task id="LOCAL-00553" summary="up">
-      <created>1554578852684</created>
-      <option name="number" value="00553" />
-      <option name="presentableId" value="LOCAL-00553" />
-      <option name="project" value="LOCAL" />
-      <updated>1554578852684</updated>
-    </task>
-    <task id="LOCAL-00554" summary="up">
-      <created>1554578971817</created>
-      <option name="number" value="00554" />
-      <option name="presentableId" value="LOCAL-00554" />
-      <option name="project" value="LOCAL" />
-      <updated>1554578971817</updated>
-    </task>
-    <task id="LOCAL-00555" summary="up">
-      <created>1554579191469</created>
-      <option name="number" value="00555" />
-      <option name="presentableId" value="LOCAL-00555" />
-      <option name="project" value="LOCAL" />
-      <updated>1554579191469</updated>
-    </task>
-    <task id="LOCAL-00556" summary="up">
-      <created>1554579533863</created>
-      <option name="number" value="00556" />
-      <option name="presentableId" value="LOCAL-00556" />
-      <option name="project" value="LOCAL" />
-      <updated>1554579533863</updated>
-    </task>
-    <task id="LOCAL-00557" summary="up">
-      <created>1554579659926</created>
-      <option name="number" value="00557" />
-      <option name="presentableId" value="LOCAL-00557" />
-      <option name="project" value="LOCAL" />
-      <updated>1554579659926</updated>
-    </task>
-    <task id="LOCAL-00558" summary="up">
-      <created>1554579911451</created>
-      <option name="number" value="00558" />
-      <option name="presentableId" value="LOCAL-00558" />
-      <option name="project" value="LOCAL" />
-      <updated>1554579911451</updated>
-    </task>
-    <task id="LOCAL-00559" summary="up">
-      <created>1554580233571</created>
-      <option name="number" value="00559" />
-      <option name="presentableId" value="LOCAL-00559" />
-      <option name="project" value="LOCAL" />
-      <updated>1554580233571</updated>
-    </task>
-    <task id="LOCAL-00560" summary="up">
-      <created>1554580415390</created>
-      <option name="number" value="00560" />
-      <option name="presentableId" value="LOCAL-00560" />
-      <option name="project" value="LOCAL" />
-      <updated>1554580415390</updated>
-    </task>
-    <task id="LOCAL-00561" summary="up">
-      <created>1554580606127</created>
-      <option name="number" value="00561" />
-      <option name="presentableId" value="LOCAL-00561" />
-      <option name="project" value="LOCAL" />
-      <updated>1554580606127</updated>
-    </task>
-    <task id="LOCAL-00562" summary="up">
-      <created>1554580796478</created>
-      <option name="number" value="00562" />
-      <option name="presentableId" value="LOCAL-00562" />
-      <option name="project" value="LOCAL" />
-      <updated>1554580796478</updated>
-    </task>
-    <task id="LOCAL-00563" summary="up">
-      <created>1554581104291</created>
-      <option name="number" value="00563" />
-      <option name="presentableId" value="LOCAL-00563" />
-      <option name="project" value="LOCAL" />
-      <updated>1554581104291</updated>
     </task>
     <task id="LOCAL-00564" summary="up">
       <created>1554581209653</created>
@@ -620,7 +335,294 @@
       <option name="project" value="LOCAL" />
       <updated>1554584245150</updated>
     </task>
-    <option name="localTasksCounter" value="572" />
+    <task id="LOCAL-00572" summary="up">
+      <created>1554621791307</created>
+      <option name="number" value="00572" />
+      <option name="presentableId" value="LOCAL-00572" />
+      <option name="project" value="LOCAL" />
+      <updated>1554621791308</updated>
+    </task>
+    <task id="LOCAL-00573" summary="up">
+      <created>1554621879884</created>
+      <option name="number" value="00573" />
+      <option name="presentableId" value="LOCAL-00573" />
+      <option name="project" value="LOCAL" />
+      <updated>1554621879885</updated>
+    </task>
+    <task id="LOCAL-00574" summary="api ok">
+      <created>1554622149212</created>
+      <option name="number" value="00574" />
+      <option name="presentableId" value="LOCAL-00574" />
+      <option name="project" value="LOCAL" />
+      <updated>1554622149212</updated>
+    </task>
+    <task id="LOCAL-00575" summary="api ok">
+      <created>1554622908046</created>
+      <option name="number" value="00575" />
+      <option name="presentableId" value="LOCAL-00575" />
+      <option name="project" value="LOCAL" />
+      <updated>1554622908046</updated>
+    </task>
+    <task id="LOCAL-00576" summary="api ok">
+      <created>1554623006045</created>
+      <option name="number" value="00576" />
+      <option name="presentableId" value="LOCAL-00576" />
+      <option name="project" value="LOCAL" />
+      <updated>1554623006045</updated>
+    </task>
+    <task id="LOCAL-00577" summary="api ok">
+      <created>1554623113297</created>
+      <option name="number" value="00577" />
+      <option name="presentableId" value="LOCAL-00577" />
+      <option name="project" value="LOCAL" />
+      <updated>1554623113297</updated>
+    </task>
+    <task id="LOCAL-00578" summary="api ok">
+      <created>1554623244630</created>
+      <option name="number" value="00578" />
+      <option name="presentableId" value="LOCAL-00578" />
+      <option name="project" value="LOCAL" />
+      <updated>1554623244630</updated>
+    </task>
+    <task id="LOCAL-00579" summary="api ok">
+      <created>1554623453791</created>
+      <option name="number" value="00579" />
+      <option name="presentableId" value="LOCAL-00579" />
+      <option name="project" value="LOCAL" />
+      <updated>1554623453792</updated>
+    </task>
+    <task id="LOCAL-00580" summary="api ok">
+      <created>1554623640598</created>
+      <option name="number" value="00580" />
+      <option name="presentableId" value="LOCAL-00580" />
+      <option name="project" value="LOCAL" />
+      <updated>1554623640598</updated>
+    </task>
+    <task id="LOCAL-00581" summary="api ok">
+      <created>1554624318205</created>
+      <option name="number" value="00581" />
+      <option name="presentableId" value="LOCAL-00581" />
+      <option name="project" value="LOCAL" />
+      <updated>1554624318205</updated>
+    </task>
+    <task id="LOCAL-00582" summary="api ok">
+      <created>1554624676577</created>
+      <option name="number" value="00582" />
+      <option name="presentableId" value="LOCAL-00582" />
+      <option name="project" value="LOCAL" />
+      <updated>1554624676577</updated>
+    </task>
+    <task id="LOCAL-00583" summary="api ok">
+      <created>1554624847218</created>
+      <option name="number" value="00583" />
+      <option name="presentableId" value="LOCAL-00583" />
+      <option name="project" value="LOCAL" />
+      <updated>1554624847218</updated>
+    </task>
+    <task id="LOCAL-00584" summary="api ok">
+      <created>1554624923287</created>
+      <option name="number" value="00584" />
+      <option name="presentableId" value="LOCAL-00584" />
+      <option name="project" value="LOCAL" />
+      <updated>1554624923287</updated>
+    </task>
+    <task id="LOCAL-00585" summary="api ok">
+      <created>1554625262690</created>
+      <option name="number" value="00585" />
+      <option name="presentableId" value="LOCAL-00585" />
+      <option name="project" value="LOCAL" />
+      <updated>1554625262691</updated>
+    </task>
+    <task id="LOCAL-00586" summary="api ok">
+      <created>1554625467967</created>
+      <option name="number" value="00586" />
+      <option name="presentableId" value="LOCAL-00586" />
+      <option name="project" value="LOCAL" />
+      <updated>1554625467967</updated>
+    </task>
+    <task id="LOCAL-00587" summary="api ok">
+      <created>1554626880874</created>
+      <option name="number" value="00587" />
+      <option name="presentableId" value="LOCAL-00587" />
+      <option name="project" value="LOCAL" />
+      <updated>1554626880874</updated>
+    </task>
+    <task id="LOCAL-00588" summary="api ok">
+      <created>1554627170807</created>
+      <option name="number" value="00588" />
+      <option name="presentableId" value="LOCAL-00588" />
+      <option name="project" value="LOCAL" />
+      <updated>1554627170807</updated>
+    </task>
+    <task id="LOCAL-00589" summary="api ok">
+      <created>1554627402671</created>
+      <option name="number" value="00589" />
+      <option name="presentableId" value="LOCAL-00589" />
+      <option name="project" value="LOCAL" />
+      <updated>1554627402671</updated>
+    </task>
+    <task id="LOCAL-00590" summary="api ok">
+      <created>1554627881192</created>
+      <option name="number" value="00590" />
+      <option name="presentableId" value="LOCAL-00590" />
+      <option name="project" value="LOCAL" />
+      <updated>1554627881192</updated>
+    </task>
+    <task id="LOCAL-00591" summary="api ok1">
+      <created>1554628658537</created>
+      <option name="number" value="00591" />
+      <option name="presentableId" value="LOCAL-00591" />
+      <option name="project" value="LOCAL" />
+      <updated>1554628658537</updated>
+    </task>
+    <task id="LOCAL-00592" summary="api ok1">
+      <created>1554628812147</created>
+      <option name="number" value="00592" />
+      <option name="presentableId" value="LOCAL-00592" />
+      <option name="project" value="LOCAL" />
+      <updated>1554628812147</updated>
+    </task>
+    <task id="LOCAL-00593" summary="api ok1">
+      <created>1554628990938</created>
+      <option name="number" value="00593" />
+      <option name="presentableId" value="LOCAL-00593" />
+      <option name="project" value="LOCAL" />
+      <updated>1554628990938</updated>
+    </task>
+    <task id="LOCAL-00594" summary="api ok1">
+      <created>1554629031890</created>
+      <option name="number" value="00594" />
+      <option name="presentableId" value="LOCAL-00594" />
+      <option name="project" value="LOCAL" />
+      <updated>1554629031890</updated>
+    </task>
+    <task id="LOCAL-00595" summary="api ok1">
+      <created>1554629056882</created>
+      <option name="number" value="00595" />
+      <option name="presentableId" value="LOCAL-00595" />
+      <option name="project" value="LOCAL" />
+      <updated>1554629056882</updated>
+    </task>
+    <task id="LOCAL-00596" summary="api ok1">
+      <created>1554629146625</created>
+      <option name="number" value="00596" />
+      <option name="presentableId" value="LOCAL-00596" />
+      <option name="project" value="LOCAL" />
+      <updated>1554629146625</updated>
+    </task>
+    <task id="LOCAL-00597" summary="api ok2">
+      <created>1554629752934</created>
+      <option name="number" value="00597" />
+      <option name="presentableId" value="LOCAL-00597" />
+      <option name="project" value="LOCAL" />
+      <updated>1554629752934</updated>
+    </task>
+    <task id="LOCAL-00598" summary="api ok2">
+      <created>1554630135269</created>
+      <option name="number" value="00598" />
+      <option name="presentableId" value="LOCAL-00598" />
+      <option name="project" value="LOCAL" />
+      <updated>1554630135269</updated>
+    </task>
+    <task id="LOCAL-00599" summary="api ok2">
+      <created>1554630253440</created>
+      <option name="number" value="00599" />
+      <option name="presentableId" value="LOCAL-00599" />
+      <option name="project" value="LOCAL" />
+      <updated>1554630253440</updated>
+    </task>
+    <task id="LOCAL-00600" summary="api ok2">
+      <created>1554630796790</created>
+      <option name="number" value="00600" />
+      <option name="presentableId" value="LOCAL-00600" />
+      <option name="project" value="LOCAL" />
+      <updated>1554630796790</updated>
+    </task>
+    <task id="LOCAL-00601" summary="api ok2">
+      <created>1554631079976</created>
+      <option name="number" value="00601" />
+      <option name="presentableId" value="LOCAL-00601" />
+      <option name="project" value="LOCAL" />
+      <updated>1554631079976</updated>
+    </task>
+    <task id="LOCAL-00602" summary="api ok2">
+      <created>1554632994459</created>
+      <option name="number" value="00602" />
+      <option name="presentableId" value="LOCAL-00602" />
+      <option name="project" value="LOCAL" />
+      <updated>1554632994459</updated>
+    </task>
+    <task id="LOCAL-00603" summary="try1">
+      <created>1554633206046</created>
+      <option name="number" value="00603" />
+      <option name="presentableId" value="LOCAL-00603" />
+      <option name="project" value="LOCAL" />
+      <updated>1554633206046</updated>
+    </task>
+    <task id="LOCAL-00604" summary="try2">
+      <created>1554633481436</created>
+      <option name="number" value="00604" />
+      <option name="presentableId" value="LOCAL-00604" />
+      <option name="project" value="LOCAL" />
+      <updated>1554633481436</updated>
+    </task>
+    <task id="LOCAL-00605" summary="try3">
+      <created>1554633841103</created>
+      <option name="number" value="00605" />
+      <option name="presentableId" value="LOCAL-00605" />
+      <option name="project" value="LOCAL" />
+      <updated>1554633841103</updated>
+    </task>
+    <task id="LOCAL-00606" summary="try4">
+      <created>1554634706284</created>
+      <option name="number" value="00606" />
+      <option name="presentableId" value="LOCAL-00606" />
+      <option name="project" value="LOCAL" />
+      <updated>1554634706284</updated>
+    </task>
+    <task id="LOCAL-00607" summary="api ok2">
+      <created>1554634788252</created>
+      <option name="number" value="00607" />
+      <option name="presentableId" value="LOCAL-00607" />
+      <option name="project" value="LOCAL" />
+      <updated>1554634788252</updated>
+    </task>
+    <task id="LOCAL-00608" summary="try5">
+      <created>1554634896703</created>
+      <option name="number" value="00608" />
+      <option name="presentableId" value="LOCAL-00608" />
+      <option name="project" value="LOCAL" />
+      <updated>1554634896703</updated>
+    </task>
+    <task id="LOCAL-00609" summary="try6">
+      <created>1554634975170</created>
+      <option name="number" value="00609" />
+      <option name="presentableId" value="LOCAL-00609" />
+      <option name="project" value="LOCAL" />
+      <updated>1554634975170</updated>
+    </task>
+    <task id="LOCAL-00610" summary="try7">
+      <created>1554635055653</created>
+      <option name="number" value="00610" />
+      <option name="presentableId" value="LOCAL-00610" />
+      <option name="project" value="LOCAL" />
+      <updated>1554635055653</updated>
+    </task>
+    <task id="LOCAL-00611" summary="try_file">
+      <created>1554635285321</created>
+      <option name="number" value="00611" />
+      <option name="presentableId" value="LOCAL-00611" />
+      <option name="project" value="LOCAL" />
+      <updated>1554635285321</updated>
+    </task>
+    <task id="LOCAL-00612" summary="try_500">
+      <created>1554635790097</created>
+      <option name="number" value="00612" />
+      <option name="presentableId" value="LOCAL-00612" />
+      <option name="project" value="LOCAL" />
+      <updated>1554635790097</updated>
+    </task>
+    <option name="localTasksCounter" value="613" />
     <servers />
   </component>
   <component name="TodoView">
@@ -636,14 +638,13 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.2291498" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4991119" visible="true" weight="0.18218623" />
       <window_info id="Structure" order="1" sideWeight="0.5008881" side_tool="true" weight="0.22186235" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5008881" side_tool="true" weight="0.22186235" />
-      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -653,7 +654,8 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.1616341" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.19182949" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.053285968" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.21669628" />
+      <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
@@ -710,18 +712,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="com5" />
-    <MESSAGE value="com6" />
-    <MESSAGE value="com7" />
-    <MESSAGE value="dada" />
-    <MESSAGE value="com8" />
-    <MESSAGE value="com9" />
-    <MESSAGE value="upload class" />
-    <MESSAGE value="upload" />
-    <MESSAGE value="upload1" />
-    <MESSAGE value="upload2" />
-    <MESSAGE value="upload3" />
-    <MESSAGE value="upload4" />
     <MESSAGE value="upload5" />
     <MESSAGE value="upload6" />
     <MESSAGE value="upload7" />
@@ -735,16 +725,25 @@
     <MESSAGE value="upload15" />
     <MESSAGE value="upload16" />
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="api ok" />
+    <MESSAGE value="api ok1" />
+    <MESSAGE value="try1" />
+    <MESSAGE value="try2" />
+    <MESSAGE value="try3" />
+    <MESSAGE value="try4" />
+    <MESSAGE value="api ok2" />
+    <MESSAGE value="try5" />
+    <MESSAGE value="try6" />
+    <MESSAGE value="try7" />
+    <MESSAGE value="try_file" />
+    <MESSAGE value="try_500" />
+    <option name="LAST_COMMIT_MESSAGE" value="try_500" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/images/chemistry1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Suggestions.js" />
     <entry file="file://$PROJECT_DIR$/src/Downshift.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Modal/index.js" />
@@ -828,7 +827,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/admin.html" />
     <entry file="file://$PROJECT_DIR$/src/admin.css" />
-    <entry file="file://$PROJECT_DIR$/src/admin.js" />
+    <entry file="file://$PROJECT_DIR$/src/Admin.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-dropzone-uploader/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1197" />
@@ -906,13 +905,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/VideoData.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -922,36 +914,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="56" column="33" lean-forward="true" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="500">
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DragAndDrop.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="89" column="20" selection-start-line="89" selection-start-column="20" selection-end-line="89" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="43" column="46" lean-forward="true" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1653">
+          <caret line="87" column="5" lean-forward="true" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
         </state>
       </provider>
     </entry>
