@@ -8,7 +8,9 @@ class Test extends Component {
             name: '',
             course: '',
             tag: '',
-            description: ''
+            description: '',
+            selectedFile: null
+
         };
     }
 
@@ -21,21 +23,41 @@ class Test extends Component {
         this.setState({ [e.target.name]: e.target.value });
     }
 
+    fileChangedHandler = event => {
+        this.setState({selectedFile: event.target.files[0]})
+
+    }
+
     onSubmit = (e) => {
         e.preventDefault();
+        const formData = new FormData();
+         formData.append(
+             'newfile',
+             this.state.selectedFile,
+             this.state.selectedFile.name
+         )
+        const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
+        axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
-        const { name, course, tag, description } = this.state;
-
-        axios.post('http://api.bacalaureat.local/api/v1/create', { name, course, tag, description })
+        const { name, course, tag, description} = this.state;
+        axios.post('http://bacalaureat.local/api/v1/create',
+                   { name, course, tag, description})
             .then((result) => {
                 //access the results here....
             });
+
+
+
     }
 
     render() {
-        const { name, course, tag, description } = this.state;
+        const { name, course, tag, description, selectedFile } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
+                <input
+                    type="file"
+                    name="newfile"
+                    onChange={this.fileChangedHandler} />
                 <input
                     type="text"
                     name="name"
