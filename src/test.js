@@ -38,13 +38,8 @@ class Test extends Component {
         );
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         const { name, course, tag, description } = this.state;
-        const json = { name, course, tag, description };
-        const blob = new Blob([json], {
-            type: 'application/json'
-        });
-        formData.append("meta", blob);
         axios.post('http://localhost:8080/api/v1/create',
-                    formData)// { name, course, tag, description })
+                   { name, course, tag, description })
             .then((result) => {
                 //access the results here....
             });
