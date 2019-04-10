@@ -44,7 +44,7 @@ class Test extends Component {
             .then((result) => {
                 //access the results here....
             });
-    };
+    }
 
     render() {
         const { name, course, tag, description } = this.state;
