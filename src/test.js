@@ -43,9 +43,9 @@ class Test extends Component {
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
-        const { name, course, tag, description} = this.state;
+        const { name, course, tag, description, selectedFile} = this.state;
         axios.post('http://bacalaureat.local/api/v1/upload',
-                   { name, course, tag, description})
+                   { name, course, tag, description, selectedFile})
             .then((result) => {
                 //access the results here....
             });
@@ -61,6 +61,7 @@ class Test extends Component {
                 <input
                     type="file"
                     name="newfile"
+                    value={selectedFile}
                     onChange={this.fileChangedHandler} />
                 <input
                     type="text"
