@@ -40,8 +40,8 @@ class Test extends Component {
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
         const { name, course, tag, description} = this.state;
-        axios.post('http://bacalaureat.local/api/v1/create',
-                   { name, course, tag, description})
+        axios.post('http://bacalaureat.local/api/v1/upload',
+                   { name, course, tag, description,formData})
             .then((result) => {
                 //access the results here....
             });
