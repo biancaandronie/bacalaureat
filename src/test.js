@@ -35,17 +35,13 @@ class Test extends Component {
              'newfile',
              this.state.selectedFile,
              this.state.selectedFile.name,
-             this.state.name,
-             this.state.course,
-             this.state.tag,
-             this.state.description
          )
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
-        const { name, course, tag, description, selectedFile} = this.state;
-        axios.post('http://bacalaureat.local/api/v1/upload',
-                   { name, course, tag, description, selectedFile})
+        const { name, course, tag, description } = this.state;
+        axios.post('http://bacalaureat.local/api/v1/create',
+                   { name, course, tag, description })
             .then((result) => {
                 //access the results here....
             });
@@ -55,13 +51,12 @@ class Test extends Component {
     }
 
     render() {
-        const { name, course, tag, description, selectedFile } = this.state;
+        const { name, course, tag, description } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
                 <input
                     type="file"
                     name="newfile"
-                    value={selectedFile}
                     onChange={this.fileChangedHandler} />
                 <input
                     type="text"
