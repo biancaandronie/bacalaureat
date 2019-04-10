@@ -34,14 +34,18 @@ class Test extends Component {
          formData.append(
              'newfile',
              this.state.selectedFile,
-             this.state.selectedFile.name
+             this.state.selectedFile.name,
+             this.state.name,
+             this.state.course,
+             this.state.tag,
+             this.state.description
          )
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
         const { name, course, tag, description} = this.state;
         axios.post('http://bacalaureat.local/api/v1/upload',
-                   { name, course, tag, description,formData})
+                   { name, course, tag, description})
             .then((result) => {
                 //access the results here....
             });
