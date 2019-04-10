@@ -30,21 +30,21 @@ class Test extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
-        const formData = new FormData();
-         formData.append(
-             'newfile',
-             this.state.selectedFile,
-             this.state.selectedFile.name,
-         )
-        const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         const { name, course, tag, description } = this.state;
         axios.post('http://localhost:8080/api/v1/create',
                    { name, course, tag, description })
             .then((result) => {
                 //access the results here....
             });
+        const formData = new FormData();
+        formData.append(
+            'newfile',
+            this.state.selectedFile,
+            this.state.selectedFile.name,
+        );
+        const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         axios.post('http://localhost:8080/api/v1/upload', formData,config);
-    }
+    };
 
     render() {
         const { name, course, tag, description } = this.state;
