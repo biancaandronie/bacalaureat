@@ -38,12 +38,12 @@ class Test extends Component {
         );
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         const { name, course, tag, description } = this.state;
-        axios.post('http://bacalaureat.local/api/v1/create',
-            { name, course, tag, description })
+        axios.post('http://localhost:8080/api/v1/create',
+            { name, course, tag, description });
+        axios.post('http://localhost:8080/api/v1/upload', formData,config)
             .then((result) => {
                 //access the results here....
             });
-        axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
     };
 
     render() {
