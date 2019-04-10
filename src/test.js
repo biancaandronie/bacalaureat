@@ -44,7 +44,7 @@ class Test extends Component {
         });
         formData.append("meta", blob);
         axios.post('http://localhost:8080/api/v1/create',
-            { name, course, tag, description })
+                    formData)// { name, course, tag, description })
             .then((result) => {
                 //access the results here....
             });
