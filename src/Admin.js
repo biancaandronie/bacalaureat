@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import FileUploadProgress  from 'react-fileupload-progress';
+import { Draggable, Droppable } from 'react-drag-and-drop';
 
 class Admin extends Component {
-    constructor(props) {
-        super(props);
-    }
     render() {
-        return (
-            <div>
-                <h3>Default style</h3>
-                <FileUploadProgress key='ex1' url='http://localhost:3000/api/upload'
-                                    onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
-                                    onLoad={ (e, request) => {console.log('load', e, request);}}
-                                    onError={ (e, request) => {console.log('error', e, request);}}
-                                    onAbort={ (e, request) => {console.log('abort', e, request);}}
-                />
-            </div>
-        )
+        <div>
+            <ul>
+                <Draggable type="fruit" data="banana"><li>Banana</li></Draggable>
+                <Draggable type="fruit" data="apple"><li>Apple</li></Draggable>
+                <Draggable type="metal" data="silver"><li>Silver</li></Draggable>
+            </ul>
+            <Droppable
+                types={['fruit']} // <= allowed drop types
+                onDrop={this.onDrop.bind(this)}>
+                <ul className="Smoothie"></ul>
+            </Droppable>
+        </div>
     }
-};
+    onDrop(data) {
+        console.log(data)
+        // => banana
+    }
+}
 export default Admin;
