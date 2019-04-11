@@ -55,12 +55,11 @@ class Admin extends Component {
         const { name, course, tag, description, selectedFile } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <FileUploadProgress
+                <input
                     type="file"
                     name="newfile"
                     onChange={this.fileChangedHandler}
-                    onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
-                 />
+                />
                 <input
                     type="text"
                     name="name"
@@ -85,7 +84,7 @@ class Admin extends Component {
                     value={description}
                     onChange={this.onChange}
                 />
-                <button type="submit">Submit</button>
+                <button type="submit" onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}>Submit</button>
 
             </form>
         );
