@@ -4,6 +4,7 @@ import { Draggable, Droppable } from 'react-drag-and-drop';
 
 class Admin extends Component {
     render() {
+        return (
         <div>
             <ul>
                 <Draggable type="fruit" data="banana"><li>Banana</li></Draggable>
@@ -16,6 +17,7 @@ class Admin extends Component {
                 <ul className="Smoothie"></ul>
             </Droppable>
         </div>
+        );
     }
     onDrop(data) {
         console.log(data)
