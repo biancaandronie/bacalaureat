@@ -57,7 +57,7 @@ class Admin extends Component {
         return (
             <form onSubmit={this.onSubmit}>
 
-                <FilePond name="newfile" onChange={this.fileChangedHandler} />
+                <FilePond type="file" name="newfile" onChange={this.fileChangedHandler} />
 
                 <input
                     type="text"
