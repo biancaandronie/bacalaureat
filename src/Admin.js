@@ -53,10 +53,10 @@ class Admin extends Component {
     }
 
     render() {
-        const { name, course, tag, description, selectedFile } = this.state;
+        const { name, course, tag, description } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <FilePond name="newfile" />
+                <FilePond name="newfile" onChange={this.fileChangedHandler} />
                 <input
                     type="text"
                     name="name"
