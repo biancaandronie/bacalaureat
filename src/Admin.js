@@ -26,7 +26,7 @@ class Admin extends Component {
     }
 
     fileChangedHandler = event => {
-        this.setState({selectedFile: event.target.files})
+        this.setState({selectedFile: event.target.files[0]})
 
     }
 
@@ -34,9 +34,7 @@ class Admin extends Component {
         e.preventDefault();
         const formData = new FormData();
         formData.append(
-            'newfile',
-            this.state.selectedFile,
-            this.state.selectedFile.name
+            'newfile'
         )
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
