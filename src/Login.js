@@ -44,7 +44,7 @@ onChange(e){
 
 if (redirectToReferrer) {
      const history = createHistory();
-     history.push('/admin');
+     history.push('http://bacalaureat.local/admin');
      history.go(0);
 }
 
