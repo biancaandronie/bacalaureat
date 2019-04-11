@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import elev1 from './images/elev1.jpg';
 import './Login.css';
-import { Route, Redirect } from 'react-router'
 import {PostData} from './service/PostData';
 import createHistory from 'history/createBrowserHistory';
 
