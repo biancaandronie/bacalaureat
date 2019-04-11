@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import FileUploadProgress  from 'react-fileupload-progress';
+import { Line, Circle } from 'rc-progress';
 
 class Admin extends Component {
     constructor() {
@@ -10,7 +10,8 @@ class Admin extends Component {
             course: '',
             tag: '',
             description: '',
-            selectedFile: null
+            selectedFile: null,
+            percentCompleted: 0
 
         };
     }
@@ -37,7 +38,13 @@ class Admin extends Component {
             this.state.selectedFile,
             this.state.selectedFile.name
         )
-        const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
+        const config = {
+            headers: { 'Access-Control-Allow-Origin': '*' },
+            onUploadProgress: function(progressEvent) {
+                let percentCompleted = Math.round( (progressEvent.loaded * 100) / progressEvent.total );
+                this.setState({ percentCompleted: percentCompleted });
+            }.bind(this)
+            };
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
         const { name, course, tag, description} = this.state;
@@ -46,20 +53,18 @@ class Admin extends Component {
             .then((result) => {
                 //access the results here....
             });
-
-
-
     }
 
     render() {
         const { name, course, tag, description, selectedFile } = this.state;
+        const progress = this.state.percentCompleted;
         return (
             <form onSubmit={this.onSubmit}>
                 <input
                     type="file"
                     name="newfile"
-                    onChange={this.fileChangedHandler}
-                />
+                    onChange={this.fileChangedHandler} />
+                <Line percent={progress} strokeWidth="4" strokeColor="#00ff00" />
                 <input
                     type="text"
                     name="name"
@@ -84,8 +89,7 @@ class Admin extends Component {
                     value={description}
                     onChange={this.onChange}
                 />
-                <button type="submit" onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}>Submit</button>
-
+                <button type="submit">Submit</button>
             </form>
         );
     }
