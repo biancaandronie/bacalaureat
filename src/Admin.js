@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import FileUploadProgress  from 'react-fileupload-progress';
 
 class Admin extends Component {
     constructor() {
@@ -83,6 +84,12 @@ class Admin extends Component {
                     onChange={this.onChange}
                 />
                 <button type="submit">Submit</button>
+                <FileUploadProgress key='ex1' url='http://bacalaureat.local/api/v1/upload'
+                                    onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
+                                    onLoad={ (e, request) => {console.log('load', e, request);}}
+                                    onError={ (e, request) => {console.log('error', e, request);}}
+                                    onAbort={ (e, request) => {console.log('abort', e, request);}}
+                />
             </form>
         );
     }
