@@ -35,7 +35,6 @@ class Admin extends Component {
         const formData = new FormData();
         formData.append(
             'newfile',
-            this.state.selectedFile,
             this.state.selectedFile.name
         )
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
@@ -56,7 +55,12 @@ class Admin extends Component {
         const { name, course, tag, description } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <FilePond name="newfile" onChange={this.fileChangedHandler} />
+                <FilePond
+                    required={true}
+                    name="newfile"
+                    allowMultiple={false}
+                    onChange={this.fileChangedHandler}
+                />
                 <input
                     type="text"
                     name="name"
