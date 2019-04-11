@@ -50,6 +50,27 @@ class Admin extends Component {
 
     }
 
+    onFileLoad = (e) => {
+        //Get current selected or dropped file (it gives you the ability to load multiple images).
+        const file = e.currentTarget.files[0];
+        //Create instance
+        let fileReader = new FileReader();
+        //Register event listeners
+        fileReader.onload = () => {
+            console.log("IMAGE LOADED: ", fileReader.result);
+        }
+        //Operation Aborted
+        fileReader.onabort = () => {
+            alert("Reading Aborted");
+        }
+        //Error when loading
+        fileReader.onerror = () => {
+            alert("Reading ERROR!");
+        }
+        //Read the file as a Data URL (which gonna give you a base64 encoded image data)
+        fileReader.readAsDataURL(file);
+    }
+
     render() {
         const { name, course, tag, description, selectedFile } = this.state;
         return (
@@ -57,7 +78,13 @@ class Admin extends Component {
                 <input
                     type="file"
                     name="newfile"
-                    onChange={this.fileChangedHandler} />
+                    onChange={this.fileChangedHandler}
+                    onDragOver={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }}
+                    onDrop={this.onFileLoad.bind(this)}
+                />
                 <input
                     type="text"
                     name="name"
