@@ -26,7 +26,7 @@ class Admin extends Component {
     }
 
     fileChangedHandler = event => {
-        this.setState({selectedFile: event.target.files[0]})
+        this.setState({selectedFile: event.target.files})
 
     }
 
@@ -35,6 +35,7 @@ class Admin extends Component {
         const formData = new FormData();
         formData.append(
             'newfile',
+            this.state.selectedFile,
             this.state.selectedFile.name
         )
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
