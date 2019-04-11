@@ -55,10 +55,12 @@ class Admin extends Component {
         const { name, course, tag, description, selectedFile } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <input
+                <FileUploadProgress
                     type="file"
                     name="newfile"
-                    onChange={this.fileChangedHandler} />
+                    onChange={this.fileChangedHandler}
+                    onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
+                 />
                 <input
                     type="text"
                     name="name"
@@ -84,12 +86,7 @@ class Admin extends Component {
                     onChange={this.onChange}
                 />
                 <button type="submit">Submit</button>
-                <FileUploadProgress key='ex1' url='http://bacalaureat.local/api/v1/upload'
-                                    onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
-                                    onLoad={ (e, request) => {console.log('load', e, request);}}
-                                    onError={ (e, request) => {console.log('error', e, request);}}
-                                    onAbort={ (e, request) => {console.log('abort', e, request);}}
-                />
+
             </form>
         );
     }
