@@ -31,44 +31,23 @@ class Admin extends Component {
     onSubmit = (e) => {
         e.preventDefault();
         const formData = new FormData();
-         formData.append(
-             'newfile',
-             this.state.selectedFile,
-             this.state.selectedFile.name
-         )
+        formData.append(
+            'newfile',
+            this.state.selectedFile,
+            this.state.selectedFile.name
+        )
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
         const { name, course, tag, description} = this.state;
         axios.post('http://bacalaureat.local/api/v1/create',
-                   { name, course, tag, description})
+            { name, course, tag, description})
             .then((result) => {
                 //access the results here....
             });
 
 
 
-    }
-
-    onFileLoad = (e) => {
-        //Get current selected or dropped file (it gives you the ability to load multiple images).
-        const file = e.currentTarget.files[0];
-        //Create instance
-        let fileReader = new FileReader();
-        //Register event listeners
-        fileReader.onload = () => {
-            console.log("IMAGE LOADED: ", fileReader.result);
-        }
-        //Operation Aborted
-        fileReader.onabort = () => {
-            alert("Reading Aborted");
-        }
-        //Error when loading
-        fileReader.onerror = () => {
-            alert("Reading ERROR!");
-        }
-        //Read the file as a Data URL (which gonna give you a base64 encoded image data)
-        fileReader.readAsDataURL(file);
     }
 
     render() {
@@ -78,13 +57,7 @@ class Admin extends Component {
                 <input
                     type="file"
                     name="newfile"
-                    onChange={this.fileChangedHandler}
-                    onDragOver={(e) => {
-                        e.preventDefault();
-                        e.stopPropagation();
-                    }}
-                    onDrop={this.onFileLoad.bind(this)}
-                />
+                    onChange={this.fileChangedHandler} />
                 <input
                     type="text"
                     name="name"
