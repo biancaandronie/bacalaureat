@@ -1,65 +1,92 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import './adminstyle.css';
+import { FilePond } from 'react-filepond';
+import 'filepond/dist/filepond.min.css';
 
 class Admin extends Component {
-    onDragStart = (event, taskName) => {
-        console.log('dragstart on div: ', taskName);
-        event.dataTransfer.setData("taskName", taskName);
-    }
-    onDragOver = (event) => {
-        event.preventDefault();
+    constructor() {
+        super();
+        this.state = {
+            name: '',
+            course: '',
+            tag: '',
+            description: '',
+            selectedFile: null
+
+        };
     }
 
-    onDrop = (event, cat) => {
-        let taskName = event.dataTransfer.getData("taskName");
-
-        let tasks = this.state.tasks.filter((task) => {
-            if (task.taskName == taskName) {
-                task.type = cat;
-            }
-            return task;
-        });
-
-        this.setState({
-            ...this.state,
-            tasks
-        });
+    onChange = (e) => {
+        /*
+         Because we named the inputs to match their
+         corresponding values in state, it's
+         super easy to update the state
+         */
+        this.setState({ [e.target.name]: e.target.value });
     }
+
+    fileChangedHandler = event => {
+        this.setState({selectedFile: event.target.files[0]})
+
+    }
+
+    onSubmit = (e) => {
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append(
+            'newfile',
+            this.state.selectedFile,
+            this.state.selectedFile.name
+        )
+        const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
+        axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
+        // get our form data out of state
+        const { name, course, tag, description} = this.state;
+        axios.post('http://bacalaureat.local/api/v1/create',
+            { name, course, tag, description})
+            .then((result) => {
+                //access the results here....
+            });
+
+
+
+    }
+
     render() {
-        var tasks = {
-            inProgress: [],
-            Done: []
-        }
-
-        this.state.tasks.forEach ((task) => {
-            tasks[task.type].push(
-                <div key={task.id}
-                     onDragStart = {(event) => this.onDragStart(event, task.taskName)}
-                     draggable
-                     className="draggable"
-                     style = {{backgroundColor: task.bgcolor}}>
-                    {task.taskName}
-                </div>
-            );
-        });
-
+        const { name, course, tag, description, selectedFile } = this.state;
         return (
-            <div className="drag-container">
-                <h2 className="head">To Do List Drag & Drop</h2>
-                <div className="inProgress"
-                     onDragOver={(event)=>this.onDragOver(event)}
-                     onDrop={(event)=>{this.onDrop(event, "inProgress")}}>
-                    <span className="group-header">In Progress</span>
-                    {tasks.inProgress}
-                </div>
-                <div className="droppable"
-                     onDragOver={(event)=>this.onDragOver(event)}
-                     onDrop={(event)=>this.onDrop(event, "Done")}>
-                    <span className="group-header">Done</span>
-                    {tasks.Done}
-                </div>
-            </div>
+            <form onSubmit={this.onSubmit}>
+                <input
+                    type="file"
+                    name="newfile"
+                    onChange={this.fileChangedHandler} />
+                <input
+                    type="text"
+                    name="name"
+                    value={name}
+                    onChange={this.onChange}
+                />
+                <input
+                    type="text"
+                    name="course"
+                    value={course}
+                    onChange={this.onChange}
+                />
+                <input
+                    type="text"
+                    name="tag"
+                    value={tag}
+                    onChange={this.onChange}
+                />
+                <input
+                    type="text"
+                    name="description"
+                    value={description}
+                    onChange={this.onChange}
+                />
+                <FilePond/>
+                <button type="submit">Submit</button>
+            </form>
         );
     }
 }
