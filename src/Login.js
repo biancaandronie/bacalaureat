@@ -44,7 +44,7 @@ onChange(e){
 
 if (redirectToReferrer) {
      const history = createHistory();
-     history.push('http://localhost:5000/admin');
+     history.push('/admin');
      history.go(0);
 }
 
