@@ -163,7 +163,7 @@ class Test extends React.Component {
     }
 
     render() {
-
+        document.body.style.backgroundColor = "green";
     return (
         <div>
             <h3>Custome rederer</h3>
