@@ -95,6 +95,14 @@ class Test extends React.Component {
         };
     }
 
+    componentWillMount() {
+    document.body.style.backgroundColor = "green";
+}
+
+    componentWillUnmount() {
+    document.body.style.backgroundColor = null;
+}
+
     formGetter(){
         return new FormData(document.getElementById('customForm'));
     }
@@ -163,7 +171,7 @@ class Test extends React.Component {
     }
 
     render() {
-        document.body.style.backgroundColor = "green";
+
     return (
         <div>
             <h3>Custome rederer</h3>
