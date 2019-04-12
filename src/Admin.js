@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import Dropzone from 'react-dropzone';
+import axios from 'axios';
+
 
 class Admin extends Component {
     constructor() {
@@ -30,10 +31,10 @@ class Admin extends Component {
     }
 
     onSubmit = selectedFiles => {
-        const uploaders = selectedFiles.map(selectedFile => {
+        const uploads = selectedFiles.map(selectedFile => {
         const formData = new FormData();
         formData.append(
-            'newfile',
+            "newfile",
             selectedFile
         );
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
@@ -46,8 +47,11 @@ class Admin extends Component {
                 //access the results here....
             });
         });
-        axios.all(uploaders).then(() => {
-            // ... perform after upload is successful operation
+
+        // We would use axios `.all()` method to perform concurrent image upload to cloudinary.
+        axios.all(uploads).then(() => {
+            // ... do anything after successful upload. You can setState() or save the data
+            console.log('Images have all being uploaded')
         });
     }
 
@@ -56,14 +60,13 @@ class Admin extends Component {
         return (
             <form onSubmit={this.onSubmit}>
                 <Dropzone
-                    onDrop={this.handleDrop}
+                    onDrop={this.handleUploadImages}
                     multiple
                     accept="image/*"
-                />
-                <input
-                    type="file"
                     name="newfile"
-                    onChange={this.fileChangedHandler} />
+                >
+                    Try dropping some files here, or click to select files to upload.
+                </Dropzone>
                 <input
                     type="text"
                     name="name"
