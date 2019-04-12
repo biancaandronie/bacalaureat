@@ -60,7 +60,7 @@ class Admin extends Component {
         return (
             <form onSubmit={this.onSubmit}>
                 <Dropzone
-                    onDrop={this.handleUploadImages}
+                    onDrop={this.onSubmit}
                     multiple
                     accept="image/*"
                     name="newfile"
