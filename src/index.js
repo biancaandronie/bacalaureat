@@ -17,9 +17,9 @@ import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render((
   <BrowserRouter>
     <div>
-      <Route exact path="/" component={App} />
-      <Route path="/admin" component={Admin} />
-      <Route path="/test" component={test} />
+      <Route exact path="/" strict component={App} />
+      <Route path="/admin" exact strict component={Admin} />
+      <Route path="/test" exact strict component={test} />
     </div>
   </BrowserRouter >
 ), document.getElementById('root'));
