@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { FilePond } from 'react-filepond';
-import 'filepond/dist/filepond.min.css';
+import DropzoneComponent from 'react-dropzone-component';
 
 class Admin extends Component {
     constructor() {
@@ -11,7 +10,12 @@ class Admin extends Component {
             course: '',
             tag: '',
             description: '',
-            selectedFile: null
+            selectedFile:  [{
+                source: 'index.html',
+                options: {
+                    type: 'local'
+                }
+            }]
 
         };
     }
@@ -28,10 +32,12 @@ class Admin extends Component {
     fileChangedHandler = event => {
         this.setState({selectedFile: event.target.files[0]})
 
+
     }
 
     onSubmit = (e) => {
         e.preventDefault();
+
         const formData = new FormData();
         formData.append(
             'newfile',
@@ -54,9 +60,16 @@ class Admin extends Component {
 
     render() {
         const { name, course, tag, description} = this.state;
+        let componentConfig = {
+            iconFiletypes: ['.jpg', '.png', '.gif'],
+            showFiletypeIcon: true,
+            postUrl: 'no-url'
+        };
         return (
             <form onSubmit={this.onSubmit}>
-                <FilePond name="newfile" onChange={this.fileChangedHandler} />
+
+                <DropzoneComponent config={componentConfig}
+                 name="newfile" onChange={this.fileChangedHandler} />
                 <input
                     type="text"
                     name="name"
