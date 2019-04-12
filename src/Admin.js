@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Dropzone from 'react-dropzone';
 import axios from 'axios';
-
+import { FilePond } from 'react-filepond';
+import 'filepond/dist/filepond.min.css';
 
 class Admin extends Component {
     constructor() {
@@ -11,7 +11,7 @@ class Admin extends Component {
             course: '',
             tag: '',
             description: '',
-            selectedFiles: null
+            selectedFile: null
 
         };
     }
@@ -30,42 +30,43 @@ class Admin extends Component {
 
     }
 
-    onSubmit = selectedFiles => {
-        const { name, course, tag, description} = this.state;
-        const uploads = selectedFiles.map(selectedFile => {
+    onSubmit = (e) => {
+        e.preventDefault();
         const formData = new FormData();
         formData.append(
-            "newfile",
-            selectedFile
+            'newfile',
+            this.state.selectedFile,
+            this.state.selectedFile.name
         );
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
-       return axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
+        axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
-
-        return axios.post('http://bacalaureat.local/api/v1/create',
+        const { name, course, tag, description} = this.state;
+        axios.post('http://bacalaureat.local/api/v1/create',
             { name, course, tag, description})
             .then((result) => {
                 //access the results here....
             });
-        });
-
-        // We would use axios `.all()` method to perform concurrent image upload to cloudinary.
-        axios.all(uploads).then(() => {
-            // ... do anything after successful upload. You can setState() or save the data
-            console.log('Images have all being uploaded')
-        });
     }
 
     render() {
         const { name, course, tag, description } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <Dropzone
-                    onDrop={this.onSubmit}
-                    multiple
-                    accept="image/*"
-                    name="newfile"
-                />
+                <div className="App">
+
+                    <header className="App-header">
+                        <h1 className="App-title">Welcome to React</h1>
+                    </header>
+
+                    <p className="App-intro">
+                        To get started, edit <code>src/App.js</code> and save to reload.
+                    </p>
+
+                    <FilePond name="newfile"
+                              onChange={this.fileChangedHandler}/>
+
+                </div>
                 <input
                     type="text"
                     name="name"
