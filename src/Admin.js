@@ -46,6 +46,9 @@ class Admin extends Component {
                 //access the results here....
             });
         });
+        axios.all(uploaders).then(() => {
+            // ... perform after upload is successful operation
+        });
     }
 
     render() {
