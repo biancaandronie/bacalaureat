@@ -93,6 +93,7 @@ class Test extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            color: "#84889c"
         };
     }
 
@@ -164,9 +165,12 @@ class Test extends React.Component {
     }
 
     render() {
+        const stylesObj = {
+            background: this.state.color
+        };
 
     return (
-        <div className="all_page">
+        <div style={stylesObj}>
             <h3>Custome rederer</h3>
 
             <FileUploadProgress url='http://localhost:8080/api/v1/upload'
