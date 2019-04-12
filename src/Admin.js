@@ -64,9 +64,7 @@ class Admin extends Component {
                     multiple
                     accept="image/*"
                     name="newfile"
-                >
-                    Try dropping some files here, or click to select files to upload.
-                </Dropzone>
+                />
                 <input
                     type="text"
                     name="name"
