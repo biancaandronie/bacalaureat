@@ -166,7 +166,7 @@ class Test extends React.Component {
     render() {
 
     return (
-        <div>
+        <div className="all_page">
             <h3>Custome rederer</h3>
 
             <FileUploadProgress url='http://localhost:8080/api/v1/upload'
