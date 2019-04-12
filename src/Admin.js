@@ -31,6 +31,7 @@ class Admin extends Component {
     }
 
     onSubmit = selectedFiles => {
+        const { name, course, tag, description} = this.state;
         const uploads = selectedFiles.map(selectedFile => {
         const formData = new FormData();
         formData.append(
@@ -38,10 +39,10 @@ class Admin extends Component {
             selectedFile
         );
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
-        axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
+       return axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
-        const { name, course, tag, description} = this.state;
-        axios.post('http://bacalaureat.local/api/v1/create',
+
+        return axios.post('http://bacalaureat.local/api/v1/create',
             { name, course, tag, description})
             .then((result) => {
                 //access the results here....
