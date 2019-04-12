@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import DropzoneComponent from 'react-dropzone-component';
+import Dropzone from 'react-dropzone';
 
 class Admin extends Component {
     constructor() {
@@ -10,12 +10,7 @@ class Admin extends Component {
             course: '',
             tag: '',
             description: '',
-            selectedFile:  [{
-                source: 'index.html',
-                options: {
-                    type: 'local'
-                }
-            }]
+            selectedFiles: null
 
         };
     }
@@ -32,18 +27,15 @@ class Admin extends Component {
     fileChangedHandler = event => {
         this.setState({selectedFile: event.target.files[0]})
 
-
     }
 
-    onSubmit = (e) => {
-        e.preventDefault();
-
+    onSubmit = selectedFiles => {
+        const uploaders = selectedFiles.map(selectedFile => {
         const formData = new FormData();
         formData.append(
             'newfile',
-            this.state.selectedFile,
-            this.state.selectedFile.name
-        )
+            selectedFile
+        );
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
         // get our form data out of state
@@ -53,23 +45,22 @@ class Admin extends Component {
             .then((result) => {
                 //access the results here....
             });
-
-
-
+        });
     }
 
     render() {
-        const { name, course, tag, description} = this.state;
-        let componentConfig = {
-            iconFiletypes: ['.jpg', '.png', '.gif'],
-            showFiletypeIcon: true,
-            postUrl: 'no-url'
-        };
+        const { name, course, tag, description } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-
-                <DropzoneComponent config={componentConfig}
-                 name="newfile" onChange={this.fileChangedHandler} />
+                <Dropzone
+                    onDrop={this.handleDrop}
+                    multiple
+                    accept="image/*"
+                />
+                <input
+                    type="file"
+                    name="newfile"
+                    onChange={this.fileChangedHandler} />
                 <input
                     type="text"
                     name="name"
