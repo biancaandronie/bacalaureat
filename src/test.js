@@ -1,6 +1,5 @@
 import React from 'react';
 import FileUploadProgress  from 'react-fileupload-progress';
-import './Admin.css';
 
 //allow react dev tools work
 window.React = React;

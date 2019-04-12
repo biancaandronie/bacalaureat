@@ -19,7 +19,7 @@ ReactDOM.render((
     <div>
       <Route exact path="/" strict component={App} />
       <Route path="/admin" exact strict component={Admin} />
-      <Route path="/test" exact strict component={test} />
+      <Route path="/test" style={Admin} exact strict component={test} />
     </div>
   </BrowserRouter >
 ), document.getElementById('root'));
