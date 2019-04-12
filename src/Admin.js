@@ -34,7 +34,9 @@ class Admin extends Component {
         e.preventDefault();
         const formData = new FormData();
         formData.append(
-            'newfile'
+            'newfile',
+            this.state.selectedFile,
+            this.state.selectedFile.name
         )
         const config = { headers: { 'Access-Control-Allow-Origin': '*' } };
         axios.post('http://bacalaureat.local/api/v1/upload', formData,config);
@@ -51,15 +53,10 @@ class Admin extends Component {
     }
 
     render() {
-        const { name, course, tag, description } = this.state;
+        const { name, course, tag, description} = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <FilePond
-                    required={true}
-                    name="newfile"
-                    allowMultiple={false}
-                    onChange={this.fileChangedHandler}
-                />
+                <FilePond name="newfile" onChange={this.fileChangedHandler} />
                 <input
                     type="text"
                     name="name"
