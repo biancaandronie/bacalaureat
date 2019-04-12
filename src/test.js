@@ -1,5 +1,6 @@
 import React from 'react';
 import FileUploadProgress  from 'react-fileupload-progress';
+import './Admin.css';
 
 //allow react dev tools work
 window.React = React;
@@ -164,20 +165,20 @@ class Test extends React.Component {
 
     render() {
 
-        return (
-            <div>
-                <h3>Custome rederer</h3>
+    return (
+        <div>
+            <h3>Custome rederer</h3>
 
-                <FileUploadProgress url='http://localhost:8080/api/v1/upload'
-                                    onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
-                                    onLoad={ (e, request) => {console.log('load', e, request);}}
-                                    onError={ (e, request) => {console.log('error', e, request);}}
-                                    onAbort={ (e, request) => {console.log('abort', e, request);}}
-                                    formGetter={this.formGetter.bind(this)}
-                                    formRenderer={this.customFormRenderer.bind(this)}
-                                    progressRenderer={this.customProgressRenderer.bind(this)}
-                />
-            </div>
+            <FileUploadProgress url='http://localhost:8080/api/v1/upload'
+                onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
+                onLoad={ (e, request) => {console.log('load', e, request);}}
+                onError={ (e, request) => {console.log('error', e, request);}}
+                onAbort={ (e, request) => {console.log('abort', e, request);}}
+                formGetter={this.formGetter.bind(this)}
+                formRenderer={this.customFormRenderer.bind(this)}
+                progressRenderer={this.customProgressRenderer.bind(this)}
+            />
+        </div>
         )
     }
 }
