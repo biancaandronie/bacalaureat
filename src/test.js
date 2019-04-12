@@ -96,7 +96,7 @@ class Test extends React.Component {
     }
 
     componentWillMount() {
-    document.body.style.backgroundColor = "green";
+    document.body.style.backgroundColor = "#84889c";
 }
 
     componentWillUnmount() {
