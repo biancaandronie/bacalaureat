@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { FilePond } from 'react-filepond';
-import 'filepond/dist/filepond.min.css';
 
 class Admin extends Component {
     constructor() {
@@ -53,20 +51,10 @@ class Admin extends Component {
         const { name, course, tag, description } = this.state;
         return (
             <form onSubmit={this.onSubmit}>
-                <div className="App">
-
-                    <header className="App-header">
-                        <h1 className="App-title">Welcome to React</h1>
-                    </header>
-
-                    <p className="App-intro">
-                        To get started, edit <code>src/App.js</code> and save to reload.
-                    </p>
-
-                    <FilePond name="newfile"
-                              onChange={this.fileChangedHandler}/>
-
-                </div>
+                <input
+                    type="file"
+                    name="newfile"
+                    onChange={this.fileChangedHandler} />
                 <input
                     type="text"
                     name="name"
