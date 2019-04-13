@@ -1,6 +1,6 @@
 import React from 'react';
 import FileUploadProgress  from 'react-fileupload-progress';
-
+import './adminstyle.css';
 //allow react dev tools work
 window.React = React;
 
@@ -173,8 +173,7 @@ class Test extends React.Component {
     render() {
 
     return (
-        <div>
-            <h3>Custome rederer</h3>
+        <div className="all_page_upload">
 
             <FileUploadProgress url='http://localhost:8080/api/v1/upload'
                 onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
