@@ -179,7 +179,7 @@ class Test extends React.Component {
                 <img src={graduate} className="graduate" alt="graduate" width="800" height="600" />
             </div>
             <div className="right">
-                <h1 className="titlu">Panneau d'administration</h1>
+                <h1 className="titlu_right">Panneau d'administration</h1>
             <FileUploadProgress url='http://localhost:8080/api/v1/upload'
                 onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
                 onLoad={ (e, request) => {console.log('load', e, request);}}

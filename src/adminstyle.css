@@ -30,9 +30,9 @@
 }
 
 .titlu_right {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 25px;
     line-height: 3.429;
     color: #545871;
-    font-weight: 501;
+    font-family: 'Roboto';
+    font-weight: 700;
 }
