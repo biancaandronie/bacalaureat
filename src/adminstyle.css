@@ -1,9 +1,20 @@
 .all_page_upload {
     border-radius: 20px;
-    background-color: white;
+    background-color: #f7eceb;
     border-width: 2px;
     position: fixed;
     height: 80%;
     width: 72%;
     margin: 5% 14%;
 }
+
+.left {
+    border-top-left-radius: 20px;
+    background-color: #545871;
+    border-width: 2px;
+    position: fixed;
+    height: 80%;
+    width: 30%;
+    border-bottom-left-radius: 20px;
+}
+
