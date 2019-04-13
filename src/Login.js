@@ -21,7 +21,7 @@ constructor(props) {
 
 login() {
     if(this.state.username && this.state.password){
-        PostData('login',this.state).then((result) => {
+        PostData(this.state).then((result) => {
         let responseJson = result;
         console.log(responseJson);
         if(responseJson.userData){
