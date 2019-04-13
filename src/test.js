@@ -174,6 +174,7 @@ class Test extends React.Component {
 
     return (
         <div className="all_page_upload">
+            <div className="left">
 
             <FileUploadProgress url='http://localhost:8080/api/v1/upload'
                 onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
@@ -184,6 +185,7 @@ class Test extends React.Component {
                 formRenderer={this.customFormRenderer.bind(this)}
                 progressRenderer={this.customProgressRenderer.bind(this)}
             />
+            </div>
         </div>
         )
     }
