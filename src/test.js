@@ -180,6 +180,7 @@ class Test extends React.Component {
                 <img src={graduate} className="graduate" alt="graduate" width="800" height="600" />
             </div>
             <div className="right">
+                <div className="inside_right">
             <FileUploadProgress url='http://localhost:8080/api/v1/upload'
                 onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
                 onLoad={ (e, request) => {console.log('load', e, request);}}
@@ -189,6 +190,7 @@ class Test extends React.Component {
                 formRenderer={this.customFormRenderer.bind(this)}
                 progressRenderer={this.customProgressRenderer.bind(this)}
             />
+                </div>
             </div>
         </div>
         )
