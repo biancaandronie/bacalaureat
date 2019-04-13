@@ -175,7 +175,9 @@ class Test extends React.Component {
     return (
         <div className="all_page_upload">
             <div className="left">
-
+                <p>Image</p>
+            </div>
+            <div className="right">
             <FileUploadProgress url='http://localhost:8080/api/v1/upload'
                 onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
                 onLoad={ (e, request) => {console.log('load', e, request);}}
