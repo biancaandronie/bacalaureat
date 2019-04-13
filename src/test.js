@@ -112,9 +112,8 @@ class Test extends React.Component {
     customFormRenderer(onSubmit){
         return (
             <form id='customForm' style={{marginBottom: '15px'}}>
-                <label style={styles.bslabel} htmlFor="videofile">File input</label>
+                <label style={styles.bslabel} htmlFor="videofile">Entrée de fichier</label>
                 <input style={{display: 'block'}} type="file" name='videofile' id="videofile" />
-                <p style={styles.bsHelp}>This is custom form.</p>
                 <input
                     type="text"
                     name="name"
@@ -135,7 +134,7 @@ class Test extends React.Component {
                     name="description"
                     id="description"
                 />
-                <button type="button" style={styles.bsButton} onClick={onSubmit}>Upload</button>
+                <button type="button" style={styles.bsButton} onClick={onSubmit}>Télécharger</button>
             </form>
         );
     }
@@ -148,7 +147,7 @@ class Test extends React.Component {
             let message = (<span>{barStyle.width}</span>);
             if (hasError) {
                 barStyle.backgroundColor = '#d9534f';
-                message = (<span style={{'color': '#a94442'}}>Failed to upload ...</span>);
+                message = (<span style={{'color': '#a94442'}}>Impossible de télécharger ...</span>);
             }
             if (progress === 100){
                 message = (<span >Done</span>);
