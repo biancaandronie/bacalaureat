@@ -2,7 +2,7 @@ import React from 'react';
 import FileUploadProgress  from 'react-fileupload-progress';
 import './adminstyle.css';
 
-import graduate from './images/graduate2.png';
+import graduate2 from './images/graduate2.png';
 //allow react dev tools work
 window.React = React;
 
@@ -177,7 +177,7 @@ class Test extends React.Component {
     return (
         <div className="all_page_upload">
             <div className="left">
-                <img src={graduate} className="graduate" alt="graduate" width="800" height="600" />
+                <img src={graduate2} className="graduate" alt="graduate" width="800" height="600" />
             </div>
             <div className="right">
             <FileUploadProgress url='http://localhost:8080/api/v1/upload'
