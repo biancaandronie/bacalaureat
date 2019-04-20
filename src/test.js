@@ -69,14 +69,14 @@ const styles = {
         padding: '1px 5px',
         fontSize: '12px',
         lineHeight: '1.5',
-        borderRadius: '3px',
+        borderRadius: '20px',
         color: '#fff',
-        backgroundColor: '#337ab7',
+        backgroundColor: '#545871',
         borderColor: '#2e6da4',
         display: 'inline-block',
         padding: '6px 12px',
         marginBottom: 0,
-        fontWeight: 400,
+        fontWeight: 700,
         textAlign: 'center',
         whiteSpace: 'nowrap',
         verticalAlign: 'middle',
@@ -87,7 +87,8 @@ const styles = {
         msUserSelect: 'none',
         userSelect: 'none',
         backgroundImage: 'none',
-        border: '1px solid transparent'
+        border: '1px solid transparent',
+        opacity: '.8'
     }
 };
 
