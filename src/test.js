@@ -161,7 +161,7 @@ class Test extends React.Component {
                     <button style={styles.cancelButton} onClick={cancelHandler}>
                         <span>&times;</span>
                     </button>
-                    <div style={{'clear':'left', display: 'inline'}}>
+                    <div style={{'clear':'left', 'display': 'inline', 'fontWeight': 700, 'color': '#b3b1bb'}}>
                         {message}
                     </div>
                 </div>
