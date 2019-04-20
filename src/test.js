@@ -1,6 +1,5 @@
 import React from 'react';
 import FileUploadProgress  from 'react-fileupload-progress';
-import './adminstyle.css';
 
 import graduate from './images/graduate6.png';
 //allow react dev tools work
@@ -89,6 +88,7 @@ const styles = {
         border: '1px solid transparent',
         opacity: '.8'
     }
+
 };
 
 class Test extends React.Component {
