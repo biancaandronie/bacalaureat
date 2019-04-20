@@ -250,9 +250,9 @@ class App extends Component {
                     </div>
                 </div>
 
-                <div>
+                <div className="search">
                     <Search items={this.state.videos}
-                            placeholder='Search Video'
+                            placeholder='Recherche vidéo'
                             maxSelected={1}
                             multiple={false}
                             getItemsAsync={this.getItemsAsync.bind(this)}
