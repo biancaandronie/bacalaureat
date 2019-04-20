@@ -1,6 +1,5 @@
 import React from 'react';
 import FileUploadProgress  from 'react-fileupload-progress';
-import './adminstyle.css';
 
 import graduate from './images/graduate6.png';
 //allow react dev tools work
@@ -88,6 +87,54 @@ const styles = {
         backgroundImage: 'none',
         border: '1px solid transparent',
         opacity: '.8'
+    },
+    all_page_upload: {
+        borderRadius: '20px',
+        backgroundColor: '#f7eceb',
+        position: 'fixed',
+        height: '80%',
+        width: '72%',
+        margin: '5% 14%'
+    },
+    left: {
+        borderTopLeftRadius: '20px',
+        backgroundColor: '#545871',
+        position: 'fixed',
+        height: '80%',
+        width: '30%',
+        borderBottomLeftRadius: '20px',
+        padding: '10px'
+    },
+    right: {
+        width: '45%',
+        float: 'right'
+    },
+    graduate: {
+        height: 'auto',
+        width: '89%',
+        margin: '8% 6%',
+        opacity: '.7'
+    },
+    titlu_right: {
+        fontSize: '25px',
+        lineHeight: '3.429',
+        color: '#545871',
+        fontFamily: 'Roboto',
+        fontWeight: 700
+    },
+    videofile: {
+        color: '#b3b1bb',
+        border: '1px solid #ccc',
+        padding: '6px 12px',
+        cursor: 'pointer',
+        fontWeight: 700,
+        marginBottom: '12px',
+        display: 'block'
+    },
+    form_control: {
+        marginBottom: '12px',
+        width: '83%',
+        opacity: '0.5'
     }
 };
 
@@ -114,22 +161,22 @@ class Admin extends React.Component {
         return (
             <form id='customForm' style={{marginBottom: '15px', marginLeft: '-26px', padding: '0 64px 0 24px'}}>
                 <label style={styles.bslabel} htmlFor="videofile">Entrée de fichier</label>
-                <input style={{display: 'block'}} type="file" name='videofile' id="videofile" />
+                <input style={styles.videofile} type="file" name='videofile' id="videofile" />
 
                 <label style={styles.bslabel} htmlFor="nom">Nom</label>
-                <input className="form-control input-lg"
+                <input style={styles.form_control} className="form-control input-lg"
                        type="text"
                        name="name"
                        id="name"
                 />
                 <label style={styles.bslabel} htmlFor="matiere">Matière</label>
-                <input className="form-control input-lg"
+                <input style={styles.form_control} className="form-control input-lg"
                        type="text"
                        name="course"
                        id="course"
                 />
                 <label style={styles.bslabel} htmlFor="description">Description</label>
-                <input className="form-control input-lg"
+                <input style={styles.form_control} className="form-control input-lg"
                        type="text"
                        name="description"
                        id="description"
@@ -174,12 +221,12 @@ class Admin extends React.Component {
     render() {
 
         return (
-            <div className="all_page_upload">
-                <div className="left">
-                    <img src={graduate} className="graduate" alt="graduate" width="800" height="600" />
+            <div style={styles.all_page_upload} className="all_page_upload">
+                <div style={styles.left} className="left">
+                    <img style={styles.graduate} src={graduate} className="graduate" alt="graduate" width="800" height="600" />
                 </div>
-                <div className="right">
-                    <h1 className="titlu_right">Panneau d'administration</h1>
+                <div style={styles.right} className="right">
+                    <h1 style={styles.titlu_right} className="titlu_right">Panneau d'administration</h1>
                     <FileUploadProgress url='http://localhost:8080/api/v1/upload'
                                         onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
                                         onLoad={ (e, request) => {console.log('load', e, request);}}
