@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Downshift from 'downshift';
 import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
@@ -13,9 +14,7 @@ import einstein1 from './images/einstein1.png';
 import geo1 from './images/geo1.png';
 import java1 from './images/java1.png';
 import mate1 from './images/mate1.png';
-import Search from 'react-search'
-import  axios from 'axios'
-import createHistory from 'history/createBrowserHistory';
+import Background from './images/searchicon.png';
 
 
 import './App.css';
@@ -23,9 +22,14 @@ import './App.css';
 import {Pop} from './Login';
 import './Login.js';
 
+
+const API = 'http://bacalaureat.local/videos.php';
+
+
+
 const divStyle = {
-  position: 'absolute',
-  filter: 'drop-shadow(8px 8px 10px #1E80A3)'
+    position: 'absolute',
+    filter: 'drop-shadow(8px 8px 10px #1E80A3)'
 };
 
 class App extends Component {
@@ -34,237 +38,254 @@ class App extends Component {
         super(props);
 
         this.state = {
-            videos: [],
-            link: null,
-            redirect: false
+            results: [],
+            placeholder:'Par exemple: physique',
         };
 
-     }
-
-    handleItemsChange(items) {
-        if(items.length > 0) {
-            console.log(items);
-            console.log(items[0].id);
-            let url = 'http://localhost:8080/api/v1/videolink'
-            axios.post(url, { "id": items[0].id })
-                .then( (response) => {
-                    if(response.data != undefined){
-                        this.setState({ link: response.data[0].link });
-                        let { videos,link} = this.state;
-                        console.log(link);
-                        this.setState({ redirect: true})
-                    }
-                });
-        }
     }
 
-    getItemsAsync(searchValue, cb){
-        let url = 'http://localhost:8080/api/v1/video'
-        axios.post(url, { "name": searchValue})
-            .then( (response) => {
-                console.log(response.data.name);
-                if(response.data != undefined){
-                    console.log(response.data);
-                    let items = response.data.map( (res, i) => { return { id: res.id, value: res.name } });
-                    this.setState({ videos: items });
-                    cb(searchValue)
-                }
-
-            });
+    componentDidMount() {
+        fetch(API)
+            .then(response => response.json())
+            .then(data => this.setState({ results: data.results }));
     }
+
 
 
     render() {
 
-        const {link, redirect } = this.state;
-
-        if (redirect) {
-            const history = createHistory();
-            history.push('/');
-            history.go(0);
-        }
+        const { results } = this.state;
 
         return (
-      <div className="App">
+            <div className="App">
 
-          <div className="header">
-                <img src={bac5} className="bac" alt="bac" width="254" height="109" />
+                <div className="header">
+                    <img src={bac5} className="bac" alt="bac" width="254" height="109" />
 
-                <div className="conectare">
-                    <Pop />
+                    <div className="conectare">
+                        <Pop />
+                    </div>
                 </div>
-          </div>
-        <br />
-          <div className="flex flex-column items-stretch bg-base-secondary">
-              <div>
-                  <div>
+                <br />
+                <div className="flex flex-column items-stretch bg-base-secondary">
+                    <div>
                         <div>
-                            <section className="css-1c0ecgf">
-                               <div className="css-pzqzmn">
-                                  <div className="css-17mv9vi">
-                                      <h1 className="sans-serif css-bbh5y6">Regardez les meilleurs tutoriels à apprendre pour l`examen du baccalauréat.</h1>
-                                      <h2 className="sans-serif css-1e10erk">Tutoriels vidéo pour simplifier le temps de travail.</h2>
-                                      <a className="sans-serif grow css-zfihb1" href="#home"><span className="lh-solid">Cliquez pour commencer à apprendre</span></a>
-                                  </div>
-                                   <div className="css-1pj66t4">
-                                      <div className="container1">
-                                           <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
+                            <div>
+                                <section className="css-1c0ecgf">
+                                    <div className="css-pzqzmn">
+                                        <div className="css-17mv9vi">
+                                            <h1 className="sans-serif css-bbh5y6">Regardez les meilleurs tutoriels à apprendre pour l`examen du baccalauréat.</h1>
+                                            <h2 className="sans-serif css-1e10erk">Tutoriels vidéo pour simplifier le temps de travail.</h2>
+                                            <a className="sans-serif grow css-zfihb1" href="#home"><span className="lh-solid">Cliquez pour commencer à apprendre</span></a>
+                                        </div>
+                                        <div className="css-1pj66t4">
+                                            <div className="container1">
+                                                <div id="myCarousel" className="carousel slide" data-ride="carousel" style={divStyle} >
 
-                                             <ol className="carousel-indicators">
-                                               <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-                                               <li data-target="#myCarousel" data-slide-to="1"></li>
-                                               <li data-target="#myCarousel" data-slide-to="2"></li>
-                                               <li data-target="#myCarousel" data-slide-to="3"></li>
-                                             </ol>
+                                                    <ol className="carousel-indicators">
+                                                        <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+                                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                                                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                                                    </ol>
 
 
-                                             <div className="carousel-inner">
-                                               <div className="item active">
-                                                 <img src={math1} alt="math" className="poza" />
-                                                 <div className="overlay">
-                                                  <a href="#home" className="icon" title="User Profile">
-                                                    <p>Apprendre les maths</p>
-                                                  </a>
+                                                    <div className="carousel-inner">
+                                                        <div className="item active">
+                                                            <img src={math1} alt="math" className="poza" />
+                                                            <div className="overlay">
+                                                                <a href="#home" className="icon" title="User Profile">
+                                                                    <p>Apprendre les maths</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="item">
+                                                            <img src={chemistry1} alt="chemistry" className="poza" />
+                                                            <div className="overlay">
+                                                                <a href="#home" className="icon" title="User Profile">
+                                                                    <p>Apprendre la chimie</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="item">
+                                                            <img src={bones1} alt="bones" className="poza" />
+                                                            <div className="overlay">
+                                                                <a href="#home" className="icon" title="User Profile">
+                                                                    <p>Apprendre la biologie</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+
+                                                        <div className="item">
+                                                            <img src={physic1} alt="physic" className="poza" />
+                                                            <div className="overlay">
+                                                                <a href="#home" className="icon" title="User Profile">
+                                                                    <p>Apprendre la physique</p>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+
+                                                    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                        <span className="glyphicon glyphicon-chevron-left"></span>
+                                                        <span className="sr-only">Previous</span>
+                                                    </a>
+                                                    <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                                                        <span className="glyphicon glyphicon-chevron-right"></span>
+                                                        <span className="sr-only">Next</span>
+                                                    </a>
                                                 </div>
-                                               </div>
-
-                                               <div className="item">
-                                                 <img src={chemistry1} alt="chemistry" className="poza" />
-                                                 <div className="overlay">
-                                                  <a href="#home" className="icon" title="User Profile">
-                                                    <p>Apprendre la chimie</p>
-                                                  </a>
-                                                </div>
-                                               </div>
-
-                                               <div className="item">
-                                                 <img src={bones1} alt="bones" className="poza" />
-                                                 <div className="overlay">
-                                                  <a href="#home" className="icon" title="User Profile">
-                                                    <p>Apprendre la biologie</p>
-                                                  </a>
-                                                </div>
-                                               </div>
-
-                                               <div className="item">
-                                                 <img src={physic1} alt="physic" className="poza" />
-                                                 <div className="overlay">
-                                                  <a href="#home" className="icon" title="User Profile">
-                                                    <p>Apprendre la physique</p>
-                                                  </a>
-                                                </div>
-                                               </div>
-                                             </div>
-
-
-
-                                             <a className="left carousel-control" href="#myCarousel" data-slide="prev">
-                                               <span className="glyphicon glyphicon-chevron-left"></span>
-                                               <span className="sr-only">Previous</span>
-                                             </a>
-                                             <a className="right carousel-control" href="#myCarousel" data-slide="next">
-                                               <span className="glyphicon glyphicon-chevron-right"></span>
-                                               <span className="sr-only">Next</span>
-                                             </a>
-                                           </div>
-                                      </div>
-                                   </div>
-                               </div>
-                            </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                  </div>
-              </div>
-          </div>
-
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-6">
-                <div className="w3-main">
-
-                  <div className="w3-row-padding">
-                    <div className="w3-third w3-container w3-margin-bottom">
-                         <img src={book1} alt="Norway" className="w3-hover-opacity" />
                     </div>
-                    <div className="w3-third w3-container w3-margin-bottom">
-                      <img src={java1} alt="Norway" className="w3-hover-opacity" />
-                    </div>
-                    <div className="w3-third w3-container">
-                      <img src={hitler1} alt="Norway" className="w3-hover-opacity" />
-                    </div>
-                  </div>
-
-
-                  <div className="w3-row-padding">
-                    <div className="w3-third w3-container w3-margin-bottom">
-                      <img src={geo1} alt="Norway" className="w3-hover-opacity" />
-
-                    </div>
-                    <div className="w3-third w3-container w3-margin-bottom">
-                      <img src={bee1} alt="Norway" className="w3-hover-opacity" />
-
-                    </div>
-                    <div className="w3-third w3-container">
-                      <img src={anatomy1} alt="Norway" className="w3-hover-opacity" />
-                    </div>
-                  </div>
-
-                  <div className="w3-row-padding">
-                    <div className="w3-third w3-container w3-margin-bottom">
-                         <img src={chimie1} alt="Norway" className="w3-hover-opacity" />
-                    </div>
-                    <div className="w3-third w3-container w3-margin-bottom">
-                      <img src={einstein1} alt="Norway" className="w3-hover-opacity" />
-                    </div>
-                    <div className="w3-third w3-container">
-                      <img src={mate1} alt="Norway" className="w3-hover-opacity" />
-                    </div>
-                  </div>
-              </div>
-              </div>
-              <div className="col-sm-6 other">
-                <div className="sans-serif bibac"><h3 className=" sans-serif titlubibac">Qu`est-ce que B!BAC?</h3>
-                  <p className="parag1">
-                      B!bac vous propose des tutoriels vidéo concis et informatifs pour vous aider à obtenir le meilleur score à l`examen du baccalauréat.
-                  </p>
-                  <p className="parag2">
-                      Nous nous engageons à respecter votre temps. Cela signifie que les cours vont droit au but et fournissent les connaissances que vous pouvez utiliser aujourd`hui. Vous ne trouverez pas de cours ennuyeux de 8 heures sur B!bac, mais plutôt une profusion de cours minuscules contenant plus d’informations en une fraction du temps.
-                  </p>
                 </div>
-              </div>
+
+                <div className="container">
+                    <div className="row">
+                        <div className="col-sm-6">
+                            <div className="w3-main">
+
+                                <div className="w3-row-padding">
+                                    <div className="w3-third w3-container w3-margin-bottom">
+                                        <img src={book1} alt="Norway" className="w3-hover-opacity" />
+                                    </div>
+                                    <div className="w3-third w3-container w3-margin-bottom">
+                                        <img src={java1} alt="Norway" className="w3-hover-opacity" />
+                                    </div>
+                                    <div className="w3-third w3-container">
+                                        <img src={hitler1} alt="Norway" className="w3-hover-opacity" />
+                                    </div>
+                                </div>
+
+
+                                <div className="w3-row-padding">
+                                    <div className="w3-third w3-container w3-margin-bottom">
+                                        <img src={geo1} alt="Norway" className="w3-hover-opacity" />
+
+                                    </div>
+                                    <div className="w3-third w3-container w3-margin-bottom">
+                                        <img src={bee1} alt="Norway" className="w3-hover-opacity" />
+
+                                    </div>
+                                    <div className="w3-third w3-container">
+                                        <img src={anatomy1} alt="Norway" className="w3-hover-opacity" />
+                                    </div>
+                                </div>
+
+                                <div className="w3-row-padding">
+                                    <div className="w3-third w3-container w3-margin-bottom">
+                                        <img src={chimie1} alt="Norway" className="w3-hover-opacity" />
+                                    </div>
+                                    <div className="w3-third w3-container w3-margin-bottom">
+                                        <img src={einstein1} alt="Norway" className="w3-hover-opacity" />
+                                    </div>
+                                    <div className="w3-third w3-container">
+                                        <img src={mate1} alt="Norway" className="w3-hover-opacity" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-sm-6 other">
+                            <div className="sans-serif bibac"><h3 className=" sans-serif titlubibac">Qu`est-ce que B!BAC?</h3>
+                                <p className="parag1">
+                                    B!bac vous propose des tutoriels vidéo concis et informatifs pour vous aider à obtenir le meilleur score à l`examen du baccalauréat.
+                                </p>
+                                <p className="parag2">
+                                    Nous nous engageons à respecter votre temps. Cela signifie que les cours vont droit au but et fournissent les connaissances que vous pouvez utiliser aujourd`hui. Vous ne trouverez pas de cours ennuyeux de 8 heures sur B!bac, mais plutôt une profusion de cours minuscules contenant plus d’informations en une fraction du temps.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className ="notice-streamer">
+                    <div className ="carousel-fullscreen-sidebar">
+                        <div className ="notice-streamer__content">
+                            <div className ="notice-streamer__headline">
+                                Prêt à commencer?
+                            </div>
+                            <div className="notice-streamer__text">
+                                Apprenez quelque chose de nouveau aujourd`hui. Rechercher des tutoriels.
+                            </div>
+                        </div>
+
+
+
+                        <Downshift
+
+                            itemToString={item => (item ? item.name : '')}
+                        >
+                            {({
+                                  getInputProps,
+                                  getItemProps,
+                                  getLabelProps,
+                                  isOpen,
+                                  inputValue,
+                                  highlightedIndex,
+                                  selectedItem,
+                              }) => (
+                                <div>
+
+                                    <input {...getInputProps({
+                                        style: {
+                                            width: '345px',
+                                            boxSizing: 'border-box',
+                                            border: '2px solid #ccc',
+                                            borderRadius: '4px',
+                                            fontSize: '16px',
+                                            backgroundColor: 'white',
+                                            backgroundImage: `url(${Background})`,
+                                            backgroundPosition: '10px 10px',
+                                            backgroundRepeat: 'no-repeat',
+                                            padding: '12px 20px 12px 40px',
+
+                                        }})} placeholder={this.state.placeholder} autoFocus />
+                                    {isOpen ? (
+                                        <div>
+                                            {results
+                                                .filter(item => !inputValue || item.name.includes(inputValue))
+                                                .map((item, index) => (
+                                                    <div
+                                                        {...getItemProps({
+                                                            key: item.name,
+                                                            index,
+                                                            item,
+                                                            style: {
+                                                                backgroundColor:
+                                                                    highlightedIndex === index ? 'lightgray' : 'white',
+                                                                fontWeight: selectedItem === item ? 'bold' : 'normal',
+                                                                width: '345px',
+                                                                margin: '7px 0 0 0',
+                                                            },
+                                                        })}
+                                                    >
+
+                                                        <a href={item.link}>{item.name}</a>
+
+                                                    </div>
+                                                ))}
+                                        </div>
+                                    ) : null}
+                                </div>
+                            )}
+                        </Downshift>
+                    </div>
+                </div>
+
             </div>
-          </div>
-
-          <div className ="notice-streamer">
-            <div className ="carousel-fullscreen-sidebar">
-                <div className ="notice-streamer__content">
-                    <div className ="notice-streamer__headline">
-                        Prêt à commencer?
-                    </div>
-                    <div className="notice-streamer__text">
-                        Apprenez quelque chose de nouveau aujourd`hui. Rechercher des tutoriels.
-                    </div>
-                </div>
-
-                <div className="search">
-                    <Search items={this.state.videos}
-                            placeholder='Recherche vidéo'
-                            maxSelected={1}
-                            multiple={false}
-                            getItemsAsync={this.getItemsAsync.bind(this)}
-                            onItemsChanged={this.handleItemsChange.bind(this)}
-                            onClick={this.handleItemsChange.bind(this)}
-                    />
-                </div>
-
-            </div>
-          </div>
-
-      </div>
 
 
-    );
+        );
 
-  }
+    }
 }
 
 export default App;
