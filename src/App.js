@@ -245,9 +245,16 @@ class App extends Component {
                     </div>
                 </div>
 
-
-
-
+                <div className="search">
+                    <Search items={this.state.videos}
+                            placeholder='Recherche vidéo'
+                            maxSelected={1}
+                            multiple={false}
+                            getItemsAsync={this.getItemsAsync.bind(this)}
+                            onItemsChanged={this.handleItemsChange.bind(this)}
+                            onClick={this.handleItemsChange.bind(this)}
+                    />
+                </div>
 
             </div>
           </div>
