@@ -148,10 +148,10 @@ class Test extends React.Component {
             let message = (<span>{barStyle.width}</span>);
             if (hasError) {
                 barStyle.backgroundColor = '#d9534f';
-                message = (<span style={{'color': '#a94442'}}>Impossible de télécharger ...</span>);
+                message = (<span style={{'color': '#a94442'}}>Impossible de télécharger...</span>);
             }
             if (progress === 100){
-                message = (<span >Done</span>);
+                message = (<span >Terminé</span>);
             }
 
             return (
