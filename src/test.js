@@ -47,7 +47,7 @@ const styles = {
         textShadow: '0 1px 0 #fff',
         filter: 'alpha(opacity=20)',
         opacity: '.2',
-        margin: '8px'
+
     },
 
     bslabel: {
