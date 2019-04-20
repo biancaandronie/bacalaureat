@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Downshift from 'downshift';
 import math1 from './images/math1.jpg';
 import chemistry1 from './images/chemistry1.jpg';
 import bones1 from './images/bones1.jpg';
@@ -14,7 +13,9 @@ import einstein1 from './images/einstein1.png';
 import geo1 from './images/geo1.png';
 import java1 from './images/java1.png';
 import mate1 from './images/mate1.png';
-import Background from './images/searchicon.png';
+import Search from 'react-search'
+import  axios from 'axios'
+import createHistory from 'history/createBrowserHistory';
 
 
 import './App.css';
@@ -38,25 +39,57 @@ class App extends Component {
         super(props);
 
         this.state = {
-          results: [],
-          placeholder:'Par exemple: physique',
+            videos: [],
+            link: null,
+            redirect: false
         };
 
      }
 
-      componentDidMount() {
-          fetch(API)
-            .then(response => response.json())
-            .then(data => this.setState({ results: data.results }));
+    handleItemsChange(items) {
+        if(items.length > 0) {
+            console.log(items);
+            console.log(items[0].id);
+            let url = 'http://localhost:8080/api/v1/videolink'
+            axios.post(url, { "id": items[0].id })
+                .then( (response) => {
+                    if(response.data != undefined){
+                        this.setState({ link: response.data[0].link });
+                        let { videos,link} = this.state;
+                        console.log(link);
+                        this.setState({ redirect: true})
+                    }
+                });
+        }
+    }
+
+    getItemsAsync(searchValue, cb){
+        let url = 'http://localhost:8080/api/v1/video'
+        axios.post(url, { "name": searchValue})
+            .then( (response) => {
+                console.log(response.data.name);
+                if(response.data != undefined){
+                    console.log(response.data);
+                    let items = response.data.map( (res, i) => { return { id: res.id, value: res.name } });
+                    this.setState({ videos: items });
+                    cb(searchValue)
+                }
+
+            });
+    }
+
+
+    render() {
+
+        const {link, redirect } = this.state;
+
+        if (redirect) {
+            const history = createHistory();
+            history.push('/');
+            history.go(0);
         }
 
-
-
-  render() {
-
-  const { results } = this.state;
-
-    return (
+        return (
       <div className="App">
 
           <div className="header">
@@ -217,66 +250,19 @@ class App extends Component {
                     </div>
                 </div>
 
+                <div>
+                    <Search items={this.state.videos}
+                            placeholder='Search Video'
+                            maxSelected={1}
+                            multiple={false}
+                            getItemsAsync={this.getItemsAsync.bind(this)}
+                            onItemsChanged={this.handleItemsChange.bind(this)}
+                            onClick={this.handleItemsChange.bind(this)}
+                    />
+                </div>
 
 
-                    <Downshift
 
-                        itemToString={item => (item ? item.name : '')}
-                      >
-                        {({
-                          getInputProps,
-                          getItemProps,
-                          getLabelProps,
-                          isOpen,
-                          inputValue,
-                          highlightedIndex,
-                          selectedItem,
-                        }) => (
-                          <div>
-
-                            <input {...getInputProps({
-                                style: {
-                                    width: '345px',
-                                    boxSizing: 'border-box',
-                                    border: '2px solid #ccc',
-                                    borderRadius: '4px',
-                                    fontSize: '16px',
-                                    backgroundColor: 'white',
-                                    backgroundImage: `url(${Background})`,
-                                    backgroundPosition: '10px 10px',
-                                    backgroundRepeat: 'no-repeat',
-                                    padding: '12px 20px 12px 40px',
-
-                                }})} placeholder={this.state.placeholder} autoFocus />
-                            {isOpen ? (
-                              <div>
-                                {results
-                                  .filter(item => !inputValue || item.name.includes(inputValue))
-                                  .map((item, index) => (
-                                    <div
-                                      {...getItemProps({
-                                        key: item.name,
-                                        index,
-                                        item,
-                                        style: {
-                                          backgroundColor:
-                                            highlightedIndex === index ? 'lightgray' : 'white',
-                                          fontWeight: selectedItem === item ? 'bold' : 'normal',
-                                          width: '345px',
-                                          margin: '7px 0 0 0',
-                                        },
-                                      })}
-                                    >
-
-                                                  <a href={item.link}>{item.name}</a>
-
-                                    </div>
-                                  ))}
-                              </div>
-                            ) : null}
-                          </div>
-                        )}
-                    </Downshift>
             </div>
           </div>
 
