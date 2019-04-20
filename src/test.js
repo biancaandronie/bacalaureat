@@ -113,7 +113,9 @@ class Test extends React.Component {
     customFormRenderer(onSubmit){
         return (
             <form id='customForm' style={{marginBottom: '15px'}}>
-                <label style={styles.bslabel} htmlFor="videofile">Entrée de fichier</label>
+                <label htmlFor="file-upload" className="custom-file-upload">
+                    <i className="fa fa-cloud-upload"></i> Custom Upload
+                </label>
                 <input style={{display: 'block'}} type="file" name='videofile' id="videofile" />
                 <input
                     type="text"
