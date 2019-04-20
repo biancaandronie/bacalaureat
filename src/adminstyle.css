@@ -45,3 +45,8 @@
     font-weight: 700;
     margin-bottom: 12px;
 }
+
+.form-control {
+    margin-bottom: 12px;
+    width: 92%;
+}
