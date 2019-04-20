@@ -54,7 +54,8 @@ const styles = {
         display: 'inline-block',
         maxWidth: '100%',
         marginBottom: '5px',
-        fontWeight: 700
+        fontWeight: 700,
+        color: '#b3b1bb'
     },
 
     bsHelp: {
@@ -123,11 +124,6 @@ class Test extends React.Component {
                     type="text"
                     name="course"
                     id="course"
-                />
-                <input
-                    type="text"
-                    name="tag"
-                    id="tag"
                 />
                 <input
                     type="text"
