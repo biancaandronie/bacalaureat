@@ -17,7 +17,7 @@ import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render((
   <BrowserRouter>
     <div>
-      <Route exact path="/" strict component={App} />
+      <Route path="/" exact strict component={App} />
       <Route path="/admin" exact strict component={Admin} />
       <Route path="/test" exact strict component={test} />
     </div>
