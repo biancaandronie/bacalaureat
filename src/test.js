@@ -34,7 +34,6 @@ const styles = {
         transition: 'width .6s ease'
     },
     cancelButton: {
-        marginTop: '5px',
         WebkitAppearance: 'none',
         padding: 0,
         cursor: 'pointer',
@@ -47,7 +46,8 @@ const styles = {
         color: '#000',
         textShadow: '0 1px 0 #fff',
         filter: 'alpha(opacity=20)',
-        opacity: '.2'
+        opacity: '.2',
+        margin: '8px'
     },
 
     bslabel: {
@@ -162,7 +162,7 @@ class Test extends React.Component {
                     <button style={styles.cancelButton} onClick={cancelHandler}>
                         <span>&times;</span>
                     </button>
-                    <div style={{'clear':'left'}}>
+                    <div style={{'clear':'left', display: 'inline'}}>
                         {message}
                     </div>
                 </div>
