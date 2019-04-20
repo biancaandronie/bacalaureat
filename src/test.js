@@ -8,8 +8,7 @@ window.React = React;
 
 const styles = {
     progressWrapper: {
-        height: '50px',
-        marginTop: '10px',
+        height: '28px',
         width: '290px',
         float:'left',
         overflow: 'hidden',
