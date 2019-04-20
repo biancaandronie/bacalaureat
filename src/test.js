@@ -115,17 +115,21 @@ class Test extends React.Component {
             <form id='customForm' style={{marginBottom: '15px'}}>
                 <label style={styles.bslabel} htmlFor="videofile">Entrée de fichier</label>
                 <input style={{display: 'block'}} type="file" name='videofile' id="videofile" />
-                <input
+
+                <label style={styles.bslabel} htmlFor="nom">Nom</label>
+                <input className="form-control input-lg"
                     type="text"
                     name="name"
                     id="name"
                 />
-                <input
+                <label style={styles.bslabel} htmlFor="matiere">Matière</label>
+                <input className="form-control input-lg"
                     type="text"
                     name="course"
                     id="course"
                 />
-                <input
+                <label style={styles.bslabel} htmlFor="description">Description</label>
+                <input className="form-control input-lg"
                     type="text"
                     name="description"
                     id="description"
