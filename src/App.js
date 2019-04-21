@@ -58,6 +58,9 @@ class App extends Component {
                         this.setState({ id: items[0].id });
                         console.log(id);
                     }
+                    let { id} = this.state;
+                    this.setState({ id: items[0].id });
+                    console.log(`hello ${id}`);
                 });
         }
     }
