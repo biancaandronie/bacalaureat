@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Admin from './Admin';
-import test from './test';
+import VideoPage from './App';
 import * as serviceWorker from './serviceWorker';
 //pt butonul din header--pt culoare am instalat mdbreact
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -19,7 +19,7 @@ ReactDOM.render((
     <div>
       <Route path="/" exact strict component={App} />
       <Route path="/admin" exact strict component={Admin} />
-      <Route path="/test" exact strict component={test} />
+      <Route path="/test" exact strict component={VideoPage} />
     </div>
   </BrowserRouter >
 ), document.getElementById('root'));
