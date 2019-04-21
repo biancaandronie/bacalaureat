@@ -37,7 +37,7 @@ class App extends Component {
             videos: [],
             link: null,
             redirect: false,
-            id: ''
+            id: 0
         };
 
     }
@@ -45,18 +45,17 @@ class App extends Component {
     handleItemsChange(items) {
         if(items.length > 0) {
             console.log(items)
-            let {id} = this.state;
-            this.setState({ id: items[0].id });
-            console.log(id);
             let url = 'http://localhost:8080/api/v1/videolink'
             axios.post(url, { "id": items[0].id })
                 .then( (response) => {
                     if(response.data != undefined){
                         this.setState({ link: response.data[0].link });
-                        let {redirect,link} = this.state;
-                        console.log(link);
+                        this.setState({ link: response.data[0].id });
                         this.setState({ redirect: false});
+                        let {id,redirect,link} = this.state;
+                        console.log(link);
                         console.log(redirect);
+                        console.log(id);
                       }
                 });
         }
