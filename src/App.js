@@ -36,7 +36,8 @@ class App extends Component {
         this.state = {
             videos: [],
             link: null,
-            redirect: false
+            redirect: false,
+            id: 0
         };
 
     }
@@ -50,9 +51,12 @@ class App extends Component {
                 .then( (response) => {
                     if(response.data != undefined){
                         this.setState({ link: response.data[0].link });
-                        let { videos,link} = this.state;
+                        let { id,redirect,link} = this.state;
                         console.log(link);
-                        this.setState({ redirect: true})
+                        this.setState({ redirect: false});
+                        console.log(redirect);
+                        this.setState({ id: items[0].id });
+                        console.log(id);
                     }
                 });
         }
@@ -277,6 +281,25 @@ class App extends Component {
 
     }
 }
+class VideoPage extends Component{
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            videos: [],
+            link: null,
+            redirect: false
+        };
+
+    }
+
+
+
+
+}
+
+
 
 export default App;
+
 
