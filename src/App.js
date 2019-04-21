@@ -55,12 +55,9 @@ class App extends Component {
                         console.log(link);
                         this.setState({ redirect: false});
                         console.log(redirect);
-                        this.setState({ id: items[0].id });
+                        this.setState({ id: response.data[0].id });
                         console.log(id);
                     }
-                    let { id} = this.state;
-                    this.setState({ id: items[0].id });
-                    console.log(`hello ${id}`);
                 });
         }
     }
