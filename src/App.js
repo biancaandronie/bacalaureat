@@ -50,12 +50,12 @@ class App extends Component {
                 .then( (response) => {
                     if(response.data != undefined){
                         this.setState({ link: response.data[0].link });
-                        this.setState({ link: response.data[0].id });
+                        this.setState({ id: response.data[0].id });
                         this.setState({ redirect: false});
                         let {videos,link,redirect,id} = this.state;
-                        console.log(link);
-                        console.log(redirect);
-                        console.log(id);
+                        console.log(`this is the link: ${link}`);
+                        console.log(`this is redirect: ${redirect}`);
+                        console.log(`this is id: ${id}`);
                       }
                 });
         }
