@@ -273,24 +273,29 @@ class App extends Component {
     }
 }
 class VideoPage extends Component{
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
 
         this.state = {
             videos: [],
             link: null,
-            redirect: false
+            redirect: false,
+            id: this.props.id
         };
 
     }
+    handleItemsChange() {
+        console.log(this.state.id);
 
+    }
 
-
+    render() {
+        return (
+            <App onClick={this.handleItemsChange.bind(this)}/>
+        );
+    }
 
 }
-
-
-
-export default App;
+export default {App, VideoPage};
 
 
