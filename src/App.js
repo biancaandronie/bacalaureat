@@ -290,8 +290,10 @@ class VideoPage extends Component{
     }
 
     render() {
+        let {id}=this.state;
+        console.log(id);
         return (
-            <App onClick={this.handleItemsChange.bind(this)}/>
+
         );
     }
 
