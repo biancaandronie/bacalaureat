@@ -44,7 +44,7 @@ class App extends Component {
 
     handleItemsChange(items) {
         if(items.length > 0) {
-            console.log(items)
+            //console.log(items);
             let url = 'http://localhost:8080/api/v1/videolink'
             axios.post(url, { "id": items[0].id })
                 .then( (response) => {
@@ -52,7 +52,7 @@ class App extends Component {
                         this.setState({ link: response.data[0].link });
                         this.setState({ link: response.data[0].id });
                         this.setState({ redirect: false});
-                        let {id,redirect,link} = this.state;
+                        let {videos,link,redirect,id} = this.state;
                         console.log(link);
                         console.log(redirect);
                         console.log(id);
