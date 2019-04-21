@@ -429,3 +429,7 @@ Din cauza lui margin-top se strica partea de jos cu caruselul
 .search {
     width: 60%;
 }
+
+.search_for_header {
+    width: 40%;
+}

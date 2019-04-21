@@ -90,6 +90,17 @@ class App extends Component {
                 <div className="header">
                     <img src={bac5} className="bac" alt="bac" width="254" height="109" />
 
+                    <div className="search_for_header">
+                        <Search items={this.state.videos}
+                                placeholder='Recherche vidéo'
+                                maxSelected={1}
+                                multiple={false}
+                                getItemsAsync={this.getItemsAsync.bind(this)}
+                                onItemsChanged={this.handleItemsChange.bind(this)}
+                                onClick={this.handleItemsChange.bind(this)}
+                        />
+                    </div>
+
                     <div className="conectare">
                         <Pop />
                     </div>
