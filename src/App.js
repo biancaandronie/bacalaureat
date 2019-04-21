@@ -37,7 +37,7 @@ class App extends Component {
             videos: [],
             link: null,
             redirect: false,
-            id: 0
+            id: ''
         };
 
     }
