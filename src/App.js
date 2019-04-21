@@ -52,7 +52,7 @@ class App extends Component {
                         this.setState({ link: response.data[0].link });
                         this.setState({ id: response.data[0].id });
                         this.setState({ redirect: false});
-                        let {videos,link,redirect,id} = this.state;
+                        let {link,redirect,id} = this.state;
                         console.log(`this is the link: ${link}`);
                         console.log(`this is redirect: ${redirect}`);
                         console.log(`this is id: ${id}`);
