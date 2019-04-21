@@ -293,7 +293,7 @@ class VideoPage extends Component{
         let {id}=this.state;
         console.log(id);
         return (
-            <h1>lll</h1>
+            <h1>{id}</h1>
         );
     }
 
