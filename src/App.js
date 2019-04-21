@@ -44,21 +44,20 @@ class App extends Component {
 
     handleItemsChange(items) {
         if(items.length > 0) {
-            console.log(items);
-            console.log(items[0].id);
+            console.log(items)
+            let {id} = this.state;
+            this.setState({ id: items[0].id });
+            console.log(id);
             let url = 'http://localhost:8080/api/v1/videolink'
             axios.post(url, { "id": items[0].id })
                 .then( (response) => {
                     if(response.data != undefined){
                         this.setState({ link: response.data[0].link });
-                        let {videos,redirect,link} = this.state;
+                        let {redirect,link} = this.state;
                         console.log(link);
                         this.setState({ redirect: false});
                         console.log(redirect);
                       }
-                    let {id,videos,redirect,link} = this.state;
-                    this.setState({ id: items[0].id });
-                    console.log(id);
                 });
         }
     }
