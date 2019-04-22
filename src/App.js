@@ -267,7 +267,6 @@ class App extends Component {
                 <BrowserRouter>
                     <Switch>
                         <div>
-                            <Route path="/" exact strict component={App} />
                             <Route path="/admin" exact strict component={Admin} />
                             <Route path="/test" exact strict component={VideoPage} />
                             <Route path="/about" exact strict render={props => <VideoPage id={this.props.id} />} />
