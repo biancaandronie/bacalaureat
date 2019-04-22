@@ -268,7 +268,7 @@ class App extends Component {
 
                 <Route
                     path='/about'
-                    render={(props) => <VideoPage {...props}  />}
+                    render={() => <VideoPage id={this.state.id} />}
                 />
 
             </div>
@@ -296,8 +296,9 @@ class VideoPage extends Component{
     // }
 
     render() {
-        let {id}=this.state;
+        let {id}=this.props;
         console.log(id);
+        console.log(this.props.id);
         return (
             <h1>{id}</h1>
         );
