@@ -15,16 +15,7 @@ import {Switch, Route} from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render((
-  <BrowserRouter>
-      <Switch>
-        <div>
-          <Route path="/" exact strict component={App} />
-          <Route path="/admin" exact strict component={Admin} />
-          <Route path="/test" exact strict component={VideoPage} />
-          <Route path="/about" exact strict render={props => <VideoPage id={this.props.id} />} />
-        </div>
-      </Switch>
-  </BrowserRouter >
+    <App/>
 ), document.getElementById('root'));
 
 //ReactDOM.render(<App />, document.getElementById('root'));

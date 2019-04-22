@@ -16,9 +16,9 @@ import mate1 from './images/mate1.png';
 import Search from 'react-search'
 import  axios from 'axios'
 import createHistory from 'history/createBrowserHistory';
-
+import { BrowserRouter } from 'react-router-dom';
 import {Switch, Route} from 'react-router';
-
+import Admin from './Admin';
 import './App.css';
 
 import {Pop} from './Login';
@@ -264,7 +264,16 @@ class App extends Component {
 
                     </div>
                 </div>
-
+                <BrowserRouter>
+                    <Switch>
+                        <div>
+                            <Route path="/" exact strict component={App} />
+                            <Route path="/admin" exact strict component={Admin} />
+                            <Route path="/test" exact strict component={VideoPage} />
+                            <Route path="/about" exact strict render={props => <VideoPage id={this.props.id} />} />
+                        </div>
+                    </Switch>
+                </BrowserRouter >
             </div>
 
 
@@ -285,7 +294,7 @@ class VideoPage extends Component{
             videos: [],
             link: null,
             redirect: false,
-            id: this.props.id
+            id: 0
         };
 
     }
