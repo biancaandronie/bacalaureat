@@ -21,6 +21,10 @@ ReactDOM.render((
           <Route path="/" exact strict component={App} />
           <Route path="/admin" exact strict component={Admin} />
           <Route path="/test" exact strict component={VideoPage} />
+            <Route
+                path='/about'
+                render={() => <VideoPage id={this.state.id} />}
+            />
         </div>
       </Switch>
   </BrowserRouter >

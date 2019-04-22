@@ -266,10 +266,7 @@ class App extends Component {
                     </div>
                 </div>
 
-                <Route
-                    path='/about'
-                    render={() => <VideoPage id={this.state.newid} />}
-                />
+
 
             </div>
 
