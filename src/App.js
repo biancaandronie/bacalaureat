@@ -291,7 +291,7 @@ class VideoPage extends Component{
     }
 
     render() {
-        console.log(this.props);
+        console.log(this.props.id);
 
         return <div> MAIN </div>;
     }
