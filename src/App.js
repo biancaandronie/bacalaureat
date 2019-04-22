@@ -300,7 +300,9 @@ class VideoPage extends Component{
 
     render() {
         let newid = this.props.id;
-        this.setState({id: newid})
+        this.setState({id: newid});
+        let {id} = this.state;
+        console.log(id);
 
 
         return <div> MAIN </div>;
