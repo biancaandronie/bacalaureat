@@ -321,6 +321,6 @@ class VideoPage extends Component{
 //
 }
 
-export default {App, VideoPage};
+export default App;
 
 
