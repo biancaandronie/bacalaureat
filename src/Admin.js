@@ -2,6 +2,8 @@ import React from 'react';
 import FileUploadProgress  from 'react-fileupload-progress';
 
 import graduate from './images/graduate6.png';
+
+import './adminstyle.css';
 //allow react dev tools work
 window.React = React;
 
