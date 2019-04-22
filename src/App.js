@@ -80,7 +80,7 @@ class App extends Component {
 
     render() {
 
-        const {link, redirect } = this.state;
+        const {id,link, redirect } = this.state;
 
         if (redirect) {
             const history = createHistory();
@@ -269,7 +269,7 @@ class App extends Component {
                         <div>
                             <Route path="/admin" exact strict component={Admin} />
                             <Route path="/test" exact strict component={VideoPage} />
-                            <Route path="/about" exact strict render={props => <VideoPage id={this.handleItemsChange.bind(this)} />} />
+                            <Route path="/about" exact strict render={props => <VideoPage id={id} />} />
                         </div>
                     </Switch>
                 </BrowserRouter >
