@@ -57,7 +57,7 @@ class App extends Component {
                         console.log(`this is the link: ${link}`);
                         console.log(`this is redirect: ${redirect}`);
                         console.log(`this is id: ${id}`);
-                      }
+                    }
                 });
         }
     }
@@ -260,6 +260,8 @@ class App extends Component {
                             </div>
                         </div>
 
+
+
                     </div>
                 </div>
 
@@ -271,6 +273,54 @@ class App extends Component {
     }
 }
 
-export default App;
+/*<Route
+    path='/about'
+    render={() => <VideoPage id={this.state.id} />}
+/>*/
+class VideoPage extends Component{
+    constructor() {
+        super();
+
+        this.state = {
+            videos: [],
+            link: null,
+            redirect: false,
+            id: this.props.id
+        };
+
+    }
+
+    render() {
+        console.log(this.props);
+
+        return <div> MAIN </div>;
+    }
+
+// class VideoPage extends React.Component {
+//
+//     componentDidMount() {
+//         // `newBugs`constant holds the bugs passed down from IndexPage
+//         const newid = this.props.id;
+//         this.setState({id: newid})
+//     }
+//
+// }
+// handleItemsChange() {
+//     console.log(this.state.id);
+//
+// }
+//
+//     render() {
+//         let {id}=this.props;
+//         console.log(id);
+//         console.log(this.props.id);
+//         return (
+//             <h1>{id}</h1>
+//         );
+//     }
+//
+}
+
+export default {App, VideoPage};
 
 
