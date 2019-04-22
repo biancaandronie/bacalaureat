@@ -269,7 +269,7 @@ class App extends Component {
                         <div>
                             <Route path="/admin" exact strict component={Admin} />
                             <Route path="/test" exact strict component={VideoPage} />
-                            <Route path="/about" exact strict render={props => <VideoPage id={this.props.id} />} />
+                            <Route path="/about" exact strict render={props => <VideoPage id={this.state.id} />} />
                         </div>
                     </Switch>
                 </BrowserRouter >
@@ -299,7 +299,9 @@ class VideoPage extends Component{
     }
 
     render() {
-        console.log(this.props.id);
+        let newid = this.props.id;
+        this.setState({id: newid})
+
 
         return <div> MAIN </div>;
     }
