@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bae3dc5-733e-40c5-9f8d-eb254070dbe9" name="Default" comment="reverting back">
+    <list default="true" id="4bae3dc5-733e-40c5-9f8d-eb254070dbe9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Admin.js" afterPath="$PROJECT_DIR$/src/Admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test.js" afterPath="$PROJECT_DIR$/src/test.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,20 +29,21 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="561">
+              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#275#330#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/index.html">
+      <file leaf-file-name="adminstyle.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/adminstyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="84" />
+            <state relative-caret-position="297">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -51,11 +52,21 @@
       <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state relative-caret-position="231">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/service/PostData.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,18 +74,18 @@
       <file leaf-file-name="Login.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="366">
+              <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4422">
-              <caret line="134" column="53" lean-forward="true" selection-start-line="134" selection-start-column="53" selection-end-line="134" selection-end-column="53" />
+            <state relative-caret-position="2523">
+              <caret line="296" column="0" lean-forward="true" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -82,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="693">
@@ -95,8 +106,8 @@
       <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-8586">
-              <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+            <state relative-caret-position="14388">
+              <caret line="436" column="27" lean-forward="false" selection-start-line="436" selection-start-column="27" selection-end-line="436" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -105,20 +116,8 @@
       <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3069">
-              <caret line="93" column="34" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminstyle.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/adminstyle.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1386">
-              <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+            <state relative-caret-position="495">
+              <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -127,11 +126,9 @@
       <file leaf-file-name="Admin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="33">
+              <caret line="1" column="60" lean-forward="false" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -140,18 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Popup</find>
-      <find>file in</find>
-      <find>selected</find>
-      <find>file</find>
-      <find>uplo</find>
-      <find>tag</find>
-      <find>tut</find>
-      <find>place</find>
-      <find>char</find>
-      <find>done</find>
-      <find>50</find>
-      <find>clea</find>
       <find>pleas</find>
       <find>rec</find>
       <find>sear</find>
@@ -160,8 +145,33 @@
       <find>left</find>
       <find>search</find>
       <find>login</find>
+      <find>a</find>
+      <find>admin</find>
+      <find>adminS</find>
+      <find>adminSt</find>
+      <find>adminSty</find>
+      <find>adminStyl</find>
+      <find>adminStyle</find>
+      <find>all_page_upload</find>
+      <find>right</find>
+      <find>graduate</find>
+      <find>videofile</find>
+      <find>form-control</find>
       <find>prev</find>
+      <find>le lo</find>
+      <find>P</find>
+      <find>Please sear</find>
+      <find>Please searc</find>
+      <find>Please search</find>
+      <find>comm</find>
+      <find>onC</find>
+      <find>togglePopup</find>
+      <find>bind</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\Bianca\IdeaProjects\bacalaureat</dir>
+      <dir>C:\Users\Bianca\IdeaProjects\bacalaureat\node_modules</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -169,19 +179,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Login.css" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/service/PostData.js" />
-        <option value="$PROJECT_DIR$/src/Login.js" />
         <option value="$PROJECT_DIR$/src/adminstyle.css" />
-        <option value="$PROJECT_DIR$/src/test.js" />
-        <option value="$PROJECT_DIR$/src/Admin.js" />
         <option value="$PROJECT_DIR$/node_modules/react-search/lib/Search.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/Login.css" />
+        <option value="$PROJECT_DIR$/src/Login.js" />
+        <option value="$PROJECT_DIR$/src/App.css" />
+        <option value="$PROJECT_DIR$/src/test.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/Admin.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -218,6 +228,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -278,14 +289,13 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../api.bacalaureat.local" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -400,209 +410,11 @@
       <workItem from="1555181954241" duration="5240000" />
       <workItem from="1555503804809" duration="221000" />
       <workItem from="1555744375353" duration="12583000" />
-    </task>
-    <task id="LOCAL-00032" summary="try1">
-      <created>1555003148054</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1555003148054</updated>
-    </task>
-    <task id="LOCAL-00033" summary="try2">
-      <created>1555003289590</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1555003289590</updated>
-    </task>
-    <task id="LOCAL-00034" summary="try3">
-      <created>1555003789876</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1555003789876</updated>
-    </task>
-    <task id="LOCAL-00035" summary="gitignore idea">
-      <created>1555141707754</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1555141707754</updated>
-    </task>
-    <task id="LOCAL-00036" summary="added class name all page upload">
-      <created>1555155017259</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1555155017259</updated>
-    </task>
-    <task id="LOCAL-00037" summary="added classname left">
-      <created>1555156084151</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1555156084151</updated>
-    </task>
-    <task id="LOCAL-00038" summary="change css">
-      <created>1555156735694</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1555156735694</updated>
-    </task>
-    <task id="LOCAL-00039" summary="added class name right">
-      <created>1555156895610</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1555156895610</updated>
-    </task>
-    <task id="LOCAL-00040" summary="change css">
-      <created>1555157577843</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1555157577843</updated>
-    </task>
-    <task id="LOCAL-00041" summary="added image graduate">
-      <created>1555158708792</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1555158708792</updated>
-    </task>
-    <task id="LOCAL-00042" summary="change image">
-      <created>1555159467216</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1555159467216</updated>
-    </task>
-    <task id="LOCAL-00043" summary="change css">
-      <created>1555159706998</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1555159706998</updated>
-    </task>
-    <task id="LOCAL-00044" summary="change css">
-      <created>1555160034087</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1555160034087</updated>
-    </task>
-    <task id="LOCAL-00045" summary="change css">
-      <created>1555160912122</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1555160912122</updated>
-    </task>
-    <task id="LOCAL-00046" summary="change css">
-      <created>1555186718474</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1555186718474</updated>
-    </task>
-    <task id="LOCAL-00047" summary="change image">
-      <created>1555187298881</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1555187298881</updated>
-    </task>
-    <task id="LOCAL-00048" summary="change css">
-      <created>1555187559196</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1555187559196</updated>
-    </task>
-    <task id="LOCAL-00049" summary="added class name inside right">
-      <created>1555187769874</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1555187769874</updated>
-    </task>
-    <task id="LOCAL-00050" summary="change css">
-      <created>1555188827212</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1555188827213</updated>
-    </task>
-    <task id="LOCAL-00051" summary="rename">
-      <created>1555189736247</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1555189736247</updated>
-    </task>
-    <task id="LOCAL-00052" summary="change css">
-      <created>1555189931869</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1555189931869</updated>
-    </task>
-    <task id="LOCAL-00053" summary="change h1">
-      <created>1555190330490</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1555190330491</updated>
-    </task>
-    <task id="LOCAL-00054" summary="change css_nou">
-      <created>1555746165056</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1555746165058</updated>
-    </task>
-    <task id="LOCAL-00055" summary="try_i class">
-      <created>1555746476877</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1555746476877</updated>
-    </task>
-    <task id="LOCAL-00056" summary="change i">
-      <created>1555746725165</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1555746725165</updated>
-    </task>
-    <task id="LOCAL-00057" summary="css">
-      <created>1555747768954</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1555747768954</updated>
-    </task>
-    <task id="LOCAL-00058" summary="change css">
-      <created>1555748172092</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1555748172092</updated>
-    </task>
-    <task id="LOCAL-00059" summary="change css">
-      <created>1555749177922</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1555749177923</updated>
-    </task>
-    <task id="LOCAL-00060" summary="change css">
-      <created>1555750719261</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1555750719261</updated>
+      <workItem from="1555831010056" duration="10854000" />
+      <workItem from="1555870708521" duration="1722000" />
+      <workItem from="1555872451824" duration="289000" />
+      <workItem from="1555872892018" duration="1196000" />
+      <workItem from="1555956484491" duration="1198000" />
     </task>
     <task id="LOCAL-00061" summary="change css">
       <created>1555755487685</created>
@@ -744,47 +556,240 @@
       <option name="project" value="LOCAL" />
       <updated>1555766752653</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="fixing layout carousel">
+      <created>1555769500177</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1555769500177</updated>
+    </task>
+    <task id="LOCAL-00082" summary="fixing layout carousel">
+      <created>1555770535230</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1555770535230</updated>
+    </task>
+    <task id="LOCAL-00083" summary="fixing layout carousel">
+      <created>1555771669853</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1555771669853</updated>
+    </task>
+    <task id="LOCAL-00084" summary="fixing layout carousel">
+      <created>1555771828609</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1555771828609</updated>
+    </task>
+    <task id="LOCAL-00085" summary="change color--login">
+      <created>1555831247551</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1555831247552</updated>
+    </task>
+    <task id="LOCAL-00086" summary="change color--login">
+      <created>1555832521860</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1555832521860</updated>
+    </task>
+    <task id="LOCAL-00087" summary="try search for header">
+      <created>1555832738123</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1555832738123</updated>
+    </task>
+    <task id="LOCAL-00088" summary="try search for header">
+      <created>1555833470648</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1555833470648</updated>
+    </task>
+    <task id="LOCAL-00089" summary="exemple test">
+      <created>1555835347026</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1555835347026</updated>
+    </task>
+    <task id="LOCAL-00090" summary="test get the id">
+      <created>1555838327603</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1555838327604</updated>
+    </task>
+    <task id="LOCAL-00091" summary="test get the id">
+      <created>1555838708921</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1555838708921</updated>
+    </task>
+    <task id="LOCAL-00092" summary="test get the id">
+      <created>1555838868622</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1555838868622</updated>
+    </task>
+    <task id="LOCAL-00093" summary="test get the id">
+      <created>1555839261173</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1555839261173</updated>
+    </task>
+    <task id="LOCAL-00094" summary="test get the id">
+      <created>1555839480871</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1555839480871</updated>
+    </task>
+    <task id="LOCAL-00095" summary="test get the id">
+      <created>1555839726596</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1555839726596</updated>
+    </task>
+    <task id="LOCAL-00096" summary="test get the id">
+      <created>1555839956922</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1555839956922</updated>
+    </task>
+    <task id="LOCAL-00097" summary="test get the id">
+      <created>1555840061619</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1555840061619</updated>
+    </task>
+    <task id="LOCAL-00098" summary="test get the id">
+      <created>1555840369453</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1555840369453</updated>
+    </task>
+    <task id="LOCAL-00099" summary="test get the id">
+      <created>1555840660792</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1555840660792</updated>
+    </task>
+    <task id="LOCAL-00100" summary="test get the id">
+      <created>1555840842436</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1555840842436</updated>
+    </task>
+    <task id="LOCAL-00101" summary="test get the id">
+      <created>1555840865919</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1555840865919</updated>
+    </task>
+    <task id="LOCAL-00102" summary="test get the id">
+      <created>1555841582150</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1555841582150</updated>
+    </task>
+    <task id="LOCAL-00103" summary="test get the id">
+      <created>1555841734700</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1555841734700</updated>
+    </task>
+    <task id="LOCAL-00104" summary="test get the id">
+      <created>1555841810449</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1555841810450</updated>
+    </task>
+    <task id="LOCAL-00105" summary="test get the id">
+      <created>1555841882659</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1555841882660</updated>
+    </task>
+    <task id="LOCAL-00106" summary="test get the id">
+      <created>1555841900411</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1555841900411</updated>
+    </task>
+    <task id="LOCAL-00107" summary="test get the id">
+      <created>1555842052573</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1555842052573</updated>
+    </task>
+    <task id="LOCAL-00108" summary="test get the id">
+      <created>1555842206622</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1555842206622</updated>
+    </task>
+    <task id="LOCAL-00109" summary="test css">
+      <created>1555957310429</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1555957310430</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53004000" />
+    <option name="totallyTimeSpent" value="70768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24594595" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14268728" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48459715" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48513675" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26378378" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -794,12 +799,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="try_15" />
-    <MESSAGE value="try_16" />
-    <MESSAGE value="try1" />
-    <MESSAGE value="try2" />
-    <MESSAGE value="try3" />
-    <MESSAGE value="gitignore idea" />
     <MESSAGE value="added class name all page upload" />
     <MESSAGE value="added classname left" />
     <MESSAGE value="added class name right" />
@@ -819,55 +818,26 @@
     <MESSAGE value="change css" />
     <MESSAGE value="change search width" />
     <MESSAGE value="reverting back" />
-    <option name="LAST_COMMIT_MESSAGE" value="reverting back" />
+    <MESSAGE value="fixing layout carousel" />
+    <MESSAGE value="change color--login" />
+    <MESSAGE value="try search for header" />
+    <MESSAGE value="exemple test" />
+    <MESSAGE value="test get the id" />
+    <MESSAGE value="test css" />
+    <option name="LAST_COMMIT_MESSAGE" value="test css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/service/PostData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2244">
-          <caret line="70" column="32" lean-forward="true" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#275#330#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
           <caret line="1" column="41" lean-forward="false" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,9 +853,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
           <caret line="33" column="24" lean-forward="false" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -894,9 +861,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -914,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,6 +888,7 @@
           <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#275#330#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -942,9 +907,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -952,9 +915,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
           <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -962,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,9 +940,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1188">
           <caret line="37" column="10" lean-forward="true" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -990,9 +948,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,6 +958,7 @@
           <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#275#330#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1010,7 +967,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,6 +976,7 @@
           <caret line="19" column="43" lean-forward="true" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#275#330#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1070,9 +1027,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,24 +1060,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/images/graduate2.png" />
-    <entry file="file://$PROJECT_DIR$/node_modules/react-search/lib/Search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="127" column="65" lean-forward="false" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1138,97 +1083,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/PostData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="15" column="12" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3069">
-          <caret line="93" column="34" lean-forward="false" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/adminstyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1386">
-          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8586">
-          <caret line="156" column="0" lean-forward="false" selection-start-line="156" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4422">
-          <caret line="134" column="53" lean-forward="true" selection-start-line="134" selection-start-column="53" selection-end-line="134" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1237,6 +1098,276 @@
         <state relative-caret-position="693">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14388">
+          <caret line="436" column="27" lean-forward="false" selection-start-line="436" selection-start-column="27" selection-end-line="436" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-search/lib/Search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="134" column="25" lean-forward="true" selection-start-line="134" selection-start-column="25" selection-end-line="134" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Bianca/IdeaProjects/bacalaureat/src">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/Admin.js#FileUploadProgress#34;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Admin.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Admin.js#graduate#96;</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.js#App.css#755;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Component#16;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Login.js#805;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Pop#784;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Search#641;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#anatomy1#347;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#axios#676;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bac5#225;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bee1#393;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bones1#139;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#book1#263;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#chemistry1#89;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#chimie1#431;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#createHistory#702;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#einstein1#475;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#geo1#523;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#hitler1#303;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#java1#561;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#mate1#601;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#math1#49;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#physic1#181;</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.test.js#App#69;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.test.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.test.js#ReactDOM#34;</node>
+            <node x="" y="">$PROJECT_DIR$/src/Login.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/Login.js#Component#16;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#Login.css#82;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#Pop#2423;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#PostData#112;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#createHistory#156;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#elev1#49;</node>
+            <node x="" y="">$PROJECT_DIR$/src/service/PostData.js#PostData#0;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-search/lib/Search.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@fortawesome/fontawesome-free/css/all.min.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/anatomy1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bac5.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bee1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bones1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/book1.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/bootstrap-css-only/css/bootstrap.min.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/chemistry1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/chimie1.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/createBrowserHistory.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/einstein1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/elev1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/geo1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/graduate6.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/history.js#createBrowserHistory#23;</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/hitler1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/index.css</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/axios/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/react/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-dom/index.js</node>
+            <node x="" y="">BrowserRouter;</node>
+            <node x="" y="">Route;Switch;</node>
+            <node x="" y="">$PROJECT_DIR$/src/index.js#Admin#115;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#App#90;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#BrowserRouter#473;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#ReactDOM#34;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#Route#435;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#Switch#427;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#VideoPage#144;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#all.min.css#275;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#bootstrap.min.css#331;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#index.css#61;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#mdb.css#382;C:/Users/Bianca/IdeaProjects/bacalaureat/src/index.js#serviceWorker#175;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-fileupload-progress/lib/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/java1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/mate1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/math1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/mdbreact/dist/css/mdb.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/physic1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/serviceWorker.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/test.js#React#7;</node>
+            <node x="" y="">createBrowserHistory;</node>
+            <node x="" y="">Component;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8892249527410206" x="797.0" y="2078.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Bianca/IdeaProjects/bacalaureat/src/Admin.js;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/Admin.js;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js;</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/Admin.js#FileUploadProgress#34;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Admin.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Admin.js#graduate#96;</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.js#App.css#755;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Component#16;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Login.js#805;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Pop#784;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Search#641;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#anatomy1#347;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#axios#676;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bac5#225;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bee1#393;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bones1#139;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#book1#263;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#chemistry1#89;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#chimie1#431;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#createHistory#702;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#einstein1#475;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#geo1#523;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#hitler1#303;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#java1#561;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#mate1#601;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#math1#49;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#physic1#181;</node>
+            <node x="" y="">$PROJECT_DIR$/src/Login.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/Login.js#Component#16;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#Login.css#82;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#Pop#2423;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#PostData#112;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#createHistory#156;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#elev1#49;</node>
+            <node x="" y="">$PROJECT_DIR$/src/service/PostData.js#PostData#0;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-search/lib/Search.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/anatomy1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bac5.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bee1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bones1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/book1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/chemistry1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/chimie1.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/createBrowserHistory.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/einstein1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/elev1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/geo1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/graduate6.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/hitler1.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/axios/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/react/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-fileupload-progress/lib/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/java1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/mate1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/math1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/physic1.jpg</node>
+            <node x="" y="">Component;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8807864609258337" x="1244.0" y="1203.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Bianca/IdeaProjects/bacalaureat/src/Admin.js;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js;">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/Admin.js;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js;</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/Admin.js#FileUploadProgress#34;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Admin.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Admin.js#graduate#96;</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/App.js#App.css#755;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Component#16;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Login.js#805;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Pop#784;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#Search#641;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#anatomy1#347;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#axios#676;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bac5#225;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bee1#393;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#bones1#139;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#book1#263;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#chemistry1#89;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#chimie1#431;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#createHistory#702;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#einstein1#475;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#geo1#523;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#hitler1#303;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#java1#561;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#mate1#601;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#math1#49;C:/Users/Bianca/IdeaProjects/bacalaureat/src/App.js#physic1#181;</node>
+            <node x="" y="">$PROJECT_DIR$/src/Login.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/Login.js#Component#16;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#Login.css#82;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#Pop#2423;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#PostData#112;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#createHistory#156;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#elev1#49;</node>
+            <node x="" y="">$PROJECT_DIR$/src/service/PostData.js#PostData#0;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-search/lib/Search.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/anatomy1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bac5.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bee1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/bones1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/book1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/chemistry1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/chimie1.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/createBrowserHistory.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/einstein1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/elev1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/geo1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/graduate6.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/hitler1.png</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/axios/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/react/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react-fileupload-progress/lib/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/java1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/mate1.png</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/math1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/physic1.jpg</node>
+            <node x="" y="">Component;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.7807864609258336" x="873.0" y="364.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram/C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/src/Login.js</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/src/Login.css</node>
+            <node x="" y="">$PROJECT_DIR$/src/Login.js#Component#16;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#Login.css#82;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#PostData#112;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#React#7;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#createHistory#156;C:/Users/Bianca/IdeaProjects/bacalaureat/src/Login.js#elev1#49;</node>
+            <node x="" y="">$PROJECT_DIR$/src/service/PostData.js#PostData#0;</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/history/createBrowserHistory.js</node>
+            <node x="" y="">$PROJECT_DIR$/src/images/elev1.jpg</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/@types/react/index.d.ts</node>
+            <node x="" y="">$PROJECT_DIR$/node_modules/react/index.js</node>
+            <node x="" y="">Component;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="385.0" y="297.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/PostData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adminstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="73" column="23" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" column="60" lean-forward="false" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#275#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2523">
+          <caret line="296" column="0" lean-forward="true" selection-start-line="296" selection-start-column="0" selection-end-line="296" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

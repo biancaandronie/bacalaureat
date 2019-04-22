@@ -17,6 +17,7 @@ import Search from 'react-search'
 import  axios from 'axios'
 import createHistory from 'history/createBrowserHistory';
 
+import {Switch, Route} from 'react-router';
 
 import './App.css';
 
@@ -265,6 +266,11 @@ class App extends Component {
                     </div>
                 </div>
 
+                <Route
+                    path='/about'
+                    render={(props) => <VideoPage {...props}  />}
+                />
+
             </div>
 
 
@@ -273,8 +279,8 @@ class App extends Component {
     }
 }
 class VideoPage extends Component{
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             videos: [],
@@ -284,10 +290,10 @@ class VideoPage extends Component{
         };
 
     }
-    handleItemsChange() {
-        console.log(this.state.id);
-
-    }
+    // handleItemsChange() {
+    //     console.log(this.state.id);
+    //
+    // }
 
     render() {
         let {id}=this.state;
