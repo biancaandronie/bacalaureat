@@ -29,6 +29,15 @@ const divStyle = {
     filter: 'drop-shadow(8px 8px 10px #1E80A3)'
 };
 
+
+import './index.css';
+import VideoPage from './App';
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "bootstrap-css-only/css/bootstrap.min.css";
+import "mdbreact/dist/css/mdb.css";
+
+import { BrowserRouter } from 'react-router-dom';
+
 class App extends Component {
 
     constructor(props) {
@@ -266,7 +275,10 @@ class App extends Component {
                     </div>
                 </div>
 
-
+                <Route
+                    path='/about'
+                    render={() => <VideoPage id={this.state.id} />}
+                />
 
             </div>
 
@@ -311,6 +323,26 @@ class VideoPage extends React.Component {
 //     }
 //
 // }
+
+ReactDOM.render((
+    <BrowserRouter>
+        <Switch>
+            <div>
+                <Route path="/" exact strict component={App} />
+                <Route path="/admin" exact strict component={Admin} />
+                <Route path="/test" exact strict component={VideoPage} />
+            </div>
+        </Switch>
+    </BrowserRouter >
+), document.getElementById('root'));
+
+//ReactDOM.render(<App />, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
+
 export default App;
 
 
