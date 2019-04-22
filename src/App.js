@@ -278,33 +278,42 @@ class App extends Component {
 
     }
 }
-class VideoPage extends Component{
-    constructor(props) {
-        super(props);
+// class VideoPage extends Component{
+//     constructor(props) {
+//         super(props);
+//
+//         this.state = {
+//             videos: [],
+//             link: null,
+//             redirect: false,
+//             id: this.props.id
+//         };
+//
+//     }
+class VideoPage extends React.Component {
 
-        this.state = {
-            videos: [],
-            link: null,
-            redirect: false,
-            id: this.props.id
-        };
-
+    componentDidMount() {
+        // `newBugs`constant holds the bugs passed down from IndexPage
+        const newid = this.props.id;
+            this.setState({id: newid})
     }
+
+}
     // handleItemsChange() {
     //     console.log(this.state.id);
     //
     // }
-
-    render() {
-        let {id}=this.props;
-        console.log(id);
-        console.log(this.props.id);
-        return (
-            <h1>{id}</h1>
-        );
-    }
-
-}
+//
+//     render() {
+//         let {id}=this.props;
+//         console.log(id);
+//         console.log(this.props.id);
+//         return (
+//             <h1>{id}</h1>
+//         );
+//     }
+//
+// }
 export default App;
 
 
