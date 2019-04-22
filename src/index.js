@@ -21,7 +21,7 @@ ReactDOM.render((
           <Route path="/" exact strict component={App} />
           <Route path="/admin" exact strict component={Admin} />
           <Route path="/test" exact strict component={VideoPage} />
-          <Route exact path="/about" render={props => <VideoPage {...props} />} />
+          <Route path="/about" exact strict render={props => <VideoPage {...props} />} />
         </div>
       </Switch>
   </BrowserRouter >
