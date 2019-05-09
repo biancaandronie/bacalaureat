@@ -106,6 +106,8 @@ class Videos extends Component {
             <div>
             <Player
                 playsInline
+                width="300"
+                height="300"
                 poster="/assets/poster.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
             />
