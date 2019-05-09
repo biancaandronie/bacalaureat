@@ -3,7 +3,8 @@ import Search from 'react-search';
 import  axios from 'axios';
 import { Redirect } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-import "node_modules/video-react/dist/video-react.css"; // import css
+//import "node_modules/video-react/dist/video-react.css"; // import css
+//@import "~video-react/styles/scss/video-react";
 import { Player } from 'video-react';
 
 class Videos extends Component {
