@@ -110,7 +110,7 @@ class Videos extends Component {
                 height={480}
                 poster="/assets/poster.png"
                 src={this.state.link}
-                type="video/mp4"
+                preload="none"
             />
             </div>
         </div>
