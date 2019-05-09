@@ -45,7 +45,7 @@ class App extends Component {
             let url = 'http://localhost:8080/api/v1/videolink'
             axios.post(url, { "id": items[0].id })
                 .then( (response) => {
-                    if(response.data != undefined){
+                    if(response.data !== undefined){
                         this.setState({ link: response.data[0].link });
                         this.setState({ id: response.data[0].id });
                         sessionStorage.setItem('id',this.state.id);
@@ -67,7 +67,7 @@ class App extends Component {
         axios.post(url, { "name": searchValue})
             .then( (response) => {
                 console.log(response.data.name);
-                if(response.data != undefined){
+                if(response.data !== undefined){
                     console.log(response.data);
                     let items = response.data.map( (res, i) => { return { id: res.id, value: res.name } });
                     this.setState({ videos: items });
@@ -79,7 +79,7 @@ class App extends Component {
 
     render() {
 
-        const {id,redirect } = this.state;
+        const {redirect } = this.state;
 
         if (redirect) {
             const history = createHistory();
