@@ -18,7 +18,7 @@ import  axios from 'axios'
 import createHistory from 'history/createBrowserHistory';
 import './App.css';
 import {Pop} from './Login';
-import Videos from './Videos';
+//import Videos from './Videos';
 
 const divStyle = {
     position: 'absolute',
@@ -60,9 +60,9 @@ class App extends Component {
     }
 
     getItemsAsync(searchValue, cb){
-        let config = {
-            headers: {'Access-Control-Allow-Origin': '*'}
-        };
+        // let config = {
+        //     headers: {'Access-Control-Allow-Origin': '*'}
+        // };
         let url = 'http://localhost:8080/api/v1/video'
         axios.post(url, { "name": searchValue})
             .then( (response) => {
@@ -79,7 +79,7 @@ class App extends Component {
 
     render() {
 
-        const {id,link, redirect } = this.state;
+        const {id,redirect } = this.state;
 
         if (redirect) {
             const history = createHistory();

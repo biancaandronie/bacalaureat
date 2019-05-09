@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Search from 'react-search';
 import  axios from 'axios';
-import { Redirect } from 'react-router-dom';
+//import { Redirect } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import "../node_modules/video-react/dist/video-react.css"; // import css
 import { Player } from 'video-react';
@@ -67,9 +67,9 @@ class Videos extends Component {
 
 
     getItemsAsync(searchValue, cb) {
-        let config = {
-            headers: {'Access-Control-Allow-Origin': '*'}
-        };
+        // let config = {
+        //     headers: {'Access-Control-Allow-Origin': '*'}
+        // };
         let url = 'http://localhost:8080/api/v1/video'
         axios.post(url, {"name": searchValue})
             .then((response) => {
