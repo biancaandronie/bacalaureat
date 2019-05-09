@@ -107,7 +107,7 @@ class Videos extends Component {
             <Player
                 playsInline
                 fluid={false}
-                width={860}
+                width={1280}
                 height={480}
                 poster="/assets/poster.png"
                 src="http://bacalaureat.local/videos/primavara.mp4"
