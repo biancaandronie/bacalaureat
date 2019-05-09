@@ -3,7 +3,7 @@ import Search from 'react-search';
 import  axios from 'axios';
 import { Redirect } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
-//import "node_modules/video-react/dist/video-react.css"; // import css
+import "./node_modules/video-react/dist/video-react.css"; // import css
 //@import "~video-react/styles/scss/video-react";
 import { Player } from 'video-react';
 
@@ -103,11 +103,13 @@ class Videos extends Component {
                     onItemsChanged={this.handleItemsChange.bind(this)}
                     onClick={this.handleItemsChange.bind(this)}
             />
+            <div>
             <Player
                 playsInline
                 poster="/assets/poster.png"
                 src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
             />
+            </div>
         </div>
     );
     }
