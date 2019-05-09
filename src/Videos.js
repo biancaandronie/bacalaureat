@@ -110,7 +110,7 @@ class Videos extends Component {
                 width={1280}
                 height={480}
                 poster="/assets/poster.png"
-                src="http://bacalaureat.local/videos/primavara.mp4"
+                src={link}
             />
             </div>
         </div>
