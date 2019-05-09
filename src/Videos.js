@@ -4,7 +4,6 @@ import  axios from 'axios';
 import { Redirect } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import "../node_modules/video-react/dist/video-react.css"; // import css
-//@import "~video-react/styles/scss/video-react";
 import { Player } from 'video-react';
 
 class Videos extends Component {
@@ -111,6 +110,7 @@ class Videos extends Component {
                 height={480}
                 poster="/assets/poster.png"
                 src={this.state.link}
+                type="video/mp4"
             />
             </div>
         </div>
