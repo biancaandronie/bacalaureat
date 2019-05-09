@@ -106,6 +106,7 @@ class Videos extends Component {
             <div>
             <Player
                 playsInline
+                fluid="false"
                 width="300"
                 height="300"
                 poster="/assets/poster.png"
