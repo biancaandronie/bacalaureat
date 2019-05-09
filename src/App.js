@@ -16,13 +16,9 @@ import mate1 from './images/mate1.png';
 import Search from 'react-search'
 import  axios from 'axios'
 import createHistory from 'history/createBrowserHistory';
-import { BrowserRouter } from 'react-router-dom';
-import {Switch, Route} from 'react-router';
-import Admin from './Admin';
 import './App.css';
-
 import {Pop} from './Login';
-import './Login.js';
+import Videos from './Videos';
 
 const divStyle = {
     position: 'absolute',
@@ -31,8 +27,8 @@ const divStyle = {
 
 class App extends Component {
 
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
 
         this.state = {
             videos: [],
@@ -43,7 +39,7 @@ class App extends Component {
 
     }
 
-    handleItemsChange(items) {
+    handleItemsChange(items,id) {
         if(items.length > 0) {
             //console.log(items);
             let url = 'http://localhost:8080/api/v1/videolink'
@@ -52,7 +48,8 @@ class App extends Component {
                     if(response.data != undefined){
                         this.setState({ link: response.data[0].link });
                         this.setState({ id: response.data[0].id });
-                        this.setState({ redirect: false});
+                        sessionStorage.setItem('id',this.state.id);
+                        this.setState({ redirect: true});
                         let {link,redirect,id} = this.state;
                         console.log(`this is the link: ${link}`);
                         console.log(`this is redirect: ${redirect}`);
@@ -63,6 +60,9 @@ class App extends Component {
     }
 
     getItemsAsync(searchValue, cb){
+        let config = {
+            headers: {'Access-Control-Allow-Origin': '*'}
+        };
         let url = 'http://localhost:8080/api/v1/video'
         axios.post(url, { "name": searchValue})
             .then( (response) => {
@@ -77,14 +77,13 @@ class App extends Component {
             });
     }
 
-
     render() {
 
         const {id,link, redirect } = this.state;
 
         if (redirect) {
             const history = createHistory();
-            history.push('/');
+            history.push(`/videos/${sessionStorage.getItem('id')}`);
             history.go(0);
         }
 
@@ -261,76 +260,16 @@ class App extends Component {
                         </div>
 
 
-
                     </div>
                 </div>
-                <BrowserRouter>
-                    <Switch>
-                        <div>
-                            <Route path="/admin" exact strict component={Admin} />
-                            <Route path="/test" exact strict component={VideoPage} />
-                            <Route path="/about" exact strict render={props => <VideoPage id={id} />} />
-                        </div>
-                    </Switch>
-                </BrowserRouter >
-            </div>
+                    <div>
+                    </div>
+                </div>
 
 
         );
 
     }
-}
-
-/*<Route
-    path='/about'
-    render={() => <VideoPage id={this.state.id} />}
-/>*/
-class VideoPage extends Component{
-    constructor() {
-        super();
-
-        this.state = {
-            videos: [],
-            link: null,
-            redirect: false,
-            id: 0
-        };
-
-    }
-
-    render() {
-        let newid = this.props.id;
-        this.setState({id: newid});
-        let {id} = this.state;
-        console.log(id);
-
-
-        return <div> MAIN </div>;
-    }
-
-// class VideoPage extends React.Component {
-//
-//     componentDidMount() {
-//         // `newBugs`constant holds the bugs passed down from IndexPage
-//         const newid = this.props.id;
-//         this.setState({id: newid})
-//     }
-//
-// }
-// handleItemsChange() {
-//     console.log(this.state.id);
-//
-// }
-//
-//     render() {
-//         let {id}=this.props;
-//         console.log(id);
-//         console.log(this.props.id);
-//         return (
-//             <h1>{id}</h1>
-//         );
-//     }
-//
 }
 
 export default App;
