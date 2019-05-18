@@ -227,6 +227,7 @@ class Admin extends React.Component {
                 <div style={styles.right} className="right">
                     <h1 style={styles.titlu_right} className="titlu_right">Panneau d'administration</h1>
                     <FileUploadProgress url='http://localhost:8080/api/v1/upload'
+                                        beforeSend={(request) => {request.setRequestHeader('Access-Control-Allow-Origin','*'); return request}}
                                         onProgress={(e, request, progress) => {console.log('progress', e, request, progress);}}
                                         onLoad={ (e, request) => {console.log('load', e, request);}}
                                         onError={ (e, request) => {console.log('error', e, request);}}
