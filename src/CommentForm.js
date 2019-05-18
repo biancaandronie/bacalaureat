@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import  axios from 'axios';
 
 export default class CommentForm extends Component {
     constructor(props) {
@@ -50,7 +51,7 @@ export default class CommentForm extends Component {
 
         // persist the comments on server
         let { comment } = this.state;
-        fetch("http://localhost:8080", {
+        fetch("http://localhost:8080/api/v1/comment", {
             method: "post",
             body: JSON.stringify(comment)
         })
