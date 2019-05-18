@@ -5,6 +5,8 @@ import  axios from 'axios';
 import createHistory from 'history/createBrowserHistory';
 import "../node_modules/video-react/dist/video-react.css"; // import css
 import { Player } from 'video-react';
+import CommentForm from './CommentForm';
+import CommentList from  './CommentList'
 
 class Videos extends Component {
 
