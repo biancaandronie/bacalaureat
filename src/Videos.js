@@ -8,8 +8,8 @@ import { Player } from 'video-react';
 
 class Videos extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
 
         this.state = {
             videos: [],
@@ -18,11 +18,20 @@ class Videos extends Component {
             course: null,
             description: null,
             redirect: false,
-            id: 0
+            id: 0,
+            comments: [],
+            loading: false
 
         };
-
+        this.addComment = this.addComment.bind(this);
     }
+    addComment(comment) {
+        this.setState({
+            loading: false,
+            comments: [comment, ...this.state.comments]
+        });
+    }
+
     componentWillMount() {
         let url = 'http://localhost:8080/api/v1/videolink'
         axios.post(url, {"id": sessionStorage.getItem('id')})
@@ -115,10 +124,14 @@ class Videos extends Component {
             <div className="row">
                 <div className="col-4  pt-3 border-right">
                     <h6>Say something about React</h6>
-                    {/* Comment Form Component */}
+                    <CommentForm addComment={this.addComment}/>
                 </div>
                 <div className="col-8  pt-3 bg-white">
                     {/* Comment List Component */}
+                    <CommentList
+                        loading={this.state.loading}
+                        comments={this.state.comments}
+                    />
                 </div>
             </div>
         </div>
