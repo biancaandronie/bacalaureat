@@ -112,6 +112,15 @@ class Videos extends Component {
                 src={link}
             />
             </div>
+            <div className="row">
+                <div className="col-4  pt-3 border-right">
+                    <h6>Say something about React</h6>
+                    {/* Comment Form Component */}
+                </div>
+                <div className="col-8  pt-3 bg-white">
+                    {/* Comment List Component */}
+                </div>
+            </div>
         </div>
     );
     }
