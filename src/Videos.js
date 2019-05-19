@@ -6,7 +6,8 @@ import createHistory from 'history/createBrowserHistory';
 import "../node_modules/video-react/dist/video-react.css"; // import css
 import { Player } from 'video-react';
 import CommentForm from './CommentForm';
-import CommentList from  './CommentList'
+import CommentList from  './CommentList';
+import queryString from 'query-string';
 
 class Videos extends Component {
 
@@ -27,11 +28,19 @@ class Videos extends Component {
         };
         this.addComment = this.addComment.bind(this);
     }
+
     addComment(comment) {
         this.setState({
             loading: false,
             comments: [comment, ...this.state.comments]
         });
+    }
+
+
+    componentDidMount() {
+        const values = queryString.parse(this.props.location.search)
+        console.log(values.filter) // "top"
+        console.log(values.origin) // "im"
     }
 
     componentWillMount() {
