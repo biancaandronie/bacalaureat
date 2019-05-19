@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import Search from 'react-search';
 import  axios from 'axios';
-//import { Redirect } from 'react-router-dom';
 import createHistory from 'history/createBrowserHistory';
 import "../node_modules/video-react/dist/video-react.css"; // import css
 import { Player } from 'video-react';
@@ -58,28 +57,8 @@ class Videos extends Component {
             });
     }
 
-    // componentDidMount () {
-    //     const { id } = this.props.match.params;
-    //     let url = 'http://localhost:8080/api/v1/videolink';
-    //     axios.post(url, {"id": id})
-    //         .then((response) => {
-    //             if (response.data !== undefined) {
-    //                 this.setState({name: response.data[0].name});
-    //                 this.setState({id: response.data[0].id});
-    //                 sessionStorage.setItem('id',this.state.id);
-    //                 this.setState({link: response.data[0].link});
-    //                 this.setState({course: response.data[0].course});
-    //                 this.setState({ redirect: true});
-    //                 let {link,id} = this.state;
-    //                 console.log(`this is the link: ${link}`);
-    //                 console.log(`this is id: ${id}`);
-    //             }
-    //         });
-    // }
-
     handleItemsChange(items, id) {
         if (items.length > 0) {
-            //console.log(items);
             let url = 'http://localhost:8080/api/v1/videolink'
             axios.post(url, {"id": items[0].id})
                 .then((response) => {
@@ -99,9 +78,6 @@ class Videos extends Component {
 
 
     getItemsAsync(searchValue, cb) {
-        // let config = {
-        //     headers: {'Access-Control-Allow-Origin': '*'}
-        // };
         let url = 'http://localhost:8080/api/v1/video'
         axios.post(url, {"name": searchValue})
             .then((response) => {
