@@ -36,8 +36,10 @@ class Videos extends Component {
     }
 
     componentWillMount() {
+        const { id } = this.props.match.params;
         let url = 'http://localhost:8080/api/v1/videolink'
-        axios.post(url, {"id": sessionStorage.getItem('id')})
+        //axios.post(url, {"id": sessionStorage.getItem('id')})
+        axios.post(url, {"id": `${id}`})
             .then((response) => {
                 if (response.data !== undefined) {
                     this.setState({name: response.data[0].name});
@@ -56,24 +58,24 @@ class Videos extends Component {
             });
     }
 
-    componentDidMount () {
-        const { id } = this.props.match.params;
-        let url = 'http://localhost:8080/api/v1/videolink';
-        axios.post(url, {"id": id})
-            .then((response) => {
-                if (response.data !== undefined) {
-                    this.setState({name: response.data[0].name});
-                    this.setState({id: response.data[0].id});
-                    sessionStorage.setItem('id',this.state.id);
-                    this.setState({link: response.data[0].link});
-                    this.setState({course: response.data[0].course});
-                    this.setState({ redirect: true});
-                    let {link,id} = this.state;
-                    console.log(`this is the link: ${link}`);
-                    console.log(`this is id: ${id}`);
-                }
-            });
-    }
+    // componentDidMount () {
+    //     const { id } = this.props.match.params;
+    //     let url = 'http://localhost:8080/api/v1/videolink';
+    //     axios.post(url, {"id": id})
+    //         .then((response) => {
+    //             if (response.data !== undefined) {
+    //                 this.setState({name: response.data[0].name});
+    //                 this.setState({id: response.data[0].id});
+    //                 sessionStorage.setItem('id',this.state.id);
+    //                 this.setState({link: response.data[0].link});
+    //                 this.setState({course: response.data[0].course});
+    //                 this.setState({ redirect: true});
+    //                 let {link,id} = this.state;
+    //                 console.log(`this is the link: ${link}`);
+    //                 console.log(`this is id: ${id}`);
+    //             }
+    //         });
+    // }
 
     handleItemsChange(items, id) {
         if (items.length > 0) {
