@@ -83,7 +83,7 @@ class App extends Component {
 
         if (redirect) {
             const history = createHistory();
-            history.push(`/videos/${sessionStorage.getItem('id')}`);
+            history.push("/videos/:id");
             history.go(0);
         }
 
