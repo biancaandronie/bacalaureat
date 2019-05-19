@@ -41,14 +41,12 @@ class App extends Component {
 
     handleItemsChange(items,id) {
         if(items.length > 0) {
-            //console.log(items);
             let url = 'http://localhost:8080/api/v1/videolink';
             axios.post(url, { "id": items[0].id })
                 .then( (response) => {
                     if(response.data !== undefined){
                         this.setState({ link: response.data[0].link });
                         this.setState({ id: response.data[0].id });
-                        //sessionStorage.setItem('id',this.state.id);
                         this.setState({ redirect: true});
                         let {link,redirect,id} = this.state;
                         console.log(`this is the link: ${link}`);
@@ -60,9 +58,6 @@ class App extends Component {
     }
 
     getItemsAsync(searchValue, cb){
-        // let config = {
-        //     headers: {'Access-Control-Allow-Origin': '*'}
-        // };
         let url = 'http://localhost:8080/api/v1/video';
         axios.post(url, { "name": searchValue})
             .then( (response) => {
