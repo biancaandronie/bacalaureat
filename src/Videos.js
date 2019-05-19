@@ -117,10 +117,11 @@ class Videos extends Component {
             });
     }
     render() {
-        const {id,link,name,course,description,redirect } = this.state;
+        const {link,redirect } = this.state;
+        const { id } = this.props.match.params;
         if (redirect) {
             const history = createHistory();
-            history.push(`/videos/${sessionStorage.getItem('id')}`);
+            history.push(`/videos/${id}`);
             history.go(0);
         }
     return (
