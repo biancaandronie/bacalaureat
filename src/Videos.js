@@ -86,7 +86,6 @@ class Videos extends Component {
                     if (response.data !== undefined) {
                         this.setState({name: response.data[0].name});
                         this.setState({id: response.data[0].id});
-                        this.params.id = this.state.id;
                         sessionStorage.setItem('id',this.state.id);
                         this.setState({link: response.data[0].link});
                         this.setState({course: response.data[0].course});
@@ -120,8 +119,7 @@ class Videos extends Component {
             });
     }
     render() {
-        const {link,redirect } = this.state;
-        const { id } = this.props.match.params;
+        const {id,link,redirect } = this.state;
         if (redirect) {
             const history = createHistory();
             history.push(`/videos/${id}`);
