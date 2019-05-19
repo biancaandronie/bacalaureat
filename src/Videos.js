@@ -86,7 +86,6 @@ class Videos extends Component {
                     if (response.data !== undefined) {
                         this.setState({name: response.data[0].name});
                         this.setState({id: response.data[0].id});
-                        sessionStorage.setItem('id',this.state.id);
                         this.setState({link: response.data[0].link});
                         this.setState({course: response.data[0].course});
                         this.setState({ redirect: true});

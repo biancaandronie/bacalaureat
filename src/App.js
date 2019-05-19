@@ -48,7 +48,7 @@ class App extends Component {
                     if(response.data !== undefined){
                         this.setState({ link: response.data[0].link });
                         this.setState({ id: response.data[0].id });
-                        sessionStorage.setItem('id',this.state.id);
+                        //sessionStorage.setItem('id',this.state.id);
                         this.setState({ redirect: true});
                         let {link,redirect,id} = this.state;
                         console.log(`this is the link: ${link}`);
