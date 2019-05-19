@@ -7,7 +7,6 @@ import "../node_modules/video-react/dist/video-react.css"; // import css
 import { Player } from 'video-react';
 import CommentForm from './CommentForm';
 import CommentList from  './CommentList';
-import queryString from 'query-string';
 
 class Videos extends Component {
 
@@ -36,13 +35,6 @@ class Videos extends Component {
         });
     }
 
-
-    componentDidMount() {
-        const values = queryString.parse(this.props.location.search)
-        console.log(values.filter) // "top"
-        console.log(values.origin) // "im"
-    }
-
     componentWillMount() {
         let url = 'http://localhost:8080/api/v1/videolink'
         axios.post(url, {"id": sessionStorage.getItem('id')})
@@ -60,6 +52,25 @@ class Videos extends Component {
                     console.log(`this is link: ${link}`);
                     console.log(`this is course: ${course}`);
                     //console.log(`this is id: ${description}`);
+                }
+            });
+    }
+
+    componentDidMount () {
+        const { id } = this.props.match.params;
+        let url = 'http://localhost:8080/api/v1/videolink';
+        axios.post(url, {"id": id})
+            .then((response) => {
+                if (response.data !== undefined) {
+                    this.setState({name: response.data[0].name});
+                    this.setState({id: response.data[0].id});
+                    sessionStorage.setItem('id',this.state.id);
+                    this.setState({link: response.data[0].link});
+                    this.setState({course: response.data[0].course});
+                    this.setState({ redirect: true});
+                    let {link,id} = this.state;
+                    console.log(`this is the link: ${link}`);
+                    console.log(`this is id: ${id}`);
                 }
             });
     }
