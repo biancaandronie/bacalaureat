@@ -49,7 +49,7 @@ class App extends Component {
                         this.setState({ link: response.data[0].link });
                         this.setState({ id: response.data[0].id });
                         sessionStorage.setItem('id',this.state.id);
-                        match.setParameter("id", this.state.id);
+                        this.params.setParameter("id", this.state.id);
                         this.setState({ redirect: true});
                         let {link,redirect,id} = this.state;
                         console.log(`this is the link: ${link}`);
