@@ -8,6 +8,7 @@
 # testing
 /coverage
 node_modules
+public/videos
 # production
 /build
 .idea
