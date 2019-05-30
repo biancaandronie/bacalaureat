@@ -12,8 +12,8 @@ export default class CommentForm extends Component {
             comment: {
                 name: "",
                 message: "",
-                video_id: {id}
-            }
+            },
+            video_id: null
         };
 
         // bind context to methods
@@ -52,10 +52,10 @@ export default class CommentForm extends Component {
         this.setState({ error: "", loading: true });
 
         // persist the comments on server
-        let { comment } = this.state;
+        let { comment,video_id } = this.state;
         fetch("http://localhost:8080/api/v1/comment", {
             method: "post",
-            body: JSON.stringify(comment)
+            body: JSON.stringify({comment,video_id})
         })
             .then(res => res.json())
             .then(res => {
