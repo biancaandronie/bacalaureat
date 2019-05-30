@@ -12,7 +12,7 @@ export default class CommentForm extends Component {
                 name: "",
                 message: "",
             },
-            video_id: null
+            video_id: ""
         };
 
         // bind context to methods
