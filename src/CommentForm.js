@@ -10,7 +10,8 @@ export default class CommentForm extends Component {
 
             comment: {
                 name: "",
-                message: ""
+                message: "",
+                video_id: ""
             }
         };
 

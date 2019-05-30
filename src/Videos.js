@@ -36,9 +36,8 @@ class Videos extends Component {
 
     componentWillMount() {
         const { id } = this.props.match.params;
-        let url = 'http://localhost:8080/api/v1/videolink'
-        //axios.post(url, {"id": sessionStorage.getItem('id')})
-        axios.post(url, {"id": `${id}`})
+        let video_url = 'http://localhost:8080/api/v1/videolink';
+        axios.post(video_url, {"id": `${id}`})
             .then((response) => {
                 if (response.data !== undefined) {
                     this.setState({name: response.data[0].name});
@@ -53,6 +52,15 @@ class Videos extends Component {
                     console.log(`this is link: ${link}`);
                     console.log(`this is course: ${course}`);
                     //console.log(`this is id: ${description}`);
+                }
+            });
+        axios.post(comment_url, {"video_id": `${id}`})
+            .then((response) => {
+                if (response.data !== undefined) {
+                    this.setState({comments: response.data});
+                    let {name,message} = this.state.comments;
+                    console.log(`this is the message: ${message}`);
+                    console.log(`this is the name: ${name}`);
                 }
             });
     }
