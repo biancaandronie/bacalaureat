@@ -52,12 +52,13 @@ export default class CommentForm extends Component {
 
         // persist the comments on server
         let { comment,video_id } = this.state;
+        let { id } = this.props.match.params;
         fetch("http://localhost:8080/api/v1/comment", {
             method: "post",
             body: JSON.stringify([ {
                 name: comment.name,
                 message: comment.message,
-                video_id: video_id
+                video_id: id
             }])
         })
             .then(res => res.json())
