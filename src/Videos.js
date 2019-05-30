@@ -37,6 +37,7 @@ class Videos extends Component {
     componentWillMount() {
         const { id } = this.props.match.params;
         let video_url = 'http://localhost:8080/api/v1/videolink';
+        let comment_url = 'http://localhost:8080/api/v1/comments';
         axios.post(video_url, {"id": `${id}`})
             .then((response) => {
                 if (response.data !== undefined) {
