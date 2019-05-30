@@ -4,7 +4,6 @@ import  axios from 'axios';
 export default class CommentForm extends Component {
     constructor(props) {
         super(props);
-        let { id } = this.props.match.params;
         this.state = {
             loading: false,
             error: "",
