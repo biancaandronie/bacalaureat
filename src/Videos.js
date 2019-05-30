@@ -60,9 +60,9 @@ class Videos extends Component {
             .then((response) => {
                 if (response.data !== undefined) {
                     this.setState({comments: response.data});
-                    // let {name,message} = this.state.comments;
-                    // console.log(`this is the message: ${message}`);
-                    // console.log(`this is the name: ${name}`);
+                    let {name,message} = this.state.comments;
+                    console.log(`this is the message: ${message}`);
+                    console.log(`this is the name: ${name}`);
                 }
             });
     }
