@@ -46,6 +46,7 @@ class Videos extends Component {
                     this.setState({id: response.data[0].id});
                     this.setState({link: response.data[0].link});
                     this.setState({course: response.data[0].course});
+                    sessionStorage.setItem("video_id", id);
                    // this.setState({description: response.data[0].description});
                     let {name,id,link,course,description} = this.state;
                     console.log(`this is the link: ${link}`);
