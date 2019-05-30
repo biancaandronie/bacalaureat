@@ -12,7 +12,7 @@ export default class CommentForm extends Component {
                 name: "",
                 message: "",
             },
-            video_id: ""
+            video_id: 0
         };
 
         // bind context to methods
@@ -57,7 +57,7 @@ export default class CommentForm extends Component {
             body: JSON.stringify([ {
                 name: comment.name,
                 message: comment.message,
-                video_id: sessionStorage.getItem("video_id")
+                video_id: sessionStorage.getItem('video_id')
             }])
         })
             .then(res => res.json())
