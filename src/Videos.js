@@ -60,7 +60,7 @@ class Videos extends Component {
         axios.post(comment_url, {"video_id": `${id}`})
             .then((response) => {
                 if (response.data !== undefined) {
-                    this.setState({comments: response.data[0]});
+                    this.setState({comments: response.data});
                     let {name,message} = this.state.comments;
                     console.log(`this is the message: ${message}`);
                     console.log(`this is the name: ${name}`);
