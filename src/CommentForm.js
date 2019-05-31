@@ -56,7 +56,7 @@ export default class CommentForm extends Component {
                 message: comment.message,
                 video_id: sessionStorage.getItem('video_id')
             }))
-            .then(res => res.json())
+            .then(response => response.json())
             .then(res => {
                 if (res.error) {
                     this.setState({ loading: false, error: res.error });
@@ -73,14 +73,13 @@ export default class CommentForm extends Component {
                     console.log(res.error)
                 }
             })
-            .catch(err => {
-                console.log(res.error)
-                this.setState({
-                    error: "Something went wrong while submitting form.",
-                    loading: false
-                });
-
-            });
+            // .catch(err => {
+            //     this.setState({
+            //         error: "Something went wrong while submitting form.",
+            //         loading: false
+            //     });
+            //
+            // });
     }
 
     isFormValid() {
