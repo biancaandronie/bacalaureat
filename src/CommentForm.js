@@ -56,7 +56,6 @@ export default class CommentForm extends Component {
                 message: comment.message,
                 video_id: sessionStorage.getItem('video_id')
             }))
-//            .then(response => response.json())
             .then((response) => {
                 if (response.error) {
                     this.setState({ loading: false, error: response.error });
