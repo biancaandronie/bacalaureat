@@ -71,6 +71,7 @@ export default class CommentForm extends Component {
                         loading: false,
                         comment: { ...comment, message: "" }
                     });
+                    console.log(res.error)
                 }
             })
             .catch(err => {
