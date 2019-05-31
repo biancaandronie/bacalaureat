@@ -52,14 +52,11 @@ export default class CommentForm extends Component {
 
         // persist the comments on server
         let { comment } = this.state;
-        fetch("http://localhost:8080/api/v1/comment", {
-            method: "post",
-            body: JSON.stringify([ {
+        axios.post("http://localhost:8080/api/v1/comment",JSON.stringify({
                 name: comment.name,
                 message: comment.message,
                 video_id: sessionStorage.getItem('video_id')
-            }])
-        })
+            }))
             .then(res => res.json())
             .then(res => {
                 if (res.error) {
