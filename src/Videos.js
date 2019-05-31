@@ -31,7 +31,6 @@ class Videos extends Component {
         this.setState({
             loading: false,
             comments: [comment, ...this.state.comments],
-//            video_id: this.props.match.params.id
         });
     }
 

@@ -12,7 +12,6 @@ export default class CommentForm extends Component {
                 name: "",
                 message: "",
             },
-            video_id: 0
         };
 
         // bind context to methods
@@ -75,10 +74,12 @@ export default class CommentForm extends Component {
                 }
             })
             .catch(err => {
+                console.log(res.error)
                 this.setState({
                     error: "Something went wrong while submitting form.",
                     loading: false
                 });
+
             });
     }
 
