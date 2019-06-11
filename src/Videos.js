@@ -77,6 +77,7 @@ class Videos extends Component {
                         this.setState({id: response.data[0].id});
                         this.setState({link: response.data[0].link});
                         this.setState({course: response.data[0].course});
+                        this.setState({course: response.data[0].description});
                         this.setState({ redirect: true});
                         let {link,id} = this.state;
                         console.log(`this is the link: ${link}`);
@@ -104,7 +105,7 @@ class Videos extends Component {
             });
     }
     render() {
-        const {id,link,redirect } = this.state;
+        const {id,link,redirect,name,description } = this.state;
         if (redirect) {
             const history = createHistory();
             history.push(`/videos/${id}`);
@@ -130,6 +131,11 @@ class Videos extends Component {
                 src={link}
             />
             </div>
+            <div className="description">
+                <div className="col-4  pt-3 border-right">
+                    <h2>{name}</h2>
+                    <h4>{description}</h4>
+                </div>
             <div className="row">
                 <div className="col-4  pt-3 border-right">
                     <h6>Say something about React</h6>
