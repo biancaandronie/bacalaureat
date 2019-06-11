@@ -46,14 +46,14 @@ class Videos extends Component {
                     this.setState({link: response.data[0].link});
                     this.setState({course: response.data[0].course});
                     sessionStorage.setItem('video_id', response.data[0].id);
-                   // this.setState({description: response.data[0].description});
+                    this.setState({description: response.data[0].description});
                     let {name,id,link,course,description} = this.state;
                     console.log(`this is the link: ${link}`);
                     console.log(`this is name: ${name}`);
                     console.log(`this is id: ${id}`);
                     console.log(`this is link: ${link}`);
                     console.log(`this is course: ${course}`);
-                    //console.log(`this is id: ${description}`);
+                    console.log(`this is id: ${description}`);
                 }
             });
         axios.post(comment_url, {"video_id": `${id}`})
@@ -77,7 +77,7 @@ class Videos extends Component {
                         this.setState({id: response.data[0].id});
                         this.setState({link: response.data[0].link});
                         this.setState({course: response.data[0].course});
-                        this.setState({course: response.data[0].description});
+                        //this.setState({course: response.data[0].description});
                         this.setState({ redirect: true});
                         let {link,id} = this.state;
                         console.log(`this is the link: ${link}`);
