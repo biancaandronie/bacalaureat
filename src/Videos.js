@@ -131,8 +131,7 @@ class Videos extends Component {
                 src={link}
             />
             </div>
-            <div className="description">
-                <div className="col-4  pt-3 border-right">
+               <div className="col-4  pt-3 border-right">
                     <h2>{name}</h2>
                     <h4>{description}</h4>
                 </div>
