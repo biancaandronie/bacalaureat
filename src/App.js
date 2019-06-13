@@ -118,7 +118,7 @@ class App extends Component {
                                         <div className="css-17mv9vi">
                                             <h1 className="sans-serif css-bbh5y6">Regardez les meilleurs tutoriels à apprendre pour l`examen du baccalauréat.</h1>
                                             <h2 className="sans-serif css-1e10erk">Tutoriels vidéo pour simplifier le temps de travail.</h2>
-                                            <a className="sans-serif grow css-zfihb1" href="#home"><span className="lh-solid">Cliquez pour commencer à apprendre</span></a>
+
                                         </div>
                                         <div className="css-1pj66t4">
                                             <div className="container1">
@@ -136,7 +136,7 @@ class App extends Component {
                                                         <div className="item active">
                                                             <img src={math1} alt="math" className="poza" />
                                                             <div className="overlay">
-                                                                <a href="#home" className="icon" title="User Profile">
+                                                                <a className="icon" title="User Profile">
                                                                     <p>Apprendre les maths</p>
                                                                 </a>
                                                             </div>
@@ -145,7 +145,7 @@ class App extends Component {
                                                         <div className="item">
                                                             <img src={chemistry1} alt="chemistry" className="poza" />
                                                             <div className="overlay">
-                                                                <a href="#home" className="icon" title="User Profile">
+                                                                <a className="icon" title="User Profile">
                                                                     <p>Apprendre la chimie</p>
                                                                 </a>
                                                             </div>
@@ -154,7 +154,7 @@ class App extends Component {
                                                         <div className="item">
                                                             <img src={bones1} alt="bones" className="poza" />
                                                             <div className="overlay">
-                                                                <a href="#home" className="icon" title="User Profile">
+                                                                <a className="icon" title="User Profile">
                                                                     <p>Apprendre la biologie</p>
                                                                 </a>
                                                             </div>
@@ -163,7 +163,7 @@ class App extends Component {
                                                         <div className="item">
                                                             <img src={physic1} alt="physic" className="poza" />
                                                             <div className="overlay">
-                                                                <a href="#home" className="icon" title="User Profile">
+                                                                <a className="icon" title="User Profile">
                                                                     <p>Apprendre la physique</p>
                                                                 </a>
                                                             </div>
