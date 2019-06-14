@@ -19,7 +19,7 @@ ReactDOM.render((
                 <div>
                     <Route path="/" exact strict component={App} />
                     <Route path="/admin" exact strict component={Admin} />
-                    <Route path={"/videos/" + sessionStorage.getItem('id')} exact strict component={Videos} />
+                    <Route path="/videos/:id" exact strict component={Videos} />
                 </div>
             </Switch>
         </BrowserRouter >
