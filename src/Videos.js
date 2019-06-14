@@ -130,12 +130,11 @@ class Videos extends Component {
                 poster="/assets/poster.png"
                 src={link}
             />
-                <h2>{name}</h2>
-                <h4>{description}</h4>
+                <h2><b>{name}</b></h2>
+                <h4>{description}</h4><br />
+                <h6><b>Matière:</b> {course}</h6>
             </div>
-               <div className="col-4  pt-3 border-right">
-                    <h2>{course}</h2>
-                </div>
+
             <div className="row">
                 <div className="col-4  pt-3 border-right">
                     <CommentForm addComment={this.addComment}/>
