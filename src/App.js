@@ -130,7 +130,7 @@ class App extends Component {
                                                         <div className="item active">
                                                             <img src={math1} alt="math" className="poza" />
                                                             <div className="overlay">
-                                                                <a className="icon" title="User Profile">
+                                                                <a href="#home" className="icon" title="User Profile">
                                                                     <p>Apprendre les maths</p>
                                                                 </a>
                                                             </div>
@@ -139,7 +139,7 @@ class App extends Component {
                                                         <div className="item">
                                                             <img src={chemistry1} alt="chemistry" className="poza" />
                                                             <div className="overlay">
-                                                                <a className="icon" title="User Profile">
+                                                                <a href="#home" className="icon" title="User Profile">
                                                                     <p>Apprendre la chimie</p>
                                                                 </a>
                                                             </div>
@@ -148,7 +148,7 @@ class App extends Component {
                                                         <div className="item">
                                                             <img src={bones1} alt="bones" className="poza" />
                                                             <div className="overlay">
-                                                                <a className="icon" title="User Profile">
+                                                                <a href="#home" className="icon" title="User Profile">
                                                                     <p>Apprendre la biologie</p>
                                                                 </a>
                                                             </div>
@@ -157,7 +157,7 @@ class App extends Component {
                                                         <div className="item">
                                                             <img src={physic1} alt="physic" className="poza" />
                                                             <div className="overlay">
-                                                                <a className="icon" title="User Profile">
+                                                                <a href="#home" className="icon" title="User Profile">
                                                                     <p>Apprendre la physique</p>
                                                                 </a>
                                                             </div>
