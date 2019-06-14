@@ -105,7 +105,7 @@ class Videos extends Component {
             });
     }
     render() {
-        const {id,link,redirect,name,description } = this.state;
+        const {id,link,redirect,name,description,course } = this.state;
         if (redirect) {
             const history = createHistory();
             history.push(`/videos/${id}`);
@@ -130,14 +130,14 @@ class Videos extends Component {
                 poster="/assets/poster.png"
                 src={link}
             />
+                <h2>{name}</h2>
+                <h4>{description}</h4>
             </div>
                <div className="col-4  pt-3 border-right">
-                    <h2>{name}</h2>
-                    <h4>{description}</h4>
+                    <h2>{course}</h2>
                 </div>
             <div className="row">
                 <div className="col-4  pt-3 border-right">
-                    <h6>Say something about React</h6>
                     <CommentForm addComment={this.addComment}/>
                 </div>
                 <div className="col-8  pt-3 bg-white">
